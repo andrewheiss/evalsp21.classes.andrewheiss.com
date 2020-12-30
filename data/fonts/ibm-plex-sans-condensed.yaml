@@ -1,0 +1,11 @@
+# Font style metadata
+name: IBM Plex Sans Condensed
+
+# Optional Google font URL
+google_fonts: 'IBM+Plex+Sans+Condensed:400,400i,700,700i'
+
+# Font families
+heading_font: IBM Plex Sans Condensed
+body_font: IBM Plex Sans Condensed
+nav_font: IBM Plex Sans Condensed
+mono_font: 'Consolas, "Liberation Mono", Menlo, Courier, monospace'

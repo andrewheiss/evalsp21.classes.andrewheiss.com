@@ -1,0 +1,22 @@
+# Theme metadata
+name: "Nord"
+
+# Is theme light or dark?
+light: true
+
+# Primary
+primary: "#5e81ac"
+
+# Links
+link: "#5e81ac"
+link_hover: "#d08770"
+
+# Menu
+menu_primary: "#fff"
+menu_text: "#5e81ac"
+menu_text_active: "#bf616a"
+menu_title: "#494949"
+
+# Home sections
+home_section_odd: "rgb(255, 255, 255)"
+home_section_even: "rgb(247, 247, 247)"

@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+public/*
+private/*
+resources/_gen/*
+*.zip
+temp_figs/*
+static/slides/*.pdf
+static/slides/**/*_cache/*
+blogdown/md5sum.txt
+themes/*

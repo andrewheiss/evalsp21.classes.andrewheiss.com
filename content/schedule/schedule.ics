@@ -1,0 +1,314 @@
+BEGIN:VCALENDAR
+PRODID:ATFutures/calendar
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-3a712b81-7e0f-48c6-8ffd-edf4bbf7cb94
+DTSTART;VALUE=DATE:20210111
+DTEND;VALUE=DATE:20210116
+SUMMARY:PMAP 8521: (Session 1) Evaluation and the causal revolution
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/01-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-7b4a7e37-1519-4be1-9d2c-d1b8838ee695
+DTSTART;VALUE=DATE:20210119
+DTEND;VALUE=DATE:20210120
+SUMMARY:PMAP 8521: Weekly check-in 1
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-38e64cca-b15f-4a7b-9395-6595f4bc0725
+DTSTART;VALUE=DATE:20210119
+DTEND;VALUE=DATE:20210120
+SUMMARY:PMAP 8521: Problem set 1
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/01-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-c0e3c864-3ee6-49b6-86cf-aec85c61fba9
+DTSTART;VALUE=DATE:20210119
+DTEND;VALUE=DATE:20210123
+SUMMARY:PMAP 8521: (Session 2) Regression and inference
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/02-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-9d0018be-70a1-4a3b-b787-85d764eb0514
+DTSTART;VALUE=DATE:20210125
+DTEND;VALUE=DATE:20210126
+SUMMARY:PMAP 8521: Weekly check-in 2
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-e68bf735-63b0-4b78-882e-bd6be8c0f95f
+DTSTART;VALUE=DATE:20210125
+DTEND;VALUE=DATE:20210126
+SUMMARY:PMAP 8521: Problem set 2
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/02-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-c8a8e4f5-4451-4f8c-bde1-e4bc98504506
+DTSTART;VALUE=DATE:20210125
+DTEND;VALUE=DATE:20210130
+SUMMARY:PMAP 8521: (Session 3) Theories of change and logic models
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/03-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-6d07ac4a-58c7-4cfe-94d2-723d59e111b9
+DTSTART;VALUE=DATE:20210201
+DTEND;VALUE=DATE:20210202
+SUMMARY:PMAP 8521: Weekly check-in 3
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-68bfc159-1990-467e-a54d-d4a15e69ee06
+DTSTART;VALUE=DATE:20210201
+DTEND;VALUE=DATE:20210202
+SUMMARY:PMAP 8521: Evaluation: Background and theory
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/01-eval-background-theory/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-1f6c564d-2d42-47cc-8b71-b0d046b3855c
+DTSTART;VALUE=DATE:20210201
+DTEND;VALUE=DATE:20210206
+SUMMARY:PMAP 8521: (Session 4) Measurement and DAGs
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/04-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-52ed59bc-b9f2-410a-bc83-199bfb2738b1
+DTSTART;VALUE=DATE:20210208
+DTEND;VALUE=DATE:20210209
+SUMMARY:PMAP 8521: Weekly check-in 4
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-faa396ff-a863-4026-8f38-2bd8b80a8da9
+DTSTART;VALUE=DATE:20210208
+DTEND;VALUE=DATE:20210209
+SUMMARY:PMAP 8521: Evaluation: Measurement
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/02-eval-measurement/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-cbefef77-78c4-4886-a19b-403b86a30312
+DTSTART;VALUE=DATE:20210208
+DTEND;VALUE=DATE:20210213
+SUMMARY:PMAP 8521: (Session 5) DAGs and potential outcomes
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/05-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-5ed0702a-6910-4ad8-9ef9-38bb0b10d614
+DTSTART;VALUE=DATE:20210215
+DTEND;VALUE=DATE:20210216
+SUMMARY:PMAP 8521: Weekly check-in 5
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-2e9256b0-9479-426a-87f4-c29da641a1b9
+DTSTART;VALUE=DATE:20210215
+DTEND;VALUE=DATE:20210216
+SUMMARY:PMAP 8521: Evaluation: Causal model
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/03-eval-dag/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-f0877838-40a7-4e0d-b0e0-ba19c625e6d4
+DTSTART;VALUE=DATE:20210215
+DTEND;VALUE=DATE:20210220
+SUMMARY:PMAP 8521: (Session 6) Threats to validity
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/06-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-4447617a-d09c-4708-a940-e8ede26b1aa6
+DTSTART;VALUE=DATE:20210222
+DTEND;VALUE=DATE:20210223
+SUMMARY:PMAP 8521: Weekly check-in 6
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-13d5f710-6590-483d-9450-ab1969f26b34
+DTSTART;VALUE=DATE:20210222
+DTEND;VALUE=DATE:20210223
+SUMMARY:PMAP 8521: Evaluation: Threats to validity
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/04-eval-threats/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-258e0409-a4d0-49cb-9487-671bdf57fb8f
+DTSTART;VALUE=DATE:20210222
+DTEND;VALUE=DATE:20210302
+SUMMARY:PMAP 8521:  **Exam 1**
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-92875fac-17bd-4ff9-85dc-559409329784
+DTSTART;VALUE=DATE:20210222
+DTEND;VALUE=DATE:20210227
+SUMMARY:PMAP 8521: (Session 7) Randomization and matching
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/07-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-eb1b5e6c-e471-4265-9a70-164561a7a57d
+DTSTART;VALUE=DATE:20210301
+DTEND;VALUE=DATE:20210302
+SUMMARY:PMAP 8521: Weekly check-in 7
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-4f7adaf6-1efd-4caa-90ae-89c22d079f65
+DTSTART;VALUE=DATE:20210301
+DTEND;VALUE=DATE:20210302
+SUMMARY:PMAP 8521: Problem set 3
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/03-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-634f16a9-31f9-4d85-9e22-e10aefc49ca9
+DTSTART;VALUE=DATE:20210312
+DTEND;VALUE=DATE:20210313
+SUMMARY:PMAP 8521: (Sessions 8–9) Difference-in-differences I + II
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/08-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-2434cf88-816a-4165-a046-f53e27990930
+DTSTART;VALUE=DATE:20210308
+DTEND;VALUE=DATE:20210309
+SUMMARY:PMAP 8521: Weekly check-in 8
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-cf192b98-1084-4dc7-b04c-5cdf6a540c5b
+DTSTART;VALUE=DATE:20210308
+DTEND;VALUE=DATE:20210309
+SUMMARY:PMAP 8521: Problem set 4
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/04-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-b2e4de77-01ae-4cc1-8e1d-aa71dafa0132
+DTSTART;VALUE=DATE:20210322
+DTEND;VALUE=DATE:20210323
+SUMMARY:PMAP 8521: Weekly check-in 9
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-054d4c4a-9547-499a-9e5a-80c8a160ae3b
+DTSTART;VALUE=DATE:20210322
+DTEND;VALUE=DATE:20210323
+SUMMARY:PMAP 8521: Problem set 5
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/05-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-d8aef600-f93b-4253-a868-9f0f33894aa1
+DTSTART;VALUE=DATE:20210322
+DTEND;VALUE=DATE:20210327
+SUMMARY:PMAP 8521: (Session 10) Regression discontinuity I
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/10-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-4e2c03c3-000c-4130-806d-2868dadf48c9
+DTSTART;VALUE=DATE:20210329
+DTEND;VALUE=DATE:20210330
+SUMMARY:PMAP 8521: Weekly check-in 10
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-25e14650-93f7-4e02-87a1-856a773ee64f
+DTSTART;VALUE=DATE:20210329
+DTEND;VALUE=DATE:20210330
+SUMMARY:PMAP 8521: Problem set 6
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/06-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-a6704700-2435-43e5-813e-519331193d1e
+DTSTART;VALUE=DATE:20210329
+DTEND;VALUE=DATE:20210403
+SUMMARY:PMAP 8521: (Session 11) Instrumental variables I
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/11-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-d95056f5-07d8-4494-a5e7-bd3e936b5e29
+DTSTART;VALUE=DATE:20210405
+DTEND;VALUE=DATE:20210406
+SUMMARY:PMAP 8521: Weekly check-in 11
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-2d5ad5ee-ccdc-4297-9d5f-a67c3ec30114
+DTSTART;VALUE=DATE:20210405
+DTEND;VALUE=DATE:20210406
+SUMMARY:PMAP 8521: Problem set 7
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/07-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-1d7a7e5e-c91b-42cb-bbc2-8474ba99fe42
+DTSTART;VALUE=DATE:20210405
+DTEND;VALUE=DATE:20210410
+SUMMARY:PMAP 8521: (Session 12) Instrumental variables II + Regression discontinuity II
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/12-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-995f6a6c-930d-4bcc-b304-9619c0cd58c8
+DTSTART;VALUE=DATE:20210412
+DTEND;VALUE=DATE:20210413
+SUMMARY:PMAP 8521: Weekly check-in 12
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-569c614b-1f4f-4081-95b5-bfdfb9baf6f1
+DTSTART;VALUE=DATE:20210412
+DTEND;VALUE=DATE:20210413
+SUMMARY:PMAP 8521: Problem set 8
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/08-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-13704842-4d28-44d7-8cfc-3b48dbdf15d6
+DTSTART;VALUE=DATE:20210412
+DTEND;VALUE=DATE:20210419
+SUMMARY:PMAP 8521:  **Exam 2**
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-de91bb67-f888-44d3-9f6f-94631bdbc6b1
+DTSTART;VALUE=DATE:20210412
+DTEND;VALUE=DATE:20210417
+SUMMARY:PMAP 8521: (Session 13) Choosing and planning ethical evaluations
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/13-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-4753a7b9-6546-46df-8665-0f25911acc6c
+DTSTART;VALUE=DATE:20210419
+DTEND;VALUE=DATE:20210420
+SUMMARY:PMAP 8521: Weekly check-in 13
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-893ac9f4-a1cb-4c05-b3a5-ef55ad2ec57f
+DTSTART;VALUE=DATE:20210419
+DTEND;VALUE=DATE:20210420
+SUMMARY:PMAP 8521: Problem set 9
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/09-problem-set/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-c7793d8b-c43b-43ac-9027-bfbb80d7aa12
+DTSTART;VALUE=DATE:20210419
+DTEND;VALUE=DATE:20210424
+SUMMARY:PMAP 8521: (Session 14) Ethics, stories, and curiosity
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/content/14-content/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-bac87e3d-4c61-4aea-b32b-22f2de0fb7fd
+DTSTART;VALUE=DATE:20210426
+DTEND;VALUE=DATE:20210427
+SUMMARY:PMAP 8521: Weekly check-in 14
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-7f378d4f-9529-48da-8795-569df0447ffe
+DTSTART;VALUE=DATE:20210426
+DTEND;VALUE=DATE:20210427
+SUMMARY:PMAP 8521: Work session
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-d2637f7f-4fcb-472b-9187-493dc1b02ec9
+DTSTART;VALUE=DATE:20210503
+DTEND;VALUE=DATE:20210504
+SUMMARY:PMAP 8521:  **Final project due** (submit online by 11:59 PM)
+DESCRIPTION:https://evalsp21.classes.andrewheiss.com/assignment/final-project/
+END:VEVENT
+END:VCALENDAR
