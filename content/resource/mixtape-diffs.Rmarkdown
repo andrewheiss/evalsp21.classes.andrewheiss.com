@@ -1,0 +1,164 @@
+---
+title: "Mixtape-style R code translations"
+date: "2021-01-04"
+menu:
+  resource:
+    parent: Guides
+type: docs
+weight: 5
+toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 6, fig.asp = 0.618, fig.align = "center",
+                      fig.retina = 3, out.width = "75%", collapse = TRUE)
+set.seed(1234)
+options("digits" = 2, "width" = 150)
+options(dplyr.summarise.inform = FALSE)
+```
+
+[*Causal Inference: The Mixtape*](https://mixtape.scunning.com/) includes code examples in both Stata and R, which is so cool! The previous PDF-only version of the book only had Stata code, so it was hard to follow along with in this class.
+
+As you'll note throughout this class, there are lots of ways to do things in R. You'll come across code in the RStudio forums and on StackOverflow that works, but looks slightly different than you're used to. In this class, we use the [tidyverse](), or a set of packages that all work together nicely like **ggplot2**, **dplyr**, and others. 
+
+*The Mixtape* also uses tidyverse (yay!), but has a couple code quirks and differences. Because the HTML version of the book (with R code) only came out on January 3, I haven't had time to find all the differences, so I'll keep a running list here.
+
+## Loading data
+
+Throughout *The Mixtape*, the code examples load data from external files stored online. The code provided for loading this data is a little more complicated than it needs to be. For instance, consider [this from Section 4.0.1](https://mixtape.scunning.com/ch3.html#statistical-inference):
+
+```{r load-data-mixtape, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(haven)
+
+read_data <- function(df)
+{
+  full_path <- paste("https://raw.github.com/scunning1975/mixtape/master/", 
+                     df, sep = "")
+  df <- read_dta(full_path)
+  return(df)
+}
+
+yule <- read_data("yule.dta") %>% 
+  lm(paup ~ outrelief + old + pop, .)
+  
+summary(yule)
+```
+
+Here, *The Mixtape* authors created a custom function named `read_data()` that loads a Stata file from a URL at GitHub. They then run a model on that data and store the results as an object named `yule`. It works, but it's not the most efficient way to do this for a few reasons:
+
+- You don't need that whole custom `read_data()` function. Instead you can feed `read_dta()` a full URL and load it like that
+- It's best if you save the data as an object by itself, *then* use it to create models. As it stands now, you can't look at the `yule.dta` file or make scatterplots or do anything with the data, since the results that are stored as `yule` are the results from the model, not the data itself.
+
+Instead, this is an easier way to load the data and run the model:
+
+### Translation
+
+```{r mixtape-load-data-fake, eval=FALSE}
+# Mixtape version
+read_data <- function(df)
+{
+  full_path <- paste("https://raw.github.com/scunning1975/mixtape/master/", 
+                     df, sep = "")
+  df <- read_dta(full_path)
+  return(df)
+}
+
+yule <- read_data("yule.dta") %>% 
+  lm(paup ~ outrelief + old + pop, .)
+
+summary(yule)
+```
+
+```{r better-load-data}
+# Our class version
+yule_data <- read_dta("https://raw.github.com/scunning1975/mixtape/master/yule.dta")
+
+yule_model <- lm(paup ~ outrelief + old + pop,
+                 data = yule_data)
+
+summary(yule_model)
+```
+
+Even better, instead of using `summary(yule_model)`, you can use `tidy()` and `glance()` from the **broom** library, which convert any kind of model object into standard data frames:
+
+```{r tidy-example}
+library(broom)  # You only need to run this once
+
+tidy(yule_model)
+glance(yule_model)
+```
+
+
+## Side-by-side regression tables: stargazer vs. modelsummary
+
+Side-by-side regression tables are a standard feature of economics, political science, and policy articles and reports. They conveniently let you see the results from multiple regresison models in one table. [This blog post here goes into detail about how to read them](http://svmiller.com/blog/2014/08/reading-a-regression-table-a-guide-for-students/).
+
+There are several R packages for creating these tables automatically. One of the earliest is named **stargazer**, and tons of people still use it—including *The Mixtape*. For instance, Section 3.1.5 in *The Mixtape* shows an example of discrimination and collider bias and the code there shows three regression models side by side:
+
+`collider_discrimination.R`:
+
+```{r stargazer-example, warning=FALSE, message=FALSE, results="asis"}
+set.seed(1234)
+
+library(tidyverse)
+library(stargazer)
+
+tb <- tibble(
+  female = ifelse(runif(10000) >= 0.5, 1, 0),
+  ability = rnorm(10000),
+  discrimination = female,
+  occupation = 1 + 2*ability + 0*female - 2*discrimination + rnorm(10000),
+  wage = 1 - 1*discrimination + 1*occupation + 2*ability + rnorm(10000) 
+)
+
+lm_1 <- lm(wage ~ female, tb)
+lm_2 <- lm(wage ~ female + occupation, tb)
+lm_3 <- lm(wage ~ female + occupation + ability, tb)
+
+stargazer(lm_1, lm_2, lm_3, type = "html", 
+          column.labels = c("Biased Unconditional", 
+                            "Biased",
+                            "Unbiased Conditional"))
+```
+
+Neat. That works, and there are a ton of additional options you can feed to `stargazer()`—run `?stargazer` or search in the Help pane for "stargazer" to see more.
+
+However, I'm not a fan of **stargazer** for a few reasons:
+
+- Stargazer tables won't knit to Word
+- You have to use different syntax when you're knitting to PDF vs. HTML (i.e. you have to change the `type` argument)
+- Stargazer handles basic models like `lm()` and `glm()` well, but doesn't support newer things since (1) it hasn't been updated for a while, and (2) support for any newer models has to be built-in by hand by the developer.
+
+In this class we won't use **stargazer**. Instead, we'll use the newer [**modelsummary** package](https://vincentarelbundock.github.io/modelsummary/), which addresses all of the issues with Stargazer:
+
+- **modelsummary** tables knit to Word
+- You don't have to use any special syntax when knitting documents with **modelsummary** tables—knit to PDF and they'll show up in the PDF; knit to Word and they'll show up in the Word file; knit to HTML and they'll show up there
+- **modelsummary** handles any model that is supported by the **broom** package (basically, if you ran run `tidy()` on it, you can stick it in a table with **modelsummary**). If a model doesn't support broom yet, you can actually add that support yourself. For instance, nonparametric regression discontinuity models made with the **rdrobust** package don't work in either **stargazer** or **modelsummary**. They'll probably never be added to **stargazer**, but if you [include the code here](https://github.com/tidymodels/broom/issues/777#issuecomment-643251123) in your document, you can add **rdrobust** models to `modelsummary()`. Magic!
+
+The syntax for `modelsummary()` is a little different from `stargazer()`. Here's how to recreate the same table from before:
+
+### Translation
+
+```{r stargazer-fake, eval=FALSE}
+# Stargazer version
+stargazer(lm_1, lm_2, lm_3, type = "text", 
+          column.labels = c("Biased Unconditional", 
+                            "Biased",
+                            "Unbiased Conditional"))
+```
+
+```{r modelsummary-real}
+# modelsummary version
+library(modelsummary)  # You only need to run this once
+
+modelsummary(list("Biased Unconditional" = lm_1, 
+                  "Biased" = lm_2, 
+                  "Unbiased Conditional" = lm_3),
+             stars = TRUE)
+```
+
+That's it! You feed `modelsummary()` a list of models. If you name the elements of the list, you'll get column headings. 
+
+The `modelsummary()` function has a ton of options for changing the appearance, adding extra rows, omitting rows, highlighting rows, etc. [See this page for examples.](https://vincentarelbundock.github.io/modelsummary/articles/modelsummary.html)
+
