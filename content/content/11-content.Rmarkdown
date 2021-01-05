@@ -34,7 +34,7 @@ slide_details <- tibble::tribble(
 
 - <i class="fas fa-book"></i> Chapter 5 in *Impact Evaluation in Practice* [@wb-eval]
 - <i class="fas fa-book"></i> Chapter 3 in *Mastering 'Metrics* [@AngristPischke:2015]
-- <i class="fas fa-book"></i> "Instrumental variables" in *Causal Inference: The Mixtape* [@mixtape]
+- <i class="fas fa-book"></i> [Chapter 7, "Instrumental variables"](https://mixtape.scunning.com/ch6.html) in *Causal Inference: The Mixtape* [@mixtape]
 
 ### Instrumental variables
 

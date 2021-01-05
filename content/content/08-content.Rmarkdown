@@ -35,7 +35,7 @@ slide_details <- tibble::tribble(
 
 - <i class="fas fa-book"></i> Chapter 7 in *Impact Evaluation in Practice* [@wb-eval]
 - <i class="fas fa-book"></i> Chapter 5 in *Mastering 'Metrics* [@AngristPischke:2015]
-- <i class="fas fa-book"></i> "Differences-in-differences" in *Causal Inference: The Mixtape* [@mixtape]
+- <i class="fas fa-book"></i> [Chapter 9, "Differences-in-differences"](https://mixtape.scunning.com/ch8.html) in *Causal Inference: The Mixtape* [@mixtape]
 
 
 ## Slides

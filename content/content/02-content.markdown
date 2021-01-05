@@ -18,7 +18,7 @@ slides: "02-slides"
 ## Readings
 
 -   <i class="fas fa-book"></i> Chapter 2 in *Mastering ’Metrics*[^1]
--   <i class="fas fa-book"></i> “Properties of regression” in *Causal Inference: The Mixtape*[^2]
+-   <i class="fas fa-book"></i> [Chapter 2, “Probability and Regression Review”](https://mixtape.scunning.com/ch1.html) in *Causal Inference: The Mixtape* (this is long; skim through this as a review)[^2]
 
 ## Recommended readings
 
@@ -124,7 +124,7 @@ You can also watch the playlist (and skip around to different sections) here:
 
 [^1]: Joshua D. Angrist and Jörn-Steffen Pischke, *Mastering ’Metrics: The Path from Cause to Effect* (Princeton, NJ: Princeton University Press, 2015).
 
-[^2]: Scott Cunningham, *Causal Inference: The Mixtape*, 2018, <https://www.scunning.com/mixtape.html>.
+[^2]: Scott Cunningham, *Causal Inference: The Mixtape* (New Haven, CT: Yale University Press, 2021), <https://mixtape.scunning.com/>.
 
 [^3]: Chester Ismay and Albert Y. Kim, *ModernDive: An Introduction to Statistical and Data Sciences via R*, 2018, <https://moderndive.com/>.
 

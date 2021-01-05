@@ -19,7 +19,7 @@ slides: "08-slides"
 
 -   <i class="fas fa-book"></i> Chapter 7 in *Impact Evaluation in Practice*[^1]
 -   <i class="fas fa-book"></i> Chapter 5 in *Mastering ’Metrics*[^2]
--   <i class="fas fa-book"></i> “Differences-in-differences” in *Causal Inference: The Mixtape*[^3]
+-   <i class="fas fa-book"></i> [Chapter 9, “Differences-in-differences”](https://mixtape.scunning.com/ch8.html) in *Causal Inference: The Mixtape*[^3]
 
 ## Slides
 
@@ -131,4 +131,4 @@ You can also watch the playlist (and skip around to different sections) here:
 
 [^2]: Joshua D. Angrist and Jörn-Steffen Pischke, *Mastering ’Metrics: The Path from Cause to Effect* (Princeton, NJ: Princeton University Press, 2015).
 
-[^3]: Scott Cunningham, *Causal Inference: The Mixtape*, 2018, <https://www.scunning.com/mixtape.html>.
+[^3]: Scott Cunningham, *Causal Inference: The Mixtape* (New Haven, CT: Yale University Press, 2021), <https://mixtape.scunning.com/>.

@@ -19,7 +19,7 @@ slides: "05-slides"
 
 -   <i class="fas fa-podcast"></i> Prologue and at least one of the four acts from [This American Life, “Gardens of Branching Paths,” episode \#691, January 10, 2020](https://www.thisamericanlife.org/691/gardens-of-branching-paths)
 -   <i class="fas fa-book"></i> Chapter 3 in *Impact Evaluation in Practice*[^1]
--   <i class="fas fa-book"></i> “Potential outcomes causal model” in *Causal Inference: The Mixtape*[^2]
+-   <i class="fas fa-book"></i> [Chapter 4, “Potential Outcomes Causal Model”](https://mixtape.scunning.com/ch3.html) in *Causal Inference: The Mixtape*[^2]
 
 ### Potential outcomes, ATEs, and CATEs example page
 
@@ -103,4 +103,4 @@ You can also watch the playlist (and skip around to different sections) here:
 
 [^1]: Paul J. Gertler et al., *Impact Evaluation in Practice*, 2nd ed. (Inter-American Development Bank; World Bank, 2016), <https://openknowledge.worldbank.org/handle/10986/25030>.
 
-[^2]: Scott Cunningham, *Causal Inference: The Mixtape*, 2018, <https://www.scunning.com/mixtape.html>.
+[^2]: Scott Cunningham, *Causal Inference: The Mixtape* (New Haven, CT: Yale University Press, 2021), <https://mixtape.scunning.com/>.

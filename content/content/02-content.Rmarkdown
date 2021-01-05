@@ -33,7 +33,7 @@ slide_details <- tibble::tribble(
 ## Readings
 
 - <i class="fas fa-book"></i> Chapter 2 in *Mastering 'Metrics* [@AngristPischke:2015]
-- <i class="fas fa-book"></i> "Properties of regression" in *Causal Inference: The Mixtape* [@mixtape]
+- <i class="fas fa-book"></i> [Chapter 2, "Probability and Regression Review"](https://mixtape.scunning.com/ch1.html) in *Causal Inference: The Mixtape* (this is long; skim through this as a review) [@mixtape]
 
 ## Recommended readings
 

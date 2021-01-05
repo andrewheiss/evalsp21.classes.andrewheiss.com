@@ -86,9 +86,9 @@ Most of the readings in this class are free.
 
 We will only use one physical textbook. There are three official textbooks for the class:
 
-- [@wb-eval] ([**Free!**](https://openknowledge.worldbank.org/handle/10986/25030))
-- [@mixtape] ([**Also free!**](https://www.scunning.com/mixtape.html))
-- [@AngristPischke:2015] (**<span>$25</span> used or <span>$30</span> new at [Amazon](https://www.amazon.com/Mastering-Metrics-Path-Cause-Effect/dp/0691152845/))**
+- Paul J. Gertler et al., *Impact Evaluation in Practice*, 2nd ed. (Inter-American Development Bank; World Bank, 2016), <https://openknowledge.worldbank.org/handle/10986/25030.> ([**Free!**](https://openknowledge.worldbank.org/handle/10986/25030))
+- Scott Cunningham, Causal Inference: The Mixtape (New Haven, CT: Yale University Press, 2021), <https://mixtape.scunning.com/>. ([**Also free(!)**](https://mixtape.scunning.com/), but there's also a print version for <span>$35</span> that you might want to get for reference after the class is over)
+- Joshua D. Angrist and Jörn-Steffen Pischke, Mastering ’Metrics: The Path from Cause to Effect (Princeton, NJ: Princeton University Press, 2015). (**<span>$25</span> used or <span>$30</span> new at [Amazon](https://www.amazon.com/Mastering-Metrics-Path-Cause-Effect/dp/0691152845/))**
 
 The World Bank's *Impact Evaluation in Practice* will be our main textbook. It's written at a general, easy-to-understand level with relatively minimal math. *Mastering 'Metrics* goes into more depth about the mechanics of different causal inference approaches and has a bit more math, but it's still fairly accessible. *Causal Inference: The Mixtape* has even more math, but hopefully not an excessively terrifying amount.
 

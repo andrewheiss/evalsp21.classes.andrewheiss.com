@@ -26,7 +26,7 @@ slides: "04-slides"
 
 -   <i class="far fa-file-pdf"></i> Julia M. Rohrer, “Thinking Clearly About Correlations and Causation: Graphical Causal Models for Observational Data”[^2] This will be posted on iCollege.
 -   <i class="far fa-file-pdf"></i> Section 2 only (pp. 4–11) from Julian Schuessler and Peter Selb, “Graphical Causal Models for Survey Inference.”[^3] [The PDF is available at SocArXiv.](https://osf.io/preprints/socarxiv/hbg3m/)
--   <i class="fas fa-book"></i> “Directed acyclical graphs” in *Causal Inference: The Mixtape*[^4]
+-   <i class="fas fa-book"></i> [Chapter 3, “Directed Acyclic Graphs”](https://mixtape.scunning.com/ch2.html) in *Causal Inference: The Mixtape*[^4]
 
 ### DAG example page
 
@@ -129,4 +129,4 @@ You can also watch the playlist (and skip around to different sections) here:
 
 [^3]: Julian Schuessler and Peter Selb, “Graphical Causal Models for Survey Inference” (Working Paper, SocArXiv, December 17, 2019), doi:[10.31235/osf.io/hbg3m](https://doi.org/10.31235/osf.io/hbg3m).
 
-[^4]: Scott Cunningham, *Causal Inference: The Mixtape*, 2018, <https://www.scunning.com/mixtape.html>.
+[^4]: Scott Cunningham, *Causal Inference: The Mixtape* (New Haven, CT: Yale University Press, 2021), <https://mixtape.scunning.com/>.

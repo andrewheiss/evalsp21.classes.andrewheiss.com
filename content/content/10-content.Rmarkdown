@@ -34,7 +34,7 @@ slide_details <- tibble::tribble(
 
 - <i class="fas fa-book"></i> Chapter 6 in *Impact Evaluation in Practice* [@wb-eval]
 - <i class="fas fa-book"></i> Chapter 4 in *Mastering 'Metrics* [@AngristPischke:2015]
-- <i class="fas fa-book"></i> "Regression discontinuity" in *Causal Inference: The Mixtape* [@mixtape]
+- <i class="fas fa-book"></i> [Chapter 6, "Regression discontinuity"](https://mixtape.scunning.com/ch5.html) in *Causal Inference: The Mixtape* [@mixtape]
 
 ### Regression discontinuity
 
