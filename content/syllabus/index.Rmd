@@ -121,6 +121,15 @@ Searching for help with R on Google can sometimes be tricky because the program 
 Additionally, we have a class chatroom at [Slack](https://gsuevalf2020.slack.com) where anyone in the class can ask questions and anyone can answer. **I will monitor Slack regularly and will respond quickly.** (It's one of the rare Slack workspaces where I actually have notifications enabled!) Ask questions about the readings, assignments, and project. You'll likely have similar questions as your peers, and you'll likely be able to answer other peoples' questions too.
 
 
+## Course schedule
+
+We have no regularly scheduled meeting times. There may be an occasional live Webex-streamed (and recorded for later) lab or two during the semester, if we can coordinate a time.
+
+Instead, 100% of the class content is asynchronous. You can do the readings and watch the videos on your own schedule at whatever time works best for you. Many of you work full time and you have childcare and parental care responsibilities, leaving you with only evenings for coursework. I've designed this asynchronous system with *you specifically* in mind. I also can only really do teaching work at night when my kids are in bed—I recorded all these videos between like 10 PM and 2 AM. We're all in similar pandemic boats.
+
+Each session has a set of readings and an accompanying lecture. I would **strongly** recommend working through the readings before watching the lecture, but you can do it in whatever order you want.
+
+
 ## Course policies
 
 **Be nice. Be honest. Don't cheat.**
