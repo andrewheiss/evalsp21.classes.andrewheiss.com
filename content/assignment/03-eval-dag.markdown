@@ -23,7 +23,7 @@ If you decide to use a different program for your final project, that's okay! Th
 
 You need to complete the three sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).
 
-**I've created an R Markdown template you can use here:** [<i class="fas fa-file-archive"></i> `causal-model.zip`](/projects/causal-model.zip). It's also [available on RStudio.cloud](https://rstudio.cloud/spaces/82624/project/1548886).
+**I've created an R Markdown template you can use here:** [<i class="fas fa-file-archive"></i> `causal-model.zip`](/projects/causal-model.zip). It's also [available on RStudio.cloud](https://rstudio.cloud/spaces/112607/project/2062898).
 
 **Submit this assignment as a PDF or Word file on iCollege.**
 

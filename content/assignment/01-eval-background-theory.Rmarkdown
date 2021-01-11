@@ -24,7 +24,7 @@ If you decide to use a different program for your final project, that's okay! Th
 
 You need to complete the four sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).^[And if you want to be super brave, try using [R Markdown's citation system](/resource/markdown/#citations)!]
 
-**I've created an R Markdown template you can use here:** [<i class="fas fa-file-archive"></i> `background-theory.zip`](/projects/background-theory.zip). It's also [available on RStudio.cloud](https://rstudio.cloud/spaces/82624/project/1548782).
+**I've created an R Markdown template you can use here:** [<i class="fas fa-file-archive"></i> `background-theory.zip`](/projects/background-theory.zip). It's also [available on RStudio.cloud](https://rstudio.cloud/spaces/112607/project/2062895).
 
 You can draw your impact theory and logic model charts by hand or with something like [Diagrams.net](https://www.diagrams.net/), [Lucidchart](https://www.lucidchart.com/pages/home), or [Creately](https://creately.com/). Export the image as a PNG, place it in the same directory as your R Markdown file, and include the image with Markdown.
 

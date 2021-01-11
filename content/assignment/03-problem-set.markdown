@@ -35,7 +35,7 @@ And as always, if you're struggling, *please* talk to me. Work with classmates t
 
     You'll need to make sure you have these packages installed on your computer: `tidyverse`, `MatchIt`, `modelsummary`, and `patchwork`. If you try to load one of those packages with `library(tidyverse)` or `library(MatchIt)`, etc., and R gives an error that the package is missing, use the "Packages" panel in RStudio to install it.
 
-    (Alternatively, you can open the project named "Problem Set 3" on RStudio.cloud and complete the assignment in your browser without needing to install anything. If you don't have access to the class RStudio.cloud account, *please let me know as soon as possible*. [This link should take you to the project](https://rstudio.cloud/spaces/82624/project/1714086)—if it doesn't, log in and look for the project named "Problem Set 3.")
+    (Alternatively, you can open the project named "Problem Set 3" on RStudio.cloud and complete the assignment in your browser without needing to install anything. If you don't have access to the class RStudio.cloud account, *please let me know as soon as possible*. [This link should take you to the project](https://rstudio.cloud/spaces/112607/project/2062881)—if it doesn't, log in and look for the project named "Problem Set 3.")
 
 2. Rename the R Markdown file named `your-name_problem-set-3.Rmd` to something that matches your name and open it in RStudio.
 
