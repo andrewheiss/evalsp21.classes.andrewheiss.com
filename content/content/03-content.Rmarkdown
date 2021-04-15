@@ -59,6 +59,15 @@ youtube_list(slide_details, playlist_id)
 ```
 
 
+## Optional lab
+
+Here are all the materials we used in the lab: 
+
+- [RStudio.cloud project](https://rstudio.cloud/spaces/112607/project/2107489)
+- [Slides](https://evalsp21.classes.andrewheiss.com/projects/01_lab/slides/01_lab.html)
+- [Project `.zip` file](https://evalsp21.classes.andrewheiss.com/projects/01_lab.zip) (the slides are in here too)
+
+
 ```{cat include=FALSE, eval=FALSE}
 Playlist: https://www.youtube.com/playlist?list=PLS6tnpTr39sHjKJRcD-ebQUbcaFhc0cQH
 

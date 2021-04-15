@@ -107,10 +107,18 @@ You can also watch the playlist (and skip around to different sections) here:
 
 <div class="embed-responsive embed-responsive-16by9">
 
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLS6tnpTr39sHjKJRcD-ebQUbcaFhc0cQH" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sHjKJRcD-ebQUbcaFhc0cQH" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 
 </div>
+
+## Optional lab
+
+Here are all the materials we used in the lab:
+
+-   [RStudio.cloud project](https://rstudio.cloud/spaces/112607/project/2107489)
+-   [Slides](https://evalsp21.classes.andrewheiss.com/projects/01_lab/slides/01_lab.html)
+-   [Project `.zip` file](https://evalsp21.classes.andrewheiss.com/projects/01_lab.zip) (the slides are in here too)
 
 [^1]: Paul J. Gertler et al., *Impact Evaluation in Practice*, 2nd ed. (Inter-American Development Bank; World Bank, 2016), <https://openknowledge.worldbank.org/handle/10986/25030>.
 
