@@ -11,12 +11,12 @@ toc: true
 editor_options:
   chunk_output_type: console
 ---
-<script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
 
@@ -42,7 +42,7 @@ There's a set of videos that walks through each section below. To make it easier
 You can also watch the playlist (and skip around to different sections) here:
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Background
@@ -329,7 +329,7 @@ modelsummary(list("Forbidden" = model_forbidden, "OLS" = model_naive,
    <td style="text-align:center;"> -85.571*** </td>
    <td style="text-align:center;"> -59.378*** </td>
    <td style="text-align:center;"> 28.819** </td>
-   <td style="text-align:center;"> 28.819** </td>
+   <td style="text-align:center;"> 28.819*** </td>
   </tr>
   <tr>
    <td style="text-align:left;">  </td>
@@ -374,18 +374,18 @@ modelsummary(list("Forbidden" = model_forbidden, "OLS" = model_naive,
    <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> (0.755) </td>
-   <td style="text-align:center;">  </td>
+   <td style="text-align:left;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (0.755) </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Num.Obs. </td>
    <td style="text-align:center;"> 1000 </td>
    <td style="text-align:center;"> 1000 </td>
    <td style="text-align:center;"> 1000 </td>
-   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> 1000 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> R2 </td>
@@ -400,13 +400,6 @@ modelsummary(list("Forbidden" = model_forbidden, "OLS" = model_naive,
    <td style="text-align:center;"> 451.244 </td>
    <td style="text-align:center;"> 107.639 </td>
    <td style="text-align:center;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 1000 </td>
   </tr>
 </tbody>
 <tfoot>
@@ -642,16 +635,16 @@ modelsummary(list("OLS" = model_naive, "2SLS (by hand)" = second_stage,
    <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> (15.176) </td>
-   <td style="text-align:center;">  </td>
+   <td style="text-align:left;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (15.176) </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Num.Obs. </td>
    <td style="text-align:center;"> 663 </td>
    <td style="text-align:center;"> 663 </td>
-   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> 663 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> R2 </td>
@@ -664,12 +657,6 @@ modelsummary(list("OLS" = model_naive, "2SLS (by hand)" = second_stage,
    <td style="text-align:center;"> 78.786 </td>
    <td style="text-align:center;"> 54.041 </td>
    <td style="text-align:center;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 663 </td>
   </tr>
 </tbody>
 <tfoot>
@@ -964,14 +951,14 @@ modelsummary(list("Naive OLS" = model_naive, "2SLS" = model_2sls),
    <td style="text-align:center;"> -0.064** </td>
   </tr>
   <tr>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:center;"> (0.016) </td>
-   <td style="text-align:center;"> (0.028) </td>
+   <td style="text-align:left;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (0.016) </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (0.028) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Num.Obs. </td>
    <td style="text-align:center;"> 3010 </td>
-   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> 3010 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> R2 </td>
@@ -982,11 +969,6 @@ modelsummary(list("Naive OLS" = model_naive, "2SLS" = model_2sls),
    <td style="text-align:left;"> F </td>
    <td style="text-align:center;"> 184.606 </td>
    <td style="text-align:center;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 3010 </td>
   </tr>
 </tbody>
 <tfoot>

@@ -11,8 +11,8 @@ toc: true
 editor_options:
   chunk_output_type: console
 ---
-<script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
 
@@ -38,7 +38,7 @@ There's a set of videos that walks through each section below. To make it easier
 You can also watch the playlist (and skip around to different sections) here:
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Program background
@@ -337,10 +337,10 @@ modelsummary(list("Full data" = model_simple,
    <td style="text-align:center;background-color: #F6D645 !important;"> 9.122*** </td>
   </tr>
   <tr>
-   <td style="text-align:left;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.800) </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (1.309) </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (1.912) </td>
+   <td style="text-align:left;box-shadow: 0px 1pxborder-bottom: 1px solid">  </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.800) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (1.309) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (1.912) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Num.Obs. </td>
@@ -359,6 +359,66 @@ modelsummary(list("Full data" = model_simple,
    <td style="text-align:center;"> 0.267 </td>
    <td style="text-align:center;"> 0.158 </td>
    <td style="text-align:center;"> 0.214 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AIC </td>
+   <td style="text-align:center;"> 6595.3 </td>
+   <td style="text-align:center;"> 2663.5 </td>
+   <td style="text-align:center;"> 1303.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> BIC </td>
+   <td style="text-align:center;"> 6615.0 </td>
+   <td style="text-align:center;"> 2679.5 </td>
+   <td style="text-align:center;"> 1316.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Log.Lik. </td>
+   <td style="text-align:center;"> -3293.663 </td>
+   <td style="text-align:center;"> -1327.755 </td>
+   <td style="text-align:center;"> -647.567 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 182.971 </td>
+   <td style="text-align:center;"> 38.891 </td>
+   <td style="text-align:center;"> 27.310 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Deviance </td>
+   <td style="text-align:center;"> 42497.66 </td>
+   <td style="text-align:center;"> 16925.61 </td>
+   <td style="text-align:center;"> 9008.56 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF Resid </td>
+   <td style="text-align:center;"> 997 </td>
+   <td style="text-align:center;"> 401 </td>
+   <td style="text-align:center;"> 191 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sigma </td>
+   <td style="text-align:center;"> 6.529 </td>
+   <td style="text-align:center;"> 6.497 </td>
+   <td style="text-align:center;"> 6.868 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Statistics </td>
+   <td style="text-align:center;"> 182.971 </td>
+   <td style="text-align:center;"> 38.891 </td>
+   <td style="text-align:center;"> 27.310 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
   </tr>
 </tbody>
 <tfoot>
@@ -449,6 +509,7 @@ We can plot this nonparametric model with `rdplot()`.
 
 ```r
 rdplot(y = tutoring$exit_exam, x = tutoring$entrance_exam, c = 70)
+## [1] "Mass points detected in the running variable."
 ```
 
 <img src="/example/rdd_files/figure-html/rdplot-basic-1.png" width="75%" style="display: block; margin: auto;" />

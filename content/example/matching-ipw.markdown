@@ -11,8 +11,8 @@ toc: true
 editor_options:
   chunk_output_type: console
 ---
-<script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
 
@@ -33,7 +33,7 @@ There's a set of videos that walks through each section below. To make it easier
 You can also watch the playlist (and skip around to different sections) here:
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
@@ -193,31 +193,32 @@ summary(matched_data)
 ## matchit(formula = net ~ income + temperature + health, data = nets, 
 ##     method = "nearest", distance = "mahalanobis", replace = TRUE)
 ## 
-## Summary of balance for all data:
-##             Means Treated Means Control SD Control Mean Diff eQQ Med eQQ Mean eQQ Max
-## income                955           873        173     82.44    88.0     83.2   153.0
-## temperature            23            24          4     -0.71     0.7      0.7     1.3
-## health                 55            48         17      6.85     7.0      6.9    11.0
+## Summary of Balance for All Data:
+##             Means Treated Means Control Std. Mean Diff. Var. Ratio eCDF Mean eCDF Max
+## income                955           873            0.41        1.4     0.104    0.198
+## temperature            23            24           -0.17        1.1     0.042    0.097
+## health                 55            48            0.36        1.2     0.071    0.168
 ## 
 ## 
-## Summary of balance for matched data:
-##             Means Treated Means Control SD Control Mean Diff eQQ Med eQQ Mean eQQ Max
-## income                955           950      191.2     5.175    39.0    40.97    95.0
-## temperature            23            23        4.1    -0.027     0.2     0.23     0.7
-## health                 55            55       18.2     0.379     3.0     3.36     7.0
+## Summary of Balance for Matched Data:
+##             Means Treated Means Control Std. Mean Diff. Var. Ratio eCDF Mean eCDF Max Std. Pair Dist.
+## income                955           950           0.026        1.1     0.010    0.048            0.12
+## temperature            23            23          -0.006        1.0     0.007    0.028            0.12
+## health                 55            55           0.020        1.1     0.007    0.028            0.12
 ## 
 ## Percent Balance Improvement:
-##             Mean Diff. eQQ Med eQQ Mean eQQ Max
-## income              94      56       51      38
-## temperature         96      71       67      46
-## health              94      57       51      36
+##             Std. Mean Diff. Var. Ratio eCDF Mean eCDF Max
+## income                   94         66        91       76
+## temperature              96         61        84       71
+## health                   94         61        90       83
 ## 
-## Sample sizes:
-##           Control Treated
-## All          1071     681
-## Matched       439     681
-## Unmatched     632       0
-## Discarded       0       0
+## Sample Sizes:
+##               Control Treated
+## All              1071     681
+## Matched (ESS)     323     681
+## Matched           439     681
+## Unmatched         632       0
+## Discarded           0       0
 ```
 
 Here we can see that all 681 of the net users were paired with similar-looking non-users (439 of them). 632 people weren't matched and will get discarded. If you're curious, you can see which treated rows got matched to which control rows by running `matched_data$match.matrix`.
@@ -541,12 +542,12 @@ modelsummary(list("Naive" = model_wrong,
    <td style="text-align:center;background-color: #F6D645 !important;"> -10.190*** </td>
   </tr>
   <tr>
-   <td style="text-align:left;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.649) </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.769) </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.763) </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.658) </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.656) </td>
+   <td style="text-align:left;box-shadow: 0px 1pxborder-bottom: 1px solid">  </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.649) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.769) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.763) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.658) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.656) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Num.Obs. </td>
@@ -571,6 +572,86 @@ modelsummary(list("Naive" = model_wrong,
    <td style="text-align:center;"> 0.144 </td>
    <td style="text-align:center;"> 0.119 </td>
    <td style="text-align:center;"> 0.121 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AIC </td>
+   <td style="text-align:center;"> 14030.7 </td>
+   <td style="text-align:center;"> 8851.7 </td>
+   <td style="text-align:center;"> 8890.0 </td>
+   <td style="text-align:center;"> 14274.3 </td>
+   <td style="text-align:center;"> 14260.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> BIC </td>
+   <td style="text-align:center;"> 14047.1 </td>
+   <td style="text-align:center;"> 8866.8 </td>
+   <td style="text-align:center;"> 8905.0 </td>
+   <td style="text-align:center;"> 14290.7 </td>
+   <td style="text-align:center;"> 14276.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Log.Lik. </td>
+   <td style="text-align:center;"> -7012.326 </td>
+   <td style="text-align:center;"> -4422.846 </td>
+   <td style="text-align:center;"> -4441.978 </td>
+   <td style="text-align:center;"> -7134.172 </td>
+   <td style="text-align:center;"> -7127.255 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 632.315 </td>
+   <td style="text-align:center;"> 280.581 </td>
+   <td style="text-align:center;"> 188.862 </td>
+   <td style="text-align:center;"> 236.841 </td>
+   <td style="text-align:center;"> 241.379 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Deviance </td>
+   <td style="text-align:center;"> 307298.43 </td>
+   <td style="text-align:center;"> 176512.42 </td>
+   <td style="text-align:center;"> 173842.84 </td>
+   <td style="text-align:center;"> 668442.23 </td>
+   <td style="text-align:center;"> 663098.21 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF Resid </td>
+   <td style="text-align:center;"> 1750 </td>
+   <td style="text-align:center;"> 1118 </td>
+   <td style="text-align:center;"> 1118 </td>
+   <td style="text-align:center;"> 1750 </td>
+   <td style="text-align:center;"> 1750 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sigma </td>
+   <td style="text-align:center;"> 13.251 </td>
+   <td style="text-align:center;"> 12.565 </td>
+   <td style="text-align:center;"> 12.470 </td>
+   <td style="text-align:center;"> 19.544 </td>
+   <td style="text-align:center;"> 19.466 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Statistics </td>
+   <td style="text-align:center;"> 632.315 </td>
+   <td style="text-align:center;"> 280.581 </td>
+   <td style="text-align:center;"> 188.862 </td>
+   <td style="text-align:center;"> 236.841 </td>
+   <td style="text-align:center;"> 241.379 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
   </tr>
 </tbody>
 <tfoot>

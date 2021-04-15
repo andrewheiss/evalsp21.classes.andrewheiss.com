@@ -11,8 +11,8 @@ toc: true
 editor_options: 
   chunk_output_type: console
 ---
-<script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
 
@@ -33,7 +33,7 @@ There's a set of videos that walks through each section below. To make it easier
 You can also watch the playlist (and skip around to different sections) here:
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLS6tnpTr39sHw3FevrihLn2Ly8pSCUUag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sHw3FevrihLn2Ly8pSCUUag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
@@ -586,9 +586,9 @@ modelsummary(list("Simple" = model_small, "Full" = model_big))
    <td style="text-align:center;"> 0.284*** </td>
   </tr>
   <tr>
-   <td style="text-align:left;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid"> (0.080) </td>
+   <td style="text-align:left;box-shadow: 0px 1pxborder-bottom: 1px solid">  </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid">  </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.080) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Num.Obs. </td>
@@ -604,6 +604,56 @@ modelsummary(list("Simple" = model_small, "Full" = model_big))
    <td style="text-align:left;"> R2 Adj. </td>
    <td style="text-align:center;"> 0.020 </td>
    <td style="text-align:center;"> 0.187 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AIC </td>
+   <td style="text-align:center;"> 18654.0 </td>
+   <td style="text-align:center;"> 16684.8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> BIC </td>
+   <td style="text-align:center;"> 18687.2 </td>
+   <td style="text-align:center;"> 16809.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Log.Lik. </td>
+   <td style="text-align:center;"> -9321.997 </td>
+   <td style="text-align:center;"> -8323.388 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 39.540 </td>
+   <td style="text-align:center;"> 73.459 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Deviance </td>
+   <td style="text-align:center;"> 9055.93 </td>
+   <td style="text-align:center;"> 7042.41 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF Resid </td>
+   <td style="text-align:center;"> 5622 </td>
+   <td style="text-align:center;"> 5329 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sigma </td>
+   <td style="text-align:center;"> 1.269 </td>
+   <td style="text-align:center;"> 1.150 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Statistics </td>
+   <td style="text-align:center;"> 39.540 </td>
+   <td style="text-align:center;"> 73.459 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 17 </td>
   </tr>
 </tbody>
 <tfoot>
