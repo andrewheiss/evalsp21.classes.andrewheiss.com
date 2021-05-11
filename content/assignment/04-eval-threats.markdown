@@ -54,9 +54,9 @@ Not all types of validity will apply to every study. Testing, for example, is on
 
 ## Assessing validity
 
-Your textbook [*Impact Evaluation in Practice*](https://openknowledge.worldbank.org/handle/10986/25030) is full of short examples of real-world evaluations, experiments, and studies. For this assignment, you will assess the (1) internal validity, (2) external validity, and (3) construct validity for four of the examples from the book. If the summary in the book isn’t sufficient, you can skim through the original study for more details.
+Your textbook [*Impact Evaluation in Practice*](https://openknowledge.worldbank.org/handle/10986/25030) is full of short examples of real-world evaluations, experiments, and studies. For this assignment, you will assess the (1) internal validity, (2) external validity, and (3) construct validity for two of the examples from the book. If the summary in the book isn’t sufficient, you can skim through the original study for more details. The original studies can be found in the Content section of iCollege.
 
-You will assess these four studies:
+You will assess **two (2)** of these four studies. Pick whichever two seem the most interesting to you:
 
 1.  **The effect of conditional cash transfers on education in Mexico** (Box 4.2, p. 70)
     -   Original study: T. Paul Schultz, “School Subsidies for the Poor: Evaluating the Mexican Progresa Poverty Program,” *Journal of Development Economics* 74, no. 1 (June 2004): 199–250, doi:[10.1016/j.jdeveco.2003.12.009](https://doi.org/10.1016/j.jdeveco.2003.12.009).
@@ -67,7 +67,7 @@ You will assess these four studies:
 4.  **Early childhood development and migration in Jamaica** (Box 9.5, p. 170)
     -   Original study: Paul Gertler et al., “Labor Market Returns to an Early Childhood Stimulation Intervention in Jamaica,” *Science* 344, no. 6187 (May 14, 2014): 998–1001, doi:[10.1126/science.1251178](https://doi.org/10.1126/science.1251178).
 
-For each study, do the following:
+For each of the two studies you choose, do the following:
 
 1.  Go through the 13 types of internal validity and describe *in 2–3 sentences* how the study succeeds/fails to address each concern. Calculate a total internal validity score.
 2.  Describe any threats to external validity and assess how generalizable the findings are. *(≈75 words)*

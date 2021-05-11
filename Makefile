@@ -58,7 +58,7 @@ static/slides/css/ath-slides.css:
 
 # build: 
 build: static/slides/css/ath-slides.css zip_projects pdf_slides
-	Rscript -e "blogdown::build_site(build_rmd = blogdown::md5sum_filter)"
+	Rscript -e "blogdown::build_site(build_rmd = blogdown::filter_md5sum)"
 
 serve: build
 	Rscript -e "blogdown::serve_site(port=4321)"

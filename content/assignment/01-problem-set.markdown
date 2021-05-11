@@ -25,7 +25,7 @@ editor_options:
 
 ## Task 2: Make an RStudio Project
 
-1. Use either RStudio.cloud or RStudio on your computer (preferably RStudio on your computer! [Follow these instructions to get started!](/resource/install/)) to create a new RStudio Project.
+1. Use either RStudio.cloud or RStudio on your computer (preferably RStudio on your computer! [Follow these instructions to get started!](/resource/install/)) to create a new RStudio Project. Refer to the [example page you read in Task 1 for instructions](/example/rstudio-tidyverse/#part-3-rstudio-projects)
 
 2. Create a folder named "data" in the project folder you just made.
 

@@ -140,7 +140,7 @@ food_health <- read_csv("data/food_health_politics.csv")
 
 We're interested in looking at the relationships between food access, mortality, and politics. Do do this, we look at data from three different sources:
 
-- The USDA's [Food Environment Atlas](https://catalog.data.gov/dataset/food-environment-atlas-f4a22)
+- The USDA's [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/documentation/)
 - The CDC's ["Compressed Mortality File 1999-2015 Series 20 No. 2U, 2016"](http://wonder.cdc.gov/cmf-icd10.html)
 - 2016 election results (found all over the internet)
 

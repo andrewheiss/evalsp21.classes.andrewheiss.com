@@ -73,7 +73,9 @@ It's always best to point R at some other directory. If you don't use RStudio, y
 
 The best way to deal with working directories with RStudio is to use RStudio Projects. These are special files that RStudio creates for you that end in a `.Rproj` extension. When you open one of these special files, a new RStudio instance will open up and be pointed at the correct directory automatically. If you move the folder later or open it on a different computer, it will work just fine and you will not be sad.
 
-[Read this super short chapter on RStudio projects.](https://r4ds.had.co.nz/workflow-projects.html)
+[Read this super short chapter on RStudio projects to learn how to create and use them](https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects)
+
+In general, you can create a new project by going to File > New Project > New Directory > Empty Project, which will create a new folder on your computer that is empty except for a single `.Rproj` file. Double click on that file to open an RStudio instance that is pointed at the correct folder.
 
 
 ## Part 4: Getting familiar with R Markdown
