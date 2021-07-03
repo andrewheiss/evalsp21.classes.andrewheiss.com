@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Helpful resources | Program Evaluation</title>
-    <link>https://evalsp21.classes.andrewheiss.com/resource/</link>
-      <atom:link href="https://evalsp21.classes.andrewheiss.com/resource/index.xml" rel="self" type="application/rss+xml" />
+    <link>/resource/</link>
+      <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
     <description>Helpful resources</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Helpful resources</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/</link>
+      <link>/resource/</link>
     </image>
     
     <item>
       <title>Things you should know for Exam 1</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/exam1/</link>
+      <link>/resource/exam1/</link>
       <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/exam1/</guid>
+      <guid>/resource/exam1/</guid>
       <description>&lt;h2 id=&#34;evidence-causation-and-evaluation&#34;&gt;Evidence, causation, and evaluation&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;You should understand…&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -129,9 +129,9 @@
     
     <item>
       <title>Installing R, RStudio, tidyverse, and tinytex</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/install/</link>
+      <link>/resource/install/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/install/</guid>
+      <guid>/resource/install/</guid>
       <description>&lt;p&gt;You will do all of your work in this class with the open source (and free!) programming language &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt;. You will use &lt;a href=&#34;https://www.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio&lt;/a&gt; as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.&lt;/p&gt;
 &lt;h2 id=&#34;rstudiocloud&#34;&gt;RStudio.cloud&lt;/h2&gt;
 &lt;p&gt;R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free &lt;a href=&#34;http://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio.cloud&lt;/a&gt; service &lt;em&gt;initially&lt;/em&gt;, which lets you run a full instance of RStudio in your web browser. This means you won&amp;rsquo;t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.&lt;/p&gt;
@@ -147,15 +147,15 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Click on &amp;ldquo;Download R for &lt;code&gt;XXX&lt;/code&gt;&amp;rdquo;, where &lt;code&gt;XXX&lt;/code&gt; is either Mac or Windows:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-links.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-links.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it&amp;rsquo;s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.0.0) and download it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If you use Windows, click &amp;ldquo;base&amp;rdquo; (or click on the bolded &amp;ldquo;install R for the first time&amp;rdquo; link) and download it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-windows.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-windows.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -174,9 +174,9 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-rstudio1.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-rstudio1.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-rstudio2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-rstudio2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Double click on the downloaded file (again, check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;
@@ -185,10 +185,10 @@
 &lt;p&gt;Double click on RStudio to run it (check your applications folder or start menu).&lt;/p&gt;
 &lt;h3 id=&#34;install-tidyverse&#34;&gt;Install &lt;code&gt;tidyverse&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;R packages are easy to install with RStudio. Select the packages panel, click on &amp;ldquo;Install,&amp;rdquo; type the name of the package you want to install, and press enter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-package-panel.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-package-panel.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This can sometimes be tedious when you&amp;rsquo;re installing lots of packages, though. &lt;a href=&#34;https://www.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The tidyverse&lt;/a&gt;, for instance, consists of dozens of packages (including &lt;strong&gt;ggplot2&lt;/strong&gt;) that all work together. Rather than install each individually, you can install a single magical package and get them all at the same time.&lt;/p&gt;
 &lt;p&gt;Go to the packages panel in RStudio, click on &amp;ldquo;Install,&amp;rdquo; type &amp;ldquo;tidyverse&amp;rdquo;, and press enter. You&amp;rsquo;ll see a bunch of output in the RStudio console as all the tidyverse packages are installed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-tidyverse.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/install/install-r-tidyverse.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Notice also that RStudio will generate a line of code for you and run it: &lt;code&gt;install.packages(&amp;quot;tidyverse&amp;quot;)&lt;/code&gt;. You can also just paste and run this instead of using the packages panel.&lt;/p&gt;
 &lt;h3 id=&#34;install-tinytex&#34;&gt;Install &lt;code&gt;tinytex&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;When you knit to PDF, R uses a special scientific typesetting program named LaTeX (pronounced &amp;ldquo;lay-tek&amp;rdquo; or &amp;ldquo;lah-tex&amp;rdquo;; for goofy nerdy reasons, the x is technically the &amp;ldquo;ch&amp;rdquo; sound in &amp;ldquo;Bach&amp;rdquo;, but most people just say it as &amp;ldquo;k&amp;rdquo;—saying &amp;ldquo;layteks&amp;rdquo; is frowned on for whatever reason).&lt;/p&gt;
@@ -205,9 +205,9 @@
     
     <item>
       <title>Things you should know for Exam 2</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/exam2/</link>
+      <link>/resource/exam2/</link>
       <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/exam2/</guid>
+      <guid>/resource/exam2/</guid>
       <description>&lt;h2 id=&#34;randomization&#34;&gt;Randomization&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Understand why randomization is crucial for causal inference and counterfactuals&lt;/li&gt;
@@ -216,7 +216,7 @@
 &lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/07-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for randomization and matching&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rcts/&#34;&gt;Guide for RCTs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/rcts/&#34;&gt;Guide for RCTs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Problem set 3&lt;/li&gt;
 &lt;li&gt;Task 1 in problem set 8&lt;/li&gt;
 &lt;/ul&gt;
@@ -228,7 +228,7 @@
 &lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/07-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for randomization and matching&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/matching-ipw/&#34;&gt;Guide for matching and inverse probability weighting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/matching-ipw/&#34;&gt;Guide for matching and inverse probability weighting&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Problem set 3&lt;/li&gt;
 &lt;li&gt;Task 2 in problem set 8&lt;/li&gt;
 &lt;/ul&gt;
@@ -240,7 +240,7 @@
 &lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/08-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for diff-in-diff&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;Guide for diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/diff-in-diff/&#34;&gt;Guide for diff-in-diff&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Problem set 4&lt;/li&gt;
 &lt;li&gt;Problem set 5&lt;/li&gt;
 &lt;li&gt;Task 3 in problem set 8&lt;/li&gt;
@@ -255,8 +255,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/10-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for regression discontinuity I (sharp)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/12-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for regression discontinuity II (fuzzy)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd/&#34;&gt;Guide for sharp diff-in-diff&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd-fuzzy/&#34;&gt;Guide for fuzzy diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/rdd/&#34;&gt;Guide for sharp diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/rdd-fuzzy/&#34;&gt;Guide for fuzzy diff-in-diff&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Problem set 6&lt;/li&gt;
 &lt;li&gt;Task 4 in problem set 8&lt;/li&gt;
 &lt;/ul&gt;
@@ -271,7 +271,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/11-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for instrumental variables I&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/12-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for instrumental variables II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/iv/&#34;&gt;Guide for instrumental variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/iv/&#34;&gt;Guide for instrumental variables&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Problem set 7&lt;/li&gt;
 &lt;li&gt;Task 5 in problem set 8&lt;/li&gt;
 &lt;/ul&gt;
@@ -280,9 +280,9 @@
     
     <item>
       <title>R</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/r/</link>
+      <link>/resource/r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/r/</guid>
+      <guid>/resource/r/</guid>
       <description>&lt;h2 id=&#34;learning-r&#34;&gt;Learning R&lt;/h2&gt;
 &lt;p&gt;I highly recommend subscribing to the &lt;a href=&#34;https://rweekly.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Weekly newsletter&lt;/a&gt;. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.&lt;/p&gt;
 &lt;p&gt;Searching for help with R on Google can sometimes be tricky because the program name is a single letter. Google is generally smart enough to figure out what you mean when you search for &amp;ldquo;r scatterplot&amp;rdquo;, but if it does struggle, try searching for &amp;ldquo;rstats&amp;rdquo; instead (e.g. &amp;ldquo;rstats scatterplot&amp;rdquo;).&lt;/p&gt;
@@ -318,9 +318,9 @@
     
     <item>
       <title>R style suggestions</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/style/</link>
+      <link>/resource/style/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/style/</guid>
+      <guid>/resource/style/</guid>
       <description>&lt;h2 id=&#34;r-style-conventions&#34;&gt;R style conventions&lt;/h2&gt;
 &lt;p&gt;R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
@@ -480,35 +480,35 @@ mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;
     
     <item>
       <title>Unzipping files</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/unzipping/</link>
+      <link>/resource/unzipping/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/unzipping/</guid>
+      <guid>/resource/unzipping/</guid>
       <description>&lt;p&gt;Because RStudio projects typically consist of multiple files (R scripts, datasets, graphical output, etc.) the easiest way to distribute them to you for examples, assignments, and projects is to combine all the different files in to a single compressed collection called a &lt;strong&gt;zip file&lt;/strong&gt;. When you unzip a zipped file, your operating system extracts all the files that are contained inside into a new folder on your computer.&lt;/p&gt;
 &lt;p&gt;Unzipping files on macOS is trivial, but unzipping files on Windows can mess you up if you don&amp;rsquo;t pay careful attention. Here&amp;rsquo;s a helpful guide to unzipping files on both macOS and Windows.&lt;/p&gt;
 &lt;h2 id=&#34;unzipping-files-on-macos&#34;&gt;Unzipping files on macOS&lt;/h2&gt;
 &lt;p&gt;Double click on the downloaded &lt;code&gt;.zip&lt;/code&gt; file. macOS will automatically create a new folder with the same name as the &lt;code&gt;.zip&lt;/code&gt; file, and all the file&amp;rsquo;s contents will be inside. Double click on the RStudio Project file (&lt;code&gt;.Rproj&lt;/code&gt;) to get started.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/unzip-mac.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unzipping/unzip-mac.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;unzipping-files-on-windows&#34;&gt;Unzipping files on Windows&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr&lt;/strong&gt;: Right click on the &lt;code&gt;.zip&lt;/code&gt; file, select &amp;ldquo;Extract All…&amp;rdquo;, and work with the resulting unzipped folder.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Unlike macOS, Windows does &lt;em&gt;not&lt;/em&gt; automatically unzip things for you. If you double click on the &lt;code&gt;.zip&lt;/code&gt; file, Windows will show you what&amp;rsquo;s inside, but it will do so without actually extracting anything. This &lt;del&gt;can be&lt;/del&gt; is incredibly confusing! Here&amp;rsquo;s what it looks like—the only clues that this folder is really a &lt;code&gt;.zip&lt;/code&gt; file are that there&amp;rsquo;s a &amp;ldquo;Compressed Folder Tools&amp;rdquo; tab at the top, and there&amp;rsquo;s a &amp;ldquo;Ratio&amp;rdquo; column that shows how much each file is compressed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/inside-zip-windows.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unzipping/inside-zip-windows.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;It is very tempting to try to open files from this view. However, if you do, things will break and you won&amp;rsquo;t be able to correctly work with any of the files in the zipped folder. If you open the R Project file, for instance, RStudio will point to a bizarre working directory buried deep in some temporary folder:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/temp-wd-windows.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unzipping/temp-wd-windows.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You most likely won&amp;rsquo;t be able to open any data files or save anything, which will be frustrating.&lt;/p&gt;
 &lt;p&gt;Instead, you need to right click on the &lt;code&gt;.zip&lt;/code&gt; file and select &amp;ldquo;Extract All…&amp;quot;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/extract-windows-1.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unzipping/extract-windows-1.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Then choose where you want to unzip all the files and click on &amp;ldquo;Extract&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/extract-windows-2.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unzipping/extract-windows-2.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You should then finally have a real folder with all the contents of the zipped file. Open the R Project file and RStudio will point to the correct working directory and everything will work.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/extract-windows-3.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unzipping/extract-windows-3.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Data</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/data/</link>
+      <link>/resource/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/data/</guid>
+      <guid>/resource/data/</guid>
       <description>&lt;p&gt;There are a ton of places to find data related to public policy and administration (as well as data on pretty much any topic you want) online:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -540,11 +540,11 @@ mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;
     
     <item>
       <title>Mixtape-style R code translations</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/</link>
+      <link>/resource/mixtape-diffs/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/</guid>
-      <description>&lt;script src=&#34;https://evalsp21.classes.andrewheiss.com/rmarkdown-libs/kePrint-0.0.1/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://evalsp21.classes.andrewheiss.com/rmarkdown-libs/lightable-0.0.1/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+      <guid>/resource/mixtape-diffs/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/kePrint-0.0.1/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/lightable-0.0.1/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;p&gt;&lt;a href=&#34;https://mixtape.scunning.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Causal Inference: The Mixtape&lt;/em&gt;&lt;/a&gt; includes code examples in both Stata and R, which is so cool! The previous PDF-only version of the book only had Stata code, so it was hard to follow along with in this class.&lt;/p&gt;
 &lt;p&gt;As you&amp;rsquo;ll note throughout this class, there are lots of ways to do things in R. You&amp;rsquo;ll come across code in the RStudio forums and on StackOverflow that works, but looks slightly different than you&amp;rsquo;re used to. In this class, we use the &lt;a href=&#34;&#34;&gt;tidyverse&lt;/a&gt;, or a set of packages that all work together nicely like &lt;strong&gt;ggplot2&lt;/strong&gt;, &lt;strong&gt;dplyr&lt;/strong&gt;, and others.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The Mixtape&lt;/em&gt; also uses tidyverse (yay!), but has a couple code quirks and differences. Because the HTML version of the book (with R code) only came out on January 3, I haven&amp;rsquo;t had time to find all the differences, so I&amp;rsquo;ll keep a running list here.&lt;/p&gt;
@@ -839,12 +839,12 @@ lm_3 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span s
     
     <item>
       <title>Citations and bibliography</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/citations/</link>
+      <link>/resource/citations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/citations/</guid>
-      <description>&lt;p&gt;You can &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/bib/references.bib&#34;&gt;download a BibTeX file&lt;/a&gt; of all the non-web-based readings in the course:&lt;/p&gt;
+      <guid>/resource/citations/</guid>
+      <description>&lt;p&gt;You can &lt;a href=&#34;/bib/references.bib&#34;&gt;download a BibTeX file&lt;/a&gt; of all the non-web-based readings in the course:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/bib/references.bib&#34;&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;code&gt;references.bib&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/bib/references.bib&#34;&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;code&gt;references.bib&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can open the file in &lt;a href=&#34;http://bibdesk.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibDesk on macOS&lt;/a&gt;, &lt;a href=&#34;http://www.jabref.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JabRef on Windows&lt;/a&gt;, or &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zotero&lt;/a&gt; or &lt;a href=&#34;https://www.mendeley.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mendeley&lt;/a&gt; online.&lt;/p&gt;
 </description>
@@ -852,9 +852,9 @@ lm_3 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span s
     
     <item>
       <title>Using Markdown</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/markdown/</link>
+      <link>/resource/markdown/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/markdown/</guid>
+      <guid>/resource/markdown/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown&lt;/a&gt; is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like &lt;a href=&#34;https://pandoc.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pandoc&lt;/a&gt; to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc. (&lt;a href=&#34;https://pandoc.org/MANUAL.html#option--to&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;see the full list of output types here&lt;/a&gt;)&lt;/p&gt;
 &lt;h2 id=&#34;basic-markdown-formatting&#34;&gt;Basic Markdown formatting&lt;/h2&gt;
 &lt;table&gt;
@@ -924,7 +924,7 @@ Heading 3
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td&gt;&lt;code&gt;![Image caption](/path/to/image.png)&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png&#34; title=&#34;fig:&#34; alt=&#34;Class logo&#34; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;/img/mstile-144x144.png&#34; title=&#34;fig:&#34; alt=&#34;Class logo&#34; /&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td&gt;`&lt;code&gt;Inline code` with backticks&lt;/code&gt;&lt;/td&gt;
@@ -1132,7 +1132,7 @@ And here&amp;#39;s more of the document.
 &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;An evaluation of &amp;#34;scare quotes&amp;#34;&amp;#39;&lt;/span&gt;
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
-&lt;p&gt;One of the most powerful features of Markdown + pandoc is the ability to automatically cite things and generate bibliographies. to use citations, you need to create a &lt;a href=&#34;http://www.bibtex.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibTeX file&lt;/a&gt; (ends in &lt;code&gt;.bib&lt;/code&gt;) that contains a database of the things you want to cite. You can do this with bibliography managers designed to work with BibTeX directly (like &lt;a href=&#34;https://bibdesk.sourceforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibDesk&lt;/a&gt; on macOS), or you can use &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zotero&lt;/a&gt; (macOS and Windows) to export a &lt;code&gt;.bib&lt;/code&gt; file. You can &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/citations/&#34;&gt;download an example &lt;code&gt;.bib&lt;/code&gt; file of all the readings from this class here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of the most powerful features of Markdown + pandoc is the ability to automatically cite things and generate bibliographies. to use citations, you need to create a &lt;a href=&#34;http://www.bibtex.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibTeX file&lt;/a&gt; (ends in &lt;code&gt;.bib&lt;/code&gt;) that contains a database of the things you want to cite. You can do this with bibliography managers designed to work with BibTeX directly (like &lt;a href=&#34;https://bibdesk.sourceforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibDesk&lt;/a&gt; on macOS), or you can use &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zotero&lt;/a&gt; (macOS and Windows) to export a &lt;code&gt;.bib&lt;/code&gt; file. You can &lt;a href=&#34;/resource/citations/&#34;&gt;download an example &lt;code&gt;.bib&lt;/code&gt; file of all the readings from this class here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Complete details for using citations can be found here&lt;/a&gt;. In brief, you need to do three things:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1210,10 +1210,10 @@ And here&amp;#39;s more of the document.
     
     <item>
       <title>Using R Markdown</title>
-      <link>https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/</link>
+      <link>/resource/rmarkdown/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown&lt;/a&gt; is &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt; with R code and output sprinkled in. You can do everything you can with &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt;, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even &lt;a href=&#34;https://rmarkdown.rstudio.com/flexdashboard/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;interactive dashboards&lt;/a&gt; with R Markdown. This whole course website is created with R Markdown (and &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a package named &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+      <guid>/resource/rmarkdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown&lt;/a&gt; is &lt;a href=&#34;/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt; with R code and output sprinkled in. You can do everything you can with &lt;a href=&#34;/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt;, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even &lt;a href=&#34;https://rmarkdown.rstudio.com/flexdashboard/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;interactive dashboards&lt;/a&gt; with R Markdown. This whole course website is created with R Markdown (and &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a package named &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation for R Markdown&lt;/a&gt; is extremely comprehensive, and their &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorials&lt;/a&gt; and &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-15.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cheatsheets&lt;/a&gt; are excellent—rely on those.&lt;/p&gt;
 &lt;p&gt;Here are the most important things you&amp;rsquo;ll need to know about R Markdown in this class:&lt;/p&gt;
 &lt;h2 id=&#34;key-terms&#34;&gt;Key terms&lt;/h2&gt;
@@ -1231,7 +1231,7 @@ And here&amp;#39;s more of the document.
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Knit&lt;/strong&gt;: When you &amp;ldquo;knit&amp;rdquo; a document, R runs each of the chunks sequentially and converts the output of each chunk into Markdown. R then runs the knitted document through &lt;a href=&#34;https://pandoc.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pandoc&lt;/a&gt; to convert it to HTML or PDF or Word (or whatever output you&amp;rsquo;ve selected).&lt;/p&gt;
 &lt;p&gt;You can knit by clicking on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editor window, or by pressing &lt;code&gt;⌘⇧K&lt;/code&gt; on macOS or &lt;code&gt;control + shift + K&lt;/code&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;add-chunks&#34;&gt;Add chunks&lt;/h2&gt;
@@ -1242,7 +1242,7 @@ And here&amp;#39;s more of the document.
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Click on the &amp;ldquo;Insert&amp;rdquo; button at the top of the editor window&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/insert-chunk.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/reference/insert-chunk.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Manually type all the backticks and curly braces (don&amp;rsquo;t do this)&lt;/p&gt;
@@ -1250,7 +1250,7 @@ And here&amp;#39;s more of the document.
 &lt;/ul&gt;
 &lt;h2 id=&#34;chunk-names&#34;&gt;Chunk names&lt;/h2&gt;
 &lt;p&gt;You can add names to chunks to make it easier to navigate your document. If you click on the little dropdown menu at the bottom of your editor in RStudio, you can see a table of contents that shows all the headings and chunks. If you name chunks, they&amp;rsquo;ll appear in the list. If you don&amp;rsquo;t include a name, the chunk will still show up, but you won&amp;rsquo;t know what it does.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/chunk-toc.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/reference/chunk-toc.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To add a name, include it immediately after the &lt;code&gt;{r&lt;/code&gt; in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. &lt;strong&gt;All chunk names in your document must be unique.&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```{r name-of-this-chunk}
 # Code goes here
@@ -1270,7 +1270,7 @@ And here&amp;#39;s more of the document.
 &lt;li&gt;&lt;code&gt;include=FALSE&lt;/code&gt;: The chunk still runs, but the code and results are not included in the final document&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can also set chunk options by clicking on the little gear icon in the top right corner of any chunk:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/chunk-options.png&#34; width=&#34;70%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/reference/chunk-options.png&#34; width=&#34;70%&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;inline-chunks&#34;&gt;Inline chunks&lt;/h2&gt;
 &lt;p&gt;You can also include R output directly in your text, which is really helpful if you want to report numbers from your analysis. To do this, use &lt;code&gt;`r r_code_here`&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s generally easiest to calculate numbers in a regular chunk beforehand and then use an inline chunk to display the value in your text. For instance, this document…&lt;/p&gt;
@@ -1284,14 +1284,14 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
 &lt;p&gt;The average fuel efficiency for cars from 1974 was 20.1 miles per gallon.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;output-formats&#34;&gt;Output formats&lt;/h2&gt;
-&lt;p&gt;You can specify what kind of document you create when you knit in the &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/#front-matter&#34;&gt;YAML front matter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can specify what kind of document you create when you knit in the &lt;a href=&#34;/resource/markdown/#front-matter&#34;&gt;YAML front matter&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My document&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;output&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;html_document&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;default&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;pdf_document&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;default&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;word_document&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;default&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also click on the down arrow on the &amp;ldquo;Knit&amp;rdquo; button to choose the output &lt;em&gt;and&lt;/em&gt; generate the appropriate YAML. If you click on the gear icon next to the &amp;ldquo;Knit&amp;rdquo; button and choose &amp;ldquo;Output options&amp;rdquo;, you change settings for each specific output type, like default figure dimensions or whether or not a table of contents is included.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/output-options.png&#34; width=&#34;35%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/reference/output-options.png&#34; width=&#34;35%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The first output type listed under &lt;code&gt;output:&lt;/code&gt; will be what is generated when you click on the &amp;ldquo;Knit&amp;rdquo; button or press the keyboard shortcut (&lt;code&gt;⌘⇧K&lt;/code&gt; on macOS; &lt;code&gt;control + shift + K&lt;/code&gt; on Windows). If you choose a different output with the &amp;ldquo;Knit&amp;rdquo; button menu, that output will be moved to the top of the &lt;code&gt;output&lt;/code&gt; section.&lt;/p&gt;
 &lt;p&gt;The indentation of the YAML section matters, especially when you have settings nested under each output type. Here&amp;rsquo;s what a typical &lt;code&gt;output&lt;/code&gt; section might look like:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---

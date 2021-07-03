@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assignment details | Program Evaluation</title>
-    <link>https://evalsp21.classes.andrewheiss.com/assignment/</link>
-      <atom:link href="https://evalsp21.classes.andrewheiss.com/assignment/index.xml" rel="self" type="application/rss+xml" />
+    <link>/assignment/</link>
+      <atom:link href="/assignment/index.xml" rel="self" type="application/rss+xml" />
     <description>Assignment details</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Assignment details</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/</link>
+      <link>/assignment/</link>
     </image>
     
     <item>
       <title>Final project</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/final-project/</link>
+      <link>/assignment/final-project/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/final-project/</guid>
+      <guid>/assignment/final-project/</guid>
       <description>&lt;p&gt;Evaluation research is tricky and costly. If you begin an intervention or launch a study prematurely, you can waste time and money—and potentially lives.&lt;/p&gt;
 &lt;p&gt;Even if you have a well designed program with an impeccable logic model and a perfect DAG, you might discover (too late!) that you forgot to collect some critical variables or realize that your identification strategy will not work.&lt;/p&gt;
 &lt;p&gt;From a more cynical perspective, you might (unethically) engage in the practice of &lt;a href=&#34;https://theconversation.com/one-reason-so-many-scientific-studies-may-be-wrong-66384&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;p-hacking&lt;/a&gt;—running all sorts of different model specifications until you find the results you want, and then claim in your report that you had intended to run that model all along.&lt;/p&gt;
 &lt;p&gt;One increasingly popular method for (1) ensuring that your data and methods work before launching a study or intervention, and (2) declaring and committing to your hypotheses and methods and models before analyzing your data is to &lt;a href=&#34;https://blogs.plos.org/plos/2019/11/preregistration-can-bring-science-back-to-its-roots/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;pre-register&lt;/em&gt; your research or evaluation&lt;/a&gt;. A &lt;a href=&#34;https://www.sciencemag.org/news/2018/09/more-and-more-scientists-are-preregistering-their-studies-should-you&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pre-registered study&lt;/a&gt; contains all the background work—an introduction, literature review, theory, hypotheses, and proposed analysis—but without the actual data. Authors post their expectations and hypotheses publicly so they can be held publicly accountable for any deviations from their proposed design.^[See the &lt;a href=&#34;https://cos.io/prereg/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Open Science&amp;rsquo;s directory of preregistrations&lt;/a&gt;, or &lt;a href=&#34;https://aspredicted.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AsPredicted list&lt;/a&gt; for examples of this in real life. &lt;a href=&#34;https://osf.io/hsbyd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s one by me!&lt;/a&gt;]&lt;/p&gt;
-&lt;p&gt;The best preregistered studies use simulated data that has the same structure as the data that will be collected (i.e. same columns, sometimes the same correlations and relationships researchers expect to see in the collected data, etc.). Because there&amp;rsquo;s no data yet (or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/synthetic-data/&#34;&gt;just fake data&lt;/a&gt;), you have more freedom when developing a preregistered study. You can experiment with different models, play with different approaches, manipulate data in different ways, and so on. If you realize that you need a new variable, or that you need to rearrange questions on a survey, or make any other kinds of changes, you can—you haven&amp;rsquo;t collected the data yet!&lt;/p&gt;
+&lt;p&gt;The best preregistered studies use simulated data that has the same structure as the data that will be collected (i.e. same columns, sometimes the same correlations and relationships researchers expect to see in the collected data, etc.). Because there&amp;rsquo;s no data yet (or &lt;a href=&#34;/example/synthetic-data/&#34;&gt;just fake data&lt;/a&gt;), you have more freedom when developing a preregistered study. You can experiment with different models, play with different approaches, manipulate data in different ways, and so on. If you realize that you need a new variable, or that you need to rearrange questions on a survey, or make any other kinds of changes, you can—you haven&amp;rsquo;t collected the data yet!&lt;/p&gt;
 &lt;p&gt;(Additionally, using synthetic data is extremely useful if you&amp;rsquo;re working with proprietary or private data that you cannot make public. &lt;a href=&#34;https://arxiv.org/abs/2011.01374&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;You can make a synthetic version of the real data instead&lt;/a&gt;; see &lt;a href=&#34;https://twitter.com/cmastication/status/1325424086659502081&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this too&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;Once you finalize your plan and know all the data you need to collect, and once you&amp;rsquo;ve written out the different models you&amp;rsquo;ll run, all you have to do is collect the real data, plop it into your script (replacing the fake data you&amp;rsquo;d been using), and run the analysis script again to generate the actual, real results. In the results section, you get to either say &amp;ldquo;As predicted, we found…&amp;rdquo;, or &amp;ldquo;Contrary to expectations, we found that…&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;For your final project in this class, you will write a pre-registered analysis of a public or nonprofit social program that you&amp;rsquo;re interested in. You don&amp;rsquo;t need to worry about collecting data—&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/synthetic-data/&#34;&gt;you&amp;rsquo;ll create a synthetic dataset for your pre-analysis.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For your final project in this class, you will write a pre-registered analysis of a public or nonprofit social program that you&amp;rsquo;re interested in. You don&amp;rsquo;t need to worry about collecting data—&lt;a href=&#34;/example/synthetic-data/&#34;&gt;you&amp;rsquo;ll create a synthetic dataset for your pre-analysis.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You will submit &lt;strong&gt;three things&lt;/strong&gt; via iCollege:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;A PDF of your preregistered report (see the outline below for details of what this needs to contain). You should compile this with R Markdown. You might want to write the prose-heavy sections in a word processor like Word or Google Docs and copy/paste the text into your R Markdown document, since RStudio doesn&amp;rsquo;t have a nice spell checker or grammar checker. This should have &lt;em&gt;no visible R code, warnings, or messages in it&lt;/em&gt; (set &lt;code&gt;echo = FALSE&lt;/code&gt; at the beginning of your document before you knit).&lt;/li&gt;
 &lt;li&gt;The same PDF as above, but with all the R code in it (set &lt;code&gt;echo = TRUE&lt;/code&gt; at the beginning of your document and reknit the file).&lt;/li&gt;
-&lt;li&gt;A CSV file of &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/synthetic-data/&#34;&gt;your fake data.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A CSV file of &lt;a href=&#34;/example/synthetic-data/&#34;&gt;your fake data.&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This project is due by &lt;strong&gt;7:00 PM on Monday, December 14, 2020.&lt;/strong&gt; &lt;span style=&#34;color: #81056F; font-weight: bold&#34;&gt; No late work will be accepted.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;You can either run the analysis in RStudio locally on your computer (highly recommended(!!), since you won&amp;rsquo;t have to worry about keeping all your work on RStudio&amp;rsquo;s servers), or use an RStudio.cloud project. You can make a copy of this RStudio.cloud project—it doesn&amp;rsquo;t have anything in it, but I have preinstalled all the packages we&amp;rsquo;ve used over the course of the semester, so you don&amp;rsquo;t have to.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062901&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Empty RStudio.cloud project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/final-project.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; Empty RStudio project you can download and unzip on your computer&lt;/a&gt; (doesn&amp;rsquo;t include any packages, since you&amp;rsquo;re responsible for installing those)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/final-project.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; Empty RStudio project you can download and unzip on your computer&lt;/a&gt; (doesn&amp;rsquo;t include any packages, since you&amp;rsquo;re responsible for installing those)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;p&gt;Most importantly, &lt;strong&gt;do not hesitate&lt;/strong&gt; to work with classmates. You all must choose different programs, but you can work in groups of up to 4 people on your own projects. Also, &lt;strong&gt;absolutely do not hesitate&lt;/strong&gt; to ask me questions! I&amp;rsquo;m here to help!&lt;/p&gt;
 &lt;p&gt;You might find this evaluation (and its proposal) of a truancy program in the Provo School District in Utah helpful as an example for the first half of this assignment (program overview, theory, implementation, threats to validity, and outcomes). The PSD evaluation doesn&amp;rsquo;t have DAGs or fancy econometrics models like RCTs, diff-in-diff, RDD, IVs, or anything like that, so you can&amp;rsquo;t use it as an example of that part, but these should provide a good template for the program-specific sections. &lt;em&gt;This is longer than expected for this class&lt;/em&gt;. I provide suggested word counts in the outline below.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/files/psd-proposal-2011.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;code&gt;psd-proposal-2011&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/files/psd-final-report-2012.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;code&gt;psd-final-report-2012&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/files/psd-proposal-2011.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;code&gt;psd-proposal-2011&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/files/psd-final-report-2012.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;code&gt;psd-final-report-2012&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;suggested-outline&#34;&gt;Suggested outline&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s an outline of what you&amp;rsquo;ll need to do. You did lots of this work in your evaluation assignments. Please don&amp;rsquo;t just copy/paste those assignments as is into this final project—you&amp;rsquo;ll want to polish it up for this final report. You can download this as an RMarkdown file and change the text if you want. I&amp;rsquo;ve also included this as an RMarkdown file in the empty RStudio.cloud project.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/final-project/final-project-template.Rmd&#34;&gt;&lt;i class=&#34;fab fa-r-project&#34;&gt;&lt;/i&gt; &lt;code&gt;final-project-template.Rmd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/final-project/final-project-template.Rmd&#34;&gt;&lt;i class=&#34;fab fa-r-project&#34;&gt;&lt;/i&gt; &lt;code&gt;final-project-template.Rmd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
@@ -86,7 +86,7 @@
 &lt;p&gt;Given your measurement approach, limits on feasibility, and identification strategy, describe the data you will use. Will you rely on administrative data collected by a government agency or nonprofit? Will you collect your own data? If so, what variables will you measure, and how? Will you conduct a survey or rely on outside observers or do something else? What does this data look like? What variables does it (or should it) include?&lt;/p&gt;
 &lt;p&gt;(&lt;strong&gt;≈100 words&lt;/strong&gt;)&lt;/p&gt;
 &lt;h3 id=&#34;synthetic-analysis&#34;&gt;Synthetic analysis&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/synthetic-data/&#34;&gt;Generate a synthetic (fake) dataset in R with all the variables you&amp;rsquo;ll need for the real life analysis.&lt;/a&gt; Analyze the data using your identification strategy. For instance:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/example/synthetic-data/&#34;&gt;Generate a synthetic (fake) dataset in R with all the variables you&amp;rsquo;ll need for the real life analysis.&lt;/a&gt; Analyze the data using your identification strategy. For instance:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If you&amp;rsquo;re relying on observational data, close all the backdoors with matching or inverse probability weighting, don&amp;rsquo;t adjust for colliders, and make a strong argument for isolation of the causal effect in the absence of treatment/control groups&lt;/li&gt;
 &lt;li&gt;If you&amp;rsquo;re doing an RCT, test the differences in means in the treatment and control groups (and follow all other best practices listed in the World Bank book, checking for balance across groups, etc.)&lt;/li&gt;
@@ -103,24 +103,24 @@
     
     <item>
       <title>Problem set 9</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/09-problem-set/</link>
+      <link>/assignment/09-problem-set/</link>
       <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/09-problem-set/</guid>
+      <guid>/assignment/09-problem-set/</guid>
       <description>&lt;p&gt;This assignment will give you practice generating synthetic data and building in causal effects.&lt;/p&gt;
 &lt;p&gt;These two examples will be incredibly helpful:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/random-numbers/%3e&#34;&gt;Generating random numbers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/synthetic-data/&#34;&gt;The ultimate guide to generating synthetic data for causal inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/random-numbers/%3e&#34;&gt;Generating random numbers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/synthetic-data/&#34;&gt;The ultimate guide to generating synthetic data for causal inference&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown. You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-9.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-9.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-9.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-9.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-9.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-9.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-9.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-9.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-9.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-9.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;broom&lt;/code&gt;, &lt;code&gt;ggdag&lt;/code&gt;, and &lt;code&gt;scales&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(ggdag)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 9&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062894&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 9.&amp;quot;)&lt;/p&gt;
 &lt;/li&gt;
@@ -129,42 +129,42 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. You can remove any of the question text if you want.&lt;/p&gt;
-&lt;p&gt;You can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/synthetic-data/&#34;&gt;the example guide&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!.&lt;/p&gt;
+&lt;p&gt;You can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/synthetic-data/&#34;&gt;the example guide&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to insert your own code chunks. Rather than typing them by hand (that&amp;rsquo;s tedious!), use the &amp;ldquo;Insert&amp;rdquo; button at the top of the editing window, or press  &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 8</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/08-problem-set/</link>
+      <link>/assignment/08-problem-set/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/08-problem-set/</guid>
+      <guid>/assignment/08-problem-set/</guid>
       <description>&lt;p&gt;This assignment is a review of all the causal inference methods we&amp;rsquo;ve learned this semester: RCTs, matching and inverse probability weighting, diff-in-diff, RDD, and IVs. Refer to your past assignments and all the examples for guidance:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RCTs&lt;/strong&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rcts/&#34;&gt;Example&lt;/a&gt; + Problem Set 3&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Matching and inverse probability weighting&lt;/strong&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/matching-ipw/&#34;&gt;Example&lt;/a&gt; + Problem Set 3&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Diff-in-diff&lt;/strong&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;Example&lt;/a&gt; + Problem Sets 4 and 5&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RDD&lt;/strong&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd/&#34;&gt;Example&lt;/a&gt; + Problem Set 6&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Instrumental variables&lt;/strong&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/iv/&#34;&gt;Example&lt;/a&gt; + Problem Set 7&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RCTs&lt;/strong&gt;: &lt;a href=&#34;/example/rcts/&#34;&gt;Example&lt;/a&gt; + Problem Set 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Matching and inverse probability weighting&lt;/strong&gt;: &lt;a href=&#34;/example/matching-ipw/&#34;&gt;Example&lt;/a&gt; + Problem Set 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diff-in-diff&lt;/strong&gt;: &lt;a href=&#34;/example/diff-in-diff/&#34;&gt;Example&lt;/a&gt; + Problem Sets 4 and 5&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RDD&lt;/strong&gt;: &lt;a href=&#34;/example/rdd/&#34;&gt;Example&lt;/a&gt; + Problem Set 6&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instrumental variables&lt;/strong&gt;: &lt;a href=&#34;/example/iv/&#34;&gt;Example&lt;/a&gt; + Problem Set 7&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown. You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-8.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-8.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-8.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-8.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-8.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-8.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-8.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-8.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-8.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-8.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;broom&lt;/code&gt;, &lt;code&gt;estimatr&lt;/code&gt;, &lt;code&gt;modelsummary&lt;/code&gt;, &lt;code&gt;MatchIt&lt;/code&gt;, &lt;code&gt;rdrobust&lt;/code&gt;, &lt;code&gt;rddensity&lt;/code&gt;, and &lt;code&gt;haven&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(MatchIt)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 8&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062892&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 8.&amp;quot;)&lt;/p&gt;
 &lt;/li&gt;
@@ -173,38 +173,38 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. You can remove any of the question text if you want.&lt;/p&gt;
-&lt;p&gt;You can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/&#34;&gt;the different example pages&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!.&lt;/p&gt;
+&lt;p&gt;You can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/&#34;&gt;the different example pages&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to insert your own code chunks. Rather than typing them by hand (that&amp;rsquo;s tedious!), use the &amp;ldquo;Insert&amp;rdquo; button at the top of the editing window, or press  &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 7</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/07-problem-set/</link>
+      <link>/assignment/07-problem-set/</link>
       <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/07-problem-set/</guid>
+      <guid>/assignment/07-problem-set/</guid>
       <description>&lt;p&gt;For this problem set, you&amp;rsquo;ll practice using instrumental variables with both real and simulated data. This example page will be incredibly useful for you:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/iv/&#34;&gt;Instrumental variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/iv/&#34;&gt;Instrumental variables&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown. You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-7.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-7.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-7.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-7.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-7.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-7.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-7.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-7.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-7.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-7.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;broom&lt;/code&gt;, &lt;code&gt;estimatr&lt;/code&gt;, and &lt;code&gt;modelsummary&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(estimatr)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 7&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062890&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 7.&amp;quot;)&lt;/p&gt;
 &lt;/li&gt;
@@ -213,38 +213,38 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. There are questions scattered throughout the document—your job is to answer those questions. You don&amp;rsquo;t need to put your answers in bold or ALL CAPS or anything, and you can remove the question text if you want.&lt;/p&gt;
-&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/iv/&#34;&gt;the example page on instrumental variables&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
+&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/iv/&#34;&gt;the example page on instrumental variables&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to insert your own code chunks. Rather than typing them by hand (that&amp;rsquo;s tedious!), use the &amp;ldquo;Insert&amp;rdquo; button at the top of the editing window, or press  &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 6</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/06-problem-set/</link>
+      <link>/assignment/06-problem-set/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/06-problem-set/</guid>
+      <guid>/assignment/06-problem-set/</guid>
       <description>&lt;p&gt;For this problem set, you&amp;rsquo;ll practice doing regression discontinuity analysis with simulated data from a hypothetical program. This example page will be incredibly useful for you:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd/&#34;&gt;Regression discontinuity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/rdd/&#34;&gt;Regression discontinuity&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown. You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-6.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-6.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-6.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-6.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-6.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-6.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-6.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-6.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-6.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-6.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;broom&lt;/code&gt;, &lt;code&gt;rdrobust&lt;/code&gt;, &lt;code&gt;rddensity&lt;/code&gt;, and &lt;code&gt;modelsummary&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(rdrobust)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 6&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062887&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 6.&amp;quot;)&lt;/p&gt;
 &lt;/li&gt;
@@ -253,25 +253,25 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. There are questions &lt;strong&gt;marked in bold&lt;/strong&gt;. Your job is to answer those questions. You don&amp;rsquo;t need to put your answers in bold or ALL CAPS or anything, and you can remove the question text if you want.&lt;/p&gt;
-&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd/&#34;&gt;the example page on regression discontinuity&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
+&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/rdd/&#34;&gt;the example page on regression discontinuity&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to insert your own code chunks. Rather than typing them by hand (that&amp;rsquo;s tedious!), use the &amp;ldquo;Insert&amp;rdquo; button at the top of the editing window, or press  &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 5</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/05-problem-set/</link>
+      <link>/assignment/05-problem-set/</link>
       <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/05-problem-set/</guid>
+      <guid>/assignment/05-problem-set/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;You’ll likely run into some errors when knitting with a &lt;code&gt;modelsummary()&lt;/code&gt; table. That’s because the current version of the &lt;strong&gt;modelsummary&lt;/strong&gt; package on CRAN doesn’t include support for robust standard errors from &lt;code&gt;feols()&lt;/code&gt; models. You can install the latest version of &lt;strong&gt;modelsummary&lt;/strong&gt; that &lt;em&gt;does&lt;/em&gt; have support for robust standard errors by doing this:&lt;/p&gt;
 &lt;ol&gt;
@@ -287,17 +287,17 @@
 &lt;p&gt;This paper uses difference-in-differences to estimate the causal effect of increased policing on car thefts. Now that you know all about diff-in-diff, you can create their same results!&lt;/p&gt;
 &lt;p&gt;The answer key from Problem Set 4 (where you also did diff-in-diff) + this example page will be incredibly useful for you:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;Difference-in-differences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/diff-in-diff/&#34;&gt;Difference-in-differences&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You’ll be doing all your R work in R Markdown. You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-5.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-5.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-5.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-5.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you’re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don’t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you’re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-5.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-5.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-5.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you’re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-5.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-5.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-5.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You’ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;haven&lt;/code&gt;, &lt;code&gt;broom&lt;/code&gt;, &lt;code&gt;fixest&lt;/code&gt;, and &lt;code&gt;modelsummary&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(haven)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the “Packages” panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named “Problem Set 5” on RStudio.cloud and complete the assignment in your browser without needing to install anything. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062885&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn’t, log in and look for the project named “Problem Set 5.”)&lt;/p&gt;
 &lt;/li&gt;
@@ -306,41 +306,41 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. There are questions &lt;strong&gt;marked in bold&lt;/strong&gt;. Your job is to answer those questions. You don’t need to put your answers in bold or ALL CAPS or anything, and you can remove the question text if you want.&lt;/p&gt;
-&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;the example page on diff-in-diff&lt;/a&gt;—don’t try to write everything from scratch!).&lt;/p&gt;
+&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/diff-in-diff/&#34;&gt;the example page on diff-in-diff&lt;/a&gt;—don’t try to write everything from scratch!).&lt;/p&gt;
 &lt;p&gt;You’ll need to insert your own code chunks. Rather than typing them by hand (that’s tedious!), use the “Insert” button at the top of the editing window, or press &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you’re all done, click on the “Knit” button at the top of the editing window and create an HTML or Word version (or PDF if you’ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you’re all done, click on the “Knit” button at the top of the editing window and create an HTML or Word version (or PDF if you’ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 4</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/04-problem-set/</link>
+      <link>/assignment/04-problem-set/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/04-problem-set/</guid>
+      <guid>/assignment/04-problem-set/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;
 &lt;strong&gt;IMPORTANT&lt;/strong&gt;: This looks like a lot of work, but again, it&amp;rsquo;s mostly copying/pasting chunks of code and changing things.
 &lt;/div&gt;
 &lt;p&gt;For this problem set, you&amp;rsquo;ll practice running difference-in-differences analysis with R, both manually and with regression. This example will be incredibly useful for you:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;Difference-in-differences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/diff-in-diff/&#34;&gt;Difference-in-differences&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown. You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-4.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-4.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-4.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-4.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-4.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-4.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-4.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-4.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-4.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-4.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;haven&lt;/code&gt;, and &lt;code&gt;broom&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(haven)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 4&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. If you don&amp;rsquo;t have access to the class RStudio.cloud account, &lt;em&gt;please let me know as soon as possible&lt;/em&gt;. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062882&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 4.&amp;quot;)&lt;/p&gt;
 &lt;/li&gt;
@@ -349,42 +349,42 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. There are questions &lt;strong&gt;marked in bold&lt;/strong&gt; (e.g. &lt;code&gt;**What is the ATE?**&lt;/code&gt;). Your job is to answer those questions. You don&amp;rsquo;t need to put your answers in bold, and you can remove the question text if you want.&lt;/p&gt;
-&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;the example page on diff-in-diff&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
+&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/diff-in-diff/&#34;&gt;the example page on diff-in-diff&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to insert your own code chunks. Rather than typing them by hand (that&amp;rsquo;s tedious!), use the &amp;ldquo;Insert&amp;rdquo; button at the top of the editing window, or press  &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 3</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/03-problem-set/</link>
+      <link>/assignment/03-problem-set/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/03-problem-set/</guid>
+      <guid>/assignment/03-problem-set/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;
 &lt;strong&gt;IMPORTANT&lt;/strong&gt;: This looks like a lot of work, but again, it&amp;rsquo;s mostly copying/pasting chunks of code and changing things.
 &lt;/div&gt;
 &lt;p&gt;For this problem set, you&amp;rsquo;ll practice analyzing RCTs and working with matching and inverse probability weighting. These two examples will be incredibly useful for you:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rcts/&#34;&gt;RCTs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/matching-ipw/&#34;&gt;Matching and IPW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/rcts/&#34;&gt;RCTs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/example/matching-ipw/&#34;&gt;Matching and IPW&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown this time (and from now on). You can download a zipped file of a pre-made project here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-3.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-3.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-3.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-3.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And as always, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too (especially for this assignment!). Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-3.Rproj&lt;/code&gt;: &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-3.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-3.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using R on your own computer, download this file, &lt;a href=&#34;https://evalf20.classes.andrewheiss.com/resource/unzipping/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;unzip it&lt;/em&gt;&lt;/a&gt;, and double click on the file named &lt;code&gt;problem-set-3.Rproj&lt;/code&gt;: &lt;a href=&#34;/projects/problem-set-3.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-3.zip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;MatchIt&lt;/code&gt;, &lt;code&gt;modelsummary&lt;/code&gt;, and &lt;code&gt;patchwork&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(MatchIt)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 3&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. If you don&amp;rsquo;t have access to the class RStudio.cloud account, &lt;em&gt;please let me know as soon as possible&lt;/em&gt;. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062881&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 3.&amp;quot;)&lt;/p&gt;
 &lt;/li&gt;
@@ -393,28 +393,28 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Complete the tasks given in the R Markdown file. There are questions &lt;strong&gt;marked in bold&lt;/strong&gt; (e.g. &lt;code&gt;**What is the ATE?**&lt;/code&gt;). Your job is to answer those questions. You don&amp;rsquo;t need to put your answers in bold, and you can remove the question text if you want.&lt;/p&gt;
-&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rcts/&#34;&gt;the example page on RCTs&lt;/a&gt; and &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/matching-ipw/&#34;&gt;the example page on matching and IPW&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
+&lt;p&gt;Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/rcts/&#34;&gt;the example page on RCTs&lt;/a&gt; and &lt;a href=&#34;/example/matching-ipw/&#34;&gt;the example page on matching and IPW&lt;/a&gt;—don&amp;rsquo;t try to write everything from scratch!).&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to insert your own code chunks. Rather than typing them by hand (that&amp;rsquo;s tedious!), use the &amp;ldquo;Insert&amp;rdquo; button at the top of the editing window, or press  &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on macOS, or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;I&lt;/kbd&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember that you can run an entire chunk by clicking on the green play arrow in the top right corner of the chunk. You can also run lines of code line-by-line if you place your cursor on some R code and press &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for macOS users) or &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;enter&lt;/kbd&gt; (for Windows users).&lt;/p&gt;
 &lt;p&gt;Make sure you run each chunk sequentially. If you run a chunk in the middle of the document without running previous ones, it might not work, since previous chunks might do things that later chunks depend on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Threats to validity</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/04-eval-threats/</link>
+      <link>/assignment/04-eval-threats/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/04-eval-threats/</guid>
+      <guid>/assignment/04-eval-threats/</guid>
       <description>&lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
-&lt;p&gt;You need to complete the &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/assignment/04-eval-threats/#assessing-validity-1&#34;&gt;“Assessing validity” section below&lt;/a&gt;. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I’ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/threats-validity.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;threats-validity.zip&lt;/code&gt;&lt;/a&gt;. It’s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062900&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You need to complete the &lt;a href=&#34;/assignment/04-eval-threats/#assessing-validity-1&#34;&gt;“Assessing validity” section below&lt;/a&gt;. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I’ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;/projects/threats-validity.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;threats-validity.zip&lt;/code&gt;&lt;/a&gt;. It’s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062900&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Submit this assignment as a PDF or Word file on iCollege.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;internal-validity-scores&#34;&gt;Internal validity scores&lt;/h2&gt;
@@ -488,14 +488,14 @@
     
     <item>
       <title>Causal model</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/03-eval-dag/</link>
+      <link>/assignment/03-eval-dag/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/03-eval-dag/</guid>
-      <description>&lt;p&gt;For your &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/assignment/final-project/&#34;&gt;final project&lt;/a&gt;, you will conduct an evaluation for a social program of your choosing. In this assignment, you will decide how to model the causal effect of your program on your primary outcome.&lt;/p&gt;
+      <guid>/assignment/03-eval-dag/</guid>
+      <description>&lt;p&gt;For your &lt;a href=&#34;/assignment/final-project/&#34;&gt;final project&lt;/a&gt;, you will conduct an evaluation for a social program of your choosing. In this assignment, you will decide how to model the causal effect of your program on your primary outcome.&lt;/p&gt;
 &lt;p&gt;If you decide to use a different program for your final project, that&amp;rsquo;s okay! This assignment doesn&amp;rsquo;t have to be related to your final program, but it would be extraordinarily helpful—a more polished version of this assignment can be included as part of your final project.&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;p&gt;You need to complete the three sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/causal-model.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;causal-model.zip&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062898&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;/projects/causal-model.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;causal-model.zip&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062898&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Submit this assignment as a PDF or Word file on iCollege.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-dag-i&#34;&gt;1: DAG I&lt;/h2&gt;
@@ -544,14 +544,14 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
     
     <item>
       <title>Measurement</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/02-eval-measurement/</link>
+      <link>/assignment/02-eval-measurement/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/02-eval-measurement/</guid>
-      <description>&lt;p&gt;For your &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/assignment/final-project/&#34;&gt;final project&lt;/a&gt;, you will conduct an evaluation for a social program of your choosing. In this assignment, you will decide how to best measure two of the program&amp;rsquo;s outcomes.&lt;/p&gt;
+      <guid>/assignment/02-eval-measurement/</guid>
+      <description>&lt;p&gt;For your &lt;a href=&#34;/assignment/final-project/&#34;&gt;final project&lt;/a&gt;, you will conduct an evaluation for a social program of your choosing. In this assignment, you will decide how to best measure two of the program&amp;rsquo;s outcomes.&lt;/p&gt;
 &lt;p&gt;If you decide to use a different program for your final project, that&amp;rsquo;s okay! This assignment doesn&amp;rsquo;t have to be related to your final program, but it would be extraordinarily helpful—a more polished version of this assignment can be included as part of your final project.&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
-&lt;p&gt;You need to complete the two sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).^[And if you want to be super brave, try using &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/#citations&#34;&gt;R Markdown&amp;rsquo;s citation system&lt;/a&gt;!]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/measurement.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;measurement.zip&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062896&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You need to complete the two sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).^[And if you want to be super brave, try using &lt;a href=&#34;/resource/markdown/#citations&#34;&gt;R Markdown&amp;rsquo;s citation system&lt;/a&gt;!]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;/projects/measurement.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;measurement.zip&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062896&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Submit this assignment as a PDF or Word file on iCollege.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;assignment-outline&#34;&gt;Assignment outline&lt;/h2&gt;
@@ -580,14 +580,14 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
     
     <item>
       <title>Background and theory</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/01-eval-background-theory/</link>
+      <link>/assignment/01-eval-background-theory/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/01-eval-background-theory/</guid>
-      <description>&lt;p&gt;For your &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/assignment/final-project/&#34;&gt;final project&lt;/a&gt;, you will conduct an evaluation for a social program of your choosing. In this assignment, you will explore the program&amp;rsquo;s background, history, purpose, and theory.&lt;/p&gt;
+      <guid>/assignment/01-eval-background-theory/</guid>
+      <description>&lt;p&gt;For your &lt;a href=&#34;/assignment/final-project/&#34;&gt;final project&lt;/a&gt;, you will conduct an evaluation for a social program of your choosing. In this assignment, you will explore the program&amp;rsquo;s background, history, purpose, and theory.&lt;/p&gt;
 &lt;p&gt;If you decide to use a different program for your final project, that&amp;rsquo;s okay! This assignment doesn&amp;rsquo;t have to be related to your final program, but it would be helpful—a more polished version of this assignment can be included as part of your final project.&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
-&lt;p&gt;You need to complete the four sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).^[And if you want to be super brave, try using &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/#citations&#34;&gt;R Markdown&amp;rsquo;s citation system&lt;/a&gt;!]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/background-theory.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;background-theory.zip&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062895&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You need to complete the four sections listed below. Ideally you should type this in R Markdown and knit your document to HTML or Word or PDF, but you can also write in Word if you want (though your final project will need to be in R Markdown, and this would give you practice).^[And if you want to be super brave, try using &lt;a href=&#34;/resource/markdown/#citations&#34;&gt;R Markdown&amp;rsquo;s citation system&lt;/a&gt;!]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve created an R Markdown template you can use here:&lt;/strong&gt; &lt;a href=&#34;/projects/background-theory.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;background-theory.zip&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s also &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062895&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on RStudio.cloud&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can draw your impact theory and logic model charts by hand or with something like &lt;a href=&#34;https://www.diagrams.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diagrams.net&lt;/a&gt;, &lt;a href=&#34;https://www.lucidchart.com/pages/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lucidchart&lt;/a&gt;, or &lt;a href=&#34;https://creately.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Creately&lt;/a&gt;. Export the image as a PNG, place it in the same directory as your R Markdown file, and include the image with Markdown.&lt;/p&gt;
 &lt;p&gt;The syntax for adding an image in Markdown is fairly simple. Importantly, it is not R code, so &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; try putting it in an R chunk. Just type this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;Image caption&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/image.png&lt;/span&gt;)
@@ -633,9 +633,9 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
     
     <item>
       <title>Problem set 2</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/02-problem-set/</link>
+      <link>/assignment/02-problem-set/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/02-problem-set/</guid>
+      <guid>/assignment/02-problem-set/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;
 &lt;strong&gt;IMPORTANT&lt;/strong&gt;: This looks like a lot of work, but it&amp;rsquo;s mostly copying/pasting chunks of code and changing things.
 &lt;/div&gt;
@@ -644,12 +644,12 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
 &lt;p&gt;You&amp;rsquo;ll be doing all your R work in R Markdown this time (and from now on). You should use an RStudio Project to keep your files well organized (either on your computer or on RStudio.cloud). Either create a new project for this exercise only, or make a project for all your work in this class.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need to download these two CSV files and put them somewhere on your computer or upload them to RStudio.cloud—preferably in a folder named &lt;code&gt;data&lt;/code&gt; in your project folder:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-2/data/penguins.csv&#34;&gt;&lt;i class=&#34;fas fa-file-csv&#34;&gt;&lt;/i&gt; &lt;code&gt;penguins.csv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-2/data/food_health_politics.csv&#34;&gt;&lt;i class=&#34;fas fa-file-csv&#34;&gt;&lt;/i&gt; &lt;code&gt;food_health_politics.csv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-2/data/penguins.csv&#34;&gt;&lt;i class=&#34;fas fa-file-csv&#34;&gt;&lt;/i&gt; &lt;code&gt;penguins.csv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-2/data/food_health_politics.csv&#34;&gt;&lt;i class=&#34;fas fa-file-csv&#34;&gt;&lt;/i&gt; &lt;code&gt;food_health_politics.csv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll also need to download this R Markdown file with a template for this problem set. Download that here and include it in your project:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-2/your-name_problem-set-2.Rmd&#34;&gt;&lt;i class=&#34;fab fa-r-project&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-2.Rmd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-2/your-name_problem-set-2.Rmd&#34;&gt;&lt;i class=&#34;fab fa-r-project&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-2.Rmd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In the end, the structure of your project directory should look something like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;your-project-name\
@@ -660,7 +660,7 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
     food_health_politics.csv
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To check that you put everything in the right places, you can download and unzip this file, which contains everything in the correct structure:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/projects/problem-set-2.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-2.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/projects/problem-set-2.zip&#34;&gt;&lt;i class=&#34;fas fa-file-archive&#34;&gt;&lt;/i&gt; &lt;code&gt;problem-set-2.zip&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You&amp;rsquo;ll need to make sure you have these packages installed on your computer: &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;modelsummary&lt;/code&gt;. If you try to load one of those packages with &lt;code&gt;library(tidyverse)&lt;/code&gt; or &lt;code&gt;library(modelsummary)&lt;/code&gt;, etc., and R gives an error that the package is missing, use the &amp;ldquo;Packages&amp;rdquo; panel in RStudio to install it.&lt;/p&gt;
 &lt;p&gt;(Alternatively, you can open the project named &amp;ldquo;Problem Set 2&amp;rdquo; on RStudio.cloud and complete the assignment in your browser without needing to install anything. If you don&amp;rsquo;t have access to the class RStudio.cloud account, &lt;em&gt;please let me know as soon as possible&lt;/em&gt;. &lt;a href=&#34;https://rstudio.cloud/spaces/112607/project/2062871&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This link should take you to the project&lt;/a&gt;—if it doesn&amp;rsquo;t, log in and look for the project named &amp;ldquo;Problem Set 2.&amp;quot;)&lt;/p&gt;
@@ -669,37 +669,37 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
 &lt;p&gt;Remember, if you&amp;rsquo;re struggling, &lt;em&gt;please&lt;/em&gt; talk to me. Work with classmates too. Don&amp;rsquo;t suffer in silence!&lt;/p&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
 &lt;p&gt;For this problem set, we&amp;rsquo;re less interested in causal relationships and more interested in the mechanics of manipulating data and running regressions in R. We&amp;rsquo;ll start caring about identification and causal models in the next problem set. Because of this, don&amp;rsquo;t put too much causal weight into the interpretations of these different models—this is an actual case of correlation not implying causation.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/regression/&#34;&gt;The example for week 2 on regression&lt;/a&gt; will be &lt;em&gt;&lt;strong&gt;incredibly&lt;/strong&gt;&lt;/em&gt; helpful for this exercise. Reference it. Copy and paste from it liberally.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/example/regression/&#34;&gt;The example for week 2 on regression&lt;/a&gt; will be &lt;em&gt;&lt;strong&gt;incredibly&lt;/strong&gt;&lt;/em&gt; helpful for this exercise. Reference it. Copy and paste from it liberally.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Rename the R Markdown file named &lt;code&gt;your-name_problem-set-2.Rmd&lt;/code&gt; to something that matches your name and open it in RStudio.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Complete the tasks given in the R Markdown file. Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/regression/&#34;&gt;from the regression example&lt;/a&gt;—&lt;em&gt;don&amp;rsquo;t try to write everything from scratch!&lt;/em&gt;), and replace text in ALL CAPS with your own. (i.e. You&amp;rsquo;ll see a bunch of &lt;code&gt;TYPE YOUR ANSWER HERE&lt;/code&gt;s. Type your answers there.). Again, you don&amp;rsquo;t need to type your answers in all caps.&lt;/p&gt;
+&lt;p&gt;Complete the tasks given in the R Markdown file. Fill out code in the empty chunks provided (you can definitely copy, paste, and adapt from other code in the document or &lt;a href=&#34;/example/regression/&#34;&gt;from the regression example&lt;/a&gt;—&lt;em&gt;don&amp;rsquo;t try to write everything from scratch!&lt;/em&gt;), and replace text in ALL CAPS with your own. (i.e. You&amp;rsquo;ll see a bunch of &lt;code&gt;TYPE YOUR ANSWER HERE&lt;/code&gt;s. Type your answers there.). Again, you don&amp;rsquo;t need to type your answers in all caps.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;turning-everything-in&#34;&gt;Turning everything in&lt;/h2&gt;
-&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re all done, click on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editing window and create an HTML or Word version (or PDF if you&amp;rsquo;ve &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt;) of your document. Upload that file to iCollege.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Problem set 1</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/01-problem-set/</link>
+      <link>/assignment/01-problem-set/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/01-problem-set/</guid>
+      <guid>/assignment/01-problem-set/</guid>
       <description>&lt;h2 id=&#34;task-1-introduce-yourself-to-r-rstudio-and-the-tidyverse&#34;&gt;Task 1: Introduce yourself to R, RStudio, and the tidyverse&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Go the the example page for this week, &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rstudio-tidyverse/&#34;&gt;&amp;ldquo;Welcome to R, RStudio, and the tidyverse&amp;rdquo;&lt;/a&gt;, and work through the different primers and videos in the four parts of the page.&lt;/p&gt;
+&lt;p&gt;Go the the example page for this week, &lt;a href=&#34;/example/rstudio-tidyverse/&#34;&gt;&amp;ldquo;Welcome to R, RStudio, and the tidyverse&amp;rdquo;&lt;/a&gt;, and work through the different primers and videos in the four parts of the page.&lt;/p&gt;
 &lt;p&gt;It seems like there&amp;rsquo;s a lot on the page, but they&amp;rsquo;re short and go fairly quickly (especially as you get the hang of the syntax). Also, &lt;strong&gt;I have no way of seeing what you do or what you get wrong or right, and that&amp;rsquo;s totally fine!&lt;/strong&gt; If you get stuck and want to skip some (or if it gets too easy), go right ahead and skip them!&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;task-2-make-an-rstudio-project&#34;&gt;Task 2: Make an RStudio Project&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Use either RStudio.cloud or RStudio on your computer (preferably RStudio on your computer! &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/&#34;&gt;Follow these instructions to get started!&lt;/a&gt;) to create a new RStudio Project. Refer to the &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rstudio-tidyverse/#part-3-rstudio-projects&#34;&gt;example page you read in Task 1 for instructions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Use either RStudio.cloud or RStudio on your computer (preferably RStudio on your computer! &lt;a href=&#34;/resource/install/&#34;&gt;Follow these instructions to get started!&lt;/a&gt;) to create a new RStudio Project. Refer to the &lt;a href=&#34;/example/rstudio-tidyverse/#part-3-rstudio-projects&#34;&gt;example page you read in Task 1 for instructions&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Create a folder named &amp;ldquo;data&amp;rdquo; in the project folder you just made.&lt;/p&gt;
@@ -707,7 +707,7 @@ my_dag &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span
 &lt;li&gt;
 &lt;p&gt;Download this CSV file and place it in that folder:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/data/cars.csv&#34;&gt;&lt;i class=&#34;fas fa-file-csv&#34;&gt;&lt;/i&gt; &lt;code&gt;cars.csv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/data/cars.csv&#34;&gt;&lt;i class=&#34;fas fa-file-csv&#34;&gt;&lt;/i&gt; &lt;code&gt;cars.csv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -756,21 +756,21 @@ PUT CHUNK HERE
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Your project folder should look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/project-structure.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/project-structure.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;task-3-work-with-r&#34;&gt;Task 3: Work with R&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Remove the text that says &amp;ldquo;PUT CHUNK HERE&amp;rdquo; and insert a new R code chunk. Either type &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;alt&lt;/kbd&gt; + &lt;kbd&gt;i&lt;/kbd&gt; on Windows, or &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;i&lt;/kbd&gt; on macOS, or use the &amp;ldquo;Insert Chunk&amp;rdquo; menu:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/insert-chunk-button.png&#34; width=&#34;19%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Follow the instructions for the three chunks of code.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Knit your document as a Word file (or PDF if you&amp;rsquo;re brave and &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/install/#install-tinytex&#34;&gt;installed LaTeX&lt;/a&gt;). Use the &amp;ldquo;Knit&amp;rdquo; menu:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Knit your document as a Word file (or PDF if you&amp;rsquo;re brave and &lt;a href=&#34;/resource/install/#install-tinytex&#34;&gt;installed LaTeX&lt;/a&gt;). Use the &amp;ldquo;Knit&amp;rdquo; menu:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Upload the knitted document to iCollege.&lt;/p&gt;
@@ -781,18 +781,18 @@ PUT CHUNK HERE
 &lt;/ol&gt;
 &lt;div class=&#34;fyi&#34;&gt;
 &lt;p&gt;You&amp;rsquo;ll be doing this same process for all your future problem sets. Each problem set will involve an R Markdown file. You can either create a new RStudio Project directory for all your work:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/rproj-one-folder.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/reference/rproj-one-folder.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Or you can create individual projects for each assignment and project:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/rproj-multiple-folders.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/reference/rproj-multiple-folders.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Weekly check-in</title>
-      <link>https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/</link>
+      <link>/assignment/weekly-check-in/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/</guid>
+      <guid>/assignment/weekly-check-in/</guid>
       <description>&lt;p&gt;Every week, after you finish working through the content, I want to hear about what you learned and what questions you still have. To facilitate this, and to encourage engagement with the course content, you&amp;rsquo;ll need to fill out a short response on iCollege. This should be ≈150 words. That&amp;rsquo;s fairly short: there are ≈250 words on a typical double-spaced page in Microsoft Word (500 when single-spaced).&lt;/p&gt;
 &lt;p&gt;You should answer these two questions each week:&lt;/p&gt;
 &lt;ol&gt;

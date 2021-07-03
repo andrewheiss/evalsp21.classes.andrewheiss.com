@@ -3,296 +3,296 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/</loc>
+    <loc>/resource/</loc>
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/</loc>
+    <loc>/assignment/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/</loc>
+    <loc>/content/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/</loc>
+    <loc>/example/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/exam1/</loc>
+    <loc>/resource/exam1/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/install/</loc>
+    <loc>/resource/install/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/exam2/</loc>
+    <loc>/resource/exam2/</loc>
     <lastmod>2020-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/r/</loc>
+    <loc>/resource/r/</loc>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/style/</loc>
+    <loc>/resource/style/</loc>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/unzipping/</loc>
+    <loc>/resource/unzipping/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/data/</loc>
+    <loc>/resource/data/</loc>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/</loc>
+    <loc>/resource/mixtape-diffs/</loc>
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/citations/</loc>
+    <loc>/resource/citations/</loc>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/</loc>
+    <loc>/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/final-project/</loc>
+    <loc>/assignment/final-project/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/14-content/</loc>
+    <loc>/content/14-content/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/09-problem-set/</loc>
+    <loc>/assignment/09-problem-set/</loc>
     <lastmod>2021-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/13-content/</loc>
+    <loc>/content/13-content/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/08-problem-set/</loc>
+    <loc>/assignment/08-problem-set/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/12-content/</loc>
+    <loc>/content/12-content/</loc>
     <lastmod>2021-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/07-problem-set/</loc>
+    <loc>/assignment/07-problem-set/</loc>
     <lastmod>2021-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/11-content/</loc>
+    <loc>/content/11-content/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/06-problem-set/</loc>
+    <loc>/assignment/06-problem-set/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/10-content/</loc>
+    <loc>/content/10-content/</loc>
     <lastmod>2021-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/05-problem-set/</loc>
+    <loc>/assignment/05-problem-set/</loc>
     <lastmod>2021-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/09-content/</loc>
+    <loc>/content/09-content/</loc>
     <lastmod>2021-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/04-problem-set/</loc>
+    <loc>/assignment/04-problem-set/</loc>
     <lastmod>2021-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/08-content/</loc>
+    <loc>/content/08-content/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/03-problem-set/</loc>
+    <loc>/assignment/03-problem-set/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/07-content/</loc>
+    <loc>/content/07-content/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/04-eval-threats/</loc>
+    <loc>/assignment/04-eval-threats/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/06-content/</loc>
+    <loc>/content/06-content/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/03-eval-dag/</loc>
+    <loc>/assignment/03-eval-dag/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/05-content/</loc>
+    <loc>/content/05-content/</loc>
     <lastmod>2021-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/02-eval-measurement/</loc>
+    <loc>/assignment/02-eval-measurement/</loc>
     <lastmod>2021-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/04-content/</loc>
+    <loc>/content/04-content/</loc>
     <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/01-eval-background-theory/</loc>
+    <loc>/assignment/01-eval-background-theory/</loc>
     <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/03-content/</loc>
+    <loc>/content/03-content/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/02-problem-set/</loc>
+    <loc>/assignment/02-problem-set/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/02-content/</loc>
+    <loc>/content/02-content/</loc>
     <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/01-problem-set/</loc>
+    <loc>/assignment/01-problem-set/</loc>
     <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/content/01-content/</loc>
+    <loc>/content/01-content/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/random-numbers/</loc>
+    <loc>/example/random-numbers/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/synthetic-data/</loc>
+    <loc>/example/synthetic-data/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/rdd-fuzzy/</loc>
+    <loc>/example/rdd-fuzzy/</loc>
     <lastmod>2020-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/cace/</loc>
+    <loc>/example/cace/</loc>
     <lastmod>2020-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/rdd/</loc>
+    <loc>/example/rdd/</loc>
     <lastmod>2020-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/matching-ipw/</loc>
+    <loc>/example/matching-ipw/</loc>
     <lastmod>2020-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/rcts/</loc>
+    <loc>/example/rcts/</loc>
     <lastmod>2020-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/po-ate-cate/</loc>
+    <loc>/example/po-ate-cate/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/dags/</loc>
+    <loc>/example/dags/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/regression/</loc>
+    <loc>/example/regression/</loc>
     <lastmod>2020-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/rstudio-tidyverse/</loc>
+    <loc>/example/rstudio-tidyverse/</loc>
     <lastmod>2020-08-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/iv/</loc>
+    <loc>/example/iv/</loc>
     <lastmod>2020-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/</loc>
+    <loc>/example/diff-in-diff/</loc>
     <lastmod>2020-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/markdown/</loc>
+    <loc>/resource/markdown/</loc>
     <lastmod>2020-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/</loc>
+    <loc>/resource/rmarkdown/</loc>
     <lastmod>2020-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/schedule/</loc>
+    <loc>/schedule/</loc>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/syllabus/</loc>
+    <loc>/syllabus/</loc>
   </url>
   
   <url>
-    <loc>https://evalsp21.classes.andrewheiss.com/assignment/weekly-check-in/</loc>
+    <loc>/assignment/weekly-check-in/</loc>
   </url>
   
 </urlset>
