@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Program background In this example, we&rsquo;ll use the same situation that we used in the the example for regression discontinuity:
+ Students take an entrance exam at the beginning of the school year If they score 70 or below, they are enrolled in a free tutoring program Students take an exit exam at the end of the year  If you want to follow along, download this dataset and put it in a folder named data:" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/example/rdd-fuzzy/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/example/rdd-fuzzy/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/example/rdd-fuzzy/" />
+  <meta property="og:title" content="Fuzzy regression discontinuity | Program Evaluation" />
+  <meta property="og:description" content="Program background In this example, we&rsquo;ll use the same situation that we used in the the example for regression discontinuity:
+ Students take an entrance exam at the beginning of the school year If they score 70 or below, they are enrolled in a free tutoring program Students take an exit exam at the end of the year  If you want to follow along, download this dataset and put it in a folder named data:" /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-10-28T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-10-28T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Fuzzy regression discontinuity | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/">Code examples</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/random-numbers/">Simulated data</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/random-numbers/">Random numbers</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/synthetic-data/">Synthetic data</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/rstudio-tidyverse/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/rstudio-tidyverse/">R, RStudio, and the tidyverse</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/regression/">Regression</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/dags/">DAGs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/po-ate-cate/">Potential outcomes, ATEs, and CATEs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rcts/">RCTs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/matching-ipw/">Matching and IPW</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/diff-in-diff/">Diff-in-diff</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd/">Regression discontinuity</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/iv/">Instrumental variables</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/cace/">ITT and CACE</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/example/rdd-fuzzy/">Fuzzy regression discontinuity</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#program-background">Program background</a></li>
+    <li><a href="#noncompliance-around-a-cutoff">Noncompliance around a cutoff</a></li>
+    <li><a href="#visualizing-a-fuzzy-gap">Visualizing a fuzzy gap</a></li>
+    <li><a href="#measuring-a-fuzzy-gap">Measuring a fuzzy gap</a>
+      <ul>
+        <li><a href="#fuzzy-parametric-estimation">Fuzzy parametric estimation</a></li>
+        <li><a href="#fuzzy-nonparametric-estimation">Fuzzy nonparametric estimation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Fuzzy regression discontinuity</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<h2 id="program-background">Program background</h2>
+<p>In this example, we&rsquo;ll use the same situation that we used in the <a href="/example/rdd/">the example for regression discontinuity</a>:</p>
+<ul>
+<li>Students take an entrance exam at the beginning of the school year</li>
+<li>If they score 70 or below, they are enrolled in a free tutoring program</li>
+<li>Students take an exit exam at the end of the year</li>
+</ul>
+<p>If you want to follow along, download this dataset and put it in a folder named <code>data</code>:</p>
+<ul>
+<li><a href="/data/tutoring_program_fuzzy.csv"><i class="fas fa-table"></i> <code>tutoring_program_fuzzy.csv</code></a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># ggplot(), %&gt;%, mutate(), and friends</span>
+<span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># Convert models to data frames</span>
+<span style="color:#a6e22e">library</span>(rdrobust)  <span style="color:#75715e"># For robust nonparametric regression discontinuity</span>
+<span style="color:#a6e22e">library</span>(estimatr)  <span style="color:#75715e"># Run 2SLS models in one step with iv_robust()</span>
+<span style="color:#a6e22e">library</span>(modelsummary)  <span style="color:#75715e"># Create side-by-side regression tables</span>
+<span style="color:#a6e22e">library</span>(kableExtra)  <span style="color:#75715e"># Fancy table formatting</span>
+
+tutoring <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/tutoring_program_fuzzy.csv&#34;</span>)
+</code></pre></div><h2 id="noncompliance-around-a-cutoff">Noncompliance around a cutoff</h2>
+<p>In <a href="/example/rdd/">the example for regression discontinuity</a>, it was fairly easy to measure the size of the jump at the cutoff because compliance was perfect. No people who scored above the threshold used the tutoring program, and nobody who qualified for the program didn&rsquo;t use it. It was a <em>sharp</em> design, since program usage looked like this:</p>
+<p><img src="/example/rdd_files/figure-html/check-fuzzy-sharp-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>However, seeing a cutoff this sharp and this perfect is fairly rare. It is possible that some people scored higher on the entrace exam and somehow used tutoring, or that some people scored below the threshold but didn&rsquo;t participate in the program, either because they&rsquo;re never-takers, or because they fell through bureaucratic cracks.</p>
+<p>More often, you&rsquo;ll see compliance that looks like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(tutoring, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> entrance_exam, y <span style="color:#f92672">=</span> tutoring_text, color <span style="color:#f92672">=</span> entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Make points small and semi-transparent since there are lots of them</span>
+  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>,
+             position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitter</span>(width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.25</span>, seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add vertical line</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add labels</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Participated in tutoring program&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Turn off the color legend, since it&#39;s redundant</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</code></pre></div><p><img src="/example/rdd-fuzzy_files/figure-html/fuzzy-compliance-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>We can see the count and percentages of compliance with <code>group_by()</code> and <code>summarize()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">tutoring <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">group_by</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summarize</span>(count <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>()) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">group_by</span>(tutoring) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> count <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(count))
+<span style="color:#75715e">## # A tibble: 4 x 4</span>
+<span style="color:#75715e">## # Groups:   tutoring [2]</span>
+<span style="color:#75715e">##   tutoring `entrance_exam &lt;= 70` count   prop</span>
+<span style="color:#75715e">##   &lt;lgl&gt;    &lt;lgl&gt;                 &lt;int&gt;  &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 FALSE    FALSE                   646 0.947 </span>
+<span style="color:#75715e">## 2 FALSE    TRUE                     36 0.0528</span>
+<span style="color:#75715e">## 3 TRUE     FALSE                   116 0.365 </span>
+<span style="color:#75715e">## 4 TRUE     TRUE                    202 0.635</span>
+</code></pre></div><p>Here we have 36 people who should have used tutoring who didn&rsquo;t (either because they&rsquo;re never-takers and are anti-program, or because the system failed them), and we have 116 people (!!!) who somehow snuck into the program. That should probably be a big red flag for the program administrators. That means that 36.5% of people in the tutoring program shouldn&rsquo;t have been there. Big yikes.</p>
+<p>This is definitely not a sharp design. This is a fuzzy regression discontinuity.</p>
+<h2 id="visualizing-a-fuzzy-gap">Visualizing a fuzzy gap</h2>
+<p>With regular sharp RD, our goal is to measure the size of the gap or discontinuity in outcome right at the cutoff. <a href="/example/rdd/#step-4-check-for-discontinuity-in-outcome-across-running-variabl">In our sharp example</a> we did this with different parametric regression models, as well as with the <code>rdrobust()</code> function for nonparametric measurement.</p>
+<p>Regular parametric regression won&rsquo;t really work here because we have strange compliance issues:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(tutoring, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> entrance_exam, y <span style="color:#f92672">=</span> exit_exam, color <span style="color:#f92672">=</span> tutoring)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add a line based on a linear model for the people scoring less than 70</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>), method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add a line based on a linear model for the people scoring 70 or more</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">70</span>), method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Exit exam score&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Used tutoring&#34;</span>)
+</code></pre></div><p><img src="/example/rdd-fuzzy_files/figure-html/check-outcome-fuzzy-discontinuity-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>There&rsquo;s still a visible gap at 70, but there are people who did and did not use the program on both sides of the cutoff.</p>
+<p>Another way to look at this is to make a sort of histogram that shows the probability of being in the tutoring program at different entrance exam scores. 100% of people who score between 25 and 50 on the exam used tutoring, so that&rsquo;s good, but then the probability of tutoring drops to ≈80ish% up until the cutpoint at 70. After 70, there&rsquo;s a 10–15% chance of using tutoring if you&rsquo;re above the threshold.</p>
+<p>If this were a sharp design, every single bar to the left of the cutpoint would be 100% and every single bar to the right would be 0%, but that&rsquo;s not the case here. The probability of tutoring changes at the cutpoint, but it&rsquo;s not 100% perfect.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># This fun code uses cut() to split the entrance exam column into distinct</span>
+<span style="color:#75715e"># categories (0-5, 5-10, 10-15, etc.). You&#39;ll see some strange syntax in the</span>
+<span style="color:#75715e"># categories it creates: (70, 75]. These ranges start with ( and end with ] for</span>
+<span style="color:#75715e"># a reason: ( means the range *does not* include the number, while ] means that</span>
+<span style="color:#75715e"># the range *does* include the number. (70, 75] thus means 71-75. You can</span>
+<span style="color:#75715e"># reverse that with an argument to cut() so taht it would do [70, 75), which</span>
+<span style="color:#75715e"># means 70-74.</span>
+tutoring_with_bins <span style="color:#f92672">&lt;-</span> tutoring <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(exam_binned <span style="color:#f92672">=</span> <span style="color:#a6e22e">cut</span>(entrance_exam, breaks <span style="color:#f92672">=</span> <span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">5</span>))) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Group by each of the new bins and tutoring status</span>
+  <span style="color:#a6e22e">group_by</span>(exam_binned, tutoring) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Count how many people are in each test bin + used/didn&#39;t use tutoring</span>
+  <span style="color:#a6e22e">summarize</span>(n <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>()) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Make this summarized data wider so that there&#39;s a column for tutoring and no tutoring</span>
+  <span style="color:#a6e22e">pivot_wider</span>(names_from <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tutoring&#34;</span>, values_from <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;n&#34;</span>, values_fill <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">rename</span>(tutor_yes <span style="color:#f92672">=</span> `TRUE`, tutor_no <span style="color:#f92672">=</span> `FALSE`) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Find the probability of tutoring in each bin by taking</span>
+  <span style="color:#75715e"># the count of yes / count of yes + count of no</span>
+  <span style="color:#a6e22e">mutate</span>(prob_tutoring <span style="color:#f92672">=</span> tutor_yes <span style="color:#f92672">/</span> (tutor_yes <span style="color:#f92672">+</span> tutor_no))
+
+<span style="color:#75715e"># Plot this puppy</span>
+<span style="color:#a6e22e">ggplot</span>(tutoring_with_bins, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> exam_binned, y <span style="color:#f92672">=</span> prob_tutoring)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_col</span>() <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">8.5</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Proportion of people participating in program&#34;</span>)
+</code></pre></div><p><img src="/example/rdd-fuzzy_files/figure-html/fuzzy-binned-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<h2 id="measuring-a-fuzzy-gap">Measuring a fuzzy gap</h2>
+<p>So how do we actually measure this gap, given all the compliance issues? Recall from Session 12 that <em>instruments</em> let us isolate causal effects for just compliers: they let us find <a href="/example/cace/">the complier average causal effect, or CACE</a>.</p>
+<p>But what should we use as an instrument? Do we use something weird like <a href="http://ftp.iza.org/dp7725.pdf" target="_blank" rel="noopener">the Scrabble score of people&rsquo;s names</a>? Something <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3715610" target="_blank" rel="noopener">overused like rainfall</a>?</p>
+<p>No! In this case, the instrument is fairly easy and straightforward: we create a variable that indicates if someone is above or below the threshold. That&rsquo;s all. This variable essentially measures <em>what should have happened</em> rather than what actually happened.</p>
+<p>Surprisingly, it meets all the qualifications of an instrument too:</p>
+<ul>
+<li><strong>Relevance</strong> ($Z \rightarrow X$ and <code>\(\operatorname{Cor}(Z, X) \neq 0\)</code>): The cutoff causes access to the tutoring program.</li>
+<li><strong>Exclusion</strong> ($Z \rightarrow X \rightarrow Y$ and <code>\(Z \nrightarrow Y\)</code> and <code>\(\operatorname{Cor}(Z, Y | X) = 0\)</code>): The cutoff causes exit exam scores <em>only through</em> the tutoring program.</li>
+<li><strong>Exogeneity</strong> ($U \nrightarrow Z$ and <code>\(\operatorname{Cor}(Z, U) = 0\)</code>): Unobserved confounders between the tutoring program and exit exam scores are unrelated to the cutoff.</li>
+</ul>
+<h3 id="fuzzy-parametric-estimation">Fuzzy parametric estimation</h3>
+<p>Let&rsquo;s make an instrument! We&rsquo;ll also center the running variable just like we did with sharp regression discontinuity:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">tutoring_centered <span style="color:#f92672">&lt;-</span> tutoring <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(entrance_centered <span style="color:#f92672">=</span> entrance_exam <span style="color:#f92672">-</span> <span style="color:#ae81ff">70</span>,
+         below_cutoff <span style="color:#f92672">=</span> entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>)
+tutoring_centered
+<span style="color:#75715e">## # A tibble: 1,000 x 7</span>
+<span style="color:#75715e">##       id entrance_exam tutoring tutoring_text exit_exam entrance_centered below_cutoff</span>
+<span style="color:#75715e">##    &lt;dbl&gt;         &lt;dbl&gt; &lt;lgl&gt;    &lt;chr&gt;             &lt;dbl&gt;             &lt;dbl&gt; &lt;lgl&gt;       </span>
+<span style="color:#75715e">##  1     1          92.4 FALSE    No tutor           78.1            22.4   FALSE       </span>
+<span style="color:#75715e">##  2     2          72.8 FALSE    No tutor           58.2             2.77  FALSE       </span>
+<span style="color:#75715e">##  3     3          53.7 TRUE     Tutor              62.0           -16.3   TRUE        </span>
+<span style="color:#75715e">##  4     4          98.3 FALSE    No tutor           67.5            28.3   FALSE       </span>
+<span style="color:#75715e">##  5     5          69.7 TRUE     Tutor              54.1            -0.288 TRUE        </span>
+<span style="color:#75715e">##  6     6          68.1 TRUE     Tutor              60.1            -1.93  TRUE        </span>
+<span style="color:#75715e">##  7     7          86.0 FALSE    No tutor           73.1            16.0   FALSE       </span>
+<span style="color:#75715e">##  8     8          85.7 TRUE     Tutor              76.7            15.7   FALSE       </span>
+<span style="color:#75715e">##  9     9          85.9 FALSE    No tutor           57.8            15.9   FALSE       </span>
+<span style="color:#75715e">## 10    10          89.5 FALSE    No tutor           79.9            19.5   FALSE       </span>
+<span style="color:#75715e">## # … with 990 more rows</span>
+</code></pre></div><p>Now we have a new column named <code>below_cutoff</code> that we&rsquo;ll use as an instrument. Most of the time this will be the same as the <code>tutoring</code> column, since most people are compliers. But some people didn&rsquo;t comply, like person 8 here who was <em>not</em> below the cutoff but still used the tutoring program.</p>
+<p>Before using the instrument, let&rsquo;s first run a model that assumes the cutoff is sharp. As we did with <a href="https://evalf20.classes.andrewheiss.com/example/rdd/#parametric-estimation" target="_blank" rel="noopener">the sharp parametric analysis</a>, we&rsquo;ll include two explanatory variables:</p>
+<p>$$
+\text{Exit exam} = \beta_0 + \beta_1 \text{Entrance exam score}_\text{centered} + \beta_2 \text{Tutoring program} + \epsilon
+$$</p>
+<p>We&rsquo;ll use a bandwidth of 10:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Bandwidth ±10</span>
+model_sans_instrument <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(exit_exam <span style="color:#f92672">~</span> entrance_centered <span style="color:#f92672">+</span> tutoring,
+                            data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring_centered,
+                                          entrance_centered <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">-10</span> <span style="color:#f92672">&amp;</span>
+                                            entrance_centered <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span>))
+<span style="color:#a6e22e">tidy</span>(model_sans_instrument)
+<span style="color:#75715e">## # A tibble: 3 x 5</span>
+<span style="color:#75715e">##   term              estimate std.error statistic   p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)         59.3      0.503     118.   9.75e-313</span>
+<span style="color:#75715e">## 2 entrance_centered    0.511    0.0665      7.69 1.17e- 13</span>
+<span style="color:#75715e">## 3 tutoringTRUE        11.5      0.744      15.4  1.77e- 42</span>
+</code></pre></div><p>Here, the coefficient for <code>tutoringTRUE</code> shows the size of the jump, which is 11.5. This means that participating in the tutoring program <em>causes</em> an increase of 11.5 points on the final exam for people in the bandwidth.</p>
+<p><strong>BUT THIS IS WRONG.</strong> This is <em>not</em> a sharp discontinuity, so we can&rsquo;t actually do this. Instead, we need to run a 2SLS model that includes our instrument in the first stage, which will then remove the endogeneity built into participation in the program. We&rsquo;ll estimate this set of models:</p>
+<p>$$
+<code>\begin{aligned} \widehat{\text{Tutoring program}} &amp;= \gamma_0 + \gamma_1 \text{Entrance exam score}_\text{centered} + \gamma_2 \text{Below cutoff} + \omega \\ \text{Exit exam} &amp;= \beta_0 + \beta_1 \text{Entrance exam score}_\text{centered} + \beta_2 \widehat{\text{Tutoring program}} + \epsilon \end{aligned}</code>
+$$</p>
+<p>We could manually run the first stage model, generate predicted <code>tutoring</code> and then use those predicted values in the second stage model <a href="/example/iv/">like we did in the instrumental variables example</a>, but that&rsquo;s tedious and nobody wants to do all that work. We&rsquo;ll use <code>iv_robust()</code> from the <strong>estimatr</strong> package instead.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_fuzzy <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">iv_robust</span>(
+  exit_exam <span style="color:#f92672">~</span> entrance_centered <span style="color:#f92672">+</span> tutoring <span style="color:#f92672">|</span> entrance_centered <span style="color:#f92672">+</span> below_cutoff,
+  data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring_centered, entrance_centered <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">-10</span> <span style="color:#f92672">&amp;</span> entrance_centered <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span>)
+)
+<span style="color:#a6e22e">tidy</span>(model_fuzzy)
+<span style="color:#75715e">##                term estimate std.error statistic  p.value conf.low conf.high  df   outcome</span>
+<span style="color:#75715e">## 1       (Intercept)    60.14     1.018      59.1 9.7e-200    58.14     62.14 400 exit_exam</span>
+<span style="color:#75715e">## 2 entrance_centered     0.44     0.099       4.4  1.4e-05     0.24      0.63 400 exit_exam</span>
+<span style="color:#75715e">## 3      tutoringTRUE     9.74     1.912       5.1  5.4e-07     5.98     13.50 400 exit_exam</span>
+</code></pre></div><p>Based on this model, using <code>below_cutoff</code> as an instrument, we can see that the coefficient for <code>tutoringTRUE</code> is different now! It&rsquo;s 9.74, which means that the tutoring program <em>causes</em> an average increase of 9.74 points on the final exam <strong>for compliers in the bandwidth</strong>.</p>
+<p>Notice that last caveat. Because we&rsquo;re working with regression discontinuity, we&rsquo;re estimating a local average treatment effect (LATE) for people in the bandwidth. Because we&rsquo;re working with instrumental variables, we&rsquo;re estimating the LATE for compliers only. That means our fuzzy regression discontinuity result here is <em>doubly robust</em>.</p>
+<p>If we compare this fuzzy result to the sharp result, we can see a sizable difference:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># gof_omit here will omit goodness-of-fit rows that match any of the text. This</span>
+<span style="color:#75715e"># means &#39;contains &#34;IC&#34; OR contains &#34;Low&#34; OR contains &#34;Adj&#34; OR contains &#34;p.value&#34;</span>
+<span style="color:#75715e"># OR contains &#34;statistic&#34; OR contains &#34;se_type&#34;&#39;. Basically we&#39;re getting rid of</span>
+<span style="color:#75715e"># all the extra diagnostic information at the bottom</span>
+<span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;No instrument (wrong)&#34;</span> <span style="color:#f92672">=</span> model_sans_instrument,
+                  <span style="color:#e6db74">&#34;Fuzzy RD (bw = 10)&#34;</span> <span style="color:#f92672">=</span> model_fuzzy),
+             gof_omit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IC|Log|Adj|p\\.value|statistic|se_type&#34;</span>,
+             stars <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Add a background color to row 5</span>
+  <span style="color:#a6e22e">row_spec</span>(<span style="color:#ae81ff">5</span>, background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#F5ABEA&#34;</span>)
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> No instrument (wrong) </th>
+   <th style="text-align:center;"> Fuzzy RD (bw = 10) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> 59.274*** </td>
+   <td style="text-align:center;"> 60.141*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.503) </td>
+   <td style="text-align:center;"> (1.018) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> entrance_centered </td>
+   <td style="text-align:center;"> 0.511*** </td>
+   <td style="text-align:center;"> 0.437*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.067) </td>
+   <td style="text-align:center;"> (0.099) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F5ABEA !important;"> tutoringTRUE </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 11.484*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 9.741*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.744) </td>
+   <td style="text-align:center;"> (1.912) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 403 </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.373 </td>
+   <td style="text-align:center;"> 0.365 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 119.103 </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> 403 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<p>We can (and should!) <a href="https://evalf20.classes.andrewheiss.com/example/rdd/#parametric-estimation" target="_blank" rel="noopener">do all the other things that we talked about in the regression discontinuity example</a>, like modifying the bandwidth, adding polynomial terms, and so forth to see how robust the finding is. But we won&rsquo;t do any of that here.</p>
+<h3 id="fuzzy-nonparametric-estimation">Fuzzy nonparametric estimation</h3>
+<p>We can also use nonparametric methods to measure the size of the fuzzy gap at the cutoff. We&rsquo;ll use <code>rdrobust()</code> just like we <a href="https://evalf20.classes.andrewheiss.com/example/rdd/#nonparametric-estimation-1" target="_blank" rel="noopener">did in the sharp example</a>. The only difference is that we have to add one extra argument. That&rsquo;s it!</p>
+<p>To do fuzzy estimation with <code>rdrobust()</code>, use the <code>fuzzy</code> argument to specify the treatment column (or <code>tutoring</code> in our case). <strong>Importantly</strong> (and confusingly! this took me waaaaay too long to figure out!), you <em><strong>do not</strong></em> need to specify an instrument (or even create one!). All you need to specify is the column that indicates treatment status—<code>rdrobust()</code> will do all the above/below-the-cutoff instrument stuff behind the scenes for you.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam,
+         c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, fuzzy <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>tutoring) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                       mserd</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 238         762</span>
+<span style="color:#75715e">## Eff. Number of Obs.            170         347</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                 12.985      12.985</span>
+<span style="color:#75715e">## BW bias (b)                 19.733      19.733</span>
+<span style="color:#75715e">## rho (h/b)                    0.658       0.658</span>
+<span style="color:#75715e">## Unique Obs.                    238         762</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional     9.683     1.893     5.116     0.000     [5.973 , 13.393]    </span>
+<span style="color:#75715e">##         Robust         -         -     4.258     0.000     [5.210 , 14.095]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+</code></pre></div><p>That&rsquo;s all! Using nonparametric methods, with a triangular kernel and a bandwidth of ±12.96, the causal effect of the tutoring program for compliers in the bandwidth is 9.683.</p>
+<p>We can (and should!) <a href="https://evalf20.classes.andrewheiss.com/example/rdd/#nonparametric-estimation" target="_blank" rel="noopener">do all the other nonparametric robustness checks that we talked about in the regression discontinuity example</a>, like modifying the bandwidth (ideal, half, double) and messing with the kernel (uniform, triangular, Epanechnikov) to see how robust the finding is. But again, we won&rsquo;t do any of that here.</p>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on October 28, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/example%5crdd-fuzzy.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

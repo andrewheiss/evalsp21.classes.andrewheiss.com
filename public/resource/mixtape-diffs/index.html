@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Causal Inference: The Mixtape includes code examples in both Stata and R, which is so cool! The previous PDF-only version of the book only had Stata code, so it was hard to follow along with in this class." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/" />
+  <meta property="og:title" content="Mixtape-style R code translations | Program Evaluation" />
+  <meta property="og:description" content="Causal Inference: The Mixtape includes code examples in both Stata and R, which is so cool! The previous PDF-only version of the book only had Stata code, so it was hard to follow along with in this class." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-01-04T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-01-04T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Mixtape-style R code translations | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/">Helpful resources</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/data/">Data</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/citations/">Citations and bibliography</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/exam1/">Study guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/exam1/">Things you should know for Exam 1</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/exam2/">Things you should know for Exam 2</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/install/">Guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/resource/mixtape-diffs/">Mixtape-style R code translations</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#loading-data">Loading data</a>
+      <ul>
+        <li><a href="#translation">Translation</a></li>
+      </ul>
+    </li>
+    <li><a href="#side-by-side-regression-tables-stargazer-vs-modelsummary">Side-by-side regression tables: stargazer vs. modelsummary</a>
+      <ul>
+        <li><a href="#translation-1">Translation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Mixtape-style R code translations</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <script src="/rmarkdown-libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<p><a href="https://mixtape.scunning.com/" target="_blank" rel="noopener"><em>Causal Inference: The Mixtape</em></a> includes code examples in both Stata and R, which is so cool! The previous PDF-only version of the book only had Stata code, so it was hard to follow along with in this class.</p>
+<p>As you&rsquo;ll note throughout this class, there are lots of ways to do things in R. You&rsquo;ll come across code in the RStudio forums and on StackOverflow that works, but looks slightly different than you&rsquo;re used to. In this class, we use the <a href="">tidyverse</a>, or a set of packages that all work together nicely like <strong>ggplot2</strong>, <strong>dplyr</strong>, and others.</p>
+<p><em>The Mixtape</em> also uses tidyverse (yay!), but has a couple code quirks and differences. Because the HTML version of the book (with R code) only came out on January 3, I haven&rsquo;t had time to find all the differences, so I&rsquo;ll keep a running list here.</p>
+<h2 id="loading-data">Loading data</h2>
+<p>Throughout <em>The Mixtape</em>, the code examples load data from external files stored online. The code provided for loading this data is a little more complicated than it needs to be. For instance, consider <a href="https://mixtape.scunning.com/ch3.html#statistical-inference" target="_blank" rel="noopener">this from Section 4.0.1</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)
+<span style="color:#a6e22e">library</span>(haven)
+
+read_data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(df)
+{
+  full_path <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;https://raw.github.com/scunning1975/mixtape/master/&#34;</span>, 
+                     df, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+  df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_dta</span>(full_path)
+  <span style="color:#a6e22e">return</span>(df)
+}
+
+yule <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_data</span>(<span style="color:#e6db74">&#34;yule.dta&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">lm</span>(paup <span style="color:#f92672">~</span> outrelief <span style="color:#f92672">+</span> old <span style="color:#f92672">+</span> pop, .)
+  
+<span style="color:#a6e22e">summary</span>(yule)
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Call:</span>
+<span style="color:#75715e">## lm(formula = paup ~ outrelief + old + pop, data = .)</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Residuals:</span>
+<span style="color:#75715e">##    Min     1Q Median     3Q    Max </span>
+<span style="color:#75715e">## -17.48  -5.31  -1.83   3.13  25.34 </span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Coefficients:</span>
+<span style="color:#75715e">##             Estimate Std. Error t value Pr(&gt;|t|)    </span>
+<span style="color:#75715e">## (Intercept)  63.1877    27.1439    2.33    0.027 *  </span>
+<span style="color:#75715e">## outrelief     0.7521     0.1350    5.57  5.8e-06 ***</span>
+<span style="color:#75715e">## old           0.0556     0.2234    0.25    0.805    </span>
+<span style="color:#75715e">## pop          -0.3107     0.0669   -4.65  7.3e-05 ***</span>
+<span style="color:#75715e">## ---</span>
+<span style="color:#75715e">## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Residual standard error: 9.6 on 28 degrees of freedom</span>
+<span style="color:#75715e">## Multiple R-squared:  0.697,	Adjusted R-squared:  0.665 </span>
+<span style="color:#75715e">## F-statistic: 21.5 on 3 and 28 DF,  p-value: 2e-07</span>
+</code></pre></div><p>Here, <em>The Mixtape</em> authors created a custom function named <code>read_data()</code> that loads a Stata file from a URL at GitHub. They then run a model on that data and store the results as an object named <code>yule</code>. It works, but it&rsquo;s not the most efficient way to do this for a few reasons:</p>
+<ul>
+<li>You don&rsquo;t need that whole custom <code>read_data()</code> function. Instead you can feed <code>read_dta()</code> a full URL and load it like that</li>
+<li>It&rsquo;s best if you save the data as an object by itself, <em>then</em> use it to create models. As it stands now, you can&rsquo;t look at the <code>yule.dta</code> file or make scatterplots or do anything with the data, since the results that are stored as <code>yule</code> are the results from the model, not the data itself.</li>
+</ul>
+<p>Instead, this is an easier way to load the data and run the model:</p>
+<h3 id="translation">Translation</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Mixtape version</span>
+read_data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(df)
+{
+  full_path <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;https://raw.github.com/scunning1975/mixtape/master/&#34;</span>, 
+                     df, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+  df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_dta</span>(full_path)
+  <span style="color:#a6e22e">return</span>(df)
+}
+
+yule <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_data</span>(<span style="color:#e6db74">&#34;yule.dta&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">lm</span>(paup <span style="color:#f92672">~</span> outrelief <span style="color:#f92672">+</span> old <span style="color:#f92672">+</span> pop, .)
+
+<span style="color:#a6e22e">summary</span>(yule)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Our class version</span>
+yule_data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_dta</span>(<span style="color:#e6db74">&#34;https://raw.github.com/scunning1975/mixtape/master/yule.dta&#34;</span>)
+
+yule_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(paup <span style="color:#f92672">~</span> outrelief <span style="color:#f92672">+</span> old <span style="color:#f92672">+</span> pop,
+                 data <span style="color:#f92672">=</span> yule_data)
+
+<span style="color:#a6e22e">summary</span>(yule_model)
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Call:</span>
+<span style="color:#75715e">## lm(formula = paup ~ outrelief + old + pop, data = yule_data)</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Residuals:</span>
+<span style="color:#75715e">##    Min     1Q Median     3Q    Max </span>
+<span style="color:#75715e">## -17.48  -5.31  -1.83   3.13  25.34 </span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Coefficients:</span>
+<span style="color:#75715e">##             Estimate Std. Error t value Pr(&gt;|t|)    </span>
+<span style="color:#75715e">## (Intercept)  63.1877    27.1439    2.33    0.027 *  </span>
+<span style="color:#75715e">## outrelief     0.7521     0.1350    5.57  5.8e-06 ***</span>
+<span style="color:#75715e">## old           0.0556     0.2234    0.25    0.805    </span>
+<span style="color:#75715e">## pop          -0.3107     0.0669   -4.65  7.3e-05 ***</span>
+<span style="color:#75715e">## ---</span>
+<span style="color:#75715e">## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Residual standard error: 9.6 on 28 degrees of freedom</span>
+<span style="color:#75715e">## Multiple R-squared:  0.697,	Adjusted R-squared:  0.665 </span>
+<span style="color:#75715e">## F-statistic: 21.5 on 3 and 28 DF,  p-value: 2e-07</span>
+</code></pre></div><p>Even better, instead of using <code>summary(yule_model)</code>, you can use <code>tidy()</code> and <code>glance()</code> from the <strong>broom</strong> library, which convert any kind of model object into standard data frames:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># You only need to run this once</span>
+
+<span style="color:#a6e22e">tidy</span>(yule_model)
+<span style="color:#75715e">## # A tibble: 4 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic    p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)  63.2      27.1        2.33  0.0274    </span>
+<span style="color:#75715e">## 2 outrelief     0.752     0.135      5.57  0.00000583</span>
+<span style="color:#75715e">## 3 old           0.0556    0.223      0.249 0.805     </span>
+<span style="color:#75715e">## 4 pop          -0.311     0.0669    -4.65  0.0000725</span>
+<span style="color:#a6e22e">glance</span>(yule_model)
+<span style="color:#75715e">## # A tibble: 1 x 12</span>
+<span style="color:#75715e">##   r.squared adj.r.squared sigma statistic     p.value    df logLik   AIC   BIC deviance df.residual  nobs</span>
+<span style="color:#75715e">##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;       &lt;int&gt; &lt;int&gt;</span>
+<span style="color:#75715e">## 1     0.697         0.665  9.55      21.5 0.000000200     3  -115.  241.  248.    2552.          28    32</span>
+</code></pre></div><h2 id="side-by-side-regression-tables-stargazer-vs-modelsummary">Side-by-side regression tables: stargazer vs. modelsummary</h2>
+<p>Side-by-side regression tables are a standard feature of economics, political science, and policy articles and reports. They conveniently let you see the results from multiple regresison models in one table. <a href="http://svmiller.com/blog/2014/08/reading-a-regression-table-a-guide-for-students/" target="_blank" rel="noopener">This blog post here goes into detail about how to read them</a>.</p>
+<p>There are several R packages for creating these tables automatically. One of the earliest is named <strong>stargazer</strong>, and tons of people still use it—including <em>The Mixtape</em>. For instance, Section 3.1.5 in <em>The Mixtape</em> shows an example of discrimination and collider bias and the code there shows three regression models side by side:</p>
+<p><code>collider_discrimination.R</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1234</span>)
+
+<span style="color:#a6e22e">library</span>(tidyverse)
+<span style="color:#a6e22e">library</span>(stargazer)
+
+tb <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tibble</span>(
+  female <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">10000</span>) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>),
+  ability <span style="color:#f92672">=</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">10000</span>),
+  discrimination <span style="color:#f92672">=</span> female,
+  occupation <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>ability <span style="color:#f92672">+</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">*</span>female <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>discrimination <span style="color:#f92672">+</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">10000</span>),
+  wage <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>discrimination <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>occupation <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>ability <span style="color:#f92672">+</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">10000</span>) 
+)
+
+lm_1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> female, tb)
+lm_2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> female <span style="color:#f92672">+</span> occupation, tb)
+lm_3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> female <span style="color:#f92672">+</span> occupation <span style="color:#f92672">+</span> ability, tb)
+
+<span style="color:#a6e22e">stargazer</span>(lm_1, lm_2, lm_3, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;html&#34;</span>, 
+          column.labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Biased Unconditional&#34;</span>, 
+                            <span style="color:#e6db74">&#34;Biased&#34;</span>,
+                            <span style="color:#e6db74">&#34;Unbiased Conditional&#34;</span>))
+</code></pre></div><table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="3">wage</td></tr>
+<tr><td style="text-align:left"></td><td>Biased Unconditional</td><td>Biased</td><td>Unbiased Conditional</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">female</td><td>-2.900<sup>***</sup></td><td>0.560<sup>***</sup></td><td>-0.980<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.084)</td><td>(0.029)</td><td>(0.028)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">occupation</td><td></td><td>1.800<sup>***</sup></td><td>0.990<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.006)</td><td>(0.010)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">ability</td><td></td><td></td><td>2.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.023)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>2.000<sup>***</sup></td><td>0.240<sup>***</sup></td><td>1.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.060)</td><td>(0.020)</td><td>(0.017)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.110</td><td>0.910</td><td>0.950</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.110</td><td>0.910</td><td>0.950</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>4.200 (df = 9998)</td><td>1.300 (df = 9997)</td><td>1.000 (df = 9996)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>1,208.000<sup>***</sup> (df = 1; 9998)</td><td>50,089.000<sup>***</sup> (df = 2; 9997)</td><td>62,279.000<sup>***</sup> (df = 3; 9996)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+<p>Neat. That works, and there are a ton of additional options you can feed to <code>stargazer()</code>—run <code>?stargazer</code> or search in the Help pane for &ldquo;stargazer&rdquo; to see more.</p>
+<p>However, I&rsquo;m not a fan of <strong>stargazer</strong> for a few reasons:</p>
+<ul>
+<li>Stargazer tables won&rsquo;t knit to Word</li>
+<li>You have to use different syntax when you&rsquo;re knitting to PDF vs. HTML (i.e. you have to change the <code>type</code> argument)</li>
+<li>Stargazer handles basic models like <code>lm()</code> and <code>glm()</code> well, but doesn&rsquo;t support newer things since (1) it hasn&rsquo;t been updated for a while, and (2) support for any newer models has to be built-in by hand by the developer.</li>
+</ul>
+<p>In this class we won&rsquo;t use <strong>stargazer</strong>. Instead, we&rsquo;ll use the newer <a href="https://vincentarelbundock.github.io/modelsummary/" target="_blank" rel="noopener"><strong>modelsummary</strong> package</a>, which addresses all of the issues with Stargazer:</p>
+<ul>
+<li><strong>modelsummary</strong> tables knit to Word</li>
+<li>You don&rsquo;t have to use any special syntax when knitting documents with <strong>modelsummary</strong> tables—knit to PDF and they&rsquo;ll show up in the PDF; knit to Word and they&rsquo;ll show up in the Word file; knit to HTML and they&rsquo;ll show up there</li>
+<li><strong>modelsummary</strong> handles any model that is supported by the <strong>broom</strong> package (basically, if you ran run <code>tidy()</code> on it, you can stick it in a table with <strong>modelsummary</strong>). If a model doesn&rsquo;t support broom yet, you can actually add that support yourself. For instance, nonparametric regression discontinuity models made with the <strong>rdrobust</strong> package don&rsquo;t work in either <strong>stargazer</strong> or <strong>modelsummary</strong>. They&rsquo;ll probably never be added to <strong>stargazer</strong>, but if you <a href="https://github.com/tidymodels/broom/issues/777#issuecomment-643251123" target="_blank" rel="noopener">include the code here</a> in your document, you can add <strong>rdrobust</strong> models to <code>modelsummary()</code>. Magic!</li>
+</ul>
+<p>The syntax for <code>modelsummary()</code> is a little different from <code>stargazer()</code>. Here&rsquo;s how to recreate the same table from before:</p>
+<h3 id="translation-1">Translation</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Stargazer version</span>
+<span style="color:#a6e22e">stargazer</span>(lm_1, lm_2, lm_3, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;text&#34;</span>, 
+          column.labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Biased Unconditional&#34;</span>, 
+                            <span style="color:#e6db74">&#34;Biased&#34;</span>,
+                            <span style="color:#e6db74">&#34;Unbiased Conditional&#34;</span>))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># modelsummary version</span>
+<span style="color:#a6e22e">library</span>(modelsummary)  <span style="color:#75715e"># You only need to run this once</span>
+
+<span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;Biased Unconditional&#34;</span> <span style="color:#f92672">=</span> lm_1, 
+                  <span style="color:#e6db74">&#34;Biased&#34;</span> <span style="color:#f92672">=</span> lm_2, 
+                  <span style="color:#e6db74">&#34;Unbiased Conditional&#34;</span> <span style="color:#f92672">=</span> lm_3),
+             stars <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> Biased Unconditional </th>
+   <th style="text-align:center;"> Biased </th>
+   <th style="text-align:center;"> Unbiased Conditional </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> 2.015*** </td>
+   <td style="text-align:center;"> 0.245*** </td>
+   <td style="text-align:center;"> 1.005*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.060) </td>
+   <td style="text-align:center;"> (0.020) </td>
+   <td style="text-align:center;"> (0.017) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:center;"> -2.933*** </td>
+   <td style="text-align:center;"> 0.561*** </td>
+   <td style="text-align:center;"> -0.984*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.084) </td>
+   <td style="text-align:center;"> (0.029) </td>
+   <td style="text-align:center;"> (0.028) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> occupation </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> 1.790*** </td>
+   <td style="text-align:center;"> 0.995*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> (0.006) </td>
+   <td style="text-align:center;"> (0.010) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ability </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> 2.007*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> (0.023) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 10000 </td>
+   <td style="text-align:center;"> 10000 </td>
+   <td style="text-align:center;"> 10000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.108 </td>
+   <td style="text-align:center;"> 0.909 </td>
+   <td style="text-align:center;"> 0.949 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 Adj. </td>
+   <td style="text-align:center;"> 0.108 </td>
+   <td style="text-align:center;"> 0.909 </td>
+   <td style="text-align:center;"> 0.949 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AIC </td>
+   <td style="text-align:center;"> 57175.7 </td>
+   <td style="text-align:center;"> 34320.7 </td>
+   <td style="text-align:center;"> 28518.8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> BIC </td>
+   <td style="text-align:center;"> 57197.3 </td>
+   <td style="text-align:center;"> 34349.6 </td>
+   <td style="text-align:center;"> 28554.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Log.Lik. </td>
+   <td style="text-align:center;"> -28584.837 </td>
+   <td style="text-align:center;"> -17156.358 </td>
+   <td style="text-align:center;"> -14254.399 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 1208.290 </td>
+   <td style="text-align:center;"> 50089.046 </td>
+   <td style="text-align:center;"> 62279.460 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<p>That&rsquo;s it! You feed <code>modelsummary()</code> a list of models. If you name the elements of the list, you&rsquo;ll get column headings.</p>
+<p>The <code>modelsummary()</code> function has a ton of options for changing the appearance, adding extra rows, omitting rows, highlighting rows, etc. <a href="https://vincentarelbundock.github.io/modelsummary/articles/modelsummary.html" target="_blank" rel="noopener">See this page for examples.</a></p>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on January 4, 2021</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/resource%5cmixtape-diffs.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

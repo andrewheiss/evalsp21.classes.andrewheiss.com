@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Markdown is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like pandoc to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/resource/markdown/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/resource/markdown/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/resource/markdown/" />
+  <meta property="og:title" content="Using Markdown | Program Evaluation" />
+  <meta property="og:description" content="Markdown is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like pandoc to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-01-13T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-01-13T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Using Markdown | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/">Helpful resources</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/data/">Data</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/citations/">Citations and bibliography</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/exam1/">Study guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/exam1/">Things you should know for Exam 1</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/exam2/">Things you should know for Exam 2</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/install/">Guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/mixtape-diffs/">Mixtape-style R code translations</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-markdown-formatting">Basic Markdown formatting</a></li>
+    <li><a href="#math">Math</a></li>
+    <li><a href="#tables">Tables</a></li>
+    <li><a href="#footnotes">Footnotes</a></li>
+    <li><a href="#front-matter">Front matter</a></li>
+    <li><a href="#citations">Citations</a></li>
+    <li><a href="#other-references">Other references</a></li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Using Markdown</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <p><a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a> is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like <a href="https://pandoc.org/" target="_blank" rel="noopener">pandoc</a> to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc. (<a href="https://pandoc.org/MANUAL.html#option--to" target="_blank" rel="noopener">see the full list of output types here</a>)</p>
+<h2 id="basic-markdown-formatting">Basic Markdown formatting</h2>
+<table>
+<colgroup>
+<col width="40%" />
+<col width="21%" />
+<col width="38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type…</th>
+<th>…or…</th>
+<th>…to get</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><pre>Some text in a paragraph.<br>
+More text in the next paragraph. Always
+use empty lines between paragraphs.</pre></td>
+<td></td>
+<td><p>Some text in a paragraph.</p>
+<p>More text in the next paragraph. Always
+use empty lines between paragraphs.</p></td>
+</tr>
+<tr class="even">
+<td><code>*Italic*</code></td>
+<td><code>_Italic_</code></td>
+<td><em>Italic</em></td>
+</tr>
+<tr class="odd">
+<td><code>**Bold**</code></td>
+<td><code>__Bold__</code></td>
+<td><strong>Bold</strong></td>
+</tr>
+<tr class="even">
+<td><code># Heading 1</code></td>
+<td></td>
+<td><h1 class="smaller-h1">
+Heading 1
+</h1></td>
+</tr>
+<tr class="odd">
+<td><code>## Heading 2</code></td>
+<td></td>
+<td><h2 class="smaller-h2">
+Heading 2
+</h2></td>
+</tr>
+<tr class="even">
+<td><code>### Heading 3</code></td>
+<td></td>
+<td><h3 class="smaller-h3">
+Heading 3
+</h3></td>
+</tr>
+<tr class="odd">
+<td>(Go up to heading level 6 with <code>######</code>)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>[Link text](http://www.example.com)</code></td>
+<td></td>
+<td><a href="http://www.example.com">Link text</a></td>
+</tr>
+<tr class="odd">
+<td><code>![Image caption](/path/to/image.png)</code></td>
+<td></td>
+<td><img src="/img/mstile-144x144.png" title="fig:" alt="Class logo" /></td>
+</tr>
+<tr class="even">
+<td>`<code>Inline code` with backticks</code></td>
+<td></td>
+<td><code>Inline code</code> with backticks</td>
+</tr>
+<tr class="odd">
+<td><code>&gt; Blockquote</code></td>
+<td></td>
+<td><blockquote>
+<p>Blockquote</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><pre>- Things in
+- an unordered
+- list</pre></td>
+<td><pre>* Things in
+* an unordered
+* list</pre></td>
+<td><ul>
+<li>Things in</li>
+<li>an unordered</li>
+<li>list</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><pre>1. Things in
+2. an ordered
+3. list</pre></td>
+<td><pre>1) Things in
+2) an ordered
+3) list</pre></td>
+<td><ol style="list-style-type: decimal">
+<li>Things in</li>
+<li>an ordered</li>
+<li>list</li>
+</ol></td>
+</tr>
+<tr class="even">
+<td><pre>Horizontal line
+<p>&mdash;</pre></td></p>
+<td><pre>Horizontal line
+<p>***</pre></td></p>
+<td><p>Horizontal line</p>
+<hr /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="math">Math</h2>
+<p>Markdown uses LaTeX to create fancy mathematical equations. There are like a billion little options and features available for math equations—you can find <a href="http://www.malinc.se/math/latex/basiccodeen.php" target="_blank" rel="noopener">helpful examples of the the most common basic commands here</a>.</p>
+<p>You can use math in two different ways: inline or in a display block. To use math inline, wrap it in single dollar signs, like <code>\$y = mx + b\$</code>:</p>
+<table>
+<colgroup>
+<col width="52%" />
+<col width="47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type…</th>
+<th>…to get</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><pre>Based on the DAG, the regression model for
+estimating the effect of education on wages
+is &dollar;\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon&dollar;, or
+&dollar;\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon&dollar;.</pre></td>
+<td>Based on the DAG, the regression model for
+estimating the effect of education on wages
+is <span class="math inline">\(\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon\)</span>, or
+<span class="math inline">\(\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon\)</span>.</td>
+</tr>
+</tbody>
+</table>
+<p>To put an equation on its own line in a display block, wrap it in double dollar signs, like this:</p>
+<p><strong>Type…</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">The quadratic equation was an important part of high school math:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+But now we just use computers to solve for $x$.
+</code></pre></div><p><strong>…to get…</strong></p>
+<blockquote>
+<p>The quadratic equation was an important part of high school math:</p>
+<p>$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$</p>
+<p>But now we just use computers to solve for <code>\(x\)</code>.</p>
+</blockquote>
+<hr>
+<p>Because dollar signs are used to indicate math equations, you can&rsquo;t just use dollar signs like normal if you&rsquo;re writing about actual dollars. For instance, if you write <code>This book costs \$5.75 and this other costs \$40</code>, Markdown will treat everything that comes between the dollar signs as math, like so: &ldquo;This book costs $5.75 and this other costs $40&rdquo;.</p>
+<p>To get around that, put a backslash (<code>\</code>) in front of the dollar signs, so that <code>This book costs \\\$5.75 and this other costs \\\$40</code> becomes &ldquo;This book costs <span>$5.75</span> and this other costs <span>$40</span>&rdquo;.</p>
+<h2 id="tables">Tables</h2>
+<p>There are 4 different ways to hand-create tables in Markdown—I say &ldquo;hand-create&rdquo; because it&rsquo;s normally way easier to use R to generate these things with packages like <a href="https://rapporter.github.io/pander/" target="_blank" rel="noopener"><strong>pander</strong></a> (use <code>pandoc.table()</code>) or <strong>knitr</strong> (use <a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html" target="_blank" rel="noopener"><code>kable()</code></a>). The two most common are simple tables and pipe tables. <a href="https://pandoc.org/MANUAL.html#tables" target="_blank" rel="noopener">You should look at the full documentation here</a>.</p>
+<p><strong>For simple tables, type…</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table: Caption goes here
+</code></pre></div><p><strong>…to get…</strong></p>
+<p>Right     Left     Center     Default</p>
+<hr>
+<pre><code> 12     12        12            12
+123     123       123          123
+  1     1          1             1
+</code></pre>
+<p>Table: Caption goes here</p>
+<p><strong>For pipe tables, type…</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+Table: Caption goes here
+</code></pre></div><p><strong>…to get…</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Right</th>
+<th style="text-align:left">Left</th>
+<th>Default</th>
+<th style="text-align:center">Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">12</td>
+<td style="text-align:left">12</td>
+<td>12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:right">123</td>
+<td style="text-align:left">123</td>
+<td>123</td>
+<td style="text-align:center">123</td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left">1</td>
+<td>1</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<p>Table: Caption goes here</p>
+<h2 id="footnotes">Footnotes</h2>
+<p>There are two different ways to add footnotes (<a href="https://pandoc.org/MANUAL.html#footnotes" target="_blank" rel="noopener">see here for complete documentation</a>): regular and inline.</p>
+<p>Regular notes need (1) an identifier and (2) the actual note. The identifier can be whatever you want. Some people like to use numbers like <code>[^1]</code>, but if you ever rearrange paragraphs or add notes before #1, the numbering will be wrong (in your Markdown file, not in the output; everything will be correct in the output). Because of that, I prefer to use some sort of text label:</p>
+<p><strong>Type…</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Here is a footnote reference[^1] and here is another [^note-on-dags].
+
+[^1]: This is a note.
+
+[^note-on-dags]: DAGs are neat. 
+
+And here&#39;s more of the document.
+</code></pre></div><p><strong>…to get…</strong></p>
+<blockquote>
+<p>Here is a footnote reference<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and here is another.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>And here&rsquo;s more of the document.</p>
+<hr />
+<div class="footnotes">
+<ol>
+<li id="fn1"><p>This is a note.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>DAGs are neat.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+</blockquote>
+<hr>
+<p>You can also use inline footnotes with <code>^[Text of the note goes here]</code>, which are often easier because you don&rsquo;t need to worry about identifiers:</p>
+<p><strong>Type…</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Causal inference is neat.^[But it can be hard too!]
+</code></pre></div><p><strong>…to get…</strong></p>
+<blockquote>
+<p>Causal inference is neat.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>1</sup></a></p>
+<hr />
+<div class="footnotes">
+<ol>
+<li id="fn3"><p>But it can be hard too!<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+</blockquote>
+<h2 id="front-matter">Front matter</h2>
+<p>You can include a special section at the top of a Markdown document that contains metadata (or data about your document) like the title, date, author, etc. This section uses a special simple syntax named <a href="https://learn.getgrav.org/16/advanced/yaml" target="_blank" rel="noopener">YAML</a> (or &ldquo;YAML Ain&rsquo;t Markup Language&rdquo;) that follows this basic outline: <code>setting: value for setting</code>. Here&rsquo;s an example YAML metadata section. Note that it must start and end with three dashes (<code>---</code>).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#ae81ff">Title of your document</span>
+<span style="color:#f92672">date</span>: <span style="color:#e6db74">&#34;January 13, 2020&#34;</span>
+<span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;Your name&#34;</span>
+---
+</code></pre></div><p>You can put the values inside quotes (like the date and name in the example above), or you can leave them outside of quotes (like the title in the example above). I typically use quotes just to be safe—if the value you&rsquo;re using has a colon (<code>:</code>) in it, it&rsquo;ll confuse Markdown since it&rsquo;ll be something like <code>title: My cool title: a subtitle</code>, which has two colons. It&rsquo;s better to do this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My cool title: a subtitle&#34;</span>
+---
+</code></pre></div><p>If you want to use quotes inside one of the values (e.g. your document is <code>An evaluation of &quot;scare quotes&quot;</code>), you can use single quotes instead:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#39;An evaluation of &#34;scare quotes&#34;&#39;</span>
+---
+</code></pre></div><h2 id="citations">Citations</h2>
+<p>One of the most powerful features of Markdown + pandoc is the ability to automatically cite things and generate bibliographies. to use citations, you need to create a <a href="http://www.bibtex.org/" target="_blank" rel="noopener">BibTeX file</a> (ends in <code>.bib</code>) that contains a database of the things you want to cite. You can do this with bibliography managers designed to work with BibTeX directly (like <a href="https://bibdesk.sourceforge.io/" target="_blank" rel="noopener">BibDesk</a> on macOS), or you can use <a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero</a> (macOS and Windows) to export a <code>.bib</code> file. You can <a href="/resource/citations/">download an example <code>.bib</code> file of all the readings from this class here</a>.</p>
+<p><a href="https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html" target="_blank" rel="noopener">Complete details for using citations can be found here</a>. In brief, you need to do three things:</p>
+<ol>
+<li>
+<p>Add a <code>bibliography:</code> entry to the YAML metadata:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#ae81ff">Title of your document</span>
+<span style="color:#f92672">date</span>: <span style="color:#e6db74">&#34;January 13, 2020&#34;</span>
+<span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;Your name&#34;</span>
+<span style="color:#f92672">bibliography</span>: <span style="color:#ae81ff">name_of_file.bib</span>
+---
+</code></pre></div></li>
+<li>
+<p>Choose a citation style based on a CSL file. The default is Chicago author-date, but you can choose from 2,000+ <a href="https://github.com/citation-style-language/styles" target="_blank" rel="noopener">at this repository</a>. Download the CSL file, put it in your project folder, and add an entry to the YAML metadata (or provide a URL to the online version):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#ae81ff">Title of your document</span>
+<span style="color:#f92672">date</span>: <span style="color:#e6db74">&#34;January 13, 2020&#34;</span>
+<span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;Your name&#34;</span>
+<span style="color:#f92672">bibliography</span>: <span style="color:#ae81ff">name_of_file.bib</span>
+<span style="color:#f92672">csl</span>: <span style="color:#e6db74">&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl&#34;</span>
+---
+</code></pre></div><p>Some of the most common CSLs are:</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl" target="_blank" rel="noopener">Chicago author-date</a></li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-note-bibliography.csl" target="_blank" rel="noopener">Chicago note-bibliography</a></li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-fullnote-bibliography.csl" target="_blank" rel="noopener">Chicago full note-bibliography</a> (no shortened notes or ibids)</li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl" target="_blank" rel="noopener">APA 7th edition</a></li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/modern-language-association.csl" target="_blank" rel="noopener">MLA 8th edition</a></li>
+</ul>
+</li>
+<li>
+<p>Cite things in your document. <a href="https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html" target="_blank" rel="noopener">Check the documentation for full details of how to do this</a>. Essentially, you use <code>@citationkey</code> inside square brackets (<code>[]</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Type…</th>
+<th>…to get…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Causal inference is neat [@Rohrer:2018; @AngristPischke:2015].</code></td>
+<td>Causal inference is neat (Rohrer 2018; Angrist and Pischke 2015).</td>
+</tr>
+<tr>
+<td><code>Causal inference is neat [see @Rohrer:2018, p. 34; also @AngristPischke:2015, chapter 1].</code></td>
+<td>Causal inference is neat (see Rohrer 2018, 34; also Angrist and Pischke 2015, chap. 1).</td>
+</tr>
+<tr>
+<td><code>Angrist and Pischke say causal inference is neat [-@AngristPischke:2015; see also @Rohrer:2018].</code></td>
+<td>Angrist and Pischke say causal inference is neat (2015; see also Rohrer 2018).</td>
+</tr>
+<tr>
+<td><code>@AngristPischke:2015 [chapter 1] say causal inference is neat, and @Rohrer:2018 agrees.</code></td>
+<td>Angrist and Pischke (2015, chap. 1) say causal inference is neat, and Rohrer (2018) agrees.</td>
+</tr>
+</tbody>
+</table>
+<p>After compiling, you should have a perfectly formatted bibliography added to the end of your document too:</p>
+<blockquote>
+<p>Angrist, Joshua D., and Jörn-Steffen Pischke. 2015. <em>Mastering ’Metrics: The Path from Cause to Effect.</em> Princeton, NJ: Princeton University Press.</p>
+<p>Rohrer, Julia M. 2018. “Thinking Clearly About Correlations and Causation: Graphical Causal Models for Observational Data.” <em>Advances in Methods and Practices in Psychological Science</em> 1 (1): 27–42. <a href="https://doi.org/10.1177/2515245917745629">https://doi.org/10.1177/2515245917745629</a>.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="other-references">Other references</h2>
+<p>These websites have additional details and examples and practice tools:</p>
+<ul>
+<li><a href="https://commonmark.org/help/tutorial/" target="_blank" rel="noopener"><strong>CommonMark&rsquo;s Markdown tutorial</strong></a>: A quick interactive Markdown tutorial.</li>
+<li><a href="https://www.markdowntutorial.com/" target="_blank" rel="noopener"><strong>Markdown tutorial</strong></a>: Another interactive tutorial to practice using Markdown.</li>
+<li><a href="http://packetlife.net/media/library/16/Markdown.pdf" target="_blank" rel="noopener"><strong>Markdown cheatsheet</strong></a>: Useful one-page reminder of Markdown syntax.</li>
+<li><a href="http://plain-text.co/" target="_blank" rel="noopener"><strong>The Plain Person’s Guide to Plain Text Social Science</strong></a>: A comprehensive explanation and tutorial about why you should write data-based reports in Markdown.</li>
+</ul>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on January 13, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/resource%5cmarkdown.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

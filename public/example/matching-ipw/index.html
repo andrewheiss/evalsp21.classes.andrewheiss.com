@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Video walk-through If you want to follow along with this example, you can download the data below:
+  mosquito_nets.csv  There&rsquo;s a set of videos that walks through each section below." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/example/matching-ipw/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/example/matching-ipw/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/example/matching-ipw/" />
+  <meta property="og:title" content="Matching and inverse probability weighting | Program Evaluation" />
+  <meta property="og:description" content="Video walk-through If you want to follow along with this example, you can download the data below:
+  mosquito_nets.csv  There&rsquo;s a set of videos that walks through each section below." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-10-02T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-10-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Matching and inverse probability weighting | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/">Code examples</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/random-numbers/">Simulated data</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/random-numbers/">Random numbers</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/synthetic-data/">Synthetic data</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/rstudio-tidyverse/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/rstudio-tidyverse/">R, RStudio, and the tidyverse</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/regression/">Regression</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/dags/">DAGs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/po-ate-cate/">Potential outcomes, ATEs, and CATEs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rcts/">RCTs</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/example/matching-ipw/">Matching and IPW</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/diff-in-diff/">Diff-in-diff</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd/">Regression discontinuity</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/iv/">Instrumental variables</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/cace/">ITT and CACE</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd-fuzzy/">Fuzzy regression discontinuity</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#video-walk-through">Video walk-through</a></li>
+    <li><a href="#program-background">Program background</a></li>
+    <li><a href="#our-goal">Our goal</a></li>
+    <li><a href="#load-data-and-libraries">Load data and libraries</a></li>
+    <li><a href="#dag-and-adjustment-sets">DAG and adjustment sets</a></li>
+    <li><a href="#naive-correlation-isnt-causation-estimate">Naive correlation-isn&rsquo;t-causation estimate</a></li>
+    <li><a href="#matching">Matching</a>
+      <ul>
+        <li><a href="#step-1-preprocess">Step 1: Preprocess</a></li>
+        <li><a href="#step-2-estimation">Step 2: Estimation</a></li>
+      </ul>
+    </li>
+    <li><a href="#inverse-probability-weighting">Inverse probability weighting</a>
+      <ul>
+        <li><a href="#oversimplified-crash-course-in-logistic-regression">Oversimplified crash course in logistic regression</a></li>
+        <li><a href="#step-1-generate-propensity-scores">Step 1: Generate propensity scores</a></li>
+        <li><a href="#step-2-estimation-1">Step 2: Estimation</a></li>
+      </ul>
+    </li>
+    <li><a href="#results-from-all-the-models">Results from all the models</a></li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Matching and inverse probability weighting</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<h2 id="video-walk-through">Video walk-through</h2>
+<p>If you want to follow along with this example, you can download the data below:</p>
+<ul>
+<li><a href="/data/mosquito_nets.csv"><i class="fas fa-table"></i> <code>mosquito_nets.csv</code></a></li>
+</ul>
+<p>There&rsquo;s a set of videos that walks through each section below. To make it easier for you to jump around the video examples, I cut the long video into smaller pieces and included them all in <a href="https://www.youtube.com/playlist?list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" target="_blank" rel="noopener">one YouTube playlist</a>.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OoYgOwxUQgI&amp;list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" target="_blank" rel="noopener">Drawing a DAG</a></li>
+<li><a href="https://www.youtube.com/watch?v=_FNrfFe99R0&amp;list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" target="_blank" rel="noopener">Creating an RStudio project</a></li>
+<li><a href="https://www.youtube.com/watch?v=7NW7GbO44BY&amp;list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" target="_blank" rel="noopener">Naive (and wrong!) estimate</a></li>
+<li><a href="https://www.youtube.com/watch?v=uGwSRnET8Sg&amp;list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" target="_blank" rel="noopener">Matching</a></li>
+<li><a href="https://www.youtube.com/watch?v=CKm1rZlAwuA&amp;list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" target="_blank" rel="noopener">Inverse probability weighting</a></li>
+</ul>
+<p>You can also watch the playlist (and skip around to different sections) here:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sGv7RPHEZy8CDSdCliQOW8K" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="program-background">Program background</h2>
+<p>Let&rsquo;s revisit the mosquito net program we used in <a href="/example/dags/">the DAG example</a>. Here, researchers are interested in whether using mosquito nets decreases an individual&rsquo;s risk of contracting malaria. They have collected data from 1,752 households in an unnamed country and have variables related to environmental factors, individual health, and household characteristics. The data is <strong>not experimental</strong>—researchers have no control over who uses mosquito nets, and individual households make their own choices over whether to apply for free nets or buy their own nets, as well as whether they use the nets if they have them.</p>
+<p>The CSV file contains the following columns:</p>
+<ul>
+<li>Malaria risk (<code>malaria_risk</code>): The likelihood that someone in the household will be infected with malaria. Measured on a scale of 0–100, with higher values indicating higher risk.</li>
+<li>Mosquito net (<code>net</code> and <code>net_num</code>): A binary variable indicating if the household used mosquito nets.</li>
+<li>Eligible for program (<code>eligible</code>): A binary variable indicating if the household is eligible for the free net program.</li>
+<li>Income (<code>income</code>): The household&rsquo;s monthly income, in US dollars.</li>
+<li>Nighttime temperatures (<code>temperature</code>): The average temperature at night, in Celsius.</li>
+<li>Health (<code>health</code>): Self-reported healthiness in the household. Measured on a scale of 0–100, with higher values indicating better health.</li>
+<li>Number in household (<code>household</code>): Number of people living in the household.</li>
+<li>Insecticide resistance (<code>resistance</code>): Some strains of mosquitoes are more resistant to insecticide and thus pose a higher risk of infecting people with malaria. This is measured on a scale of 0–100, with higher values indicating higher resistance.</li>
+</ul>
+<h2 id="our-goal">Our goal</h2>
+<p><strong>Our goal in this example is to estimate the <em>causal</em> effect of bed net usage on malaria risk using <em>only</em> observational data.</strong> This was not an RCT, so it might seem a little sketchy to make claims of causality. But if we can draw a correct DAG and adjust for the correct nodes, we can isolate the net → malaria relationship and talk about causality.</p>
+<p>Because this is simulated data, we know the true causal effect of the net program because I built it into the data. <strong>The true average treatment effect (ATE) is -10.</strong> Using a mosquito net <em>causes</em> the risk of malaria to decrease by 10 points, on average.</p>
+<p>Let&rsquo;s see if we can find that 10 point effect!</p>
+<h2 id="load-data-and-libraries">Load data and libraries</h2>
+<p>First, let&rsquo;s download the dataset (if you haven&rsquo;t already), put in a folder named <code>data</code>, and load it:</p>
+<ul>
+<li><a href="/data/mosquito_nets.csv"><i class="fas fa-table"></i> <code>mosquito_nets.csv</code></a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># ggplot(), %&gt;%, mutate(), and friends</span>
+<span style="color:#a6e22e">library</span>(ggdag)  <span style="color:#75715e"># Make DAGs</span>
+<span style="color:#a6e22e">library</span>(dagitty)  <span style="color:#75715e"># Do DAG logic with R</span>
+<span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># Convert models to data frames</span>
+<span style="color:#a6e22e">library</span>(MatchIt)  <span style="color:#75715e"># Match things</span>
+<span style="color:#a6e22e">library</span>(modelsummary)  <span style="color:#75715e"># Make side-by-side regression tables</span>
+
+<span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1234</span>)   <span style="color:#75715e"># Make all random draws reproducible</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Load the data.</span>
+<span style="color:#75715e"># It&#39;d be a good idea to click on the &#34;nets&#34; object in the Environment panel in</span>
+<span style="color:#75715e"># RStudio to see what the data looks like after you load it</span>
+nets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/mosquito_nets.csv&#34;</span>)
+</code></pre></div><h2 id="dag-and-adjustment-sets">DAG and adjustment sets</h2>
+<p>Before running any models, we need to find what we need to adjust for. Recall from <a href="/example/dags/">the DAG example</a> that we built this causal model to show the data generating process behind the relationship between mosquito net usage and malaria risk:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mosquito_dag <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dagify</span>(
+  malaria_risk <span style="color:#f92672">~</span> net <span style="color:#f92672">+</span> income <span style="color:#f92672">+</span> health <span style="color:#f92672">+</span> temperature <span style="color:#f92672">+</span> resistance,
+  net <span style="color:#f92672">~</span> income <span style="color:#f92672">+</span> health <span style="color:#f92672">+</span> temperature <span style="color:#f92672">+</span> eligible <span style="color:#f92672">+</span> household,
+  eligible <span style="color:#f92672">~</span> income <span style="color:#f92672">+</span> household,
+  health <span style="color:#f92672">~</span> income,
+  exposure <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;net&#34;</span>,
+  outcome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;malaria_risk&#34;</span>,
+  coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(x <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(malaria_risk <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, net <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, income <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, health <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>,
+                      temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, resistance <span style="color:#f92672">=</span> <span style="color:#ae81ff">8.5</span>, eligible <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, household <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>),
+                y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(malaria_risk <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, net <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, income <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, health <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+                      temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, resistance <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, eligible <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, household <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)),
+  labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(malaria_risk <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Risk of malaria&#34;</span>, net <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mosquito net&#34;</span>, income <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Income&#34;</span>,
+             health <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Health&#34;</span>, temperature <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nighttime temperatures&#34;</span>,
+             resistance <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Insecticide resistance&#34;</span>,
+             eligible <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Eligible for program&#34;</span>, household <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number in household&#34;</span>)
+)
+
+<span style="color:#a6e22e">ggdag_status</span>(mosquito_dag, use_labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;label&#34;</span>, text <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(fill <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>  <span style="color:#75715e"># Disable the legend</span>
+  <span style="color:#a6e22e">theme_dag</span>()
+</code></pre></div><p><img src="/example/matching-ipw_files/figure-html/build-mosquito-dag-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Following the logic of <em>do</em>-calculus, we can find all the nodes that confound the relationship between net usage and malaria risk, since those nodes open up backdoor paths and distort the causal effect we care about. We can either do this graphically by looking for any node that points to both net and malaria risk, or we can use R:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">adjustmentSets</span>(mosquito_dag)
+<span style="color:#75715e">## { health, income, temperature }</span>
+</code></pre></div><p>Based on the relationships between all the nodes in the DAG, adjusting for health, income, and temperature is enough to close all backdoors and identify the relationship between net use and malaria risk.</p>
+<h2 id="naive-correlation-isnt-causation-estimate">Naive correlation-isn&rsquo;t-causation estimate</h2>
+<p>For fun, we can calculate the difference in average malaria risk for those who did/didn&rsquo;t use mosquito nets. This is most definitely <em>not</em> the actual causal effect—this is the &ldquo;correlation is not causation&rdquo; effect that doesn&rsquo;t account for any of the backdoors in the DAG.</p>
+<p>We can do this with a table (but then we have to do manual math to subtract the <code>FALSE</code> average from the <code>TRUE</code> average):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nets <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">group_by</span>(net) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summarize</span>(number <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>(),
+            avg <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(malaria_risk))
+<span style="color:#75715e">## # A tibble: 2 x 3</span>
+<span style="color:#75715e">##   net   number   avg</span>
+<span style="color:#75715e">##   &lt;lgl&gt;  &lt;int&gt; &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 FALSE   1071  41.9</span>
+<span style="color:#75715e">## 2 TRUE     681  25.6</span>
+</code></pre></div><p>Or we can do it with regression:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_wrong <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(malaria_risk <span style="color:#f92672">~</span> net, data <span style="color:#f92672">=</span> nets)
+
+<span style="color:#a6e22e">tidy</span>(model_wrong)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic   p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)     41.9     0.405     104.  0.       </span>
+<span style="color:#75715e">## 2 netTRUE        -16.3     0.649     -25.1 2.25e-119</span>
+</code></pre></div><p>According to this estimate, using a mosquito net is associated with a 16.33 point decrease in malaria risk, on average. We can&rsquo;t legally talk about this as a causal effect though—there are confounding variables to deal with.</p>
+<h2 id="matching">Matching</h2>
+<p>We can use matching techniques to pair up similar observations and make the unconfoundedness assumption—that if we see two observations that are pretty much identical, and one used a net and one didn&rsquo;t, the choice to use a net was random.</p>
+<p>Because we know from the DAG that income, nighttime temperatures, and health help cause both net use and malaria risk (and confound that relationship!), we&rsquo;ll try to find observations with similar values of income, temperatures, and health that both used and didn&rsquo;t use nets.</p>
+<p>We can use the <code>matchit()</code> function from the <strong>MatchIt</strong> R package to match points based on Mahalanobis distance. There are lots of other options available—see <a href="http://gking.harvard.edu/matchit" target="_blank" rel="noopener">the online documentation</a> for details.</p>
+<p>We can include the <code>replace = TRUE</code> option to make it so that points that have been matched already can be matched again (that is, we&rsquo;re not forcing a one-to-one matching; we have one-to-many matching instead).</p>
+<h3 id="step-1-preprocess">Step 1: Preprocess</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">matched_data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matchit</span>(net <span style="color:#f92672">~</span> income <span style="color:#f92672">+</span> temperature <span style="color:#f92672">+</span> health,
+                        data <span style="color:#f92672">=</span> nets,
+                        method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;nearest&#34;</span>,
+                        distance <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mahalanobis&#34;</span>,
+                        replace <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">summary</span>(matched_data)
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Call:</span>
+<span style="color:#75715e">## matchit(formula = net ~ income + temperature + health, data = nets, </span>
+<span style="color:#75715e">##     method = &#34;nearest&#34;, distance = &#34;mahalanobis&#34;, replace = TRUE)</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Summary of Balance for All Data:</span>
+<span style="color:#75715e">##             Means Treated Means Control Std. Mean Diff. Var. Ratio eCDF Mean eCDF Max</span>
+<span style="color:#75715e">## income                955           873            0.41        1.4     0.104    0.198</span>
+<span style="color:#75715e">## temperature            23            24           -0.17        1.1     0.042    0.097</span>
+<span style="color:#75715e">## health                 55            48            0.36        1.2     0.071    0.168</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Summary of Balance for Matched Data:</span>
+<span style="color:#75715e">##             Means Treated Means Control Std. Mean Diff. Var. Ratio eCDF Mean eCDF Max Std. Pair Dist.</span>
+<span style="color:#75715e">## income                955           950           0.026        1.1     0.010    0.048            0.12</span>
+<span style="color:#75715e">## temperature            23            23          -0.006        1.0     0.007    0.028            0.12</span>
+<span style="color:#75715e">## health                 55            55           0.020        1.1     0.007    0.028            0.12</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Percent Balance Improvement:</span>
+<span style="color:#75715e">##             Std. Mean Diff. Var. Ratio eCDF Mean eCDF Max</span>
+<span style="color:#75715e">## income                   94         66        91       76</span>
+<span style="color:#75715e">## temperature              96         61        84       71</span>
+<span style="color:#75715e">## health                   94         61        90       83</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Sample Sizes:</span>
+<span style="color:#75715e">##               Control Treated</span>
+<span style="color:#75715e">## All              1071     681</span>
+<span style="color:#75715e">## Matched (ESS)     323     681</span>
+<span style="color:#75715e">## Matched           439     681</span>
+<span style="color:#75715e">## Unmatched         632       0</span>
+<span style="color:#75715e">## Discarded           0       0</span>
+</code></pre></div><p>Here we can see that all 681 of the net users were paired with similar-looking non-users (439 of them). 632 people weren&rsquo;t matched and will get discarded. If you&rsquo;re curious, you can see which treated rows got matched to which control rows by running <code>matched_data$match.matrix</code>.</p>
+<p>We can create a new data frame of those matches with <code>match.data()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">matched_data_for_real <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">match.data</span>(matched_data)
+</code></pre></div><h3 id="step-2-estimation">Step 2: Estimation</h3>
+<p>Now that the data has been matched, it should work better for modeling. Also, because we used income, temperatures, and health in the matching process, we&rsquo;ve adjusted for those DAG nodes and have closed those backdoors, so our model can be pretty simple here:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_matched <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(malaria_risk <span style="color:#f92672">~</span> net,
+                    data <span style="color:#f92672">=</span> matched_data_for_real)
+<span style="color:#a6e22e">tidy</span>(model_matched)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)     38.5     0.600      64.2 0.      </span>
+<span style="color:#75715e">## 2 netTRUE        -12.9     0.769     -16.8 2.31e-56</span>
+</code></pre></div><p>The 12.88 point decrease here is better than the naive estimate, but it&rsquo;s not the true 10 point causal effect (that I built in to the data). Perhaps that&rsquo;s because the matches aren&rsquo;t great, or maybe we threw away too much data. There are a host of diagnostics you can look at to see how well things are matched (check <a href="http://gking.harvard.edu/matchit" target="_blank" rel="noopener">the documentation for <strong>MatchIt</strong></a> for examples.)</p>
+<p>Actually, the most likely culprit for the incorrect estimate is that there&rsquo;s some imbalance in the data. Because we set <code>replace = TRUE</code>, we did <em>not</em> do 1:1 matching—untreated observations were paired with more than one treated observation. As a result, the multiply-matched observations are getting overcounted and have too much importance in the model. Fortunately, <code>matchit()</code> provides us with a column called <code>weights</code> that allows us to scale down the overmatched observations when running the model. <strong>Importantly,</strong> these weights have nothing to do with causal inference or backdoors or inverse probability weighting—their only purpose is to help scale down the imbalance arising from overmatching. If you use <code>replace = FALSE</code> and enforce 1:1 matching, the whole <code>weights</code> column will just be 1.</p>
+<p>We can incorporate those weights into the model and get a more accurate estimate:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_matched_wts <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(malaria_risk <span style="color:#f92672">~</span> net,
+                        data <span style="color:#f92672">=</span> matched_data_for_real,
+                        weights <span style="color:#f92672">=</span> weights)
+<span style="color:#a6e22e">tidy</span>(model_matched_wts)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)     36.1     0.595      60.6 0.      </span>
+<span style="color:#75715e">## 2 netTRUE        -10.5     0.763     -13.7 7.98e-40</span>
+</code></pre></div><p>After weighting to account for under- and over-matching, we find a -10.49 point causal effect. That&rsquo;s much better than any of the other estimates we&rsquo;ve tried so far! The reason it&rsquo;s accurate is because we&rsquo;ve closed the confounding backdoors and isolated the arrow between net use and malaria risk.</p>
+<h2 id="inverse-probability-weighting">Inverse probability weighting</h2>
+<p>One potential downside to matching is that you generally have to throw away a sizable chunk of your data—anything that&rsquo;s unmatched doesn&rsquo;t get included in the final matched data.</p>
+<p>An alternative approach to matching is to assign every observation some probability of receiving treatment, and then weight each observation by its inverse probability—observations that are predicted to get treatment and then don&rsquo;t, or observations that are predicted to not get treatment and then do will receive more weight than the observations that get/don&rsquo;t get treatment as predicted.</p>
+<p>Generating these inverse probability weights requires a two step process: (1) we first generate propensity scores, or the probability of receiving treatment, and then (2) we use a special formula to convert those propensity scores into weights. Once we have inverse probability weights weights, we can incorporate them into our regression model.</p>
+<h3 id="oversimplified-crash-course-in-logistic-regression">Oversimplified crash course in logistic regression</h3>
+<p>There are many ways to generate propensity scores (like logistic regression, probit regression, and even machine learning techniques like random forests and neural networks), but logistic regression is probably the most common method.</p>
+<p>The complete technical details of logistic regression are beyond the scope of this class, but if you&rsquo;re curious you should check out <a href="https://uc-r.github.io/logistic_regression" target="_blank" rel="noopener">this highly accessible tutorial</a>.</p>
+<p>All you really need to know is that the outcome variable in logistic regression models must be binary, and the explanatory variables you include in the model help explain the variation in the likelihood of your binary outcome. The Y (or outcome) in logistic regression is a logged ratio of probabilities, which forces the model&rsquo;s output to be in a 0-1 range:</p>
+<p>$$
+\log \frac{p_y}{p_{1-y}} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
+$$</p>
+<p>Here&rsquo;s what it looks like visually. Because net usage is a binary outcome, there are lines of observations at 0 and 1 along the y axis. The blue curvy line here shows the output of a logistic regression model—people with low income have a low likelihood of using a net, while those with high income are far more likely to do so.</p>
+<p>I also included a red line showing the results from a regular old <code>lm()</code> OLS model. It follows the blue line fairly well for a while, but predicts negative probabilities if you use lower values of income, like less than 250. For strange historical and mathy reasons, many economists like using OLS on binary outcomes (they even have a fancy name for it: linear probability models (LPMs)), but I&rsquo;m partial to logistic regression since it doesn&rsquo;t generate probabilities greater than 100% or less than 0%. (BUT DON&rsquo;T EVER COMPLAIN ABOUT LPMs ONLINE. You&rsquo;ll start battles between economists and other social scientists. 🤣)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(nets, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> income, y <span style="color:#f92672">=</span> net_num)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;glm&#34;</span>, method.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(family <span style="color:#f92672">=</span> <span style="color:#a6e22e">binomial</span>(link <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;logit&#34;</span>))) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Income&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Probability of using a net&#34;</span>)
+</code></pre></div><p><img src="/example/matching-ipw_files/figure-html/net-income-logit-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>The coefficients from a logistic regression model are interpreted differently than you&rsquo;re used to (and their interpretations can be controversial!). Here&rsquo;s an example for the model in the graph above:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Notice how we use glm() instead of lm(). The &#34;g&#34; stands for &#34;generalized&#34;</span>
+<span style="color:#75715e"># linear model. We have to specify a family in any glm() model. You can</span>
+<span style="color:#75715e"># technically run a regular OLS model (like you do with lm()) if you use</span>
+<span style="color:#75715e"># glm(y ~ x1 + x2, family = gaussian(link = &#34;identity&#34;)), but people rarely do that.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># To use logistic regression, you have to specify a binomial/logit family like so:</span>
+<span style="color:#75715e"># family = binomial(link = &#34;logit&#34;)</span>
+model_logit <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(net <span style="color:#f92672">~</span> income <span style="color:#f92672">+</span> temperature <span style="color:#f92672">+</span> health,
+                   data <span style="color:#f92672">=</span> nets,
+                   family <span style="color:#f92672">=</span> <span style="color:#a6e22e">binomial</span>(link <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;logit&#34;</span>))
+
+<span style="color:#a6e22e">tidy</span>(model_logit)
+<span style="color:#75715e">## # A tibble: 4 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic     p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept) -1.32     0.376        -3.50 0.000464   </span>
+<span style="color:#75715e">## 2 income       0.00209  0.000421      4.95 0.000000727</span>
+<span style="color:#75715e">## 3 temperature -0.0589   0.0125       -4.70 0.00000264 </span>
+<span style="color:#75715e">## 4 health       0.00688  0.00430       1.60 0.109</span>
+</code></pre></div><p>The coefficients here aren&rsquo;t normal numbers—they&rsquo;re called &ldquo;log odds&rdquo; and represent the change in the logged odds as you move explanatory variables up. For instance, here the logged odds of using a net increase by 0.00688 for every one point increase in your health score. But what do logged odds even mean?! Nobody knows.</p>
+<p>You can make these coefficients slightly more interpretable by unlogging them and creating something called an &ldquo;odds ratio.&rdquo; These coefficients were logged with a natural log, so you unlog them by raising <code>\(e\)</code> to the power of the coefficient. The odds ratio for temperature is <code>\(e^{-0.0589}\)</code>, or 0.94. Odds ratios get interpreted a little differently than regular model coefficients. Odds ratios are all centered around 1—values above 1 mean that there&rsquo;s an increase in the likelihood of the outcome, while values below 1 mean that there&rsquo;s a decrease in the likelihood of the outcome.</p>
+<p>Our nighttime temperature odds ratio here is 0.94, which is 0.06 below 1, which means we can say that for every one point increase in nighttime temperatures, a person is 6% less likely to use a net. If the coefficient was something like 1.34, we could say that they&rsquo;d be <em>34% more likely</em> to use a net; if it was something like 5.02 we could say that they&rsquo;d be <em>5 times more</em> likely to use a net; if it was something like 0.1, we could say that they&rsquo;re <em>90% less likely</em> to use a net.</p>
+<p>You can make R exponentiate the coefficients automatically by including <code>exponentiate = TRUE</code> in <code>tidy()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">tidy</span>(model_logit, exponentiate <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#75715e">## # A tibble: 4 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic     p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)    0.268  0.376        -3.50 0.000464   </span>
+<span style="color:#75715e">## 2 income         1.00   0.000421      4.95 0.000000727</span>
+<span style="color:#75715e">## 3 temperature    0.943  0.0125       -4.70 0.00000264 </span>
+<span style="color:#75715e">## 4 health         1.01   0.00430       1.60 0.109</span>
+</code></pre></div><p><strong>BUT AGAIN</strong> this goes beyond the scope of this class! Just know that when you build a logistic regression model, you&rsquo;re using explanatory variables to predict the probability of an outcome.</p>
+<p>Just one last little explanation for why we have to use weird log odds things. When working with binary outcomes, we&rsquo;re dealing with probabilities, and we can create something called &ldquo;odds&rdquo; with probabilities. If there&rsquo;s a 70% chance of something happening, there&rsquo;s a 30% chance of it not happening. The ratio of those two probabilities is called &ldquo;odds&rdquo;: <code>\(\frac{p}{1 - p} = \frac{0.7}{1 - 0.7} = \frac{0.7}{0.3} = 2.333\)</code>. Odds typically follow a curvy relationship—as you move up to higher levels of your explanatory variable, the odds get bigger faster. If you log these odds, though ($\log \frac{p}{1 - p}$), the relationship becomes linear, which means we can use regular old linear regression on probabilities. Magic!</p>
+<p>You can see the relationship between log odds and odds ratios in the first two panels here (this is fake data where X ranges between -5 and 5, and Y is either 0 or 1; you can see the data points in the final panel as dots):</p>
+<p><img src="/example/matching-ipw_files/figure-html/odds-probs-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>The coefficients from logistic regression are log odds because they come from model that creates that nice straight line in the first panel. Log odds are impossible to interpret, so we can unlog them ($e^\beta$) to turn them into odds ratios.</p>
+<p>The bottom panel shows predicted probabilities. You can do one more mathematical transformation with the odds ($\frac{p}{1 - p}$) to generate a probability instead of odds: <code>\(\frac{\text{odds}}{1 + \text{odds}}\)</code>. <em><strong>That</strong></em> is what a propensity score is.</p>
+<p><strong>BUT AGAIN I cannot stress enough how much you don&rsquo;t need to worry about the inner mechanics of logistic regression for this class!</strong> If that went over your head, don&rsquo;t worry! All we&rsquo;re doing for IPW is using logistic regression to create propensity scores, and the code below shows how to do that. Behind the scenes you&rsquo;re moving from log odds (they&rsquo;re linear!) to odds (they&rsquo;re interpretable-ish) to probabilities (they&rsquo;re super interpretable!), but you don&rsquo;t need to worry about that.</p>
+<p>If you&rsquo;re confused, <a href="https://twitter.com/ChelseaParlett/status/1304436259926896640" target="_blank" rel="noopener">watch this TikTok for consolation</a>.</p>
+<h3 id="step-1-generate-propensity-scores">Step 1: Generate propensity scores</h3>
+<p>PHEW. With that little tangent into logistic regression done, we can now build a model to generate propensity scores (or predicted probabilities).</p>
+<p>When we include variables in the model that generates propensity scores, we&rsquo;re making adjustments and closing backdoors in the DAG, just like we did with matching. But unlike matching, we&rsquo;re not throwing any data away! We&rsquo;re just making some observations more important and others less important.</p>
+<p>First we build a model that predicts net usage based on income, nighttime temperatures, and health (since those nodes are our confounders from the DAG):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_net <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(net <span style="color:#f92672">~</span> income <span style="color:#f92672">+</span> temperature <span style="color:#f92672">+</span> health,
+                 data <span style="color:#f92672">=</span> nets,
+                 family <span style="color:#f92672">=</span> <span style="color:#a6e22e">binomial</span>(link <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;logit&#34;</span>))
+
+<span style="color:#75715e"># We could look at these results if we wanted, but we don&#39;t need to for this class</span>
+<span style="color:#75715e"># tidy(model_net, exponentiate = TRUE)</span>
+</code></pre></div><p>We can then plug in the income, temperatures, and health for every row in our dataset and generate a predicted probability using this model:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># augment_columns() handles the plugging in of values. You need to feed it the</span>
+<span style="color:#75715e"># name of the model and the name of the dataset you want to add the predictions</span>
+<span style="color:#75715e"># to. The type.predict = &#34;response&#34; argument makes it so the predictions are in</span>
+<span style="color:#75715e"># the 0-1 scale. If you don&#39;t include that, you&#39;ll get predictions in an</span>
+<span style="color:#75715e"># uninterpretable log odds scale.</span>
+net_probabilities <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">augment_columns</span>(model_net,
+                                     nets,
+                                     type.predict <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;response&#34;</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># The predictions are in a column named &#34;.fitted&#34;, so we rename it here</span>
+  <span style="color:#a6e22e">rename</span>(propensity <span style="color:#f92672">=</span> .fitted)
+
+<span style="color:#75715e"># Look at the first few rows of a few columns</span>
+net_probabilities <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">select</span>(id, net, income, temperature, health, propensity) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">head</span>()
+<span style="color:#75715e">## # A tibble: 6 x 6</span>
+<span style="color:#75715e">##      id net   income temperature health propensity</span>
+<span style="color:#75715e">##   &lt;dbl&gt; &lt;lgl&gt;  &lt;dbl&gt;       &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1     1 TRUE     781        21.1     56      0.367</span>
+<span style="color:#75715e">## 2     2 FALSE    974        26.5     57      0.389</span>
+<span style="color:#75715e">## 3     3 FALSE    502        25.6     15      0.158</span>
+<span style="color:#75715e">## 4     4 TRUE     671        21.3     20      0.263</span>
+<span style="color:#75715e">## 5     5 FALSE    728        19.2     17      0.308</span>
+<span style="color:#75715e">## 6     6 FALSE   1050        25.3     48      0.429</span>
+</code></pre></div><p>The propensity scores are in the <code>propensity</code> column. Some people, like person 3, are unlikely to use nets (only a 15.8% chance) given their levels of income, temperature, and health. Others like person 6 have a higher probability (42.9%) since their income and health are higher. Neat.</p>
+<p>Next we need to convert those propensity scores into inverse probability weights, which makes weird observations more important (i.e. people who had a high probability of using a net but didn&rsquo;t, and vice versa). To do this, we follow this equation:</p>
+<p>$$
+\frac{\text{Treatment}}{\text{Propensity}} - \frac{1 - \text{Treatment}}{1 - \text{Propensity}}
+$$</p>
+<p>This equation will create weights that provide the average treatment effect (ATE), but there are other versions that let you find the average treatment effect on the treated (ATT), average treatment effect on the controls (ATC), and a bunch of others. <a href="https://livefreeordichotomize.com/2019/01/17/understanding-propensity-score-weighting/#how-do-we-incorporate-a-propensity-score-in-a-weight" target="_blank" rel="noopener">You can find those equations here</a>.</p>
+<p>We&rsquo;ll use <code>mutate()</code> to create a column for the inverse probability weight:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">net_ipw <span style="color:#f92672">&lt;-</span> net_probabilities <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(ipw <span style="color:#f92672">=</span> (net_num <span style="color:#f92672">/</span> propensity) <span style="color:#f92672">+</span> ((<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> net_num) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> propensity)))
+
+<span style="color:#75715e"># Look at the first few rows of a few columns</span>
+net_ipw <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">select</span>(id, net, income, temperature, health, propensity, ipw) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">head</span>()
+<span style="color:#75715e">## # A tibble: 6 x 7</span>
+<span style="color:#75715e">##      id net   income temperature health propensity   ipw</span>
+<span style="color:#75715e">##   &lt;dbl&gt; &lt;lgl&gt;  &lt;dbl&gt;       &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt; &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1     1 TRUE     781        21.1     56      0.367  2.72</span>
+<span style="color:#75715e">## 2     2 FALSE    974        26.5     57      0.389  1.64</span>
+<span style="color:#75715e">## 3     3 FALSE    502        25.6     15      0.158  1.19</span>
+<span style="color:#75715e">## 4     4 TRUE     671        21.3     20      0.263  3.81</span>
+<span style="color:#75715e">## 5     5 FALSE    728        19.2     17      0.308  1.44</span>
+<span style="color:#75715e">## 6     6 FALSE   1050        25.3     48      0.429  1.75</span>
+</code></pre></div><p>These first few rows have fairly low weights—those with low probabilities of using nets didn&rsquo;t, while those with high probabilities did. But look at person 4! They only had a 26% chance of using a net and they <em>did</em>! That&rsquo;s weird! They therefore have a higher inverse probability weight (3.81).</p>
+<h3 id="step-2-estimation-1">Step 2: Estimation</h3>
+<p>Now that we&rsquo;ve generated inverse probability weights based on our confounders, we can run a model to find the causal effect of mosquito net usage on malaria risk. Again, we don&rsquo;t need to include income, temperatures, or health in the model since we already used them when we created the propensity scores and weights:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_ipw <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(malaria_risk <span style="color:#f92672">~</span> net,
+                data <span style="color:#f92672">=</span> net_ipw,
+                weights <span style="color:#f92672">=</span> ipw)
+
+<span style="color:#a6e22e">tidy</span>(model_ipw)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)     39.7     0.468      84.7 0.      </span>
+<span style="color:#75715e">## 2 netTRUE        -10.1     0.658     -15.4 3.21e-50</span>
+</code></pre></div><p>Cool! After using the inverse probability weights, we find a -10.13 point causal effect. That&rsquo;s a tiiiny bit off from the true value of 10, but not bad at all!</p>
+<p>It&rsquo;s important to check the values of your inverse probability weights. Sometimes they can get too big, like if someone had an income of 0 and the lowest possible health and lived in a snow field <em>and yet</em> still used a net. Having really really high IPW values can throw off estimation. To fix this, we can truncate weights at some lower level. There&rsquo;s no universal rule of thumb for a good maximum weight—I&rsquo;ve often seen 10 used. In our mosquito net data, no IPWs are higher than 10 (the max is exactly 10 with person 877), so we don&rsquo;t need to worry about truncation.</p>
+<p>If you did want to truncate, you&rsquo;d do something like this (here we&rsquo;re truncating at 8 instead of 10 so truncation actually does something):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">net_ipw <span style="color:#f92672">&lt;-</span> net_ipw <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># If the IPW is larger than 8, make it 8, otherwise use the current IPW</span>
+  <span style="color:#a6e22e">mutate</span>(ipw_truncated <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(ipw <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">8</span>, ipw))
+
+model_ipw_truncated <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(malaria_risk <span style="color:#f92672">~</span> net,
+                          data <span style="color:#f92672">=</span> net_ipw,
+                          weights <span style="color:#f92672">=</span> ipw_truncated)
+
+<span style="color:#a6e22e">tidy</span>(model_ipw_truncated)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)     39.7     0.467      85.1 0.      </span>
+<span style="color:#75715e">## 2 netTRUE        -10.2     0.656     -15.5 4.32e-51</span>
+</code></pre></div><p>Now the causal effect is -10.19, which is slightly lower and probably less accurate since we don&rsquo;t really have any exceptional cases messing up our original IPW estimate.</p>
+<h2 id="results-from-all-the-models">Results from all the models</h2>
+<p>All done! We just used observational data to estimate causal effects. Causation without RCTs! Do you know how neat that is?!</p>
+<p>Let&rsquo;s compare all the ATEs that we just calculated:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;Naive&#34;</span> <span style="color:#f92672">=</span> model_wrong,
+                  <span style="color:#e6db74">&#34;Matched&#34;</span> <span style="color:#f92672">=</span> model_matched, <span style="color:#e6db74">&#34;Matched + weights&#34;</span> <span style="color:#f92672">=</span> model_matched_wts,
+                  <span style="color:#e6db74">&#34;IPW&#34;</span> <span style="color:#f92672">=</span> model_ipw, <span style="color:#e6db74">&#34;IPW truncated at 8&#34;</span> <span style="color:#f92672">=</span> model_ipw_truncated))
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> Naive </th>
+   <th style="text-align:center;"> Matched </th>
+   <th style="text-align:center;"> Matched + weights </th>
+   <th style="text-align:center;"> IPW </th>
+   <th style="text-align:center;"> IPW truncated at 8 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> 41.937*** </td>
+   <td style="text-align:center;"> 38.487*** </td>
+   <td style="text-align:center;"> 36.094*** </td>
+   <td style="text-align:center;"> 39.679*** </td>
+   <td style="text-align:center;"> 39.679*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.405) </td>
+   <td style="text-align:center;"> (0.600) </td>
+   <td style="text-align:center;"> (0.595) </td>
+   <td style="text-align:center;"> (0.468) </td>
+   <td style="text-align:center;"> (0.467) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F6D645 !important;"> netTRUE </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> -16.332*** </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> -12.882*** </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> -10.489*** </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> -10.131*** </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> -10.190*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;box-shadow: 0px 1pxborder-bottom: 1px solid">  </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.649) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.769) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.763) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.658) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.656) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 1752 </td>
+   <td style="text-align:center;"> 1120 </td>
+   <td style="text-align:center;"> 1120 </td>
+   <td style="text-align:center;"> 1752 </td>
+   <td style="text-align:center;"> 1752 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.265 </td>
+   <td style="text-align:center;"> 0.201 </td>
+   <td style="text-align:center;"> 0.145 </td>
+   <td style="text-align:center;"> 0.119 </td>
+   <td style="text-align:center;"> 0.121 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 Adj. </td>
+   <td style="text-align:center;"> 0.265 </td>
+   <td style="text-align:center;"> 0.200 </td>
+   <td style="text-align:center;"> 0.144 </td>
+   <td style="text-align:center;"> 0.119 </td>
+   <td style="text-align:center;"> 0.121 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AIC </td>
+   <td style="text-align:center;"> 14030.7 </td>
+   <td style="text-align:center;"> 8851.7 </td>
+   <td style="text-align:center;"> 8890.0 </td>
+   <td style="text-align:center;"> 14274.3 </td>
+   <td style="text-align:center;"> 14260.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> BIC </td>
+   <td style="text-align:center;"> 14047.1 </td>
+   <td style="text-align:center;"> 8866.8 </td>
+   <td style="text-align:center;"> 8905.0 </td>
+   <td style="text-align:center;"> 14290.7 </td>
+   <td style="text-align:center;"> 14276.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Log.Lik. </td>
+   <td style="text-align:center;"> -7012.326 </td>
+   <td style="text-align:center;"> -4422.846 </td>
+   <td style="text-align:center;"> -4441.978 </td>
+   <td style="text-align:center;"> -7134.172 </td>
+   <td style="text-align:center;"> -7127.255 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 632.315 </td>
+   <td style="text-align:center;"> 280.581 </td>
+   <td style="text-align:center;"> 188.862 </td>
+   <td style="text-align:center;"> 236.841 </td>
+   <td style="text-align:center;"> 241.379 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Deviance </td>
+   <td style="text-align:center;"> 307298.43 </td>
+   <td style="text-align:center;"> 176512.42 </td>
+   <td style="text-align:center;"> 173842.84 </td>
+   <td style="text-align:center;"> 668442.23 </td>
+   <td style="text-align:center;"> 663098.21 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF Resid </td>
+   <td style="text-align:center;"> 1750 </td>
+   <td style="text-align:center;"> 1118 </td>
+   <td style="text-align:center;"> 1118 </td>
+   <td style="text-align:center;"> 1750 </td>
+   <td style="text-align:center;"> 1750 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sigma </td>
+   <td style="text-align:center;"> 13.251 </td>
+   <td style="text-align:center;"> 12.565 </td>
+   <td style="text-align:center;"> 12.470 </td>
+   <td style="text-align:center;"> 19.544 </td>
+   <td style="text-align:center;"> 19.466 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Statistics </td>
+   <td style="text-align:center;"> 632.315 </td>
+   <td style="text-align:center;"> 280.581 </td>
+   <td style="text-align:center;"> 188.862 </td>
+   <td style="text-align:center;"> 236.841 </td>
+   <td style="text-align:center;"> 241.379 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<p>Which one is right? In this case, because this is fake simulated data where I built in a 10 point effect, we can see which of these models gets the closest: here, the non-truncated IPW model wins. But that won&rsquo;t always be the case. Both matching and IPW work well for closing backdoors and adjusting for confounders. In real life, you won&rsquo;t know the true value, so try multiple ways.</p>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on October 2, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/example%5cmatching-ipw.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

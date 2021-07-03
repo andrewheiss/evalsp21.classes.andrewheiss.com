@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helpful resources | Program Evaluation</title>
+    <link>https://evalsp21.classes.andrewheiss.com/resource/</link>
+      <atom:link href="https://evalsp21.classes.andrewheiss.com/resource/index.xml" rel="self" type="application/rss+xml" />
+    <description>Helpful resources</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Helpful resources</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/</link>
+    </image>
+    
+    <item>
+      <title>Things you should know for Exam 1</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/exam1/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/exam1/</guid>
+      <description>&lt;h2 id=&#34;evidence-causation-and-evaluation&#34;&gt;Evidence, causation, and evaluation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;You should understand…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…the difference between experimental research and observational research&lt;/li&gt;
+&lt;li&gt;…the sometimes conflicting roles of science and intuition in public administration and policy&lt;/li&gt;
+&lt;li&gt;…the difference between the various types of evaluations and how they target specific parts of a logic model&lt;/li&gt;
+&lt;li&gt;…the difference between identifying correlation (math) and identifying causation (philosophy and theory)&lt;/li&gt;
+&lt;li&gt;…what it means for a relationship to be causal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;regression-and-inference&#34;&gt;Regression and inference&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;You should understand…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…the difference between correlation coefficients and regression coefficients&lt;/li&gt;
+&lt;li&gt;…the difference between outcome/response/dependent and explanatory/predictor/independent variables&lt;/li&gt;
+&lt;li&gt;…the two purposes of regression&lt;/li&gt;
+&lt;li&gt;…what each of the components in a regression equation stand for, in both &amp;ldquo;flavors&amp;rdquo; of notation:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\(y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon\)&lt;/code&gt; for the statistical flavor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\(y = \alpha + \beta x_1 + \gamma x_2 + \epsilon\)&lt;/code&gt; for the econometrics flavor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;…how sliders and switches work as metaphors for regression coefficients&lt;/li&gt;
+&lt;li&gt;…what it means to hold variables constant (or to control for variables)&lt;/li&gt;
+&lt;li&gt;…the different elements of the grammar of graphics and be able to identify how variables are encoded in a graph (i.e. how columns in a dataset can be represented through x/y coordinates, through color, through size, through fill, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;You should be able to…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…write and interpret R code that calculates summary statistics for groups (i.e. &lt;code&gt;group_by() %&amp;gt;% summarize()&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;…write and interpret R code that builds linear models (i.e. &lt;code&gt;lm()&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;…interpret regression coefficients&lt;/li&gt;
+&lt;li&gt;…interpret other regression diagnostics like &lt;code&gt;\(R^2\)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;…use the &lt;code&gt;%&amp;gt;%&lt;/code&gt; pipe in R to chain functions together&lt;/li&gt;
+&lt;li&gt;…use &lt;code&gt;ggplot()&lt;/code&gt; to visualize data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Helpful resources:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Garrett Grolemund and Hadley Wickham, &lt;a href=&#34;https://r4ds.had.co.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;R for Data Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Kieran Healy, &lt;a href=&#34;http://socviz.co/makeplot.html#how-ggplot-works&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;How ggplot works,&amp;quot;&lt;/a&gt; chapter 3 in &lt;em&gt;Data Visualization: A Practical Introduction&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;theories-of-change-and-measurement&#34;&gt;Theories of change and measurement&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;You should understand…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…how to describe a program&amp;rsquo;s theory of change&lt;/li&gt;
+&lt;li&gt;…the difference between inputs, activities, outputs, and outcomes&lt;/li&gt;
+&lt;li&gt;…the elements of a program&amp;rsquo;s impact theory: causes (activities) linked to effects (outcomes)&lt;/li&gt;
+&lt;li&gt;…the elements of a program&amp;rsquo;s logic model: the explicit links between all its inputs, activities, outputs, and outcomes&lt;/li&gt;
+&lt;li&gt;…the difference between implicit and articulated program theories&lt;/li&gt;
+&lt;li&gt;…the purpose of smaller-scale mechanism testing&lt;/li&gt;
+&lt;li&gt;…how indicators can be measured at different levels of abstraction&lt;/li&gt;
+&lt;li&gt;…what makes an indicator a good indicator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;You should be able to…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…identify a program&amp;rsquo;s underlying theory based on its mission statement&lt;/li&gt;
+&lt;li&gt;…draw a program impact theory chart that links activities to outcomes&lt;/li&gt;
+&lt;li&gt;…draw a program logic model that links inputs to activities to outputs to outcomes&lt;/li&gt;
+&lt;li&gt;…identify the most central elements of a potential outcome measurement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;counterfactuals-and-dags&#34;&gt;Counterfactuals and DAGs&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;You should understand…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…how a causal model encodes our understanding of a causal process&lt;/li&gt;
+&lt;li&gt;…how to identify front door and back door paths between treatment/exposure and outcome&lt;/li&gt;
+&lt;li&gt;…why we avoid closing front door paths&lt;/li&gt;
+&lt;li&gt;…why we close back door paths&lt;/li&gt;
+&lt;li&gt;…why adjusting for colliders can distort causal effects&lt;/li&gt;
+&lt;li&gt;…the difference between logic models and DAGs&lt;/li&gt;
+&lt;li&gt;…the difference between individual level causal effects, average treatment effects (ATE), conditional average treatment effect (CATE), average treatment on the treated effects (ATT), and average treatment on the untreated (ATU)&lt;/li&gt;
+&lt;li&gt;…what the fundamental problem of causal inference is and how we can attempt to address it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;You should be able to…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…draw a possible DAG for a given causal relationship&lt;/li&gt;
+&lt;li&gt;…identify all pathways between treatment/exposure and outcome&lt;/li&gt;
+&lt;li&gt;…identify which nodes in the DAG need to be adjusted for (or closed)&lt;/li&gt;
+&lt;li&gt;…identify colliders (which should not be adjusted for)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Helpful resources:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Malcom Barrett, &lt;a href=&#34;https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-dags.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;An Introduction to Directed Acyclic Graphs&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Malcom Barrett, &lt;a href=&#34;https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;An Introduction to ggdag&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Judea Pearl, &lt;a href=&#34;http://causality.cs.ucla.edu/blog/index.php/2019/08/14/a-crash-course-in-good-and-bad-control/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;A Crash Course in Good and Bad Control&amp;rdquo;&lt;/a&gt;: A quick summary of back doors, front doors, confounders, colliders, and when to control/not control for DAG nodes&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Causal Inference Bootcamp, &lt;a href=&#34;https://modu.ssri.duke.edu/module/introduction-causal-inference/average-treatment-effect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Average Treatment Effects,&amp;quot;&lt;/a&gt; Duke University&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Causal Inference Bootcamp, &lt;a href=&#34;https://modu.ssri.duke.edu/module/introduction-causal-inference/unit-level-effect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Unit Level Effects,&amp;quot;&lt;/a&gt; Duke University&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Causal Inference Bootcamp, &lt;a href=&#34;https://modu.ssri.duke.edu/module/introduction-causal-inference/conditional-average-treatment-effect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Conditional Average Treatment Effects,&amp;quot;&lt;/a&gt; Duke University&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Causal Inference Bootcamp, &lt;a href=&#34;https://modu.ssri.duke.edu/module/introduction-causal-inference/counterfactuals&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Counterfactuals,&amp;quot;&lt;/a&gt; Duke University&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Neel Ocean, &lt;a href=&#34;http://www.neelocean.com/understanding-selection-bias/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Understanding Selection Bias&amp;rdquo;&lt;/a&gt;: explanation of how to identify selection bias from the ATT and the ATE, with an explanation of how ATE = ATT + selection bias under the potential outcomes framework&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Paul Hünermund, &lt;a href=&#34;https://p-hunermund.com/2018/10/15/sample-selection-vs-selection-into-treatment/amp/?__twitter_impression=true&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Sample Selection vs. Selection Into Treatment&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;threats-to-validity&#34;&gt;Threats to validity&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;You should understand…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…what it means when a study has internal validity and know how to identify the major threats to internal validity, including: omitted variable bias (selection and attrition), trend issues (maturation, secular trends, seasonality, testing, regression to the mean), study calibration issues (measurement error, time frame of study), and contamination issues (Hawthorne effects, John Henry effects, spillovers, and intervening events)&lt;/li&gt;
+&lt;li&gt;…why selection bias is the most pernicious and difficult threat to internal validity and how we can account for it&lt;/li&gt;
+&lt;li&gt;…what it means when a study has external validity&lt;/li&gt;
+&lt;li&gt;…what it means when the measures used in a study have construct validity&lt;/li&gt;
+&lt;li&gt;…what it means when the analysis used in a study has statistical conclusion validity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;You should be able to…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;…identify existing and potential threats to validity in a study&lt;/li&gt;
+&lt;li&gt;…suggest ways of addressing these threats&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Helpful resources:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Really, just google &lt;a href=&#34;https://www.google.com/search?q=threats&amp;#43;to&amp;#43;internal&amp;#43;validity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;threats to internal validity&amp;rdquo;&lt;/a&gt; or &lt;a href=&#34;https://www.google.com/search?q=threats&amp;#43;to&amp;#43;external&amp;#43;validity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;threats to external validity&amp;rdquo;&lt;/a&gt; and you&amp;rsquo;ll find a billion different slide decks, articles, and lessons about these. They&amp;rsquo;re a pretty standard part of any research design class.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing R, RStudio, tidyverse, and tinytex</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/install/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/install/</guid>
+      <description>&lt;p&gt;You will do all of your work in this class with the open source (and free!) programming language &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt;. You will use &lt;a href=&#34;https://www.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio&lt;/a&gt; as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.&lt;/p&gt;
+&lt;h2 id=&#34;rstudiocloud&#34;&gt;RStudio.cloud&lt;/h2&gt;
+&lt;p&gt;R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free &lt;a href=&#34;http://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio.cloud&lt;/a&gt; service &lt;em&gt;initially&lt;/em&gt;, which lets you run a full instance of RStudio in your web browser. This means you won&amp;rsquo;t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://rstudio.cloud/&#34;&gt;https://rstudio.cloud/&lt;/a&gt; and create an account. You&amp;rsquo;ll receive a link to join the shared class workspace separately. If you don&amp;rsquo;t get this link, let me know and I will invite you.&lt;/p&gt;
+&lt;h2 id=&#34;rstudio-on-your-computer&#34;&gt;RStudio on your computer&lt;/h2&gt;
+&lt;p&gt;RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets, more complicated analysis, or fancier graphics. Over the course of the semester, you should wean yourself off of RStudio.cloud and install all these things locally. This is also important if you want to customize fonts, since RStudio.cloud has extremely limited support for fonts other than Helvetica.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how you install all these things&lt;/p&gt;
+&lt;h3 id=&#34;install-r&#34;&gt;Install R&lt;/h3&gt;
+&lt;p&gt;First you need to install R itself (the engine).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the CRAN (Collective R Archive Network)^[It&amp;rsquo;s a goofy name, but CRAN is where most R packages—and R itself—lives.] website: &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;https://cran.r-project.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on &amp;ldquo;Download R for &lt;code&gt;XXX&lt;/code&gt;&amp;rdquo;, where &lt;code&gt;XXX&lt;/code&gt; is either Mac or Windows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-links.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it&amp;rsquo;s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.0.0) and download it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you use Windows, click &amp;ldquo;base&amp;rdquo; (or click on the bolded &amp;ldquo;install R for the first time&amp;rdquo; link) and download it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-windows.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double click on the downloaded file (check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you use macOS, &lt;a href=&#34;https://www.xquartz.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;download and install XQuartz&lt;/a&gt;. You do not need to do this on Windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;install-rstudio&#34;&gt;Install RStudio&lt;/h3&gt;
+&lt;p&gt;Next, you need to install RStudio, the nicer graphical user interface (GUI) for R (the dashboard). Once R and RStudio are both installed, you can ignore R and only use RStudio. RStudio will use R automatically and you won&amp;rsquo;t ever have to interact with it directly.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the free download location on RStudio&amp;rsquo;s website: &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/#download&#34;&gt;https://www.rstudio.com/products/rstudio/download/#download&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-rstudio1.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-rstudio2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double click on the downloaded file (again, check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Double click on RStudio to run it (check your applications folder or start menu).&lt;/p&gt;
+&lt;h3 id=&#34;install-tidyverse&#34;&gt;Install &lt;code&gt;tidyverse&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;R packages are easy to install with RStudio. Select the packages panel, click on &amp;ldquo;Install,&amp;rdquo; type the name of the package you want to install, and press enter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-package-panel.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This can sometimes be tedious when you&amp;rsquo;re installing lots of packages, though. &lt;a href=&#34;https://www.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The tidyverse&lt;/a&gt;, for instance, consists of dozens of packages (including &lt;strong&gt;ggplot2&lt;/strong&gt;) that all work together. Rather than install each individually, you can install a single magical package and get them all at the same time.&lt;/p&gt;
+&lt;p&gt;Go to the packages panel in RStudio, click on &amp;ldquo;Install,&amp;rdquo; type &amp;ldquo;tidyverse&amp;rdquo;, and press enter. You&amp;rsquo;ll see a bunch of output in the RStudio console as all the tidyverse packages are installed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/install/install-r-tidyverse.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Notice also that RStudio will generate a line of code for you and run it: &lt;code&gt;install.packages(&amp;quot;tidyverse&amp;quot;)&lt;/code&gt;. You can also just paste and run this instead of using the packages panel.&lt;/p&gt;
+&lt;h3 id=&#34;install-tinytex&#34;&gt;Install &lt;code&gt;tinytex&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;When you knit to PDF, R uses a special scientific typesetting program named LaTeX (pronounced &amp;ldquo;lay-tek&amp;rdquo; or &amp;ldquo;lah-tex&amp;rdquo;; for goofy nerdy reasons, the x is technically the &amp;ldquo;ch&amp;rdquo; sound in &amp;ldquo;Bach&amp;rdquo;, but most people just say it as &amp;ldquo;k&amp;rdquo;—saying &amp;ldquo;layteks&amp;rdquo; is frowned on for whatever reason).&lt;/p&gt;
+&lt;p&gt;LaTeX is neat and makes pretty documents, but it&amp;rsquo;s a huge program—&lt;a href=&#34;https://tug.org/mactex/mactex-download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the macOS version, for instance, is nearly 4 GB&lt;/a&gt;! To make life easier, there&amp;rsquo;s &lt;a href=&#34;https://yihui.org/tinytex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;an R package named &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt; that installs a minimal LaTeX program and that automatically deals with differences between macOS and Windows.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how to install &lt;strong&gt;tinytex&lt;/strong&gt; so you can knit to pretty PDFs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use the Packages in panel in RStudio to install &lt;strong&gt;tinytex&lt;/strong&gt; like you did above with &lt;strong&gt;tidyverse&lt;/strong&gt;. Alternatively, run &lt;code&gt;install.packages(&amp;quot;tinytex&amp;quot;)&lt;/code&gt; in the console.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;tinytex::install_tinytex()&lt;/code&gt; in the console.&lt;/li&gt;
+&lt;li&gt;Wait for a bit while R downloads and installs everything you need.&lt;/li&gt;
+&lt;li&gt;The end! You should now be able to knit to PDF.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Things you should know for Exam 2</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/exam2/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/exam2/</guid>
+      <description>&lt;h2 id=&#34;randomization&#34;&gt;Randomization&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand why randomization is crucial for causal inference and counterfactuals&lt;/li&gt;
+&lt;li&gt;Understand the process for analyzing a randomized controlled trial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/07-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for randomization and matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rcts/&#34;&gt;Guide for RCTs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem set 3&lt;/li&gt;
+&lt;li&gt;Task 1 in problem set 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;matching-and-inverse-probability-weighting&#34;&gt;Matching and inverse probability weighting&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the intuition behind matching and inverse probability weighting&lt;/li&gt;
+&lt;li&gt;Understand the process for adjusting for confounders and closing backdoors with both matching and inverse probability weighting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/07-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for randomization and matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/matching-ipw/&#34;&gt;Guide for matching and inverse probability weighting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem set 3&lt;/li&gt;
+&lt;li&gt;Task 2 in problem set 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;difference-in-difference&#34;&gt;Difference-in-difference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the intuition behind making causal inferences with difference-in-differences&lt;/li&gt;
+&lt;li&gt;Understand the process for analyzing diff-in-diffs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/08-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/diff-in-diff/&#34;&gt;Guide for diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem set 4&lt;/li&gt;
+&lt;li&gt;Problem set 5&lt;/li&gt;
+&lt;li&gt;Task 3 in problem set 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;regression-discontinuity&#34;&gt;Regression discontinuity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the intuition behind making causal inferences with regression discontinuity&lt;/li&gt;
+&lt;li&gt;Understand the process for analyzing regression discontinuities, both &lt;em&gt;&lt;strong&gt;fuzzy&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;sharp&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Understand the difference between ATE and LATE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/10-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for regression discontinuity I (sharp)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/12-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for regression discontinuity II (fuzzy)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd/&#34;&gt;Guide for sharp diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/rdd-fuzzy/&#34;&gt;Guide for fuzzy diff-in-diff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem set 6&lt;/li&gt;
+&lt;li&gt;Task 4 in problem set 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;instrumental-variables&#34;&gt;Instrumental variables&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the intuition behind using instruments for causal inference&lt;/li&gt;
+&lt;li&gt;Understand the three characteristics of a good instrument&lt;/li&gt;
+&lt;li&gt;Understand the process for analyzing data with instrumental variables and 2SLS&lt;/li&gt;
+&lt;li&gt;Understand the difference between ATE and LATE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Crucial resources&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/11-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for instrumental variables I&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalf20.classes.andrewheiss.com/content/12-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Readings, slides, and videos for instrumental variables II&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/example/iv/&#34;&gt;Guide for instrumental variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Problem set 7&lt;/li&gt;
+&lt;li&gt;Task 5 in problem set 8&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/r/</guid>
+      <description>&lt;h2 id=&#34;learning-r&#34;&gt;Learning R&lt;/h2&gt;
+&lt;p&gt;I highly recommend subscribing to the &lt;a href=&#34;https://rweekly.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Weekly newsletter&lt;/a&gt;. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.&lt;/p&gt;
+&lt;p&gt;Searching for help with R on Google can sometimes be tricky because the program name is a single letter. Google is generally smart enough to figure out what you mean when you search for &amp;ldquo;r scatterplot&amp;rdquo;, but if it does struggle, try searching for &amp;ldquo;rstats&amp;rdquo; instead (e.g. &amp;ldquo;rstats scatterplot&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;If you use Twitter, post R-related questions and content with &lt;a href=&#34;https://twitter.com/search?q=%23rstats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#rstats&lt;/a&gt;. The community there is exceptionally generous and helpful. Also check out &lt;a href=&#34;https://stackoverflow.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;StackOverflow&lt;/a&gt; (a Q&amp;amp;A site with hundreds of thousands of answers to all sorts of programming questions) and &lt;a href=&#34;https://community.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio Community&lt;/a&gt; (a forum specifically designed for people using RStudio and the tidyverse (i.e. you)).&lt;/p&gt;
+&lt;p&gt;These resources are also really really helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R for Data Science&lt;/strong&gt;&lt;/a&gt;: A free online book for learning the basics of R and the tidyverse.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R and RStudio cheat sheets&lt;/strong&gt;&lt;/a&gt;: A large collection of simple cheat sheets for RStudio, &lt;strong&gt;ggplot2&lt;/strong&gt;, and other R-related things.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stat545.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Stat 545&lt;/strong&gt;&lt;/a&gt;: &lt;a href=&#34;https://twitter.com/JennyBryan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dr. Jenny Bryan&lt;/a&gt; at RStudio has an entire introductory course in R, visualization, and data analysis online.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www2.stat.duke.edu/courses/Fall17/sta112.01/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;STA 112FS: Data Science&lt;/strong&gt;&lt;/a&gt;: &lt;a href=&#34;https://twitter.com/minebocek&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dr. Mine Çetinkaya-Rundel&lt;/a&gt; at the University of Edinburgh / Duke University has an entire introductory course in R, visualization, and data science online.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cslu.ohsu.edu/~bedricks/courses/cs631/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;CSE 631: Principles &amp;amp; Practice of Data Visualization&lt;/strong&gt;&lt;/a&gt;: Yet another introductory course for R and ggplot2 by &lt;a href=&#34;https://twitter.com/apreshill&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dr. Alison Presmanes Hill&lt;/a&gt; at RStudio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;r-in-the-wild&#34;&gt;R in the wild&lt;/h2&gt;
+&lt;p&gt;A popular (and increasingly standard) way for sharing your analyses and visualizations is to post an annotated explanation of your process somewhere online. RStudio allows you to publish knitted HTML files directly to &lt;a href=&#34;http://rpubs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RPubs&lt;/a&gt;, but you can also post your output to a blog or other type of website.^[If you want to be really fancy, you can use &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;, which makes a complete website with R Markdown files. That&amp;rsquo;s actually how this site is built (&lt;a href=&#34;https://github.com/andrewheiss/datavizm20.classes.andrewheiss.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;see the source code&lt;/a&gt;). You can build your own site &lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;with this tutorial&lt;/a&gt;.] Reading these kinds of posts is one of the best ways to learn R, since they walk you through each step of the process &lt;em&gt;and&lt;/em&gt; show the code and output.&lt;/p&gt;
+&lt;p&gt;Here are some of the best examples I&amp;rsquo;ve come across:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://varianceexplained.org/r/trump-tweets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Text analysis of Trump&amp;rsquo;s tweets confirms he writes only the (angrier) Android half&lt;/a&gt; (with a &lt;a href=&#34;http://varianceexplained.org/r/trump-followup/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow-up&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rudeboybert.github.io/fivethirtyeight/articles/bob_ross.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bob Ross - Joy of Painting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rudeboybert.github.io/fivethirtyeight/articles/bechdel.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bechdel analysis using the tidyverse&lt;/a&gt;: There are also a bunch of other examples &lt;a href=&#34;https://rudeboybert.github.io/fivethirtyeight/articles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;using data from FiveThirtyEight&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rpubs.com/Jwhitman/Final_Project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sexism on the Silver Screen: Exploring film&amp;rsquo;s gender divide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://soc301s2017.netlify.com/group_projects/group5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Comparison of Quentin Tarantino Movies by Box Office and the Bechdel Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juliasilge.com/blog/who-came-to-vote/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Who came to vote in Utah&amp;rsquo;s caucuses?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juliasilge.com/blog/health-care-indicators/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Health care indicators in Utah counties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juliasilge.com/blog/song-lyrics-across/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Song lyrics across the United States&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.karawoo.com/2016/09/22/A-decade-ish-of-listening-to-Sigur-Ros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A decade (ish) of listening to Sigur Rós&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rpubs.com/ry_lisa_elana/chicago&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;When is Tom peeping these days?&lt;/a&gt;: There are a also bunch of final projects from other R and data visualization classes &lt;a href=&#34;http://soc301s2017.netlify.com/group-projects/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://rudeboybert.github.io/MATH116/PS/final_project/final_project_outline.html#past_examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rud.is/b/2017/09/18/mapping-fall-foliage-with-sf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mapping Fall Foliage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rud.is/b/2017/07/25/r%E2%81%B6-general-attys-distributions/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;General (Attys) Distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rud.is/b/2017/06/18/r%E2%81%B6-disproving-approval/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disproving Approval&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R style suggestions</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/style/</guid>
+      <description>&lt;h2 id=&#34;r-style-conventions&#34;&gt;R style conventions&lt;/h2&gt;
+&lt;p&gt;R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, 
+         class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, class&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg,cty&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,class&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, 
+                        class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter &lt;/span&gt;( mpg,cty&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,     class&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt; )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But you&amp;rsquo;ll notice that only a few of those iterations (the first three) are easily readable.&lt;/p&gt;
+&lt;p&gt;To help improve readability and make it easier to share code with others, there&amp;rsquo;s &lt;a href=&#34;https://style.tidyverse.org/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;an unofficial style guide for writing R code&lt;/a&gt;. It&amp;rsquo;s fairly short and just has lots of examples of good and bad ways of writing code (naming variables, dealing with long lines, using proper indentation levels, etc.)—you should glance through it some time.&lt;/p&gt;
+&lt;p&gt;RStudio has a built-in way of cleaning up your code. Select some code, press &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;i&lt;/kbd&gt; (on Windows) or &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;i&lt;/kbd&gt; (on macOS), and R will reformat the code for you. It&amp;rsquo;s not always perfect, but it&amp;rsquo;s really helpful for getting indentation right without having to manually hit &lt;kbd&gt;space&lt;/kbd&gt; a billion times.&lt;/p&gt;
+&lt;h2 id=&#34;main-style-things-to-pay-attention-to-for-this-class&#34;&gt;Main style things to pay attention to for this class&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Important note&lt;/em&gt;: I won&amp;rsquo;t ever grade you on any of this! If you submit something like &lt;code&gt;filter(mpg,cty&amp;gt;10,class==&amp;quot;compact&amp;quot;)&lt;/code&gt;, I might recommend adding spaces, but it won&amp;rsquo;t affect your grade or points or anything.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;spacing&#34;&gt;Spacing&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#spacing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Spacing&amp;rdquo; section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Put spaces after commas (like in regular English):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg , cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg ,cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg,cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Put spaces around operators like &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt;, etc.:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Don&amp;rsquo;t put spaces around parentheses that are parts of functions:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter &lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter &lt;/span&gt;( mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;( mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;long-lines&#34;&gt;Long lines&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#long-lines&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Long lines&amp;rdquo; section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s generally good practice to not have really long lines of code. A good suggestion is to keep lines at a maximum of 80 characters. Instead of counting characters by hand (ew), in RStudio go to &amp;ldquo;Tools&amp;rdquo; &amp;gt; &amp;ldquo;Global Options&amp;rdquo; &amp;gt; &amp;ldquo;Code&amp;rdquo; &amp;gt; &amp;ldquo;Display&amp;rdquo; and check the box for &amp;ldquo;Show margin&amp;rdquo;. You should now see a really thin line indicating 80 characters. Again, you can go beyond this—that&amp;rsquo;s fine. It&amp;rsquo;s just good practice to avoid going too far past it.&lt;/p&gt;
+&lt;p&gt;You can add line breaks inside longer lines of code. Line breaks should come after commas, and things like function arguments should align within the function:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, 
+       class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg,
+       cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,
+       class &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, class &lt;span style=&#34;color:#f92672&#34;&gt;%in%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pickup&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;midsize&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subcompact&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;suv&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2seater&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;minivan&amp;#34;&lt;/span&gt;))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(mpg, 
+       cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, 
+       class &lt;span style=&#34;color:#f92672&#34;&gt;%in%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pickup&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;midsize&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subcompact&amp;#34;&lt;/span&gt;, 
+                    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;suv&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2seater&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;minivan&amp;#34;&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pipes--and-ggplot-layers-&#34;&gt;Pipes (&lt;code&gt;%&amp;gt;%&lt;/code&gt;) and ggplot layers (&lt;code&gt;+&lt;/code&gt;)&lt;/h3&gt;
+&lt;p&gt;Put each layer of a ggplot plot on separate lines, with the &lt;code&gt;+&lt;/code&gt; at the end of the line, indented with two spaces:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(mpg, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cty, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; hwy, color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; class)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_smooth&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(mpg, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cty, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; hwy, color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; class)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_smooth&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Super bad&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(mpg, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cty, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; hwy, color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; class)) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_smooth&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Super bad and won&amp;#39;t even work&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;ggplot&lt;/span&gt;(mpg, &lt;span style=&#34;color:#a6e22e&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cty, y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; hwy, color &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; class))
+  &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_point&lt;/span&gt;()
+  &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;geom_smooth&lt;/span&gt;() 
+  &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;theme_bw&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Put each step in a dplyr pipeline on separate lines, with the &lt;code&gt;%&amp;gt;%&lt;/code&gt; at the end of the line, indented with two spaces:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;group_by&lt;/span&gt;(class) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;summarize&lt;/span&gt;(avg_hwy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(hwy))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;group_by&lt;/span&gt;(class) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;summarize&lt;/span&gt;(avg_hwy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(hwy))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Super bad&lt;/span&gt;
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;group_by&lt;/span&gt;(class) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;summarize&lt;/span&gt;(avg_hwy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(hwy))
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Super bad and won&amp;#39;t even work&lt;/span&gt;
+mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+  &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;group_by&lt;/span&gt;(class)
+  &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;summarize&lt;/span&gt;(avg_hwy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(hwy))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;comments&#34;&gt;Comments&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#comments&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Comments&amp;rdquo; section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Comments should start with a comment symbol and a single space: &lt;code&gt;# &lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#Bad&lt;/span&gt;
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;#Bad&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the comment is really short (and won&amp;rsquo;t cause you to go over 80 characters in the line), you can include it in the same line as the code, separated by at least two spaces (it works with one space, but using a couple can enhance readability):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Only rows where cty is 10 +&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;group_by&lt;/span&gt;(class) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Divide into class groups&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;summarize&lt;/span&gt;(avg_hwy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(hwy))  &lt;span style=&#34;color:#75715e&#34;&gt;# Find the average hwy in each group&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can add extra spaces to get inline comments to align, if you want:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;mpg &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(cty &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;# Only rows where cty is 10 +&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;group_by&lt;/span&gt;(class) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;             &lt;span style=&#34;color:#75715e&#34;&gt;# Divide into class groups&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;summarize&lt;/span&gt;(avg_hwy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(hwy))  &lt;span style=&#34;color:#75715e&#34;&gt;# Find the average hwy in each group&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the comment is really long, you can break it into multiple lines. RStudio can do this for you if you go to &amp;ldquo;Code&amp;rdquo; &amp;gt; &amp;ldquo;Reflow comment&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Good&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Happy families are all alike; every unhappy family is unhappy in its own way.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Everything was in confusion in the Oblonskys’ house. The wife had discovered&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# that the husband was carrying on an intrigue with a French girl, who had been&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# a governess in their family, and she had announced to her husband that she&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# could not go on living in the same house with him. This position of affairs&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# had now lasted three days, and not only the husband and wife themselves, but&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# all the members of their family and household, were painfully conscious of it.&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Bad&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Happy families are all alike; every unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys’ house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she had announced to her husband that she could not go on living in the same house with him. This position of affairs had now lasted three days, and not only the husband and wife themselves, but all the members of their family and household, were painfully conscious of it.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Though, if you&amp;rsquo;re dealing with comments that are &lt;em&gt;that&lt;/em&gt; long, consider putting the text in R Markdown instead and having it be actual prose.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unzipping files</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/unzipping/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/unzipping/</guid>
+      <description>&lt;p&gt;Because RStudio projects typically consist of multiple files (R scripts, datasets, graphical output, etc.) the easiest way to distribute them to you for examples, assignments, and projects is to combine all the different files in to a single compressed collection called a &lt;strong&gt;zip file&lt;/strong&gt;. When you unzip a zipped file, your operating system extracts all the files that are contained inside into a new folder on your computer.&lt;/p&gt;
+&lt;p&gt;Unzipping files on macOS is trivial, but unzipping files on Windows can mess you up if you don&amp;rsquo;t pay careful attention. Here&amp;rsquo;s a helpful guide to unzipping files on both macOS and Windows.&lt;/p&gt;
+&lt;h2 id=&#34;unzipping-files-on-macos&#34;&gt;Unzipping files on macOS&lt;/h2&gt;
+&lt;p&gt;Double click on the downloaded &lt;code&gt;.zip&lt;/code&gt; file. macOS will automatically create a new folder with the same name as the &lt;code&gt;.zip&lt;/code&gt; file, and all the file&amp;rsquo;s contents will be inside. Double click on the RStudio Project file (&lt;code&gt;.Rproj&lt;/code&gt;) to get started.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/unzip-mac.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;unzipping-files-on-windows&#34;&gt;Unzipping files on Windows&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr&lt;/strong&gt;: Right click on the &lt;code&gt;.zip&lt;/code&gt; file, select &amp;ldquo;Extract All…&amp;rdquo;, and work with the resulting unzipped folder.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Unlike macOS, Windows does &lt;em&gt;not&lt;/em&gt; automatically unzip things for you. If you double click on the &lt;code&gt;.zip&lt;/code&gt; file, Windows will show you what&amp;rsquo;s inside, but it will do so without actually extracting anything. This &lt;del&gt;can be&lt;/del&gt; is incredibly confusing! Here&amp;rsquo;s what it looks like—the only clues that this folder is really a &lt;code&gt;.zip&lt;/code&gt; file are that there&amp;rsquo;s a &amp;ldquo;Compressed Folder Tools&amp;rdquo; tab at the top, and there&amp;rsquo;s a &amp;ldquo;Ratio&amp;rdquo; column that shows how much each file is compressed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/inside-zip-windows.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It is very tempting to try to open files from this view. However, if you do, things will break and you won&amp;rsquo;t be able to correctly work with any of the files in the zipped folder. If you open the R Project file, for instance, RStudio will point to a bizarre working directory buried deep in some temporary folder:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/temp-wd-windows.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You most likely won&amp;rsquo;t be able to open any data files or save anything, which will be frustrating.&lt;/p&gt;
+&lt;p&gt;Instead, you need to right click on the &lt;code&gt;.zip&lt;/code&gt; file and select &amp;ldquo;Extract All…&amp;quot;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/extract-windows-1.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Then choose where you want to unzip all the files and click on &amp;ldquo;Extract&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/extract-windows-2.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You should then finally have a real folder with all the contents of the zipped file. Open the R Project file and RStudio will point to the correct working directory and everything will work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/unzipping/extract-windows-3.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/data/</guid>
+      <description>&lt;p&gt;There are a ton of places to find data related to public policy and administration (as well as data on pretty much any topic you want) online:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tinyletter.com/data-is-plural&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Data is Plural newsletter&lt;/strong&gt;&lt;/a&gt;: Jeremy Singer-Vine sends a weekly newsletter of the most interesting public datasets he&amp;rsquo;s found. You should subscribe to it. &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;He also has an archive of all the datasets he&amp;rsquo;s highlighted.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://toolbox.google.com/datasetsearch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Google Dataset Search&lt;/strong&gt;&lt;/a&gt;: Google indexes thousands of public datasets; search for them here.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/datasets&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Kaggle&lt;/strong&gt;&lt;/a&gt;: Kaggle hosts machine learning competitions where people compete to create the fastest, most efficient, most predictive algorithms. A byproduct of these competitions is a host of fascinating datasets that are generally free and open to the public. See, for example, &lt;a href=&#34;https://www.kaggle.com/hugomathien/soccer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the European Soccer Database&lt;/a&gt;, the &lt;a href=&#34;https://www.kaggle.com/rtatman/salem-witchcraft-dataset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Salem Witchcraft Dataset&lt;/a&gt; or results from an &lt;a href=&#34;https://www.kaggle.com/rtatman/oreo-flavors-tastetest-ratings&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oreo flavors taste test&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.threesixtygiving.org/data/data-registry/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;360Giving&lt;/strong&gt;&lt;/a&gt;: Dozens of British foundations follow a standard file format for sharing grant data and have made that data available online.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://us-cities.survey.okfn.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;US City Open Data Census&lt;/strong&gt;&lt;/a&gt;: More than 100 US cities have committed to sharing dozens of types of data, including data about crime, budgets, campaign finance, lobbying, transit, and zoning. This site from the &lt;a href=&#34;http://sunlightfoundation.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sunlight Foundation&lt;/a&gt; and &lt;a href=&#34;http://www.codeforamerica.org//&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code for America&lt;/a&gt; collects this data and rates cities by how well they&amp;rsquo;re doing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Political science and economics datasets&lt;/strong&gt;: There&amp;rsquo;s a wealth of data available for political science- and economics-related topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/briatte/srqm/wiki/Data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;François Briatte&amp;rsquo;s extensive curated lists&lt;/strong&gt;&lt;/a&gt;: Includes data from/about intergovernmental organizations (IGOs), nongovernmental organizations (NGOs), public opinion surveys, parliaments and legislatures, wars, human rights, elections, and municipalities.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/leeper/poliscitoys/issues/1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Thomas Leeper&amp;rsquo;s list of political science datasets&lt;/strong&gt;&lt;/a&gt;: Good short list of useful datasets, divided by type of data (country-level data, survey data, social media data, event data, text data, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikgahner/PolData&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Erik Gahner&amp;rsquo;s list of political science datasets&lt;/strong&gt;&lt;/a&gt;: Huge list of useful datasets, divided by topic (governance, elections, policy, political elites, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mixtape-style R code translations</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/mixtape-diffs/</guid>
+      <description>&lt;script src=&#34;https://evalsp21.classes.andrewheiss.com/rmarkdown-libs/kePrint-0.0.1/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://evalsp21.classes.andrewheiss.com/rmarkdown-libs/lightable-0.0.1/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;p&gt;&lt;a href=&#34;https://mixtape.scunning.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Causal Inference: The Mixtape&lt;/em&gt;&lt;/a&gt; includes code examples in both Stata and R, which is so cool! The previous PDF-only version of the book only had Stata code, so it was hard to follow along with in this class.&lt;/p&gt;
+&lt;p&gt;As you&amp;rsquo;ll note throughout this class, there are lots of ways to do things in R. You&amp;rsquo;ll come across code in the RStudio forums and on StackOverflow that works, but looks slightly different than you&amp;rsquo;re used to. In this class, we use the &lt;a href=&#34;&#34;&gt;tidyverse&lt;/a&gt;, or a set of packages that all work together nicely like &lt;strong&gt;ggplot2&lt;/strong&gt;, &lt;strong&gt;dplyr&lt;/strong&gt;, and others.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Mixtape&lt;/em&gt; also uses tidyverse (yay!), but has a couple code quirks and differences. Because the HTML version of the book (with R code) only came out on January 3, I haven&amp;rsquo;t had time to find all the differences, so I&amp;rsquo;ll keep a running list here.&lt;/p&gt;
+&lt;h2 id=&#34;loading-data&#34;&gt;Loading data&lt;/h2&gt;
+&lt;p&gt;Throughout &lt;em&gt;The Mixtape&lt;/em&gt;, the code examples load data from external files stored online. The code provided for loading this data is a little more complicated than it needs to be. For instance, consider &lt;a href=&#34;https://mixtape.scunning.com/ch3.html#statistical-inference&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this from Section 4.0.1&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(tidyverse)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(haven)
+
+read_data &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;function&lt;/span&gt;(df)
+{
+  full_path &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;paste&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://raw.github.com/scunning1975/mixtape/master/&amp;#34;&lt;/span&gt;, 
+                     df, sep &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+  df &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read_dta&lt;/span&gt;(full_path)
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;return&lt;/span&gt;(df)
+}
+
+yule &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read_data&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yule.dta&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(paup &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; outrelief &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; old &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; pop, .)
+  
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(yule)
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Call:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## lm(formula = paup ~ outrelief + old + pop, data = .)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Residuals:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##    Min     1Q Median     3Q    Max &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## -17.48  -5.31  -1.83   3.13  25.34 &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Coefficients:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##             Estimate Std. Error t value Pr(&amp;gt;|t|)    &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## (Intercept)  63.1877    27.1439    2.33    0.027 *  &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## outrelief     0.7521     0.1350    5.57  5.8e-06 ***&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## old           0.0556     0.2234    0.25    0.805    &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## pop          -0.3107     0.0669   -4.65  7.3e-05 ***&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## ---&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Residual standard error: 9.6 on 28 degrees of freedom&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Multiple R-squared:  0.697,	Adjusted R-squared:  0.665 &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## F-statistic: 21.5 on 3 and 28 DF,  p-value: 2e-07&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here, &lt;em&gt;The Mixtape&lt;/em&gt; authors created a custom function named &lt;code&gt;read_data()&lt;/code&gt; that loads a Stata file from a URL at GitHub. They then run a model on that data and store the results as an object named &lt;code&gt;yule&lt;/code&gt;. It works, but it&amp;rsquo;s not the most efficient way to do this for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You don&amp;rsquo;t need that whole custom &lt;code&gt;read_data()&lt;/code&gt; function. Instead you can feed &lt;code&gt;read_dta()&lt;/code&gt; a full URL and load it like that&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s best if you save the data as an object by itself, &lt;em&gt;then&lt;/em&gt; use it to create models. As it stands now, you can&amp;rsquo;t look at the &lt;code&gt;yule.dta&lt;/code&gt; file or make scatterplots or do anything with the data, since the results that are stored as &lt;code&gt;yule&lt;/code&gt; are the results from the model, not the data itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead, this is an easier way to load the data and run the model:&lt;/p&gt;
+&lt;h3 id=&#34;translation&#34;&gt;Translation&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Mixtape version&lt;/span&gt;
+read_data &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;function&lt;/span&gt;(df)
+{
+  full_path &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;paste&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://raw.github.com/scunning1975/mixtape/master/&amp;#34;&lt;/span&gt;, 
+                     df, sep &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+  df &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read_dta&lt;/span&gt;(full_path)
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;return&lt;/span&gt;(df)
+}
+
+yule &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read_data&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yule.dta&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(paup &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; outrelief &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; old &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; pop, .)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(yule)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Our class version&lt;/span&gt;
+yule_data &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read_dta&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://raw.github.com/scunning1975/mixtape/master/yule.dta&amp;#34;&lt;/span&gt;)
+
+yule_model &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(paup &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; outrelief &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; old &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; pop,
+                 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; yule_data)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(yule_model)
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Call:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## lm(formula = paup ~ outrelief + old + pop, data = yule_data)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Residuals:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##    Min     1Q Median     3Q    Max &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## -17.48  -5.31  -1.83   3.13  25.34 &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Coefficients:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##             Estimate Std. Error t value Pr(&amp;gt;|t|)    &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## (Intercept)  63.1877    27.1439    2.33    0.027 *  &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## outrelief     0.7521     0.1350    5.57  5.8e-06 ***&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## old           0.0556     0.2234    0.25    0.805    &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## pop          -0.3107     0.0669   -4.65  7.3e-05 ***&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## ---&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Residual standard error: 9.6 on 28 degrees of freedom&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## Multiple R-squared:  0.697,	Adjusted R-squared:  0.665 &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## F-statistic: 21.5 on 3 and 28 DF,  p-value: 2e-07&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Even better, instead of using &lt;code&gt;summary(yule_model)&lt;/code&gt;, you can use &lt;code&gt;tidy()&lt;/code&gt; and &lt;code&gt;glance()&lt;/code&gt; from the &lt;strong&gt;broom&lt;/strong&gt; library, which convert any kind of model object into standard data frames:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(broom)  &lt;span style=&#34;color:#75715e&#34;&gt;# You only need to run this once&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;tidy&lt;/span&gt;(yule_model)
+&lt;span style=&#34;color:#75715e&#34;&gt;## # A tibble: 4 x 5&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##   term        estimate std.error statistic    p.value&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## 1 (Intercept)  63.2      27.1        2.33  0.0274    &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## 2 outrelief     0.752     0.135      5.57  0.00000583&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## 3 old           0.0556    0.223      0.249 0.805     &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## 4 pop          -0.311     0.0669    -4.65  0.0000725&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;glance&lt;/span&gt;(yule_model)
+&lt;span style=&#34;color:#75715e&#34;&gt;## # A tibble: 1 x 12&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##   r.squared adj.r.squared sigma statistic     p.value    df logLik   AIC   BIC deviance df.residual  nobs&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;##       &amp;lt;dbl&amp;gt;         &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;       &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## 1     0.697         0.665  9.55      21.5 0.000000200     3  -115.  241.  248.    2552.          28    32&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;side-by-side-regression-tables-stargazer-vs-modelsummary&#34;&gt;Side-by-side regression tables: stargazer vs. modelsummary&lt;/h2&gt;
+&lt;p&gt;Side-by-side regression tables are a standard feature of economics, political science, and policy articles and reports. They conveniently let you see the results from multiple regresison models in one table. &lt;a href=&#34;http://svmiller.com/blog/2014/08/reading-a-regression-table-a-guide-for-students/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This blog post here goes into detail about how to read them&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are several R packages for creating these tables automatically. One of the earliest is named &lt;strong&gt;stargazer&lt;/strong&gt;, and tons of people still use it—including &lt;em&gt;The Mixtape&lt;/em&gt;. For instance, Section 3.1.5 in &lt;em&gt;The Mixtape&lt;/em&gt; shows an example of discrimination and collider bias and the code there shows three regression models side by side:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;collider_discrimination.R&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set.seed&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt;)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(tidyverse)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(stargazer)
+
+tb &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tibble&lt;/span&gt;(
+  female &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;runif&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10000&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;),
+  ability &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rnorm&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10000&lt;/span&gt;),
+  discrimination &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; female,
+  occupation &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;ability &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;female &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;discrimination &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rnorm&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10000&lt;/span&gt;),
+  wage &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;discrimination &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;occupation &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;ability &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rnorm&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10000&lt;/span&gt;) 
+)
+
+lm_1 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(wage &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; female, tb)
+lm_2 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(wage &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; female &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; occupation, tb)
+lm_3 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(wage &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; female &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; occupation &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; ability, tb)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;stargazer&lt;/span&gt;(lm_1, lm_2, lm_3, type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;html&amp;#34;&lt;/span&gt;, 
+          column.labels &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Biased Unconditional&amp;#34;&lt;/span&gt;, 
+                            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Biased&amp;#34;&lt;/span&gt;,
+                            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unbiased Conditional&amp;#34;&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table style=&#34;text-align:center&#34;&gt;&lt;tr&gt;&lt;td colspan=&#34;4&#34; style=&#34;border-bottom: 1px solid black&#34;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;&lt;em&gt;Dependent variable:&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td colspan=&#34;3&#34; style=&#34;border-bottom: 1px solid black&#34;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;wage&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;Biased Unconditional&lt;/td&gt;&lt;td&gt;Biased&lt;/td&gt;&lt;td&gt;Unbiased Conditional&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;(1)&lt;/td&gt;&lt;td&gt;(2)&lt;/td&gt;&lt;td&gt;(3)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&#34;4&#34; style=&#34;border-bottom: 1px solid black&#34;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;female&lt;/td&gt;&lt;td&gt;-2.900&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.560&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;-0.980&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;(0.084)&lt;/td&gt;&lt;td&gt;(0.029)&lt;/td&gt;&lt;td&gt;(0.028)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;occupation&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1.800&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.990&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;(0.006)&lt;/td&gt;&lt;td&gt;(0.010)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;ability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;(0.023)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;Constant&lt;/td&gt;&lt;td&gt;2.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.240&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;1.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;(0.060)&lt;/td&gt;&lt;td&gt;(0.020)&lt;/td&gt;&lt;td&gt;(0.017)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&#34;4&#34; style=&#34;border-bottom: 1px solid black&#34;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;Observations&lt;/td&gt;&lt;td&gt;10,000&lt;/td&gt;&lt;td&gt;10,000&lt;/td&gt;&lt;td&gt;10,000&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.110&lt;/td&gt;&lt;td&gt;0.910&lt;/td&gt;&lt;td&gt;0.950&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;Adjusted R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.110&lt;/td&gt;&lt;td&gt;0.910&lt;/td&gt;&lt;td&gt;0.950&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;Residual Std. Error&lt;/td&gt;&lt;td&gt;4.200 (df = 9998)&lt;/td&gt;&lt;td&gt;1.300 (df = 9997)&lt;/td&gt;&lt;td&gt;1.000 (df = 9996)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;F Statistic&lt;/td&gt;&lt;td&gt;1,208.000&lt;sup&gt;***&lt;/sup&gt; (df = 1; 9998)&lt;/td&gt;&lt;td&gt;50,089.000&lt;sup&gt;***&lt;/sup&gt; (df = 2; 9997)&lt;/td&gt;&lt;td&gt;62,279.000&lt;sup&gt;***&lt;/sup&gt; (df = 3; 9996)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&#34;4&#34; style=&#34;border-bottom: 1px solid black&#34;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/td&gt;&lt;td colspan=&#34;3&#34; style=&#34;text-align:right&#34;&gt;&lt;sup&gt;*&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;**&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;***&lt;/sup&gt;p&lt;0.01&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;Neat. That works, and there are a ton of additional options you can feed to &lt;code&gt;stargazer()&lt;/code&gt;—run &lt;code&gt;?stargazer&lt;/code&gt; or search in the Help pane for &amp;ldquo;stargazer&amp;rdquo; to see more.&lt;/p&gt;
+&lt;p&gt;However, I&amp;rsquo;m not a fan of &lt;strong&gt;stargazer&lt;/strong&gt; for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stargazer tables won&amp;rsquo;t knit to Word&lt;/li&gt;
+&lt;li&gt;You have to use different syntax when you&amp;rsquo;re knitting to PDF vs. HTML (i.e. you have to change the &lt;code&gt;type&lt;/code&gt; argument)&lt;/li&gt;
+&lt;li&gt;Stargazer handles basic models like &lt;code&gt;lm()&lt;/code&gt; and &lt;code&gt;glm()&lt;/code&gt; well, but doesn&amp;rsquo;t support newer things since (1) it hasn&amp;rsquo;t been updated for a while, and (2) support for any newer models has to be built-in by hand by the developer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this class we won&amp;rsquo;t use &lt;strong&gt;stargazer&lt;/strong&gt;. Instead, we&amp;rsquo;ll use the newer &lt;a href=&#34;https://vincentarelbundock.github.io/modelsummary/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;modelsummary&lt;/strong&gt; package&lt;/a&gt;, which addresses all of the issues with Stargazer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;modelsummary&lt;/strong&gt; tables knit to Word&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t have to use any special syntax when knitting documents with &lt;strong&gt;modelsummary&lt;/strong&gt; tables—knit to PDF and they&amp;rsquo;ll show up in the PDF; knit to Word and they&amp;rsquo;ll show up in the Word file; knit to HTML and they&amp;rsquo;ll show up there&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;modelsummary&lt;/strong&gt; handles any model that is supported by the &lt;strong&gt;broom&lt;/strong&gt; package (basically, if you ran run &lt;code&gt;tidy()&lt;/code&gt; on it, you can stick it in a table with &lt;strong&gt;modelsummary&lt;/strong&gt;). If a model doesn&amp;rsquo;t support broom yet, you can actually add that support yourself. For instance, nonparametric regression discontinuity models made with the &lt;strong&gt;rdrobust&lt;/strong&gt; package don&amp;rsquo;t work in either &lt;strong&gt;stargazer&lt;/strong&gt; or &lt;strong&gt;modelsummary&lt;/strong&gt;. They&amp;rsquo;ll probably never be added to &lt;strong&gt;stargazer&lt;/strong&gt;, but if you &lt;a href=&#34;https://github.com/tidymodels/broom/issues/777#issuecomment-643251123&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;include the code here&lt;/a&gt; in your document, you can add &lt;strong&gt;rdrobust&lt;/strong&gt; models to &lt;code&gt;modelsummary()&lt;/code&gt;. Magic!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The syntax for &lt;code&gt;modelsummary()&lt;/code&gt; is a little different from &lt;code&gt;stargazer()&lt;/code&gt;. Here&amp;rsquo;s how to recreate the same table from before:&lt;/p&gt;
+&lt;h3 id=&#34;translation-1&#34;&gt;Translation&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Stargazer version&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;stargazer&lt;/span&gt;(lm_1, lm_2, lm_3, type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;, 
+          column.labels &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Biased Unconditional&amp;#34;&lt;/span&gt;, 
+                            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Biased&amp;#34;&lt;/span&gt;,
+                            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unbiased Conditional&amp;#34;&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# modelsummary version&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(modelsummary)  &lt;span style=&#34;color:#75715e&#34;&gt;# You only need to run this once&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;modelsummary&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;list&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Biased Unconditional&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lm_1, 
+                  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Biased&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lm_2, 
+                  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unbiased Conditional&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lm_3),
+             stars &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRUE&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table class=&#34;table&#34; style=&#34;width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt;   &lt;/th&gt;
+   &lt;th style=&#34;text-align:center;&#34;&gt; Biased Unconditional &lt;/th&gt;
+   &lt;th style=&#34;text-align:center;&#34;&gt; Biased &lt;/th&gt;
+   &lt;th style=&#34;text-align:center;&#34;&gt; Unbiased Conditional &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; (Intercept) &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 2.015*** &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.245*** &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 1.005*** &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.060) &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.020) &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.017) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; -2.933*** &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.561*** &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; -0.984*** &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.084) &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.029) &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.028) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; occupation &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 1.790*** &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.995*** &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.006) &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.010) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; ability &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 2.007*** &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; (0.023) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Num.Obs. &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 10000 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 10000 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 10000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; R2 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.108 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.909 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.949 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; R2 Adj. &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.108 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.909 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 0.949 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; AIC &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 57175.7 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 34320.7 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 28518.8 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; BIC &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 57197.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 34349.6 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 28554.9 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Log.Lik. &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; -28584.837 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; -17156.358 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; -14254.399 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; F &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 1208.290 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 50089.046 &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 62279.460 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+&lt;td style=&#34;padding: 0; border:0;&#34; colspan=&#34;100%&#34;&gt;
+&lt;sup&gt;&lt;/sup&gt; * p &amp;lt; 0.1, ** p &amp;lt; 0.05, *** p &amp;lt; 0.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;p&gt;That&amp;rsquo;s it! You feed &lt;code&gt;modelsummary()&lt;/code&gt; a list of models. If you name the elements of the list, you&amp;rsquo;ll get column headings.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;modelsummary()&lt;/code&gt; function has a ton of options for changing the appearance, adding extra rows, omitting rows, highlighting rows, etc. &lt;a href=&#34;https://vincentarelbundock.github.io/modelsummary/articles/modelsummary.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;See this page for examples.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Citations and bibliography</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/citations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/citations/</guid>
+      <description>&lt;p&gt;You can &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/bib/references.bib&#34;&gt;download a BibTeX file&lt;/a&gt; of all the non-web-based readings in the course:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/bib/references.bib&#34;&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;code&gt;references.bib&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can open the file in &lt;a href=&#34;http://bibdesk.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibDesk on macOS&lt;/a&gt;, &lt;a href=&#34;http://www.jabref.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JabRef on Windows&lt;/a&gt;, or &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zotero&lt;/a&gt; or &lt;a href=&#34;https://www.mendeley.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mendeley&lt;/a&gt; online.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Markdown</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/markdown/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/markdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown&lt;/a&gt; is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like &lt;a href=&#34;https://pandoc.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pandoc&lt;/a&gt; to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc. (&lt;a href=&#34;https://pandoc.org/MANUAL.html#option--to&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;see the full list of output types here&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;basic-markdown-formatting&#34;&gt;Basic Markdown formatting&lt;/h2&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;40%&#34; /&gt;
+&lt;col width=&#34;21%&#34; /&gt;
+&lt;col width=&#34;38%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Type…&lt;/th&gt;
+&lt;th&gt;…or…&lt;/th&gt;
+&lt;th&gt;…to get&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;pre&gt;Some text in a paragraph.&lt;br&gt;
+More text in the next paragraph. Always
+use empty lines between paragraphs.&lt;/pre&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Some text in a paragraph.&lt;/p&gt;
+&lt;p&gt;More text in the next paragraph. Always
+use empty lines between paragraphs.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;*Italic*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;_Italic_&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Italic&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;**Bold**&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;__Bold__&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;# Heading 1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;h1 class=&#34;smaller-h1&#34;&gt;
+Heading 1
+&lt;/h1&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;## Heading 2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;h2 class=&#34;smaller-h2&#34;&gt;
+Heading 2
+&lt;/h2&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;### Heading 3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;h3 class=&#34;smaller-h3&#34;&gt;
+Heading 3
+&lt;/h3&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;(Go up to heading level 6 with &lt;code&gt;######&lt;/code&gt;)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;[Link text](http://www.example.com)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.example.com&#34;&gt;Link text&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;![Image caption](/path/to/image.png)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png&#34; title=&#34;fig:&#34; alt=&#34;Class logo&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;`&lt;code&gt;Inline code` with backticks&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Inline code&lt;/code&gt; with backticks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt; Blockquote&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;blockquote&gt;
+&lt;p&gt;Blockquote&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;pre&gt;- Things in
+- an unordered
+- list&lt;/pre&gt;&lt;/td&gt;
+&lt;td&gt;&lt;pre&gt;* Things in
+* an unordered
+* list&lt;/pre&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;Things in&lt;/li&gt;
+&lt;li&gt;an unordered&lt;/li&gt;
+&lt;li&gt;list&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;pre&gt;1. Things in
+2. an ordered
+3. list&lt;/pre&gt;&lt;/td&gt;
+&lt;td&gt;&lt;pre&gt;1) Things in
+2) an ordered
+3) list&lt;/pre&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Things in&lt;/li&gt;
+&lt;li&gt;an ordered&lt;/li&gt;
+&lt;li&gt;list&lt;/li&gt;
+&lt;/ol&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;pre&gt;Horizontal line
+&lt;p&gt;&amp;mdash;&lt;/pre&gt;&lt;/td&gt;&lt;/p&gt;
+&lt;td&gt;&lt;pre&gt;Horizontal line
+&lt;p&gt;***&lt;/pre&gt;&lt;/td&gt;&lt;/p&gt;
+&lt;td&gt;&lt;p&gt;Horizontal line&lt;/p&gt;
+&lt;hr /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;Markdown uses LaTeX to create fancy mathematical equations. There are like a billion little options and features available for math equations—you can find &lt;a href=&#34;http://www.malinc.se/math/latex/basiccodeen.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;helpful examples of the the most common basic commands here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can use math in two different ways: inline or in a display block. To use math inline, wrap it in single dollar signs, like &lt;code&gt;\$y = mx + b\$&lt;/code&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;52%&#34; /&gt;
+&lt;col width=&#34;47%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Type…&lt;/th&gt;
+&lt;th&gt;…to get&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;pre&gt;Based on the DAG, the regression model for
+estimating the effect of education on wages
+is &amp;dollar;\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon&amp;dollar;, or
+&amp;dollar;\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon&amp;dollar;.&lt;/pre&gt;&lt;/td&gt;
+&lt;td&gt;Based on the DAG, the regression model for
+estimating the effect of education on wages
+is &lt;span class=&#34;math inline&#34;&gt;\(\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon\)&lt;/span&gt;, or
+&lt;span class=&#34;math inline&#34;&gt;\(\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon\)&lt;/span&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;To put an equation on its own line in a display block, wrap it in double dollar signs, like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type…&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;The quadratic equation was an important part of high school math:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+But now we just use computers to solve for $x$.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The quadratic equation was an important part of high school math:&lt;/p&gt;
+&lt;p&gt;$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$&lt;/p&gt;
+&lt;p&gt;But now we just use computers to solve for &lt;code&gt;\(x\)&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Because dollar signs are used to indicate math equations, you can&amp;rsquo;t just use dollar signs like normal if you&amp;rsquo;re writing about actual dollars. For instance, if you write &lt;code&gt;This book costs \$5.75 and this other costs \$40&lt;/code&gt;, Markdown will treat everything that comes between the dollar signs as math, like so: &amp;ldquo;This book costs $5.75 and this other costs $40&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;To get around that, put a backslash (&lt;code&gt;\&lt;/code&gt;) in front of the dollar signs, so that &lt;code&gt;This book costs \\\$5.75 and this other costs \\\$40&lt;/code&gt; becomes &amp;ldquo;This book costs &lt;span&gt;$5.75&lt;/span&gt; and this other costs &lt;span&gt;$40&lt;/span&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;There are 4 different ways to hand-create tables in Markdown—I say &amp;ldquo;hand-create&amp;rdquo; because it&amp;rsquo;s normally way easier to use R to generate these things with packages like &lt;a href=&#34;https://rapporter.github.io/pander/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;pander&lt;/strong&gt;&lt;/a&gt; (use &lt;code&gt;pandoc.table()&lt;/code&gt;) or &lt;strong&gt;knitr&lt;/strong&gt; (use &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/kable.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;kable()&lt;/code&gt;&lt;/a&gt;). The two most common are simple tables and pipe tables. &lt;a href=&#34;https://pandoc.org/MANUAL.html#tables&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;You should look at the full documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For simple tables, type…&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table: Caption goes here
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Right     Left     Center     Default&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt; 12     12        12            12
+123     123       123          123
+  1     1          1             1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Table: Caption goes here&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For pipe tables, type…&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+Table: Caption goes here
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Right&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Left&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Center&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;12&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;12&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;123&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;123&lt;/td&gt;
+&lt;td&gt;123&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;123&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Table: Caption goes here&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;There are two different ways to add footnotes (&lt;a href=&#34;https://pandoc.org/MANUAL.html#footnotes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;see here for complete documentation&lt;/a&gt;): regular and inline.&lt;/p&gt;
+&lt;p&gt;Regular notes need (1) an identifier and (2) the actual note. The identifier can be whatever you want. Some people like to use numbers like &lt;code&gt;[^1]&lt;/code&gt;, but if you ever rearrange paragraphs or add notes before #1, the numbering will be wrong (in your Markdown file, not in the output; everything will be correct in the output). Because of that, I prefer to use some sort of text label:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type…&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Here is a footnote reference[^1] and here is another [^note-on-dags].
+
+[^1]: This is a note.
+
+[^note-on-dags]: DAGs are neat. 
+
+And here&amp;#39;s more of the document.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here is a footnote reference&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; and here is another.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s more of the document.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;This is a note.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;DAGs are neat.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;You can also use inline footnotes with &lt;code&gt;^[Text of the note goes here]&lt;/code&gt;, which are often easier because you don&amp;rsquo;t need to worry about identifiers:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type…&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Causal inference is neat.^[But it can be hard too!]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Causal inference is neat.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;But it can be hard too!&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;front-matter&#34;&gt;Front matter&lt;/h2&gt;
+&lt;p&gt;You can include a special section at the top of a Markdown document that contains metadata (or data about your document) like the title, date, author, etc. This section uses a special simple syntax named &lt;a href=&#34;https://learn.getgrav.org/16/advanced/yaml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YAML&lt;/a&gt; (or &amp;ldquo;YAML Ain&amp;rsquo;t Markup Language&amp;rdquo;) that follows this basic outline: &lt;code&gt;setting: value for setting&lt;/code&gt;. Here&amp;rsquo;s an example YAML metadata section. Note that it must start and end with three dashes (&lt;code&gt;---&lt;/code&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Title of your document&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;January 13, 2020&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Your name&amp;#34;&lt;/span&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can put the values inside quotes (like the date and name in the example above), or you can leave them outside of quotes (like the title in the example above). I typically use quotes just to be safe—if the value you&amp;rsquo;re using has a colon (&lt;code&gt;:&lt;/code&gt;) in it, it&amp;rsquo;ll confuse Markdown since it&amp;rsquo;ll be something like &lt;code&gt;title: My cool title: a subtitle&lt;/code&gt;, which has two colons. It&amp;rsquo;s better to do this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My cool title: a subtitle&amp;#34;&lt;/span&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you want to use quotes inside one of the values (e.g. your document is &lt;code&gt;An evaluation of &amp;quot;scare quotes&amp;quot;&lt;/code&gt;), you can use single quotes instead:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;An evaluation of &amp;#34;scare quotes&amp;#34;&amp;#39;&lt;/span&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;One of the most powerful features of Markdown + pandoc is the ability to automatically cite things and generate bibliographies. to use citations, you need to create a &lt;a href=&#34;http://www.bibtex.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibTeX file&lt;/a&gt; (ends in &lt;code&gt;.bib&lt;/code&gt;) that contains a database of the things you want to cite. You can do this with bibliography managers designed to work with BibTeX directly (like &lt;a href=&#34;https://bibdesk.sourceforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BibDesk&lt;/a&gt; on macOS), or you can use &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zotero&lt;/a&gt; (macOS and Windows) to export a &lt;code&gt;.bib&lt;/code&gt; file. You can &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/citations/&#34;&gt;download an example &lt;code&gt;.bib&lt;/code&gt; file of all the readings from this class here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Complete details for using citations can be found here&lt;/a&gt;. In brief, you need to do three things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add a &lt;code&gt;bibliography:&lt;/code&gt; entry to the YAML metadata:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Title of your document&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;January 13, 2020&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Your name&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;bibliography&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;name_of_file.bib&lt;/span&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a citation style based on a CSL file. The default is Chicago author-date, but you can choose from 2,000+ &lt;a href=&#34;https://github.com/citation-style-language/styles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;at this repository&lt;/a&gt;. Download the CSL file, put it in your project folder, and add an entry to the YAML metadata (or provide a URL to the online version):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Title of your document&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;January 13, 2020&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Your name&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;bibliography&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;name_of_file.bib&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;csl&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl&amp;#34;&lt;/span&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Some of the most common CSLs are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chicago author-date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-note-bibliography.csl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chicago note-bibliography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-fullnote-bibliography.csl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chicago full note-bibliography&lt;/a&gt; (no shortened notes or ibids)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;APA 7th edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/modern-language-association.csl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MLA 8th edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cite things in your document. &lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check the documentation for full details of how to do this&lt;/a&gt;. Essentially, you use &lt;code&gt;@citationkey&lt;/code&gt; inside square brackets (&lt;code&gt;[]&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type…&lt;/th&gt;
+&lt;th&gt;…to get…&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Causal inference is neat [@Rohrer:2018; @AngristPischke:2015].&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Causal inference is neat (Rohrer 2018; Angrist and Pischke 2015).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Causal inference is neat [see @Rohrer:2018, p. 34; also @AngristPischke:2015, chapter 1].&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Causal inference is neat (see Rohrer 2018, 34; also Angrist and Pischke 2015, chap. 1).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Angrist and Pischke say causal inference is neat [-@AngristPischke:2015; see also @Rohrer:2018].&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Angrist and Pischke say causal inference is neat (2015; see also Rohrer 2018).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;@AngristPischke:2015 [chapter 1] say causal inference is neat, and @Rohrer:2018 agrees.&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Angrist and Pischke (2015, chap. 1) say causal inference is neat, and Rohrer (2018) agrees.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;After compiling, you should have a perfectly formatted bibliography added to the end of your document too:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Angrist, Joshua D., and Jörn-Steffen Pischke. 2015. &lt;em&gt;Mastering ’Metrics: The Path from Cause to Effect.&lt;/em&gt; Princeton, NJ: Princeton University Press.&lt;/p&gt;
+&lt;p&gt;Rohrer, Julia M. 2018. “Thinking Clearly About Correlations and Causation: Graphical Causal Models for Observational Data.” &lt;em&gt;Advances in Methods and Practices in Psychological Science&lt;/em&gt; 1 (1): 27–42. &lt;a href=&#34;https://doi.org/10.1177/2515245917745629&#34;&gt;https://doi.org/10.1177/2515245917745629&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;other-references&#34;&gt;Other references&lt;/h2&gt;
+&lt;p&gt;These websites have additional details and examples and practice tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;CommonMark&amp;rsquo;s Markdown tutorial&lt;/strong&gt;&lt;/a&gt;: A quick interactive Markdown tutorial.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown tutorial&lt;/strong&gt;&lt;/a&gt;: Another interactive tutorial to practice using Markdown.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://packetlife.net/media/library/16/Markdown.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown cheatsheet&lt;/strong&gt;&lt;/a&gt;: Useful one-page reminder of Markdown syntax.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://plain-text.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Plain Person’s Guide to Plain Text Social Science&lt;/strong&gt;&lt;/a&gt;: A comprehensive explanation and tutorial about why you should write data-based reports in Markdown.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using R Markdown</title>
+      <link>https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown&lt;/a&gt; is &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt; with R code and output sprinkled in. You can do everything you can with &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt;, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even &lt;a href=&#34;https://rmarkdown.rstudio.com/flexdashboard/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;interactive dashboards&lt;/a&gt; with R Markdown. This whole course website is created with R Markdown (and &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a package named &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation for R Markdown&lt;/a&gt; is extremely comprehensive, and their &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorials&lt;/a&gt; and &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-15.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cheatsheets&lt;/a&gt; are excellent—rely on those.&lt;/p&gt;
+&lt;p&gt;Here are the most important things you&amp;rsquo;ll need to know about R Markdown in this class:&lt;/p&gt;
+&lt;h2 id=&#34;key-terms&#34;&gt;Key terms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Document&lt;/strong&gt;: A Markdown file where you type stuff&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Chunk&lt;/strong&gt;: A piece of R code that is included in your document. It looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```{r}
+# Code goes here
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There must be an empty line before and after the chunk. The final three backticks must be the only thing on the line—if you add more text, or if you forget to add the backticks, or accidentally delete the backticks, your document will not knit correctly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Knit&lt;/strong&gt;: When you &amp;ldquo;knit&amp;rdquo; a document, R runs each of the chunks sequentially and converts the output of each chunk into Markdown. R then runs the knitted document through &lt;a href=&#34;https://pandoc.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pandoc&lt;/a&gt; to convert it to HTML or PDF or Word (or whatever output you&amp;rsquo;ve selected).&lt;/p&gt;
+&lt;p&gt;You can knit by clicking on the &amp;ldquo;Knit&amp;rdquo; button at the top of the editor window, or by pressing &lt;code&gt;⌘⇧K&lt;/code&gt; on macOS or &lt;code&gt;control + shift + K&lt;/code&gt; on Windows.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;add-chunks&#34;&gt;Add chunks&lt;/h2&gt;
+&lt;p&gt;There are three ways to insert chunks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;code&gt;⌘⌥I&lt;/code&gt; on macOS or &lt;code&gt;control + alt + I&lt;/code&gt; on Windows&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on the &amp;ldquo;Insert&amp;rdquo; button at the top of the editor window&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/insert-chunk.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Manually type all the backticks and curly braces (don&amp;rsquo;t do this)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chunk-names&#34;&gt;Chunk names&lt;/h2&gt;
+&lt;p&gt;You can add names to chunks to make it easier to navigate your document. If you click on the little dropdown menu at the bottom of your editor in RStudio, you can see a table of contents that shows all the headings and chunks. If you name chunks, they&amp;rsquo;ll appear in the list. If you don&amp;rsquo;t include a name, the chunk will still show up, but you won&amp;rsquo;t know what it does.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/chunk-toc.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To add a name, include it immediately after the &lt;code&gt;{r&lt;/code&gt; in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. &lt;strong&gt;All chunk names in your document must be unique.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```{r name-of-this-chunk}
+# Code goes here
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;chunk-options&#34;&gt;Chunk options&lt;/h2&gt;
+&lt;p&gt;There are a bunch of different options you can set for each chunk. You can see a complete list in the &lt;a href=&#34;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RMarkdown Reference Guide&lt;/a&gt; or at &lt;a href=&#34;https://yihui.org/knitr/options/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;knitr&lt;/strong&gt;&amp;rsquo;s website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Options go inside the &lt;code&gt;{r}&lt;/code&gt; section of the chunk:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```{r name-of-this-chunk, warning=FALSE, message=FALSE}
+# Code goes here
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The most common chunk options are these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fig.width=5&lt;/code&gt; and &lt;code&gt;fig.height=3&lt;/code&gt; (&lt;em&gt;or whatever number you want&lt;/em&gt;): Set the dimensions for figures&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo=FALSE&lt;/code&gt;: The code is not shown in the final document, but the results are&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;message=FALSE&lt;/code&gt;: Any messages that R generates (like all the notes that appear after you load a package) are omitted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;warning=FALSE&lt;/code&gt;: Any warnings that R generates are omitted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;include=FALSE&lt;/code&gt;: The chunk still runs, but the code and results are not included in the final document&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also set chunk options by clicking on the little gear icon in the top right corner of any chunk:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/chunk-options.png&#34; width=&#34;70%&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;inline-chunks&#34;&gt;Inline chunks&lt;/h2&gt;
+&lt;p&gt;You can also include R output directly in your text, which is really helpful if you want to report numbers from your analysis. To do this, use &lt;code&gt;`r r_code_here`&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s generally easiest to calculate numbers in a regular chunk beforehand and then use an inline chunk to display the value in your text. For instance, this document…&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;```{r find-avg-mpg, echo=FALSE}
+avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mpg&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;```&lt;/span&gt;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;The&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fuel&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;efficiency&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;cars&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;1974&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;was&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`r round(avg_mpg, 1)`&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;miles&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;per&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;gallon&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;… would knit into this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The average fuel efficiency for cars from 1974 was 20.1 miles per gallon.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;output-formats&#34;&gt;Output formats&lt;/h2&gt;
+&lt;p&gt;You can specify what kind of document you create when you knit in the &lt;a href=&#34;https://evalsp21.classes.andrewheiss.com/resource/markdown/#front-matter&#34;&gt;YAML front matter&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My document&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;output&lt;/span&gt;:
+  &lt;span style=&#34;color:#f92672&#34;&gt;html_document&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;default&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;pdf_document&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;default&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;word_document&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;default&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also click on the down arrow on the &amp;ldquo;Knit&amp;rdquo; button to choose the output &lt;em&gt;and&lt;/em&gt; generate the appropriate YAML. If you click on the gear icon next to the &amp;ldquo;Knit&amp;rdquo; button and choose &amp;ldquo;Output options&amp;rdquo;, you change settings for each specific output type, like default figure dimensions or whether or not a table of contents is included.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://evalsp21.classes.andrewheiss.com/img/reference/output-options.png&#34; width=&#34;35%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The first output type listed under &lt;code&gt;output:&lt;/code&gt; will be what is generated when you click on the &amp;ldquo;Knit&amp;rdquo; button or press the keyboard shortcut (&lt;code&gt;⌘⇧K&lt;/code&gt; on macOS; &lt;code&gt;control + shift + K&lt;/code&gt; on Windows). If you choose a different output with the &amp;ldquo;Knit&amp;rdquo; button menu, that output will be moved to the top of the &lt;code&gt;output&lt;/code&gt; section.&lt;/p&gt;
+&lt;p&gt;The indentation of the YAML section matters, especially when you have settings nested under each output type. Here&amp;rsquo;s what a typical &lt;code&gt;output&lt;/code&gt; section might look like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;---
+&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My document&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My name&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;January 13, 2020&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;output&lt;/span&gt;: 
+  &lt;span style=&#34;color:#f92672&#34;&gt;html_document&lt;/span&gt;: 
+    &lt;span style=&#34;color:#f92672&#34;&gt;toc&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;yes&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;fig_caption&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;yes&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;fig_height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;fig_width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;pdf_document&lt;/span&gt;: 
+    &lt;span style=&#34;color:#f92672&#34;&gt;latex_engine&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;xelatex &lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# More modern PDF typesetting engine&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;toc&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;yes&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;word_document&lt;/span&gt;: 
+    &lt;span style=&#34;color:#f92672&#34;&gt;toc&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;yes&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;fig_caption&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;yes&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;fig_height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;fig_width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

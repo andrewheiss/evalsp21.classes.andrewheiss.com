@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="There&rsquo;s no video for this example, since the R code is fairly straightforward, and since I talked about it in the lecture (see the slides).
+If you want to follow along with this example, you can download the data below:" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/example/rcts/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/example/rcts/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/example/rcts/" />
+  <meta property="og:title" content="Randomized controlled trials (RCTs) | Program Evaluation" />
+  <meta property="og:description" content="There&rsquo;s no video for this example, since the R code is fairly straightforward, and since I talked about it in the lecture (see the slides).
+If you want to follow along with this example, you can download the data below:" /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-10-02T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-10-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Randomized controlled trials (RCTs) | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/">Code examples</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/random-numbers/">Simulated data</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/random-numbers/">Random numbers</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/synthetic-data/">Synthetic data</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/rstudio-tidyverse/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/rstudio-tidyverse/">R, RStudio, and the tidyverse</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/regression/">Regression</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/dags/">DAGs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/po-ate-cate/">Potential outcomes, ATEs, and CATEs</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/example/rcts/">RCTs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/matching-ipw/">Matching and IPW</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/diff-in-diff/">Diff-in-diff</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd/">Regression discontinuity</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/iv/">Instrumental variables</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/cace/">ITT and CACE</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd-fuzzy/">Fuzzy regression discontinuity</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#program-details">Program details</a></li>
+    <li><a href="#1-check-balance">1. Check balance</a></li>
+    <li><a href="#2-estimate-difference">2. Estimate difference</a></li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Randomized controlled trials (RCTs)</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <p>There&rsquo;s no video for this example, since the R code is fairly straightforward, and since <a href="https://www.youtube.com/watch?v=W0NyALrjLA4&amp;list=PLS6tnpTr39sGJURMOwN9tf9MNDN4t0JMz" target="_blank" rel="noopener">I talked about it in the lecture</a> (<a href="/slides/07-slides.html#26">see the slides</a>).</p>
+<p>If you want to follow along with this example, you can download the data below:</p>
+<ul>
+<li><a href="/data/village_randomized.csv"><i class="fas fa-table"></i> <code>village_randomized.csv</code></a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># ggplot(), %&gt;%, mutate(), and friends</span>
+<span style="color:#a6e22e">library</span>(ggdag)  <span style="color:#75715e"># Make DAGs</span>
+<span style="color:#a6e22e">library</span>(scales)  <span style="color:#75715e"># Format numbers with functions like comma(), percent(), and dollar()</span>
+<span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># Convert models to data frames</span>
+<span style="color:#a6e22e">library</span>(patchwork)  <span style="color:#75715e"># Combine ggplots into single composite plots</span>
+
+<span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1234</span>)   <span style="color:#75715e"># Make all random draws reproducible</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">village_randomized <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/village_randomized.csv&#34;</span>)
+</code></pre></div><h2 id="program-details">Program details</h2>
+<p>In this hypothetical situation, an NGO is planning on launching a training program designed to boost incomes. Based on their experiences in running pilot programs in other countries, they&rsquo;ve found that older, richer men tend to self-select into the training program. The NGO&rsquo;s evaluation consultant (you!) drew this causal model explaining the effect of the program on participant incomes, given the confounding caused by age, sex, and prior income:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">income_dag <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dagify</span>(post_income <span style="color:#f92672">~</span> program <span style="color:#f92672">+</span> age <span style="color:#f92672">+</span> sex <span style="color:#f92672">+</span> pre_income,
+                     program <span style="color:#f92672">~</span> age <span style="color:#f92672">+</span> sex <span style="color:#f92672">+</span> pre_income,
+                     exposure <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;program&#34;</span>,
+                     outcome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;post_income&#34;</span>,
+                     labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(post_income <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Post income&#34;</span>,
+                                program <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Program&#34;</span>,
+                                age <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age&#34;</span>,
+                                sex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sex&#34;</span>,
+                                pre_income <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Pre income&#34;</span>),
+                     coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(x <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(program <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, post_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, age <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,
+                                         sex <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, pre_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>),
+                                   y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(program <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, post_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, age <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+                                         sex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, pre_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>)))
+
+<span style="color:#a6e22e">ggdag_status</span>(income_dag, use_labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;label&#34;</span>, text <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">theme_dag</span>()
+</code></pre></div><p><img src="/example/rcts_files/figure-html/income-dag-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>The NGO just received funding to run a randomized controlled trial (RCT) in a village, and you&rsquo;re excited because you can finally manipulate access to the program—you can calculate <code>\(E(\text{Post-income} | do(\text{Program})\)</code>. Following the rules of causal diagrams, you get to delete all the arrows going into the program node:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">income_dag_rct <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dagify</span>(post_income <span style="color:#f92672">~</span> program <span style="color:#f92672">+</span> age <span style="color:#f92672">+</span> sex <span style="color:#f92672">+</span> pre_income,
+                         exposure <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;program&#34;</span>,
+                         outcome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;post_income&#34;</span>,
+                         labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(post_income <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Post income&#34;</span>,
+                                    program <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Program&#34;</span>,
+                                    age <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age&#34;</span>,
+                                    sex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sex&#34;</span>,
+                                    pre_income <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Pre income&#34;</span>),
+                         coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(x <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(program <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, post_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, age <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,
+                                             sex <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, pre_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>),
+                                       y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(program <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, post_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, age <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+                                             sex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, pre_income <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>)))
+
+<span style="color:#a6e22e">ggdag_status</span>(income_dag_rct, use_labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;label&#34;</span>, text <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">theme_dag</span>()
+</code></pre></div><p><img src="/example/rcts_files/figure-html/income-dag-rct-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<h2 id="1-check-balance">1. Check balance</h2>
+<p>You ran the study on 1,000 participants over the course of 6 months and you just got your data back.</p>
+<p>Before calculating the effect of the program, you first check to see how well balanced assignment was, and you find that assignment to the program was pretty much split 50/50, which is good:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">village_randomized <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">count</span>(program) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n))
+<span style="color:#75715e">## # A tibble: 2 x 3</span>
+<span style="color:#75715e">##   program        n  prop</span>
+<span style="color:#75715e">##   &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 No program   503 0.503</span>
+<span style="color:#75715e">## 2 Program      497 0.497</span>
+</code></pre></div><p>You then check to see how well balanced the treatment and control groups were in participants' pre-treatment characteristics:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">village_randomized <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">group_by</span>(program) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summarize</span>(prop_male <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(sex_num),
+            avg_age <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(age),
+            avg_pre_income <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(pre_income))
+<span style="color:#75715e">## # A tibble: 2 x 4</span>
+<span style="color:#75715e">##   program    prop_male avg_age avg_pre_income</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;          &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 No program     0.584    34.9           803.</span>
+<span style="color:#75715e">## 2 Program        0.604    34.9           801.</span>
+</code></pre></div><p>These variables appear fairly well balanced. To check that there aren&rsquo;t any statistically significant differences between the groups, you make some graphs (you could run t-tests too, but graphs are easier for your non-statistical audience to read later).</p>
+<p>There were more men in both the treatment and control groups, but the proportion is the same in both, and there&rsquo;s no substantial difference in sex proportion:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Here we save each plot as an object so that we can combine the two plots with</span>
+<span style="color:#75715e"># + (which comes from the patchwork package). If you want to see what an</span>
+<span style="color:#75715e"># individual plot looks like, you can run `plot_diff_sex`, or whatever the plot</span>
+<span style="color:#75715e"># object is named.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># stat_summary() here is a little different from the geom_*() layers you&#39;ve seen</span>
+<span style="color:#75715e"># in the past. stat_summary() takes a function (here mean_se()) and runs it on</span>
+<span style="color:#75715e"># each of the program groups to get the average and standard error. It then</span>
+<span style="color:#75715e"># plots those with geom_pointrange. The fun.args part of this lets us pass an</span>
+<span style="color:#75715e"># argument to mean_se() so that we can multiply the standard error by 1.96,</span>
+<span style="color:#75715e"># giving us the 95% confidence interval.</span>
+plot_diff_sex <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> program, y <span style="color:#f92672">=</span> sex_num, color <span style="color:#f92672">=</span> program)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">stat_summary</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pointrange&#34;</span>, fun.data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean_se&#34;</span>, fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(mult <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.96</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Proportion male&#34;</span>)
+<span style="color:#75715e"># plot_diff_sex  # Uncomment this if you want to see this plot by itself</span>
+
+plot_prop_sex <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> program, fill <span style="color:#f92672">=</span> sex)) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Using position = &#34;fill&#34; makes the bars range from 0-1 and show the proportion</span>
+  <span style="color:#a6e22e">geom_bar</span>(position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fill&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Proportion&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">scale_fill_manual</span>(values <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;darkblue&#34;</span>, <span style="color:#e6db74">&#34;darkred&#34;</span>))
+
+<span style="color:#75715e"># Show the plots side-by-side</span>
+plot_diff_sex <span style="color:#f92672">+</span> plot_prop_sex
+</code></pre></div><p><img src="/example/rcts_files/figure-html/balance-sex-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>The distribution of ages looks basically the same in the treatment and control groups, and there&rsquo;s no substantial difference in the average age across groups:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">plot_diff_age <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> program, y <span style="color:#f92672">=</span> age, color <span style="color:#f92672">=</span> program)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">stat_summary</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pointrange&#34;</span>, fun.data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean_se&#34;</span>, fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(mult <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.96</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age&#34;</span>)
+
+plot_hist_age <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> age, fill <span style="color:#f92672">=</span> program)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_histogram</span>(binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(fill <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Count&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(program), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+
+plot_diff_age <span style="color:#f92672">+</span> plot_hist_age
+</code></pre></div><p><img src="/example/rcts_files/figure-html/balance-age-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Pre-program income is also distributed the same—and has no substantial difference in averages—across treatment and control groups:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">plot_diff_income <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> program, y <span style="color:#f92672">=</span> pre_income, color <span style="color:#f92672">=</span> program)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">stat_summary</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pointrange&#34;</span>, fun.data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean_se&#34;</span>, fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(mult <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.96</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Pre income&#34;</span>)
+
+plot_hist_income <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> pre_income, fill <span style="color:#f92672">=</span> program)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_histogram</span>(binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(fill <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Pre income&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Count&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(program), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+
+plot_diff_income <span style="color:#f92672">+</span> plot_hist_income
+</code></pre></div><p><img src="/example/rcts_files/figure-html/balance-income-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>All our pre-treatment covariates look good and balanced! You can now estimate the causal effect of the program.</p>
+<h2 id="2-estimate-difference">2. Estimate difference</h2>
+<p>You are interested in the causal effect of the program, or</p>
+<p>$$
+E[\text{Post income}\ |\ do(\text{Program})]
+$$</p>
+<p>You can find this causal effect by calculating the average treatment effect:</p>
+<p>$$
+\text{ATE} = E(\overline{\text{Post income }} | \text{ Program} = 1) - E(\overline{\text{Post income }} | \text{ Program} = 0)
+$$</p>
+<p>This is simply the average outcome for people in the program minus the average outcome for people not in the program. You calculate the group averages:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">village_randomized <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">group_by</span>(program) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summarize</span>(avg_post <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(post_income))
+<span style="color:#75715e">## # A tibble: 2 x 2</span>
+<span style="color:#75715e">##   program    avg_post</span>
+<span style="color:#75715e">##   &lt;chr&gt;         &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 No program    1180.</span>
+<span style="color:#75715e">## 2 Program       1279.</span>
+</code></pre></div><p>That&rsquo;s 1279 − 1180, or 99, which means that the program caused an increase of $99 in incomes, on average.</p>
+<p>Finding that difference required some manual math, so as a shortcut, you run a regression model with post-program income as the outcome variable and the program indicator variable as the explanatory variable. The coefficient for <code>program</code> is the causal effect (and it includes information about standard errors and significance). You find the same result:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_rct <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(post_income <span style="color:#f92672">~</span> program, data <span style="color:#f92672">=</span> village_randomized)
+<span style="color:#a6e22e">tidy</span>(model_rct)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term           estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;             &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)      1180.       4.27     276.  0.      </span>
+<span style="color:#75715e">## 2 programProgram     99.2      6.06      16.4 1.23e-53</span>
+</code></pre></div><p>Based on your RCT, you conclude that the program causes an average increase of $99.25 in income.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(village_randomized, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> program, y <span style="color:#f92672">=</span> post_income, color <span style="color:#f92672">=</span> program)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">stat_summary</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pointrange&#34;</span>, fun.data <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean_se&#34;</span>, fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(mult <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.96</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Post income&#34;</span>)
+</code></pre></div><p><img src="/example/rcts_files/figure-html/rct-finding-1.png" width="75%" style="display: block; margin: auto;" /></p>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on October 2, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/example%5crcts.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

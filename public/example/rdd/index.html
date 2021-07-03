@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Video walk-through If you want to follow along with this example, you can download the data below:
+  tutoring_program.csv  Important: The results will be slightly different here than they were in the video." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/example/rdd/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/example/rdd/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/example/rdd/" />
+  <meta property="og:title" content="Regression discontinuity | Program Evaluation" />
+  <meta property="og:description" content="Video walk-through If you want to follow along with this example, you can download the data below:
+  tutoring_program.csv  Important: The results will be slightly different here than they were in the video." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-10-20T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-10-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Regression discontinuity | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/">Code examples</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/random-numbers/">Simulated data</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/random-numbers/">Random numbers</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/synthetic-data/">Synthetic data</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/rstudio-tidyverse/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/rstudio-tidyverse/">R, RStudio, and the tidyverse</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/regression/">Regression</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/dags/">DAGs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/po-ate-cate/">Potential outcomes, ATEs, and CATEs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rcts/">RCTs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/matching-ipw/">Matching and IPW</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/diff-in-diff/">Diff-in-diff</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/example/rdd/">Regression discontinuity</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/iv/">Instrumental variables</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/cace/">ITT and CACE</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd-fuzzy/">Fuzzy regression discontinuity</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#video-walk-through">Video walk-through</a></li>
+    <li><a href="#program-background">Program background</a></li>
+    <li><a href="#load-and-clean-data">Load and clean data</a></li>
+    <li><a href="#step-1-determine-if-process-of-assigning-treatment-is-rule-based">Step 1: Determine if process of assigning treatment is rule-based</a></li>
+    <li><a href="#step-2-determine-if-the-design-is-fuzzy-or-sharp">Step 2: Determine if the design is fuzzy or sharp</a></li>
+    <li><a href="#step-3-check-for-discontinuity-in-running-variable-around-cutpoint">Step 3: Check for discontinuity in running variable around cutpoint</a></li>
+    <li><a href="#step-4-check-for-discontinuity-in-outcome-across-running-variable">Step 4: Check for discontinuity in outcome across running variable</a></li>
+    <li><a href="#step-5-measure-the-size-of-the-effect">Step 5: Measure the size of the effect</a>
+      <ul>
+        <li><a href="#parametric-estimation">Parametric estimation</a></li>
+        <li><a href="#nonparametric-estimation">Nonparametric estimation</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-6-compare-all-the-effects">Step 6: Compare all the effects</a></li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Regression discontinuity</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<h2 id="video-walk-through">Video walk-through</h2>
+<p>If you want to follow along with this example, you can download the data below:</p>
+<ul>
+<li><a href="/data/tutoring_program.csv"><i class="fas fa-table"></i> <code>tutoring_program.csv</code></a></li>
+</ul>
+<div class="warning">
+<strong>Important</strong>: The results will be slightly different here than they were in the video. That&rsquo;s because in the data I used in the video, I didn&rsquo;t round any values, so people could score a 71.8392403 on the entrance exam, which is kind of an excessive number of decimals. In this data, I rounded everything to one decimal point (e.g. 71.8), so the gaps and lines will be a tiny bit different here.
+</div>
+
+<p>There&rsquo;s a set of videos that walks through each section below. To make it easier for you to jump around the video examples, I cut the long video into smaller pieces and included them all in <a href="https://www.youtube.com/playlist?list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">one YouTube playlist</a>.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=8CayGMcJoLY&amp;list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">Getting started</a></li>
+<li><a href="https://www.youtube.com/watch?v=ViDChprm2IY&amp;list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">Sharp or fuzzy?</a></li>
+<li><a href="https://www.youtube.com/watch?v=hqPVIt-72fY&amp;list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">Checking for manipulation</a></li>
+<li><a href="https://www.youtube.com/watch?v=yYqO22l_jgc&amp;list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">Finding discontinuity in outcome</a></li>
+<li><a href="https://www.youtube.com/watch?v=Por8Rd9QuBk&amp;list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">Measuring the gap parametrically</a></li>
+<li><a href="https://www.youtube.com/watch?v=lfBkAZLX_Z4&amp;list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" target="_blank" rel="noopener">Measuring the gap nonparametrically</a></li>
+</ul>
+<p>You can also watch the playlist (and skip around to different sections) here:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sFCr8amjT2Ld_FE34i26a3S" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="program-background">Program background</h2>
+<p>In this hypothetical example, students take an entrance exam at the beginning of a school year. Those who score 70 or below are automatically enrolled in a free tutoring program and receive assistance throughout the year. At the end of the school year, students take a final test, or exit exam (with a maximum of 100 points) to measure how much they learned overall. Remember, this is a hypothetical example and tests like this don&rsquo;t really exist, but just go with it.</p>
+<p>You have a dataset with four columns in it:</p>
+<ul>
+<li><code>id</code>: The ID of the student</li>
+<li><code>entrance_exam</code>: The student&rsquo;s entrance exam score (out of 100)</li>
+<li><code>exit_exam</code>: The student&rsquo;s exit exam score (out of 100)</li>
+<li><code>tutoring</code>: An indicator variable showing if the student was enrolled in the tutoring program</li>
+</ul>
+<h2 id="load-and-clean-data">Load and clean data</h2>
+<p>First, let&rsquo;s download the dataset (if you haven&rsquo;t already), put in a folder named <code>data</code>, and load it:</p>
+<ul>
+<li><a href="/data/tutoring_program.csv"><i class="fas fa-table"></i> <code>tutoring_program.csv</code></a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># ggplot(), %&gt;%, mutate(), and friends</span>
+<span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># Convert models to data frames</span>
+<span style="color:#a6e22e">library</span>(rdrobust)  <span style="color:#75715e"># For robust nonparametric regression discontinuity</span>
+<span style="color:#a6e22e">library</span>(rddensity)  <span style="color:#75715e"># For nonparametric regression discontinuity density tests</span>
+<span style="color:#a6e22e">library</span>(modelsummary)  <span style="color:#75715e"># Create side-by-side regression tables</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Load the data.</span>
+<span style="color:#75715e"># It&#39;d be a good idea to click on the &#34;tutoring&#34; object in the Environment</span>
+<span style="color:#75715e"># panel in RStudio to see what the data looks like after you load it</span>
+tutoring <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/tutoring_program.csv&#34;</span>)
+</code></pre></div><h2 id="step-1-determine-if-process-of-assigning-treatment-is-rule-based">Step 1: Determine if process of assigning treatment is rule-based</h2>
+<p>In order to join the tutoring program, students have to score 70 points or lower on the entrance exam. Students who score higher than 70 are not eligible for the program. Since we have a clear 70-point rule, we can assume that the process of participating in the tutoring program is rule-based.</p>
+<h2 id="step-2-determine-if-the-design-is-fuzzy-or-sharp">Step 2: Determine if the design is fuzzy or sharp</h2>
+<p>Since we know that the program was applied based on a rule, we next want to figure out how strictly the rule was applied. The threshold was 70 points on the test—did people who scored 68 slip through bureaucratic cracks and not participate, or did people who scored 73 sneak into the program? The easiest way to check this is with a graph, and we can get exact numbers with a table.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(tutoring, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> entrance_exam, y <span style="color:#f92672">=</span> tutoring, color <span style="color:#f92672">=</span> tutoring)) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Make points small and semi-transparent since there are lots of them</span>
+  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>,
+             position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitter</span>(width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.25</span>, seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add vertical line</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add labels</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Participated in tutoring program&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Turn off the color legend, since it&#39;s redundant</span>
+  <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</code></pre></div><p><img src="/example/rdd_files/figure-html/check-fuzzy-sharp-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>This looks pretty sharp—it doesn&rsquo;t look like people who scored under 70 participated in the program. We can verify this with a table. There are no people where <code>entrance_exam</code> is greater than 70 and <code>tutoring</code> is false, and no people where <code>entrance_exam</code> is less than 70 and <code>tutoring</code> is true.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">tutoring <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">group_by</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summarize</span>(count <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>())
+<span style="color:#75715e">## # A tibble: 2 x 3</span>
+<span style="color:#75715e">## # Groups:   tutoring [2]</span>
+<span style="color:#75715e">##   tutoring `entrance_exam &lt;= 70` count</span>
+<span style="color:#75715e">##   &lt;lgl&gt;    &lt;lgl&gt;                 &lt;int&gt;</span>
+<span style="color:#75715e">## 1 FALSE    FALSE                   759</span>
+<span style="color:#75715e">## 2 TRUE     TRUE                    241</span>
+</code></pre></div><p>This is thus a sharp design.</p>
+<h2 id="step-3-check-for-discontinuity-in-running-variable-around-cutpoint">Step 3: Check for discontinuity in running variable around cutpoint</h2>
+<p>Next we need to see if there was any manipulation in the running variable—maybe lots of people bunched up around 70 because of how the test was graded (i.e. students wanted to get into the program, so they purposely did poorly on the exam to get under 70). We can do this a couple different ways. First, we&rsquo;ll make a histogram of the running variable (test scores) and see if there are any big jumps around the threshold:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(tutoring, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> entrance_exam, fill <span style="color:#f92672">=</span> tutoring)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_histogram</span>(binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>, boundary <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Count&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;In program&#34;</span>)
+</code></pre></div><p><img src="/example/rdd_files/figure-html/check-running-discontinuity-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Here it doesn&rsquo;t look like there&rsquo;s a jump around the cutoff—there&rsquo;s a tiny visible difference between the height of the bars right before and right after the 70-point threshold, but it seems to follow the general shape of the overall distribution. We can check to see if that jump is statistically significant with a McCrary density test (explained in <a href="https://mixtape.scunning.com/ch5.html#mccrarys-density-test" target="_blank" rel="noopener">section 6.3.1 of <em>Causal Inference: The Mixtape</em></a>). This puts data into bins like a histogram, and then plots the averages and confidence intervals of those bins. If the confidence intervals of the density lines don&rsquo;t overlap, then there&rsquo;s likely something systematically wrong with how the test was scored (i.e. too many people getting 69 vs 71). If the confidence intervals overlap, there&rsquo;s not any significant difference around the threshold and we&rsquo;re fine.</p>
+<p>First we use <code>rddensity()</code> to do the actual statistical test. You need to feed it two things: the running variable and the cutoff.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Notice this tutoring$entrance_exam syntax. This is one way for R to access</span>
+<span style="color:#75715e"># columns in data frames---it means &#34;use the entrance_exam column in the</span>
+<span style="color:#75715e"># tutoring data frame&#34;. The general syntax for it is data_frame$column_name</span>
+test_density <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rddensity</span>(tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>)
+<span style="color:#a6e22e">summary</span>(test_density)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">## Manipulation testing using local polynomial density estimation.
+## 
+## Number of obs =       1000
+## Model =               unrestricted
+## Kernel =              triangular
+## BW method =           estimated
+## VCE method =          jackknife
+## 
+## c = 70                Left of c           Right of c          
+## Number of obs         237                 763                 
+## Eff. Number of obs    208                 577                 
+## Order est. (p)        2                   2                   
+## Order bias (q)        3                   3                   
+## BW est. (h)           22.444              19.966              
+## 
+## Method                T                   P &gt; |T|             
+## Robust                -0.5521             0.5809
+</code></pre></div><p>We can then plot that density test:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># The syntax for rdplotdensity is kinda wonky here. You have to feed it the</span>
+<span style="color:#75715e"># rddensity() test, and then you have to specify x, which is your running</span>
+<span style="color:#75715e"># variable (again!). The type argument tells the plot to show both points and</span>
+<span style="color:#75715e"># lines---without it, it&#39;ll only show lines.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Finally, notice how I assigned the output of rdplotdensity to a variable named</span>
+<span style="color:#75715e"># plot_density_test. In theory, this should make it show nothing---all the</span>
+<span style="color:#75715e"># output should go to that object. Because of a bug in rdplotdensity, though, it</span>
+<span style="color:#75715e"># will show a plot automatically even if assigning it to a variable. If we don&#39;t</span>
+<span style="color:#75715e"># assign it to a variable you&#39;ll see two identical plots when knitting, which is</span>
+<span style="color:#75715e"># annoying. So we save it as a variable to hide the output, but get the output</span>
+<span style="color:#75715e"># for a single plot anyway. Ugh.</span>
+plot_density_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rdplotdensity</span>(rdd <span style="color:#f92672">=</span> test_density,
+                                   X <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam,
+                                   type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;both&#34;</span>)  <span style="color:#75715e"># This adds both points and lines</span>
+</code></pre></div><p><img src="/example/rdd_files/figure-html/plot-running-discontinuity-mcrary-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>There&rsquo;s a lot of output here, but what we care about is the line that starts with &ldquo;Robust&rdquo;, which shows the t-test for the difference in the two points on either side of the cutpoint in the plot. Notice in the plot that the confidence intervals overlap substantially. The p-value for the size of that overlap is 0.5809, which is a lot larger than 0.05, so we don&rsquo;t have good evidence that there&rsquo;s a significant difference between the two lines. Based on this plot and the t-statistic, we&rsquo;re probably safe in saying that there&rsquo;s no manipulation or bunching.</p>
+<h2 id="step-4-check-for-discontinuity-in-outcome-across-running-variable">Step 4: Check for discontinuity in outcome across running variable</h2>
+<p>Now that we know this is a sharp design and that there&rsquo;s no bunching of test scores around the 70-point threshold, we can finally see if there&rsquo;s a discontinuity in final scores based on participation in the tutoring program. Plot the running variable on the x-axis, the outcome variable on the y-axis, and color the points by whether they participated in the program.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(tutoring, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> entrance_exam, y <span style="color:#f92672">=</span> exit_exam, color <span style="color:#f92672">=</span> tutoring)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add a line based on a linear model for the people scoring 70 or less</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>), method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add a line based on a linear model for the people scoring more than 70</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">70</span>), method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Exit exam score&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Used tutoring&#34;</span>)
+</code></pre></div><p><img src="/example/rdd_files/figure-html/check-outcome-discontinuity-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Based on this graph, there&rsquo;s a clear discontinuity! It looks like participation in the tutoring program boosted final test scores.</p>
+<h2 id="step-5-measure-the-size-of-the-effect">Step 5: Measure the size of the effect</h2>
+<p>There&rsquo;s a discontinuity, but how big is it? And is it statistically significant?</p>
+<p>We can check the size two different ways: parametrically (i.e. using <code>lm()</code> with specific parameters and coefficients), and nonparametrically (i.e. not using <code>lm()</code> or any kind of straight line and instead drawing lines that fit the data more precisely). We&rsquo;ll do it both ways.</p>
+<h3 id="parametric-estimation">Parametric estimation</h3>
+<p>First we&rsquo;ll do it parametrically by using linear regression. Here we want to explain the variation in final scores based on the entrance exam score and participation in the tutoring program:</p>
+<p>$$
+\text{Exit exam} = \beta_0 + \beta_1 \text{Entrance exam score}_\text{centered} + \beta_2 \text{Tutoring program} + \epsilon
+$$</p>
+<p>To make it easier to interpret coefficients, we can center the entrance exam column so that instead of showing the actual test score, it shows how many points above or below 70 the student scored. That way we can use the coefficient for <code>tutoring</code> for the causal effect.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">tutoring_centered <span style="color:#f92672">&lt;-</span> tutoring <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">mutate</span>(entrance_centered <span style="color:#f92672">=</span> entrance_exam <span style="color:#f92672">-</span> <span style="color:#ae81ff">70</span>)
+
+model_simple <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(exit_exam <span style="color:#f92672">~</span> entrance_centered <span style="color:#f92672">+</span> tutoring,
+                   data <span style="color:#f92672">=</span> tutoring_centered)
+<span style="color:#a6e22e">tidy</span>(model_simple)
+<span style="color:#75715e">## # A tibble: 3 x 5</span>
+<span style="color:#75715e">##   term              estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)         59.4      0.442      134.  0.      </span>
+<span style="color:#75715e">## 2 entrance_centered    0.510    0.0269      18.9 1.40e-68</span>
+<span style="color:#75715e">## 3 tutoringTRUE        10.8      0.800       13.5 3.12e-38</span>
+</code></pre></div><p>Here&rsquo;s what these coefficients mean:</p>
+<ul>
+<li><code>\(\beta_0\)</code>: This is the intercept. Because we centered entrance exam scores, it shows the average exit exam score at the 70-point threshold. People who scored 70.001 points on the entrance exam score an average of 59.4 points on the exit exam. (Another way to think about this is that it shows the predicted exit exam score when <code>entrance_centered</code> is 0 (i.e. 70) and when <code>tutoring</code> is <code>FALSE</code>.)</li>
+<li><code>\(\beta_1\)</code>: This is the coefficient for <code>entrance_centered</code>. For every point above 70 that people score on the entrance exam, they score 0.51 points higher on the exit exam. We don&rsquo;t really care that much about this number.</li>
+<li><code>\(\beta_2\)</code>: This is the coefficient for the tutoring program, and <em>this is the one we care about the most</em>. This is the shift in intercept when <code>tutoring</code> is true, or the difference between scores at the threshold. Participating in the tutoring program increases exit exam scores by 10.8 points.</li>
+</ul>
+<p>One advantage to using a parametric approach is that you can include other covariates like demographics. You can also use polynomial regression and include terms like <code>entrance_centered²</code> or <code>entrance_centered³</code> or even <code>entrance_centered⁴</code> to make the line fit the data as close as possible.</p>
+<p>Here we fit the model to the entire data, but in real life, we care most about the observations right around the threshold, which means this model is actually <em><strong>wrong</strong></em>. Scores that are super high or super low shouldn&rsquo;t really influence our effect size, since we only care about the people who score just barely under and just barely over 70.</p>
+<p>We can fit the same model but restrict it to people within a smaller window, or bandwidth, like ±10 points, or ±5 points:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_bw_10 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(exit_exam <span style="color:#f92672">~</span> entrance_centered <span style="color:#f92672">+</span> tutoring,
+                  data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring_centered,
+                                entrance_centered <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">-10</span> <span style="color:#f92672">&amp;</span>
+                                  entrance_centered <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span>))
+<span style="color:#a6e22e">tidy</span>(model_bw_10)
+<span style="color:#75715e">## # A tibble: 3 x 5</span>
+<span style="color:#75715e">##   term              estimate std.error statistic   p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)         60.4       0.752     80.3  2.99e-249</span>
+<span style="color:#75715e">## 2 entrance_centered    0.388     0.114      3.40 7.45e-  4</span>
+<span style="color:#75715e">## 3 tutoringTRUE         9.27      1.31       7.09 6.27e- 12</span>
+
+model_bw_5 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(exit_exam <span style="color:#f92672">~</span> entrance_centered <span style="color:#f92672">+</span> tutoring,
+                  data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring_centered,
+                                entrance_centered <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">-5</span> <span style="color:#f92672">&amp;</span>
+                                  entrance_centered <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>))
+<span style="color:#a6e22e">tidy</span>(model_bw_5)
+<span style="color:#75715e">## # A tibble: 3 x 5</span>
+<span style="color:#75715e">##   term              estimate std.error statistic   p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)         60.6       1.12      54.3  4.78e-118</span>
+<span style="color:#75715e">## 2 entrance_centered    0.380     0.331      1.15 2.53e-  1</span>
+<span style="color:#75715e">## 3 tutoringTRUE         9.12      1.91       4.77 3.66e-  6</span>
+</code></pre></div><p>We can compare all these models simultaneously with <code>modelsummary()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;Full data&#34;</span> <span style="color:#f92672">=</span> model_simple,
+                  <span style="color:#e6db74">&#34;Bandwidth = 10&#34;</span> <span style="color:#f92672">=</span> model_bw_10,
+                  <span style="color:#e6db74">&#34;Bandwidth = 5&#34;</span> <span style="color:#f92672">=</span> model_bw_5))
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> Full data </th>
+   <th style="text-align:center;"> Bandwidth = 10 </th>
+   <th style="text-align:center;"> Bandwidth = 5 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> 59.411*** </td>
+   <td style="text-align:center;"> 60.377*** </td>
+   <td style="text-align:center;"> 60.631*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.442) </td>
+   <td style="text-align:center;"> (0.752) </td>
+   <td style="text-align:center;"> (1.117) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> entrance_centered </td>
+   <td style="text-align:center;"> 0.510*** </td>
+   <td style="text-align:center;"> 0.388*** </td>
+   <td style="text-align:center;"> 0.380 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.027) </td>
+   <td style="text-align:center;"> (0.114) </td>
+   <td style="text-align:center;"> (0.331) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F6D645 !important;"> tutoringTRUE </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> 10.800*** </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> 9.273*** </td>
+   <td style="text-align:center;background-color: #F6D645 !important;"> 9.122*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;box-shadow: 0px 1pxborder-bottom: 1px solid">  </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (0.800) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (1.309) </td>
+   <td style="text-align:center;box-shadow: 0px 1pxborder-bottom: 1px solid"> (1.912) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 1000 </td>
+   <td style="text-align:center;"> 404 </td>
+   <td style="text-align:center;"> 194 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.268 </td>
+   <td style="text-align:center;"> 0.162 </td>
+   <td style="text-align:center;"> 0.222 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 Adj. </td>
+   <td style="text-align:center;"> 0.267 </td>
+   <td style="text-align:center;"> 0.158 </td>
+   <td style="text-align:center;"> 0.214 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AIC </td>
+   <td style="text-align:center;"> 6595.3 </td>
+   <td style="text-align:center;"> 2663.5 </td>
+   <td style="text-align:center;"> 1303.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> BIC </td>
+   <td style="text-align:center;"> 6615.0 </td>
+   <td style="text-align:center;"> 2679.5 </td>
+   <td style="text-align:center;"> 1316.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Log.Lik. </td>
+   <td style="text-align:center;"> -3293.663 </td>
+   <td style="text-align:center;"> -1327.755 </td>
+   <td style="text-align:center;"> -647.567 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 182.971 </td>
+   <td style="text-align:center;"> 38.891 </td>
+   <td style="text-align:center;"> 27.310 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Deviance </td>
+   <td style="text-align:center;"> 42497.66 </td>
+   <td style="text-align:center;"> 16925.61 </td>
+   <td style="text-align:center;"> 9008.56 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF Resid </td>
+   <td style="text-align:center;"> 997 </td>
+   <td style="text-align:center;"> 401 </td>
+   <td style="text-align:center;"> 191 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sigma </td>
+   <td style="text-align:center;"> 6.529 </td>
+   <td style="text-align:center;"> 6.497 </td>
+   <td style="text-align:center;"> 6.868 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Statistics </td>
+   <td style="text-align:center;"> 182.971 </td>
+   <td style="text-align:center;"> 38.891 </td>
+   <td style="text-align:center;"> 27.310 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+   <td style="text-align:center;"> 0.000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> DF </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<p>The effect of <code>tutoring</code> differs a lot across these different models, from 9.1 to 10.8. Which one is right? I don&rsquo;t know. Definitely not the full data one.</p>
+<p>Also notice how much the sample size (N) changes across the models. As you narrow the bandwidth, you look at fewer and fewer observations.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(tutoring, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> entrance_exam, y <span style="color:#f92672">=</span> exit_exam, color <span style="color:#f92672">=</span> tutoring)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add lines for the full model (model_simple)</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>),
+              method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, se <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dotted&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">70</span>),
+              method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, se <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dotted&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add lines for bandwidth = 10</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>, entrance_exam <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>),
+              method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, se <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dashed&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">70</span>, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">80</span>),
+              method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, se <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dashed&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Add lines for bandwidth = 5</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span>, entrance_exam <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">65</span>),
+              method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, se <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">filter</span>(tutoring, entrance_exam <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">70</span>, entrance_exam <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">75</span>),
+              method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, se <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Zoom in</span>
+  <span style="color:#a6e22e">coord_cartesian</span>(xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">90</span>), ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">75</span>)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Entrance exam score&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Exit exam score&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Used tutoring&#34;</span>)
+</code></pre></div><p><img src="/example/rdd_files/figure-html/different-lm-bandwidths-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<h3 id="nonparametric-estimation">Nonparametric estimation</h3>
+<p>Instead of using linear regression to measure the size of the discontinuity, we can use nonparametric methods. Essentially this means that R will not try to fit a straight line to the data—instead it&rsquo;ll curve around the points and try to fit everything as smoothly as possible.</p>
+<p>The <code>rdrobust()</code> function makes it really easy to measure the gap at the cutoff with nonparametric estimation. Here&rsquo;s the simplest version:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Notice how we have to use the tutoring$exit_exam syntax here. Also make sure</span>
+<span style="color:#75715e"># you set the cutoff with c</span>
+<span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                       mserd</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.            144         256</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                  9.969       9.969</span>
+<span style="color:#75715e">## BW bias (b)                 14.661      14.661</span>
+<span style="color:#75715e">## rho (h/b)                    0.680       0.680</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -8.578     1.601    -5.359     0.000   [-11.715 , -5.441]    </span>
+<span style="color:#75715e">##         Robust         -         -    -4.352     0.000   [-12.101 , -4.587]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+</code></pre></div><p>There are a few important pieces of information to look at in this output:</p>
+<ul>
+<li>The thing you care about the most is the actual effect size. This is the coefficient in the table at the bottom, indicated with the &ldquo;Conventional&rdquo; method. Here it&rsquo;s -8.578, which means the tutoring program causes an 8-point change in exit exam scores. The table at the bottom also includes standard errors, p-values, and confidence intervals for the coefficient, both normal estimates (conventional) and robust estimates (robust). According to both types of estimates, this 8 point bump is statistically significant (p &lt; 0.001; the 95% confidence interval definitely doesn&rsquo;t ever include 0).</li>
+<li>Importantly, notice that the coefficient here is actually negative (-8.578), while our previous parametric estimates were all positive. That does <em>not</em> mean that the program causes a drop in test scores. That negative value is just a side effect of how <code>rdrobust()</code> measures the gap. It looks at the value of the treatment group right before the threshold and then shows that test scores drop when shifting to the control group (while before we talked about the opposite story: test scores increase as you move from the control group to the treatment group). There&rsquo;s no way to flip the sign within <code>rdrobust()</code>, so you need to look at the plot and see what the gap is really doing.</li>
+<li>The model used a bandwidth of 9.969 (<code>BW est. (h)</code> in the output), which means it only looked at people with test scores of 70 ± 10. It decided on this bandwidth automatically, but you can change it to whatever you want.</li>
+<li>The model used a triangular kernel. This is the most esoteric part of the model—the kernel decides how much weight to give to observations around the cutoff. Test scores like 69.99 or 70.01 are extremely close to 70, so they get the most weight. Scores like 67 or 73 are a little further away so they matter less. Scores like 64 or 76 matter even less, so they get even less weight. You can use different kernels too, and <a href="https://en.wikipedia.org/wiki/Kernel_%28statistics%29#Kernel_functions_in_common_use" target="_blank" rel="noopener">Wikipedia has a nice graphic showing the shapes of these different kernels</a> and how they give different weights to observations at different distances.</li>
+</ul>
+<p>We can plot this nonparametric model with <code>rdplot()</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">rdplot</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>)
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+</code></pre></div><p><img src="/example/rdd_files/figure-html/rdplot-basic-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Look at that 8.5 point jump at 70! Neat!</p>
+<p>Notice that the points here aren&rsquo;t actually the observations in the dataset. The <code>rdplot()</code> function makes bins of points (like a histogram) and then shows the average outcome within each bin. You can control how many bins are used in the x-axis with the <code>nbins</code> or <code>binselect</code> arguments in <code>rdplot()</code> (run <code>?rdplot</code> in your console to see all the possible options for plotting nonparametric discontinuities).</p>
+<div class="fyi">
+<p><strong>Side note</strong>: <code>rdplot()</code> uses the same plotting system as <code>ggplot()</code>, so you can add layers like <code>labs()</code> or <code>geom_point()</code> or anything else, which is cool, but getting to that underlying <code>ggplot()</code> object is weird. To do it, store the results of <code>rdplot</code> as an object, like <code>asdf</code>, then use <code>asdf$rdplot</code> to access the plot:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">asdf <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rdplot</span>(<span style="color:#66d9ef">...</span>)
+asdf<span style="color:#f92672">$</span>rdplot <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Running variable&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Outcome variable&#34;</span>)
+</code></pre></div><p>You don&rsquo;t need to worry about all that for showing simple plots though!</p>
+
+</div>
+
+<p>By default, <code>rdrobust()</code> chooses the bandwidth size automatically based on fancy algorithms that economists have developed. You can use <code>rdbwselect()</code> to see what that bandwidth is, and if you include the <code>all = TRUE</code> argument, you can see a bunch of different potential bandwidths based on a bunch of different algorithms:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># This says to use the mserd version, which according to the help file for</span>
+<span style="color:#75715e"># rdbwselect means &#34;the mean squared error-optimal bandwidth selector for RD</span>
+<span style="color:#75715e"># treatment effects&#34;. Sounds great.</span>
+<span style="color:#a6e22e">rdbwselect</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdbwselect</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                       mserd</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =======================================================</span>
+<span style="color:#75715e">##                   BW est. (h)    BW bias (b)</span>
+<span style="color:#75715e">##             Left of c Right of c  Left of c Right of c</span>
+<span style="color:#75715e">## =======================================================</span>
+<span style="color:#75715e">##      mserd     9.969      9.969     14.661     14.661</span>
+<span style="color:#75715e">## =======================================================</span>
+</code></pre></div><p>What are the different possible bandwidths we could use?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">rdbwselect</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, all <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdbwselect</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                         All</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =======================================================</span>
+<span style="color:#75715e">##                   BW est. (h)    BW bias (b)</span>
+<span style="color:#75715e">##             Left of c Right of c  Left of c Right of c</span>
+<span style="color:#75715e">## =======================================================</span>
+<span style="color:#75715e">##      mserd     9.969      9.969     14.661     14.661</span>
+<span style="color:#75715e">##     msetwo    11.521     10.054     17.067     14.907</span>
+<span style="color:#75715e">##     msesum    12.044     12.044     17.631     17.631</span>
+<span style="color:#75715e">##   msecomb1     9.969      9.969     14.661     14.661</span>
+<span style="color:#75715e">##   msecomb2    11.521     10.054     17.067     14.907</span>
+<span style="color:#75715e">##      cerrd     7.058      7.058     14.661     14.661</span>
+<span style="color:#75715e">##     certwo     8.156      7.118     17.067     14.907</span>
+<span style="color:#75715e">##     cersum     8.526      8.526     17.631     17.631</span>
+<span style="color:#75715e">##   cercomb1     7.058      7.058     14.661     14.661</span>
+<span style="color:#75715e">##   cercomb2     8.156      7.118     17.067     14.907</span>
+<span style="color:#75715e">## =======================================================</span>
+</code></pre></div><p>Phew. There are a lot here. The best one was <code>mserd</code>, or ±9.69. Some say ±7, others ±12, other are asymmetric and say -11.5 before and +10 after. Try a bunch of different bandwidths as part of your sensitivity analysis and see if your effect size changes substantially as a result.</p>
+<p>Another common approach to sensitivity analysis is to use the ideal bandwidth, twice the ideal, and half the ideal (so in our case 10, 20, and 5) and see if the estimate changes substantially. Use the <code>h</code> argument to specify your own bandwidth</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, h <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.969</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                      Manual</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.            144         256</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                  9.969       9.969</span>
+<span style="color:#75715e">## BW bias (b)                  9.969       9.969</span>
+<span style="color:#75715e">## rho (h/b)                    1.000       1.000</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -8.578     1.601    -5.359     0.000   [-11.715 , -5.441]    </span>
+<span style="color:#75715e">##         Robust         -         -    -3.276     0.001   [-12.483 , -3.138]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+
+<span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, h <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.969</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                      Manual</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.            206         577</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                 19.938      19.938</span>
+<span style="color:#75715e">## BW bias (b)                 19.938      19.938</span>
+<span style="color:#75715e">## rho (h/b)                    1.000       1.000</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -9.151     1.130    -8.100     0.000   [-11.365 , -6.937]    </span>
+<span style="color:#75715e">##         Robust         -         -    -4.980     0.000   [-11.670 , -5.078]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+
+<span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, h <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.969</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                      Manual</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.             82         109</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                  4.984       4.984</span>
+<span style="color:#75715e">## BW bias (b)                  4.984       4.984</span>
+<span style="color:#75715e">## rho (h/b)                    1.000       1.000</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -8.201     2.348    -3.493     0.000   [-12.803 , -3.600]    </span>
+<span style="color:#75715e">##         Robust         -         -    -2.032     0.042   [-13.618 , -0.246]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+</code></pre></div><p>Here the coefficients change slightly:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Bandwidth</th>
+<th style="text-align:center">Effect size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">9.969 (ideal)</td>
+<td style="text-align:center">8.578</td>
+</tr>
+<tr>
+<td style="text-align:center">19.938 (twice)</td>
+<td style="text-align:center">9.151</td>
+</tr>
+<tr>
+<td style="text-align:center">4.984 (half)</td>
+<td style="text-align:center">8.201</td>
+</tr>
+</tbody>
+</table>
+<p>You can also adjust the kernel. By default <code>rd_robust</code> uses a triangular kernel (more distant observations have less weight linearly), but you can switch it to Epanechnikov (more distant observations have less weight following a curve) or uniform (more distant observations have the same weight as closer observations; this is unweighted).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Non-parametric RD with different kernels</span>
+<span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam,
+         c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;triangular&#34;</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()  <span style="color:#75715e"># Default</span>
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                       mserd</span>
+<span style="color:#75715e">## Kernel                   Triangular</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.            144         256</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                  9.969       9.969</span>
+<span style="color:#75715e">## BW bias (b)                 14.661      14.661</span>
+<span style="color:#75715e">## rho (h/b)                    0.680       0.680</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -8.578     1.601    -5.359     0.000   [-11.715 , -5.441]    </span>
+<span style="color:#75715e">##         Robust         -         -    -4.352     0.000   [-12.101 , -4.587]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+
+<span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam,
+         c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;epanechnikov&#34;</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                       mserd</span>
+<span style="color:#75715e">## Kernel                   Epanechnikov</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.            130         204</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                  8.201       8.201</span>
+<span style="color:#75715e">## BW bias (b)                 12.807      12.807</span>
+<span style="color:#75715e">## rho (h/b)                    0.640       0.640</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -8.389     1.677    -5.001     0.000   [-11.677 , -5.101]    </span>
+<span style="color:#75715e">##         Robust         -         -    -4.085     0.000   [-12.116 , -4.260]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+
+<span style="color:#a6e22e">rdrobust</span>(y <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>exit_exam, x <span style="color:#f92672">=</span> tutoring<span style="color:#f92672">$</span>entrance_exam,
+         c <span style="color:#f92672">=</span> <span style="color:#ae81ff">70</span>, kernel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;uniform&#34;</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">summary</span>()
+<span style="color:#75715e">## [1] &#34;Mass points detected in the running variable.&#34;</span>
+<span style="color:#75715e">## Call: rdrobust</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 1000</span>
+<span style="color:#75715e">## BW type                       mserd</span>
+<span style="color:#75715e">## Kernel                      Uniform</span>
+<span style="color:#75715e">## VCE method                       NN</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Number of Obs.                 237         763</span>
+<span style="color:#75715e">## Eff. Number of Obs.            119         176</span>
+<span style="color:#75715e">## Order est. (p)                   1           1</span>
+<span style="color:#75715e">## Order bias  (q)                  2           2</span>
+<span style="color:#75715e">## BW est. (h)                  7.346       7.346</span>
+<span style="color:#75715e">## BW bias (b)                 12.561      12.561</span>
+<span style="color:#75715e">## rho (h/b)                    0.585       0.585</span>
+<span style="color:#75715e">## Unique Obs.                    155         262</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##         Method     Coef. Std. Err.         z     P&gt;|z|      [ 95% C.I. ]       </span>
+<span style="color:#75715e">## =============================================================================</span>
+<span style="color:#75715e">##   Conventional    -8.175     1.651    -4.952     0.000   [-11.411 , -4.939]    </span>
+<span style="color:#75715e">##         Robust         -         -    -4.085     0.000   [-11.704 , -4.115]    </span>
+<span style="color:#75715e">## =============================================================================</span>
+</code></pre></div><p>Again, the coefficients change slightly:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Kernel</th>
+<th style="text-align:center">Effect size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Triangular</td>
+<td style="text-align:center">8.578</td>
+</tr>
+<tr>
+<td style="text-align:center">Epanechnikov</td>
+<td style="text-align:center">8.389</td>
+</tr>
+<tr>
+<td style="text-align:center">Uniform</td>
+<td style="text-align:center">8.175</td>
+</tr>
+</tbody>
+</table>
+<p>Which one is best? ¯\_(ツ)_/¯. All that really matters is that the size and direction of the effect doesn&rsquo;t change. It&rsquo;s still positive and it&rsquo;s still in the 8–9ish point range.</p>
+<h2 id="step-6-compare-all-the-effects">Step 6: Compare all the effects</h2>
+<p>We just estimated a ton of effect sizes. In real life you&rsquo;d generally just report one of these as your final effect, but you&rsquo;d run the different parametric and nonparametric models to check how reliable and robust your findings are. Here&rsquo;s everything we just found:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Bandwidth</th>
+<th style="text-align:center">Kernel</th>
+<th style="text-align:center">Estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Parametric</td>
+<td style="text-align:center">Full data</td>
+<td style="text-align:center">Unweighted</td>
+<td style="text-align:center">10.8</td>
+</tr>
+<tr>
+<td style="text-align:center">Parametric</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">Unweighted</td>
+<td style="text-align:center">9.273</td>
+</tr>
+<tr>
+<td style="text-align:center">Parametric</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Unweighted</td>
+<td style="text-align:center">9.122</td>
+</tr>
+<tr>
+<td style="text-align:center">Nonparametric</td>
+<td style="text-align:center">9.969</td>
+<td style="text-align:center">Triangular</td>
+<td style="text-align:center">8.578</td>
+</tr>
+<tr>
+<td style="text-align:center">Nonparametric</td>
+<td style="text-align:center">19.938</td>
+<td style="text-align:center">Triangular</td>
+<td style="text-align:center">9.151</td>
+</tr>
+<tr>
+<td style="text-align:center">Nonparametric</td>
+<td style="text-align:center">4.984</td>
+<td style="text-align:center">Triangular</td>
+<td style="text-align:center">8.201</td>
+</tr>
+<tr>
+<td style="text-align:center">Nonparametric</td>
+<td style="text-align:center">8.201</td>
+<td style="text-align:center">Epanechnikov</td>
+<td style="text-align:center">8.389</td>
+</tr>
+<tr>
+<td style="text-align:center">Nonparametric</td>
+<td style="text-align:center">7.346</td>
+<td style="text-align:center">Uniform (unweighted)</td>
+<td style="text-align:center">8.175</td>
+</tr>
+</tbody>
+</table>
+<p>In real life, I&rsquo;d likely report the simplest one (row 4: nonparametric, automatic bandwidth, triangular kernel), but knowing how much the effect varies across model specifications is helpful.</p>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on October 20, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/example%5crdd.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

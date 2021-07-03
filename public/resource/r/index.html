@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning R I highly recommend subscribing to the R Weekly newsletter. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/resource/r/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/resource/r/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/resource/r/" />
+  <meta property="og:title" content="R | Program Evaluation" />
+  <meta property="og:description" content="Learning R I highly recommend subscribing to the R Weekly newsletter. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>R | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/">Helpful resources</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/data/">Data</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/citations/">Citations and bibliography</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/exam1/">Study guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/exam1/">Things you should know for Exam 1</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/exam2/">Things you should know for Exam 2</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/install/">Guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/mixtape-diffs/">Mixtape-style R code translations</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#learning-r">Learning R</a></li>
+    <li><a href="#r-in-the-wild">R in the wild</a></li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>R</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <h2 id="learning-r">Learning R</h2>
+<p>I highly recommend subscribing to the <a href="https://rweekly.org/" target="_blank" rel="noopener">R Weekly newsletter</a>. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.</p>
+<p>Searching for help with R on Google can sometimes be tricky because the program name is a single letter. Google is generally smart enough to figure out what you mean when you search for &ldquo;r scatterplot&rdquo;, but if it does struggle, try searching for &ldquo;rstats&rdquo; instead (e.g. &ldquo;rstats scatterplot&rdquo;).</p>
+<p>If you use Twitter, post R-related questions and content with <a href="https://twitter.com/search?q=%23rstats" target="_blank" rel="noopener">#rstats</a>. The community there is exceptionally generous and helpful. Also check out <a href="https://stackoverflow.com/" target="_blank" rel="noopener">StackOverflow</a> (a Q&amp;A site with hundreds of thousands of answers to all sorts of programming questions) and <a href="https://community.rstudio.com/" target="_blank" rel="noopener">RStudio Community</a> (a forum specifically designed for people using RStudio and the tidyverse (i.e. you)).</p>
+<p>These resources are also really really helpful:</p>
+<ul>
+<li><a href="https://r4ds.had.co.nz/" target="_blank" rel="noopener"><strong>R for Data Science</strong></a>: A free online book for learning the basics of R and the tidyverse.</li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank" rel="noopener"><strong>R and RStudio cheat sheets</strong></a>: A large collection of simple cheat sheets for RStudio, <strong>ggplot2</strong>, and other R-related things.</li>
+<li><a href="http://stat545.com/" target="_blank" rel="noopener"><strong>Stat 545</strong></a>: <a href="https://twitter.com/JennyBryan" target="_blank" rel="noopener">Dr. Jenny Bryan</a> at RStudio has an entire introductory course in R, visualization, and data analysis online.</li>
+<li><a href="http://www2.stat.duke.edu/courses/Fall17/sta112.01/" target="_blank" rel="noopener"><strong>STA 112FS: Data Science</strong></a>: <a href="https://twitter.com/minebocek" target="_blank" rel="noopener">Dr. Mine Çetinkaya-Rundel</a> at the University of Edinburgh / Duke University has an entire introductory course in R, visualization, and data science online.</li>
+<li><a href="http://cslu.ohsu.edu/~bedricks/courses/cs631/" target="_blank" rel="noopener"><strong>CSE 631: Principles &amp; Practice of Data Visualization</strong></a>: Yet another introductory course for R and ggplot2 by <a href="https://twitter.com/apreshill" target="_blank" rel="noopener">Dr. Alison Presmanes Hill</a> at RStudio.</li>
+</ul>
+<h2 id="r-in-the-wild">R in the wild</h2>
+<p>A popular (and increasingly standard) way for sharing your analyses and visualizations is to post an annotated explanation of your process somewhere online. RStudio allows you to publish knitted HTML files directly to <a href="http://rpubs.com/" target="_blank" rel="noopener">RPubs</a>, but you can also post your output to a blog or other type of website.^[If you want to be really fancy, you can use <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a>, which makes a complete website with R Markdown files. That&rsquo;s actually how this site is built (<a href="https://github.com/andrewheiss/datavizm20.classes.andrewheiss.com" target="_blank" rel="noopener">see the source code</a>). You can build your own site <a href="https://apreshill.rbind.io/post/up-and-running-with-blogdown/" target="_blank" rel="noopener">with this tutorial</a>.] Reading these kinds of posts is one of the best ways to learn R, since they walk you through each step of the process <em>and</em> show the code and output.</p>
+<p>Here are some of the best examples I&rsquo;ve come across:</p>
+<ul>
+<li><a href="http://varianceexplained.org/r/trump-tweets/" target="_blank" rel="noopener">Text analysis of Trump&rsquo;s tweets confirms he writes only the (angrier) Android half</a> (with a <a href="http://varianceexplained.org/r/trump-followup/" target="_blank" rel="noopener">follow-up</a>)</li>
+<li><a href="https://rudeboybert.github.io/fivethirtyeight/articles/bob_ross.html" target="_blank" rel="noopener">Bob Ross - Joy of Painting</a></li>
+<li><a href="https://rudeboybert.github.io/fivethirtyeight/articles/bechdel.html" target="_blank" rel="noopener">Bechdel analysis using the tidyverse</a>: There are also a bunch of other examples <a href="https://rudeboybert.github.io/fivethirtyeight/articles/" target="_blank" rel="noopener">using data from FiveThirtyEight</a>.</li>
+<li><a href="http://rpubs.com/Jwhitman/Final_Project" target="_blank" rel="noopener">Sexism on the Silver Screen: Exploring film&rsquo;s gender divide</a></li>
+<li><a href="http://soc301s2017.netlify.com/group_projects/group5" target="_blank" rel="noopener">Comparison of Quentin Tarantino Movies by Box Office and the Bechdel Test</a></li>
+<li><a href="https://juliasilge.com/blog/who-came-to-vote/" target="_blank" rel="noopener">Who came to vote in Utah&rsquo;s caucuses?</a></li>
+<li><a href="https://juliasilge.com/blog/health-care-indicators/" target="_blank" rel="noopener">Health care indicators in Utah counties</a></li>
+<li><a href="https://juliasilge.com/blog/song-lyrics-across/" target="_blank" rel="noopener">Song lyrics across the United States</a></li>
+<li><a href="http://blog.karawoo.com/2016/09/22/A-decade-ish-of-listening-to-Sigur-Ros" target="_blank" rel="noopener">A decade (ish) of listening to Sigur Rós</a></li>
+<li><a href="http://rpubs.com/ry_lisa_elana/chicago" target="_blank" rel="noopener">When is Tom peeping these days?</a>: There are a also bunch of final projects from other R and data visualization classes <a href="http://soc301s2017.netlify.com/group-projects/" target="_blank" rel="noopener">here</a> and <a href="https://rudeboybert.github.io/MATH116/PS/final_project/final_project_outline.html#past_examples" target="_blank" rel="noopener">here</a>.</li>
+<li><a href="https://rud.is/b/2017/09/18/mapping-fall-foliage-with-sf/" target="_blank" rel="noopener">Mapping Fall Foliage</a></li>
+<li><a href="https://rud.is/b/2017/07/25/r%E2%81%B6-general-attys-distributions/" target="_blank" rel="noopener">General (Attys) Distributions</a></li>
+<li><a href="https://rud.is/b/2017/06/18/r%E2%81%B6-disproving-approval/" target="_blank" rel="noopener">Disproving Approval</a></li>
+</ul>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on January 1, 0001</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/resource%5cr.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

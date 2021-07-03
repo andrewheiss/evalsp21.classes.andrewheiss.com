@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="R Markdown is regular Markdown with R code and output sprinkled in. You can do everything you can with regular Markdown, but you can incorporate graphs, tables, and other R output directly in your document." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/resource/rmarkdown/" />
+  <meta property="og:title" content="Using R Markdown | Program Evaluation" />
+  <meta property="og:description" content="R Markdown is regular Markdown with R code and output sprinkled in. You can do everything you can with regular Markdown, but you can incorporate graphs, tables, and other R output directly in your document." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-01-13T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-01-13T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Using R Markdown | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/">Helpful resources</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/data/">Data</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/citations/">Citations and bibliography</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/exam1/">Study guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/exam1/">Things you should know for Exam 1</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/exam2/">Things you should know for Exam 2</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/install/">Guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/mixtape-diffs/">Mixtape-style R code translations</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#key-terms">Key terms</a></li>
+    <li><a href="#add-chunks">Add chunks</a></li>
+    <li><a href="#chunk-names">Chunk names</a></li>
+    <li><a href="#chunk-options">Chunk options</a></li>
+    <li><a href="#inline-chunks">Inline chunks</a></li>
+    <li><a href="#output-formats">Output formats</a></li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Using R Markdown</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <p><a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">R Markdown</a> is <a href="/resource/markdown/">regular Markdown</a> with R code and output sprinkled in. You can do everything you can with <a href="/resource/markdown/">regular Markdown</a>, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even <a href="https://rmarkdown.rstudio.com/flexdashboard/index.html" target="_blank" rel="noopener">interactive dashboards</a> with R Markdown. This whole course website is created with R Markdown (and <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">a package named <strong>blogdown</strong></a>).</p>
+<p>The <a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">documentation for R Markdown</a> is extremely comprehensive, and their <a href="https://rmarkdown.rstudio.com/lesson-1.html" target="_blank" rel="noopener">tutorials</a> and <a href="https://rmarkdown.rstudio.com/lesson-15.html" target="_blank" rel="noopener">cheatsheets</a> are excellent—rely on those.</p>
+<p>Here are the most important things you&rsquo;ll need to know about R Markdown in this class:</p>
+<h2 id="key-terms">Key terms</h2>
+<ul>
+<li>
+<p><strong>Document</strong>: A Markdown file where you type stuff</p>
+</li>
+<li>
+<p><strong>Chunk</strong>: A piece of R code that is included in your document. It looks like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">```{r}
+# Code goes here
+```
+</code></pre></div><p>There must be an empty line before and after the chunk. The final three backticks must be the only thing on the line—if you add more text, or if you forget to add the backticks, or accidentally delete the backticks, your document will not knit correctly.</p>
+</li>
+<li>
+<p><strong>Knit</strong>: When you &ldquo;knit&rdquo; a document, R runs each of the chunks sequentially and converts the output of each chunk into Markdown. R then runs the knitted document through <a href="https://pandoc.org/" target="_blank" rel="noopener">pandoc</a> to convert it to HTML or PDF or Word (or whatever output you&rsquo;ve selected).</p>
+<p>You can knit by clicking on the &ldquo;Knit&rdquo; button at the top of the editor window, or by pressing <code>⌘⇧K</code> on macOS or <code>control + shift + K</code> on Windows.</p>
+<p><img src="/img/assignments/knit-button.png" width="30%" /></p>
+</li>
+</ul>
+<h2 id="add-chunks">Add chunks</h2>
+<p>There are three ways to insert chunks:</p>
+<ul>
+<li>
+<p>Press <code>⌘⌥I</code> on macOS or <code>control + alt + I</code> on Windows</p>
+</li>
+<li>
+<p>Click on the &ldquo;Insert&rdquo; button at the top of the editor window</p>
+<p><img src="/img/reference/insert-chunk.png" width="30%" /></p>
+</li>
+<li>
+<p>Manually type all the backticks and curly braces (don&rsquo;t do this)</p>
+</li>
+</ul>
+<h2 id="chunk-names">Chunk names</h2>
+<p>You can add names to chunks to make it easier to navigate your document. If you click on the little dropdown menu at the bottom of your editor in RStudio, you can see a table of contents that shows all the headings and chunks. If you name chunks, they&rsquo;ll appear in the list. If you don&rsquo;t include a name, the chunk will still show up, but you won&rsquo;t know what it does.</p>
+<p><img src="/img/reference/chunk-toc.png" width="40%" /></p>
+<p>To add a name, include it immediately after the <code>{r</code> in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. <strong>All chunk names in your document must be unique.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">```{r name-of-this-chunk}
+# Code goes here
+```
+</code></pre></div><h2 id="chunk-options">Chunk options</h2>
+<p>There are a bunch of different options you can set for each chunk. You can see a complete list in the <a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" target="_blank" rel="noopener">RMarkdown Reference Guide</a> or at <a href="https://yihui.org/knitr/options/" target="_blank" rel="noopener"><strong>knitr</strong>&rsquo;s website</a>.</p>
+<p>Options go inside the <code>{r}</code> section of the chunk:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">```{r name-of-this-chunk, warning=FALSE, message=FALSE}
+# Code goes here
+```
+</code></pre></div><p>The most common chunk options are these:</p>
+<ul>
+<li><code>fig.width=5</code> and <code>fig.height=3</code> (<em>or whatever number you want</em>): Set the dimensions for figures</li>
+<li><code>echo=FALSE</code>: The code is not shown in the final document, but the results are</li>
+<li><code>message=FALSE</code>: Any messages that R generates (like all the notes that appear after you load a package) are omitted</li>
+<li><code>warning=FALSE</code>: Any warnings that R generates are omitted</li>
+<li><code>include=FALSE</code>: The chunk still runs, but the code and results are not included in the final document</li>
+</ul>
+<p>You can also set chunk options by clicking on the little gear icon in the top right corner of any chunk:</p>
+<p><img src="/img/reference/chunk-options.png" width="70%" /></p>
+<h2 id="inline-chunks">Inline chunks</h2>
+<p>You can also include R output directly in your text, which is really helpful if you want to report numbers from your analysis. To do this, use <code>`r r_code_here`</code>.</p>
+<p>It&rsquo;s generally easiest to calculate numbers in a regular chunk beforehand and then use an inline chunk to display the value in your text. For instance, this document…</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">```{r find-avg-mpg, echo=FALSE}
+avg_mpg &lt;<span style="color:#f92672">-</span> <span style="color:#a6e22e">mean</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">mtcars</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">mpg</span><span style="color:#960050;background-color:#1e0010">)</span>
+<span style="color:#960050;background-color:#1e0010">```</span>
+
+<span style="color:#a6e22e">The</span> <span style="color:#a6e22e">average</span> <span style="color:#a6e22e">fuel</span> <span style="color:#a6e22e">efficiency</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">cars</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">1974</span> <span style="color:#a6e22e">was</span> <span style="color:#e6db74">`r round(avg_mpg, 1)`</span> <span style="color:#a6e22e">miles</span> <span style="color:#a6e22e">per</span> <span style="color:#a6e22e">gallon</span><span style="color:#960050;background-color:#1e0010">.</span>
+</code></pre></div><p>… would knit into this:</p>
+<blockquote>
+<p>The average fuel efficiency for cars from 1974 was 20.1 miles per gallon.</p>
+</blockquote>
+<h2 id="output-formats">Output formats</h2>
+<p>You can specify what kind of document you create when you knit in the <a href="/resource/markdown/#front-matter">YAML front matter</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My document&#34;</span>
+<span style="color:#f92672">output</span>:
+  <span style="color:#f92672">html_document</span>: <span style="color:#ae81ff">default</span>
+  <span style="color:#f92672">pdf_document</span>: <span style="color:#ae81ff">default</span>
+  <span style="color:#f92672">word_document</span>: <span style="color:#ae81ff">default</span>
+</code></pre></div><p>You can also click on the down arrow on the &ldquo;Knit&rdquo; button to choose the output <em>and</em> generate the appropriate YAML. If you click on the gear icon next to the &ldquo;Knit&rdquo; button and choose &ldquo;Output options&rdquo;, you change settings for each specific output type, like default figure dimensions or whether or not a table of contents is included.</p>
+<p><img src="/img/reference/output-options.png" width="35%" /></p>
+<p>The first output type listed under <code>output:</code> will be what is generated when you click on the &ldquo;Knit&rdquo; button or press the keyboard shortcut (<code>⌘⇧K</code> on macOS; <code>control + shift + K</code> on Windows). If you choose a different output with the &ldquo;Knit&rdquo; button menu, that output will be moved to the top of the <code>output</code> section.</p>
+<p>The indentation of the YAML section matters, especially when you have settings nested under each output type. Here&rsquo;s what a typical <code>output</code> section might look like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My document&#34;</span>
+<span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;My name&#34;</span>
+<span style="color:#f92672">date</span>: <span style="color:#e6db74">&#34;January 13, 2020&#34;</span>
+<span style="color:#f92672">output</span>: 
+  <span style="color:#f92672">html_document</span>: 
+    <span style="color:#f92672">toc</span>: <span style="color:#66d9ef">yes</span>
+    <span style="color:#f92672">fig_caption</span>: <span style="color:#66d9ef">yes</span>
+    <span style="color:#f92672">fig_height</span>: <span style="color:#ae81ff">8</span>
+    <span style="color:#f92672">fig_width</span>: <span style="color:#ae81ff">10</span>
+  <span style="color:#f92672">pdf_document</span>: 
+    <span style="color:#f92672">latex_engine</span>: <span style="color:#ae81ff">xelatex </span> <span style="color:#75715e"># More modern PDF typesetting engine</span>
+    <span style="color:#f92672">toc</span>: <span style="color:#66d9ef">yes</span>
+  <span style="color:#f92672">word_document</span>: 
+    <span style="color:#f92672">toc</span>: <span style="color:#66d9ef">yes</span>
+    <span style="color:#f92672">fig_caption</span>: <span style="color:#66d9ef">yes</span>
+    <span style="color:#f92672">fig_height</span>: <span style="color:#ae81ff">4</span>
+    <span style="color:#f92672">fig_width</span>: <span style="color:#ae81ff">5</span>
+---
+</code></pre></div>
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on January 13, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/resource%5crmarkdown.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

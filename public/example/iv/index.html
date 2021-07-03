@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en-us" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Video walk-through If you want to follow along with this example, you can download these three datasets:
+  father_education.csv  wage2.csv  card.csv  There&rsquo;s a set of videos that walks through each section below." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://evalsp21.classes.andrewheiss.com/example/iv/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#CF4446" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i%7CBarlow:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b1c9db8ebcb2f46d899db57725d16510.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://evalsp21.classes.andrewheiss.com/example/iv/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@andrewheiss" />
+    <meta property="twitter:creator" content="@andrewheiss" />
+  
+  <meta property="og:site_name" content="Program Evaluation" />
+  <meta property="og:url" content="https://evalsp21.classes.andrewheiss.com/example/iv/" />
+  <meta property="og:title" content="Instrumental variables | Program Evaluation" />
+  <meta property="og:description" content="Video walk-through If you want to follow along with this example, you can download these three datasets:
+  father_education.csv  wage2.csv  card.csv  There&rsquo;s a set of videos that walks through each section below." /><meta property="og:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://evalsp21.classes.andrewheiss.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-04-08T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-04-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://evalsp21.classes.andrewheiss.com/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://evalsp21.classes.andrewheiss.com/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://evalsp21.classes.andrewheiss.com/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="PMAP 8141: Program Evaluation" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://evalsp21.classes.andrewheiss.com/img/mstile-144x144.png" />
+
+
+  <title>Instrumental variables | Program Evaluation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Program Evaluation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://gsuevalsp2021.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+    
+
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+            
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/">Code examples</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/random-numbers/">Simulated data</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/random-numbers/">Random numbers</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/synthetic-data/">Synthetic data</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/rstudio-tidyverse/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/rstudio-tidyverse/">R, RStudio, and the tidyverse</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/regression/">Regression</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/dags/">DAGs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/po-ate-cate/">Potential outcomes, ATEs, and CATEs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rcts/">RCTs</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/matching-ipw/">Matching and IPW</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/diff-in-diff/">Diff-in-diff</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd/">Regression discontinuity</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/example/iv/">Instrumental variables</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/cace/">ITT and CACE</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/rdd-fuzzy/">Fuzzy regression discontinuity</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+        </div>
+
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+            <ul class="nav toc-top">
+                <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+            </ul>
+
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#video-walk-through">Video walk-through</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#education-wages-and-fathers-education-fake-data">Education, wages, and father&rsquo;s education (fake data)</a>
+      <ul>
+        <li><a href="#naive-model">Naive model</a></li>
+        <li><a href="#check-instrument-validity">Check instrument validity</a></li>
+        <li><a href="#2sls-manually">2SLS manually</a></li>
+        <li><a href="#2sls-in-one-step">2SLS in one step</a></li>
+        <li><a href="#compare-results">Compare results</a></li>
+      </ul>
+    </li>
+    <li><a href="#education-wages-and-parents-education-multiple-instruments-real-data">Education, wages, and parent&rsquo;s education (multiple instruments) (real data)</a>
+      <ul>
+        <li><a href="#naive-model-1">Naive model</a></li>
+        <li><a href="#check-instrument-validity-1">Check instrument validity</a></li>
+        <li><a href="#2sls-manually-1">2SLS manually</a></li>
+        <li><a href="#2sls-in-one-step-1">2SLS in one step</a></li>
+        <li><a href="#compare-results-1">Compare results</a></li>
+        <li><a href="#check-for-weak-instruments">Check for weak instruments</a></li>
+      </ul>
+    </li>
+    <li><a href="#education-wages-and-distance-to-college-control-variables-real-data">Education, wages, and distance to college (control variables) (real data)</a>
+      <ul>
+        <li><a href="#check-instrument-validity-2">Check instrument validity</a></li>
+        <li><a href="#2sls-estimation">2SLS estimation</a></li>
+        <li><a href="#compare-results-2">Compare results</a></li>
+        <li><a href="#extra-diagnostics">Extra diagnostics</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+        </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+            <article class="article">
+
+                <div class="docs-article-container">
+                    <h1>Instrumental variables</h1>
+
+                    
+
+                    
+
+                    
+
+                    <div class="article-style">
+                        <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+<h2 id="video-walk-through">Video walk-through</h2>
+<p>If you want to follow along with this example, you can download these three datasets:</p>
+<ul>
+<li><a href="/data/father_education.csv"><i class="fas fa-table"></i> <code>father_education.csv</code></a></li>
+<li><a href="/data/wage2.csv"><i class="fas fa-table"></i> <code>wage2.csv</code></a></li>
+<li><a href="/data/card.csv"><i class="fas fa-table"></i> <code>card.csv</code></a></li>
+</ul>
+<p>There&rsquo;s a set of videos that walks through each section below. To make it easier for you to jump around the video examples, I cut the long video into smaller pieces and included them all in <a href="https://www.youtube.com/playlist?list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">one YouTube playlist</a>.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=h-rx-dXo74Y&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">Getting started</a></li>
+<li><a href="https://www.youtube.com/watch?v=wHTiAbGwKe4&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">Checking instrument validity</a></li>
+<li><a href="https://www.youtube.com/watch?v=tnerIh0uMxU&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">Manual 2SLS</a></li>
+<li><a href="https://www.youtube.com/watch?v=EI-knWTbH-s&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">One-step 2SLS</a></li>
+<li><a href="https://www.youtube.com/watch?v=W8Up5OOPtEY&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">Checking instrument validity (real data)</a></li>
+<li><a href="https://www.youtube.com/watch?v=6sp8sYrRv5c&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">2SLS (real data)</a></li>
+<li><a href="https://www.youtube.com/watch?v=uDr4nsWkG2c&amp;list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" target="_blank" rel="noopener">Validity + 2SLS (real data)</a></li>
+</ul>
+<p>You can also watch the playlist (and skip around to different sections) here:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sF97TfofFZ1O-bOQtB4ygZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="background">Background</h2>
+<p>For all these examples, we&rsquo;re interested in the perennial econometrics question of whether an extra year of education causes increased wages. Economists love this stuff.</p>
+<p>We&rsquo;ll explore the question with three different datasets: a fake one I made up and two real ones from published research.</p>
+<ul>
+<li><a href="/data/father_education.csv"><i class="fas fa-table"></i> <code>father_education.csv</code></a></li>
+<li><a href="/data/wage2.csv"><i class="fas fa-table"></i> <code>wage2.csv</code></a></li>
+<li><a href="/data/card.csv"><i class="fas fa-table"></i> <code>card.csv</code></a></li>
+</ul>
+<p>Make sure you load all these libraries before getting started:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># ggplot(), %&gt;%, mutate(), and friends</span>
+<span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># Convert models to data frames</span>
+<span style="color:#a6e22e">library</span>(modelsummary)  <span style="color:#75715e"># Create side-by-side regression tables</span>
+<span style="color:#a6e22e">library</span>(kableExtra)  <span style="color:#75715e"># Add fancier formatting to tables</span>
+<span style="color:#a6e22e">library</span>(estimatr)  <span style="color:#75715e"># Run 2SLS models in one step with iv_robust()</span>
+</code></pre></div><h2 id="education-wages-and-fathers-education-fake-data">Education, wages, and father&rsquo;s education (fake data)</h2>
+<p>First let&rsquo;s use some fake data to see if education causes additional wages.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ed_fake <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/father_education.csv&#34;</span>)
+</code></pre></div><p>The <code>father_education.csv</code> file contains four variables:</p>
+<table>
+<thead>
+<tr>
+<th>Variable name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wage</code></td>
+<td>Weekly wage</td>
+</tr>
+<tr>
+<td><code>educ</code></td>
+<td>Years of education</td>
+</tr>
+<tr>
+<td><code>ability</code></td>
+<td>Magical column that measures your ability to work and go to school (omitted variable)</td>
+</tr>
+<tr>
+<td><code>fathereduc</code></td>
+<td>Years of education for father</td>
+</tr>
+</tbody>
+</table>
+<h3 id="naive-model">Naive model</h3>
+<p>If we could actually measure ability, we could estimate this model, which closes the confounding backdoor posed by ability and isolates just the effect of education on wages:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_forbidden <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> educ <span style="color:#f92672">+</span> ability, data <span style="color:#f92672">=</span> ed_fake)
+<span style="color:#a6e22e">tidy</span>(model_forbidden)
+<span style="color:#75715e">## # A tibble: 3 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic   p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)  -85.6      7.20       -11.9 1.42e- 30</span>
+<span style="color:#75715e">## 2 educ           7.77     0.456       17.1 2.08e- 57</span>
+<span style="color:#75715e">## 3 ability        0.344    0.0104      33.2 2.14e-163</span>
+</code></pre></div><p>However, in real life we don&rsquo;t have <code>ability</code>, so we&rsquo;re stuck with a naive model:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_naive <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> educ, data <span style="color:#f92672">=</span> ed_fake)
+<span style="color:#a6e22e">tidy</span>(model_naive)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)    -59.4    10.4       -5.72 1.39e- 8</span>
+<span style="color:#75715e">## 2 educ            13.1     0.618     21.2  6.47e-83</span>
+</code></pre></div><p>The naive model overestimates the effect of education on wages (12.2 vs. 9.24) because of omitted variable bias. Education suffers from endogeneity&mdash;there are things in the model (like ability, hidden in the error term) that are correlated with it. Any estimate we calculate will be wrong and biased because of selection effects or omitted variable bias (all different names for endogeneity).</p>
+<h3 id="check-instrument-validity">Check instrument validity</h3>
+<p>To fix the endogeneity problem, we can use an instrument to remove the endogeneity from education and instead use a special exogeneity-only version of education. Perhaps someone&rsquo;s father&rsquo;s education can be an instrument for education (it&rsquo;s not the greatest instrument, but we&rsquo;ll go with it).</p>
+<p>For an instrument to be valid, it must meet three criteria:</p>
+<ol>
+<li><strong>Relevance</strong>: Instrument is correlated with policy variable</li>
+<li><strong>Exclusion</strong>: Instrument is correlated with outcome <em>only through</em> the policy variable</li>
+<li><strong>Exogeneity</strong>: Instrument isn&rsquo;t correlated with anything else in the model (i.e. omitted variables)</li>
+</ol>
+<p><strong>Relevance</strong></p>
+<p>We can first test relevance by making a scatterplot and running a model of <code>policy ~ instrument</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(ed_fake, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> fathereduc, y <span style="color:#f92672">=</span> educ)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>() <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>)
+</code></pre></div><p><img src="/example/iv_files/figure-html/unnamed-chunk-3-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">
+check_relevance <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(educ <span style="color:#f92672">~</span> fathereduc, data <span style="color:#f92672">=</span> ed_fake)
+<span style="color:#a6e22e">tidy</span>(check_relevance)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)    2.25     0.172       13.1 3.67e-36</span>
+<span style="color:#75715e">## 2 fathereduc     0.916    0.0108      84.5 0.</span>
+<span style="color:#a6e22e">glance</span>(check_relevance)
+<span style="color:#75715e">## # A tibble: 1 x 12</span>
+<span style="color:#75715e">##   r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC deviance df.residual  nobs</span>
+<span style="color:#75715e">##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;       &lt;int&gt; &lt;int&gt;</span>
+<span style="color:#75715e">## 1     0.877         0.877 0.703     7136.       0     1 -1066. 2137. 2152.     493.         998  1000</span>
+</code></pre></div><p>This looks pretty good! The F-statistic is definitely above 10 (it&rsquo;s 7,136!), and there&rsquo;s a significant relationship between the instrument and policy. I&rsquo;d say that this is relevant.</p>
+<p><strong>Exclusion</strong></p>
+<p>To check for exclusion, we need to see if there&rsquo;s a relationship between father&rsquo;s education and wages that occurs <em>only</em> because of education. If we plot it, we&rsquo;ll see a relationship:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(ed_fake, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> fathereduc, y <span style="color:#f92672">=</span> wage)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>() <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>)
+</code></pre></div><p><img src="/example/iv_files/figure-html/unnamed-chunk-4-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>That&rsquo;s to be expected, since in our model, father&rsquo;s education causes education which causes wages&mdash;they should be correlated. But we have to use a convincing story + theory to justify the idea that a father&rsquo;s education increases the hourly wage <em>only because it increases one&rsquo;s education</em>, and there&rsquo;s no real statistical test for that. Good luck.</p>
+<p><strong>Exogeneity</strong></p>
+<p>There&rsquo;s not really a test for exogeneity either, since there&rsquo;s no way to measure other endogenous variables in the model (that&rsquo;s the whole reason we&rsquo;re using IVs in the first place!). Because we have the magical <code>ability</code> column in this fake data, we can test it. Father&rsquo;s education shouldn&rsquo;t be related to ability:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(ed_fake, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> ability, y <span style="color:#f92672">=</span> fathereduc)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>() <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>)
+</code></pre></div><p><img src="/example/iv_files/figure-html/unnamed-chunk-5-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>And it&rsquo;s not! We can safely say that it meets the exogeneity assumption.</p>
+<p>In real life, though there&rsquo;s no statistical test for exogeneity. We just have to tell a theory-based story that the number of years of education one&rsquo;s father has is not correlated with anything else in the model (including any omitted variables). Good luck with that&mdash;it&rsquo;s probably not a good instrument. This relates to Scott Cunningham&rsquo;s argument that instruments have to be weird. <a href="https://twitter.com/causalinf/status/1194069373935337473" target="_blank" rel="noopener">According to Scott</a>:</p>
+<blockquote>
+<p>The reason I think this is because an instrument doesn’t belong in the structural error term and the structural error term is all the intuitive things that determine your outcome. So it <em>must</em> be weird, otherwise it’s probably in the error term.</p>
+</blockquote>
+<p>Let&rsquo;s just pretend that father&rsquo;s education <em>is</em> a valid instrument and move on :)</p>
+<h3 id="2sls-manually">2SLS manually</h3>
+<p>Now we can do two-stage least squares (2SLS) regression and use the instrument to filter out the endogenous part of education. The first stage predicts education based on the instrument (we already ran this model earlier when checking for relevance, but we&rsquo;ll do it again just for fun):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">first_stage <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(educ <span style="color:#f92672">~</span> fathereduc, data <span style="color:#f92672">=</span> ed_fake)
+</code></pre></div><p>Now we want to add a column of predicted education to our original dataset. The easiest way to do that is with the <code>augment_columns()</code> function from the <strong>broom</strong> library, which plugs values from a dataset into a model to generate predictions:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ed_fake_with_prediction <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">augment_columns</span>(first_stage, ed_fake)
+<span style="color:#a6e22e">head</span>(ed_fake_with_prediction)
+<span style="color:#75715e">## # A tibble: 6 x 11</span>
+<span style="color:#75715e">##    wage  educ ability fathereduc .fitted .se.fit  .resid    .hat .sigma    .cooksd .std.resid</span>
+<span style="color:#75715e">##   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1  180.  18.5    408.       17.2    18.0  0.0270  0.576  0.00147  0.703 0.000496       0.820 </span>
+<span style="color:#75715e">## 2  100.  16.2    310.       15.5    16.4  0.0224 -0.203  0.00102  0.703 0.0000424     -0.289 </span>
+<span style="color:#75715e">## 3  125.  18.2    303.       17.7    18.4  0.0306 -0.259  0.00189  0.703 0.000129      -0.369 </span>
+<span style="color:#75715e">## 4  178.  16.6    342.       15.6    16.5  0.0223  0.0522 0.00101  0.703 0.00000278     0.0743</span>
+<span style="color:#75715e">## 5  265.  17.3    534.       14.7    15.8  0.0248  1.58   0.00124  0.702 0.00316        2.25  </span>
+<span style="color:#75715e">## 6  187.  17.5    409.       16.0    16.9  0.0224  0.577  0.00101  0.703 0.000342       0.822</span>
+</code></pre></div><p>Note a couple of these new columns. <code>.fitted</code> is the fitted/predicted value of education, and it&rsquo;s the version of education with endogeneity arguably removed. <code>.resid</code> shows how far off the prediction is from <code>educ</code>. The other columns don&rsquo;t matter so much.</p>
+<p>Instead of dealing with weird names like <code>.fitted</code>, I like to rename the fitted variable to something more understandable after I use <code>augment_columns</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ed_fake_with_prediction <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">augment_columns</span>(first_stage, ed_fake) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">rename</span>(educ_hat <span style="color:#f92672">=</span> .fitted)
+
+<span style="color:#a6e22e">head</span>(ed_fake_with_prediction)
+<span style="color:#75715e">## # A tibble: 6 x 11</span>
+<span style="color:#75715e">##    wage  educ ability fathereduc educ_hat .se.fit  .resid    .hat .sigma    .cooksd .std.resid</span>
+<span style="color:#75715e">##   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1  180.  18.5    408.       17.2     18.0  0.0270  0.576  0.00147  0.703 0.000496       0.820 </span>
+<span style="color:#75715e">## 2  100.  16.2    310.       15.5     16.4  0.0224 -0.203  0.00102  0.703 0.0000424     -0.289 </span>
+<span style="color:#75715e">## 3  125.  18.2    303.       17.7     18.4  0.0306 -0.259  0.00189  0.703 0.000129      -0.369 </span>
+<span style="color:#75715e">## 4  178.  16.6    342.       15.6     16.5  0.0223  0.0522 0.00101  0.703 0.00000278     0.0743</span>
+<span style="color:#75715e">## 5  265.  17.3    534.       14.7     15.8  0.0248  1.58   0.00124  0.702 0.00316        2.25  </span>
+<span style="color:#75715e">## 6  187.  17.5    409.       16.0     16.9  0.0224  0.577  0.00101  0.703 0.000342       0.822</span>
+</code></pre></div><p>We can now use the new <code>educ_hat</code> variable in our second stage model:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">second_stage <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> educ_hat, data <span style="color:#f92672">=</span> ed_fake_with_prediction)
+<span style="color:#a6e22e">tidy</span>(second_stage)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)    28.8     12.7        2.27 2.32e- 2</span>
+<span style="color:#75715e">## 2 educ_hat        7.83     0.755     10.4  5.10e-24</span>
+</code></pre></div><p>The estimate for <code>educ_hat</code> is arguably more accurate now because we&rsquo;ve used the instrument to remove the endogenous part of education and should only have the exogenous part.</p>
+<h3 id="2sls-in-one-step">2SLS in one step</h3>
+<p>Doing all that two-stage work is neat and it helps with the intuition of instrumental variables, but it&rsquo;s tedious. More importntly, the standard errors for <code>educ_hat</code> are wrong and the <code>\(R^2\)</code> and other diagnostics for the second stage model are wrong too. You can use fancy math to adjust these things in the second stage, but we&rsquo;re not going to do that. Instead, we&rsquo;ll use a function that does both stages of the 2SLS model at the same time!</p>
+<p>There are several functions from different R packages that let you do 2SLS, and they all work a little differently and have different benefits:</p>
+<ul>
+<li><a href="https://declaredesign.org/r/estimatr/articles/getting-started.html#iv_robust" target="_blank" rel="noopener"><code>iv_robust()</code> from <strong>estimatr</strong></a>:
+<ul>
+<li>Syntax: <code>outcome ~ treatment | instrument</code></li>
+<li>Benefits: Handles robust and clustered standard errors</li>
+</ul>
+</li>
+<li><a href="https://github.com/john-d-fox/ivreg/" target="_blank" rel="noopener"><code>ivreg()</code> from <strong>ivreg</strong></a>:
+<ul>
+<li>Syntax: <code>outcome ~ treatment | instrument</code></li>
+<li>Benefits: Includes a ton of fancy diagnostics</li>
+</ul>
+</li>
+<li><a href="https://raw.githack.com/uo-ec607/lectures/master/08-regression/08-regression.html#Option_1:_AER::ivreg%28%29" target="_blank" rel="noopener"><code>ivreg()</code> from <strong>AER</strong></a>:
+<ul>
+<li>Syntax: <code>outcome ~ treatment | instrument</code></li>
+<li>Benefits: Includes special tests for weak instruments (that are better than the standard &ldquo;check if F &gt; 10&rdquo;), like Anderson-Rubin confidence intervals</li>
+</ul>
+</li>
+<li><a href="https://raw.githack.com/uo-ec607/lectures/master/08-regression/08-regression.html#Option_3:_felm::lfe%28%29" target="_blank" rel="noopener"><code>lfe()</code> from <strong>felm</strong></a>:
+<ul>
+<li>Syntax: <code>outcome ~ treatment | fixed effects | instrument</code></li>
+<li>Benefits: Handles fixed effects really quickly (kind of like <code>feols()</code> that you used in Problem Set 5)</li>
+</ul>
+</li>
+<li><a href="https://cran.r-project.org/web/packages/plm/vignettes/plmPackage.html#instrumental-variable-estimators" target="_blank" rel="noopener"><code>plm()</code> from <strong>plm</strong></a>:
+<ul>
+<li>Syntax: <code>outcome ~ treatment | instrument</code></li>
+<li>Benefits: Handles panel data (country/year, state/year, etc.)</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://raw.githack.com/uo-ec607/lectures/master/08-regression/08-regression.html#Instrumental_variables" target="_blank" rel="noopener">This page here has more detailed examples of the main three</a>: <code>iv_robust()</code>, <code>ivreg()</code>, and <code>lfe()</code></p>
+<p>I typically like using <code>iv_robust()</code>, so we&rsquo;ll do that here. Instead of running a first stage, generating predictions, and running a second stage, we can do it all at once like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_2sls <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">iv_robust</span>(wage <span style="color:#f92672">~</span> educ <span style="color:#f92672">|</span> fathereduc,
+                        data <span style="color:#f92672">=</span> ed_fake)
+<span style="color:#a6e22e">tidy</span>(model_2sls)
+<span style="color:#75715e">##          term estimate std.error statistic p.value conf.low conf.high  df outcome</span>
+<span style="color:#75715e">## 1 (Intercept)     28.8     11.16       2.6 1.0e-02      6.9      50.7 998    wage</span>
+<span style="color:#75715e">## 2        educ      7.8      0.66      11.8 3.3e-30      6.5       9.1 998    wage</span>
+</code></pre></div><p>The coefficient for <code>educ</code> here is the same as <code>educ_hat</code> from the manual 2SLS model, but here we found it in one line of code! Also, the model&rsquo;s standard errors and diagnostics are all correct now.</p>
+<h3 id="compare-results">Compare results</h3>
+<p>We can put all the models side-by-side to compare them:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># gof_omit here will omit goodness-of-fit rows that match any of the text. This</span>
+<span style="color:#75715e"># means &#39;contains &#34;IC&#34; OR contains &#34;Low&#34; OR contains &#34;Adj&#34; OR contains &#34;p.value&#34;</span>
+<span style="color:#75715e"># OR contains &#34;statistic&#34; OR contains &#34;se_type&#34;&#39;. Basically we&#39;re getting rid of</span>
+<span style="color:#75715e"># all the extra diagnostic information at the bottom</span>
+<span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;Forbidden&#34;</span> <span style="color:#f92672">=</span> model_forbidden, <span style="color:#e6db74">&#34;OLS&#34;</span> <span style="color:#f92672">=</span> model_naive,
+                  <span style="color:#e6db74">&#34;2SLS (by hand)&#34;</span> <span style="color:#f92672">=</span> second_stage, <span style="color:#e6db74">&#34;2SLS (automatic)&#34;</span> <span style="color:#f92672">=</span> model_2sls),
+             gof_omit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IC|Log|Adj|p\\.value|statistic|se_type&#34;</span>,
+             stars <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Add a background color to rows 3 and 7</span>
+  <span style="color:#a6e22e">row_spec</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>), background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#F5ABEA&#34;</span>)
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> Forbidden </th>
+   <th style="text-align:center;"> OLS </th>
+   <th style="text-align:center;"> 2SLS (by hand) </th>
+   <th style="text-align:center;"> 2SLS (automatic) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> -85.571*** </td>
+   <td style="text-align:center;"> -59.378*** </td>
+   <td style="text-align:center;"> 28.819** </td>
+   <td style="text-align:center;"> 28.819*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (7.198) </td>
+   <td style="text-align:center;"> (10.376) </td>
+   <td style="text-align:center;"> (12.672) </td>
+   <td style="text-align:center;"> (11.165) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F5ABEA !important;"> educ </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 7.767*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 13.124*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 7.835*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.456) </td>
+   <td style="text-align:center;"> (0.618) </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> (0.664) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ability </td>
+   <td style="text-align:center;"> 0.344*** </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.010) </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F5ABEA !important;"> educ_hat </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 7.835*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (0.755) </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 1000 </td>
+   <td style="text-align:center;"> 1000 </td>
+   <td style="text-align:center;"> 1000 </td>
+   <td style="text-align:center;"> 1000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.673 </td>
+   <td style="text-align:center;"> 0.311 </td>
+   <td style="text-align:center;"> 0.097 </td>
+   <td style="text-align:center;"> 0.261 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 1025.794 </td>
+   <td style="text-align:center;"> 451.244 </td>
+   <td style="text-align:center;"> 107.639 </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<p>Note how the coefficients for <code>educ_hat</code> and <code>educ</code> in the 2SLS models are close to the coefficient for <code>educ</code> in the forbidden model that accounts for ability. That&rsquo;s the magic of instrumental variables!</p>
+<h2 id="education-wages-and-parents-education-multiple-instruments-real-data">Education, wages, and parent&rsquo;s education (multiple instruments) (real data)</h2>
+<p>This data comes from the <code>wage2</code> dataset in the <strong>wooldridge</strong> R package (and it&rsquo;s real!). The data was used in this paper:</p>
+<blockquote>
+<p>M. Blackburn and D. Neumark (1992), &ldquo;Unobserved Ability, Efficiency Wages, and Interindustry Wage Differentials,&rdquo; <em>Quarterly Journal of Economics</em> 107, 1421-1436. <a href="https://doi.org/10.3386/w3857">https://doi.org/10.3386/w3857</a></p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">wage2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/wage2.csv&#34;</span>)
+</code></pre></div><p>This dataset includes a bunch of different variables. If you run <code>library(wooldridge)</code> and then run <code>?wage</code> you can see the documentation for the data. These are the variables we care about for this example:</p>
+<table>
+<thead>
+<tr>
+<th>Variable name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wage</code></td>
+<td>Monthly wage (1980 dollars)</td>
+</tr>
+<tr>
+<td><code>educ</code></td>
+<td>Years of education</td>
+</tr>
+<tr>
+<td><code>feduc</code></td>
+<td>Years of education for father</td>
+</tr>
+<tr>
+<td><code>meduc</code></td>
+<td>Years of education for mother</td>
+</tr>
+</tbody>
+</table>
+<p>To make life easier, we&rsquo;ll rename some of the columns and get rid of rows with missing data:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ed_real <span style="color:#f92672">&lt;-</span> wage2 <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">rename</span>(education <span style="color:#f92672">=</span> educ, education_dad <span style="color:#f92672">=</span> feduc, education_mom <span style="color:#f92672">=</span> meduc) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">na.omit</span>()  <span style="color:#75715e"># Get rid of rows with missing values</span>
+</code></pre></div><h3 id="naive-model-1">Naive model</h3>
+<p>We want to again estimate the effect of education on wages, but this time we&rsquo;ll use both one&rsquo;s father&rsquo;s education and one&rsquo;s mother&rsquo;s education as instruments. Here&rsquo;s the naive estimate of the relationship, which suffers from endogeneity:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_naive <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> education, data <span style="color:#f92672">=</span> ed_real)
+<span style="color:#a6e22e">tidy</span>(model_naive)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)    175.      92.8       1.89 5.96e- 2</span>
+<span style="color:#75715e">## 2 education       59.5      6.70      8.88 6.45e-18</span>
+</code></pre></div><p>This is wrong though! Education is endogenous to unmeasured things in the model (like ability, which lives in the error term). We can isolate the exogenous part of education with an instrument.</p>
+<h3 id="check-instrument-validity-1">Check instrument validity</h3>
+<p>Before doing any 2SLS models, we want to check the validity of the instruments. Remember, for an instrument to be valid, it should meet these criteria:</p>
+<ol>
+<li><strong>Relevance</strong>: Instrument is correlated with policy variable</li>
+<li><strong>Exclusion</strong>: Instrument is correlated with outcome <em>only through</em> the policy variable</li>
+<li><strong>Exogeneity</strong>: Instrument isn&rsquo;t correlated with anything else in the model (i.e. omitted variables)</li>
+</ol>
+<p><strong>Relevance</strong></p>
+<p>We can check for relevance by looking at the relationship between the instruments and education:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Combine father&#39;s and mother&#39;s education into one column so we can plot both at the same time</span>
+ed_real_long <span style="color:#f92672">&lt;-</span> ed_real <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">pivot_longer</span>(cols <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(education_dad, education_mom),
+               names_to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;instrument&#34;</span>, values_to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;instrument_value&#34;</span>)
+
+<span style="color:#a6e22e">ggplot</span>(ed_real_long, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> instrument_value, y <span style="color:#f92672">=</span> education)) <span style="color:#f92672">+</span>
+  <span style="color:#75715e"># Make points semi-transparent because of overplotting</span>
+  <span style="color:#a6e22e">geom_point</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(instrument))
+</code></pre></div><p><img src="/example/iv_files/figure-html/unnamed-chunk-16-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_check_instruments <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(education <span style="color:#f92672">~</span> education_dad <span style="color:#f92672">+</span> education_mom,
+                              data <span style="color:#f92672">=</span> ed_real)
+<span style="color:#a6e22e">tidy</span>(model_check_instruments)
+<span style="color:#75715e">## # A tibble: 3 x 5</span>
+<span style="color:#75715e">##   term          estimate std.error statistic   p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)      9.91     0.320      31.0  5.29e-131</span>
+<span style="color:#75715e">## 2 education_dad    0.219    0.0289      7.58 1.19e- 13</span>
+<span style="color:#75715e">## 3 education_mom    0.140    0.0337      4.17 3.52e-  5</span>
+<span style="color:#a6e22e">glance</span>(model_check_instruments)
+<span style="color:#75715e">## # A tibble: 1 x 12</span>
+<span style="color:#75715e">##   r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC deviance df.residual  nobs</span>
+<span style="color:#75715e">##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;       &lt;int&gt; &lt;int&gt;</span>
+<span style="color:#75715e">## 1     0.202         0.199  2.00      83.3 5.55e-33     2 -1398. 2804. 2822.    2632.         660   663</span>
+</code></pre></div><p>There&rsquo;s a clear relationship between both of the instruments and education, and the coefficients for each are significant. The F-statistic for the model is 83, which is higher than 10, which might be a good sign of a strong instrument. However, it&rsquo;s less than 104, which, <a href="https://arxiv.org/abs/2010.05058" target="_blank" rel="noopener">according to this paper</a>, is a better threshold for F statistics. So maybe it&rsquo;s not so relevant in the end. Who knows.</p>
+<p><strong>Exclusion</strong></p>
+<p>We can check for exclusion in part by looking at the relationship between the instruments and the outcome, or wages. We should see some relationship:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">ggplot</span>(ed_real_long, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> instrument_value, y <span style="color:#f92672">=</span> wage)) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_point</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>) <span style="color:#f92672">+</span>
+  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> instrument)
+</code></pre></div><p><img src="/example/iv_files/figure-html/unnamed-chunk-18-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>And we do! Now we just have to make the case that the only reason there&rsquo;s a relationship is that parental education only influences wages through education. Good luck with that.</p>
+<p><strong>Exogeneity</strong></p>
+<p>The last step is to prove exogeneity&mdash;that parental education is not correlated with education or wages. Good luck with that too.</p>
+<h3 id="2sls-manually-1">2SLS manually</h3>
+<p>Now that we&rsquo;ve maybe found some okay-ish instruments perhaps, we can use them in a two-stage least squares model. I&rsquo;ll show you how to do it by hand, just to help with the intuition, but then we&rsquo;ll do it automatically with <code>iv_robust()</code>.</p>
+<p>Assuming that parental education is a good instrument, we can use it to remove the endogenous part of education using 2SLS. In the first stage, we predict education using our instruments:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">first_stage <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(education <span style="color:#f92672">~</span> education_dad <span style="color:#f92672">+</span> education_mom, data <span style="color:#f92672">=</span> ed_real)
+</code></pre></div><p>We can then extract the predicted education and add it to our main dataset, renaming the <code>.fitted</code> variable to something more useful along the way:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ed_real_with_predicted <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">augment_columns</span>(first_stage, ed_real) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#a6e22e">rename</span>(education_hat <span style="color:#f92672">=</span> .fitted)
+</code></pre></div><p>Finally, we can use predicted education to estimate the exogenous effect of education on wages:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">second_stage <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(wage <span style="color:#f92672">~</span> education_hat,
+                   data <span style="color:#f92672">=</span> ed_real_with_predicted)
+<span style="color:#a6e22e">tidy</span>(second_stage)
+<span style="color:#75715e">## # A tibble: 2 x 5</span>
+<span style="color:#75715e">##   term          estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)      -538.     208.      -2.58 1.00e- 2</span>
+<span style="color:#75715e">## 2 education_hat     112.      15.2      7.35 5.82e-13</span>
+</code></pre></div><p>The coefficient for <code>education_hat</code> here should arguably be our actual effect!</p>
+<h3 id="2sls-in-one-step-1">2SLS in one step</h3>
+<p>Again, in real life, you won&rsquo;t want to do all that. It&rsquo;s tedious and your standard errors are wrong. Here&rsquo;s how to do it all in one step:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_2sls <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">iv_robust</span>(wage <span style="color:#f92672">~</span> education <span style="color:#f92672">|</span> education_dad <span style="color:#f92672">+</span> education_mom,
+                        data <span style="color:#f92672">=</span> ed_real)
+<span style="color:#a6e22e">tidy</span>(model_2sls)
+<span style="color:#75715e">##          term estimate std.error statistic p.value conf.low conf.high  df outcome</span>
+<span style="color:#75715e">## 1 (Intercept)     -538       214      -2.5 1.2e-02     -959      -117 661    wage</span>
+<span style="color:#75715e">## 2   education      112        16       7.0 5.7e-12       80       143 661    wage</span>
+</code></pre></div><p>The coefficient for <code>education</code> is the same that we found in the manual 2SLS process, but now the errors are correct.</p>
+<h3 id="compare-results-1">Compare results</h3>
+<p>Let&rsquo;s compare all the findings and interpret the results!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;OLS&#34;</span> <span style="color:#f92672">=</span> model_naive, <span style="color:#e6db74">&#34;2SLS (by hand)&#34;</span> <span style="color:#f92672">=</span> second_stage,
+                  <span style="color:#e6db74">&#34;2SLS (automatic)&#34;</span> <span style="color:#f92672">=</span> model_2sls),
+             gof_omit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IC|Log|Adj|p\\.value|statistic|se_type&#34;</span>,
+             stars <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Add a background color to rows 3 and 5</span>
+  <span style="color:#a6e22e">row_spec</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>), background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#F5ABEA&#34;</span>)
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> OLS </th>
+   <th style="text-align:center;"> 2SLS (by hand) </th>
+   <th style="text-align:center;"> 2SLS (automatic) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> 175.160* </td>
+   <td style="text-align:center;"> -537.712** </td>
+   <td style="text-align:center;"> -537.712** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (92.839) </td>
+   <td style="text-align:center;"> (208.164) </td>
+   <td style="text-align:center;"> (214.431) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F5ABEA !important;"> education </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 59.452*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 111.561*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (6.698) </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:center;"> (15.901) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F5ABEA !important;"> education_hat </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 111.561*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (15.176) </td>
+   <td style="text-align:center;box-shadow: 0px 1px">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 663 </td>
+   <td style="text-align:center;"> 663 </td>
+   <td style="text-align:center;"> 663 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.106 </td>
+   <td style="text-align:center;"> 0.076 </td>
+   <td style="text-align:center;"> 0.025 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 78.786 </td>
+   <td style="text-align:center;"> 54.041 </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<p>The 2SLS effect is roughly twice as large and is arguably more accurate, since it has removed the endogeneity from education. An extra year of school leads to an extra $111.56 dollars a month in income (in 1980 dollars).</p>
+<h3 id="check-for-weak-instruments">Check for weak instruments</h3>
+<p>The F-statistic in the first stage was 83.3, which is bigger than 10, but not huge. Again, <a href="https://arxiv.org/abs/2010.05058" target="_blank" rel="noopener">this newer paper</a> argues that relying on 10 as a threshold isn&rsquo;t great. They provide a new, more powerful test called the tF procedure, but nobody&rsquo;s written an R function to do that yet, so we can&rsquo;t use it yet.</p>
+<p>We <em>can</em>, however, do a couple other tests for instrument strength. First, if you include the <code>diagnostics = TRUE</code> argument when running <code>iv_robust()</code>, you can get a few extra diagnostic statistics. (See <a href="https://www.rdocumentation.org/packages/estimatr/versions/0.26.0/topics/iv_robust#l_details" target="_blank" rel="noopener">the &ldquo;Details&rdquo; section in the documentation for <code>iv_robust</code></a> for more details about what these are.)</p>
+<p>Let&rsquo;s re-run the 2SLS model with <code>iv_robust</code> with diagnostics on. To see diagnostic details, you can&rsquo;t use <code>tidy()</code> (since that just shows the coefficients), so you have to use <code>summary()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_2sls <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">iv_robust</span>(wage <span style="color:#f92672">~</span> education <span style="color:#f92672">|</span> education_dad <span style="color:#f92672">+</span> education_mom,
+                        data <span style="color:#f92672">=</span> ed_real, diagnostics <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">summary</span>(model_2sls)
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Call:</span>
+<span style="color:#75715e">## iv_robust(formula = wage ~ education | education_dad + education_mom, </span>
+<span style="color:#75715e">##     data = ed_real, diagnostics = TRUE)</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Standard error type:  HC2 </span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Coefficients:</span>
+<span style="color:#75715e">##             Estimate Std. Error t value Pr(&gt;|t|) CI Lower CI Upper  DF</span>
+<span style="color:#75715e">## (Intercept)     -538      214.4   -2.51 1.24e-02   -958.8     -117 661</span>
+<span style="color:#75715e">## education        112       15.9    7.02 5.66e-12     80.3      143 661</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Multiple R-squared:  0.0247 ,	Adjusted R-squared:  0.0232 </span>
+<span style="color:#75715e">## F-statistic: 49.2 on 1 and 661 DF,  p-value: 5.66e-12</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Diagnostics:</span>
+<span style="color:#75715e">##                  numdf dendf value p.value    </span>
+<span style="color:#75715e">## Weak instruments     2   660  96.2 &lt; 2e-16 ***</span>
+<span style="color:#75715e">## Wu-Hausman           1   660  16.5 5.5e-05 ***</span>
+<span style="color:#75715e">## Overidentifying      1    NA   0.4    0.53    </span>
+<span style="color:#75715e">## ---</span>
+<span style="color:#75715e">## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</span>
+</code></pre></div><p>The main diagnostic we care about here is the first one: &ldquo;Weak instruments&rdquo;. This is a slightly fancier version of just looking at the first-stage F statistic. The null hypothesis for this test is that the instruments we have specified are weak, so we&rsquo;d like to reject that null hypothesis. Here, the p-value is tiny, so we can safely reject the null and say the instruments likely aren&rsquo;t weak. (In general, you want a statistically significant weak instruments test).</p>
+<p>Another approach for checking for weak instruments is to calculate something called the Anderson-Rubin confidence set, which is essentially a 95% confidence interval for your coefficient that shows the stability of the coefficient based on how weak or strong the instrument is. This test was invented in like 1949 and it&rsquo;s arguably more robust than checking F statistics, but for whatever reason, <em>nobody really teaches it or uses it!</em>. It&rsquo;s not in any of the textbooks for this class, and it&rsquo;s really kind of rare. Even if you google &ldquo;anderson rubin test weak instruments&rdquo;, you&rsquo;ll only find a bunch of lecture notes from fancy econometrics classes (like <a href="https://economics.yale.edu/sites/default/files/files/Workshops-Seminars/Econometrics/andrews1-051012.pdf" target="_blank" rel="noopener">p. 10 here</a>, or <a href="https://www.ssc.wisc.edu/~xshi/econ715/Lecture_11_WeakIV.pdf" target="_blank" rel="noopener">p. 4 here</a>, or <a href="https://ocw.mit.edu/courses/economics/14-384-time-series-analysis-fall-2013/lecture-notes/MIT14_384F13_lec7and8.pdf" target="_blank" rel="noopener">p. 4 here</a>).</p>
+<p>Additionally, most of the automatic 2SLS R packages don&rsquo;t provide an easy way to do this test! The only one I&rsquo;ve found is in the <strong>AER</strong> package. Basically, create a 2SLS model with AER&rsquo;s <code>ivreg()</code> and then feed that model to the <code>anderson.rubin.ci()</code> function from the <strong>ivpack</strong> function. This doesn&rsquo;t work with models you make with <code>iv_robust()</code> or any of the other packages that do 2SLS—only with AER&rsquo;s <code>ivreg()</code>. It&rsquo;s a hassle.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(AER)  <span style="color:#75715e"># For ivreg()</span>
+<span style="color:#a6e22e">library</span>(ivpack)  <span style="color:#75715e"># For IV diagnostics like Anderson-Rubin causal effects</span>
+
+<span style="color:#75715e"># You have to include x = TRUE so that this works with diagnostic functions</span>
+model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ivreg</span>(wage <span style="color:#f92672">~</span> education <span style="color:#f92672">|</span> education_dad <span style="color:#f92672">+</span> education_mom,
+               data <span style="color:#f92672">=</span> ed_real, x <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+
+<span style="color:#75715e"># AR 95% confidence interval</span>
+<span style="color:#a6e22e">anderson.rubin.ci</span>(model)
+<span style="color:#75715e">## $confidence.interval</span>
+<span style="color:#75715e">## [1] &#34;[ 75.9391400848449 , 152.076319769297 ]&#34;</span>
+</code></pre></div><p>Based on this confidence interval, given the strength (or weakness) of the instruments, the IV estimate could be as low as 75.9 and as high as 152, which is a fairly big range around the $112 effect we found. Neat.</p>
+<p>There&rsquo;s no magic threshold to look for in these confidence intervals—you&rsquo;re mostly concerned with how much potential variability there is. If you&rsquo;re fine with a causal effect that could be between 76 and 152, great. If you want that range to be narrower, find some better instruments.</p>
+<h2 id="education-wages-and-distance-to-college-control-variables-real-data">Education, wages, and distance to college (control variables) (real data)</h2>
+<p>For this last example we&rsquo;ll estimate the effect of education on wages using a different instrument—geographic proximity to colleges. This data comes from David Card&rsquo;s 1995 study where he did the same thing, and it&rsquo;s available in the <strong>wooldridge</strong> library as <code>card</code>. You can find a description of all variables <a href="http://fmwww.bc.edu/ec-p/data/wooldridge/card.des" target="_blank" rel="noopener">here</a>; we&rsquo;ll use these:</p>
+<table>
+<thead>
+<tr>
+<th>Variable name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lwage</code></td>
+<td>Annual wage (log form)</td>
+</tr>
+<tr>
+<td><code>educ</code></td>
+<td>Years of education</td>
+</tr>
+<tr>
+<td><code>nearc4</code></td>
+<td>Living close to college (=1) or far from college (=0)</td>
+</tr>
+<tr>
+<td><code>smsa</code></td>
+<td>Living in metropolitan area (=1) or not (=0)</td>
+</tr>
+<tr>
+<td><code>exper</code></td>
+<td>Years of experience</td>
+</tr>
+<tr>
+<td><code>expersq</code></td>
+<td>Years of experience (squared term)</td>
+</tr>
+<tr>
+<td><code>black</code></td>
+<td>Black (=1), not black (=0)</td>
+</tr>
+<tr>
+<td><code>south</code></td>
+<td>Living in the south (=1) or not (=0)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">card <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;data/card.csv&#34;</span>)
+</code></pre></div><p>Once again, Card wants to estimate the effect of education on wage. But to remove the endogeneity that comes from ability, he uses a different instrumental variable: <strong>proximity to college</strong>.</p>
+<p>He also uses control variables to help explain additional variation in wages: <code>smsa66 + exper + expersq + black + south66</code>.</p>
+<p><strong>IMPORTANT NOTE</strong>: When you include controls, <a href="https://stats.stackexchange.com/a/177752/3025" target="_blank" rel="noopener">every control variable needs to go in <em>both stages</em></a>. The only things from the first stage that don&rsquo;t carry over to the second stage are the instruments—notice how <code>nearc4</code> is only in the first stage, since it&rsquo;s the instrument, but it&rsquo;s not in the second stage. The other controls are all in both stages.</p>
+<p>He thus estimates a model where:</p>
+<p><strong>First stage:</strong></p>
+<p>$$
+\widehat{\text{educ}} = \beta_0 + \beta_1\text{nearc4} + \beta_{2-6}\text{Control variables}
+$$</p>
+<p><strong>Second stage:</strong></p>
+<p>$$
+\text{lwage} = \beta_0 + \beta_1 \widehat{\text{educ}} + \beta_{2-6}\text{Control variables}
+$$</p>
+<h3 id="check-instrument-validity-2">Check instrument validity</h3>
+<p>Card provides arguments to support each of three main characteristics of a good instrumental variable:</p>
+<ol>
+<li><strong>Relevancy</strong>: People who live close to a 4-year college have easier access to education at a lower costs (no commuting costs and time nor accommodation costs), so they have greater incentives to pursue education.</li>
+<li><strong>Exclusion</strong>: Proximity to a college has no effect on your annual income, unless you decide to pursue further education because of the nearby college.</li>
+<li><strong>Exogeneity</strong>: Individual ability does not depend on proximity to a college.</li>
+</ol>
+<p>Let&rsquo;s see if these assumptions hold up:</p>
+<p><strong>Relevancy</strong></p>
+<p>There should be a strong relationship between the instrument (distance to college) and education:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">first_stage <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(educ <span style="color:#f92672">~</span> nearc4 <span style="color:#f92672">+</span> smsa66 <span style="color:#f92672">+</span> exper <span style="color:#f92672">+</span> expersq <span style="color:#f92672">+</span> black <span style="color:#f92672">+</span> south66,
+                  data <span style="color:#f92672">=</span> card)
+<span style="color:#a6e22e">tidy</span>(first_stage)
+<span style="color:#75715e">## # A tibble: 7 x 5</span>
+<span style="color:#75715e">##   term         estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept) 16.8        0.173      96.9   0.      </span>
+<span style="color:#75715e">## 2 nearc4       0.334      0.0870      3.84  1.27e- 4</span>
+<span style="color:#75715e">## 3 smsa66       0.255      0.0849      3.00  2.72e- 3</span>
+<span style="color:#75715e">## 4 exper       -0.409      0.0337    -12.1   4.74e-33</span>
+<span style="color:#75715e">## 5 expersq      0.000461   0.00165     0.279 7.80e- 1</span>
+<span style="color:#75715e">## 6 black       -0.924      0.0934     -9.90  9.41e-23</span>
+<span style="color:#75715e">## 7 south66     -0.348      0.0832     -4.18  3.00e- 5</span>
+<span style="color:#a6e22e">glance</span>(first_stage)
+<span style="color:#75715e">## # A tibble: 1 x 12</span>
+<span style="color:#75715e">##   r.squared adj.r.squared sigma statistic p.value    df logLik    AIC    BIC deviance df.residual  nobs</span>
+<span style="color:#75715e">##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;    &lt;dbl&gt;       &lt;int&gt; &lt;int&gt;</span>
+<span style="color:#75715e">## 1     0.473         0.472  1.95      449.       0     6 -6271. 12558. 12606.   11369.        3003  3010</span>
+</code></pre></div><p>Based on this first stage model, <code>nearc4</code> has a significant relationship to <code>educ</code>, and the model&rsquo;s joint F statistic is 449, which is definitely bigger than both 10 and 104. Good. We&rsquo;ll call it relevant.</p>
+<p><strong>Exclusion</strong></p>
+<p>For distance to college to work as an instrument and meet the exclusion restriction, we have to prove that distance to college causes wages <em>only through</em> getting more education. Think about other possible pathways between living close to a college and increased wages—there could be other paths that don&rsquo;t go through education. Good luck.</p>
+<p><strong>Exogeneity</strong></p>
+<p>For distance to college to work as an exogenous instrument, we have to prove that none of the unobserved confounders between education and earnings are connected to distance. Also good luck.</p>
+<h3 id="2sls-estimation">2SLS estimation</h3>
+<p>Assuming distance to education is a valid instrument (sure), we can use it in a 2SLS model. Remember that control variables have to go in both stages, so specify them accordingly in the model formula:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_2sls <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">iv_robust</span>(lwage <span style="color:#f92672">~</span> educ <span style="color:#f92672">+</span> smsa66 <span style="color:#f92672">+</span> exper <span style="color:#f92672">+</span> expersq <span style="color:#f92672">+</span> black <span style="color:#f92672">+</span> south66 <span style="color:#f92672">|</span>
+                          nearc4 <span style="color:#f92672">+</span> smsa66 <span style="color:#f92672">+</span> exper <span style="color:#f92672">+</span> expersq <span style="color:#f92672">+</span> black <span style="color:#f92672">+</span> south66,
+                        data <span style="color:#f92672">=</span> card, diagnostics <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">tidy</span>(model_2sls)
+<span style="color:#75715e">##          term estimate std.error statistic p.value conf.low conf.high   df outcome</span>
+<span style="color:#75715e">## 1 (Intercept)   3.3572   0.93042       3.6 3.1e-04   1.5329   5.18155 3003   lwage</span>
+<span style="color:#75715e">## 2        educ   0.1572   0.05481       2.9 4.2e-03   0.0498   0.26468 3003   lwage</span>
+<span style="color:#75715e">## 3      smsa66   0.0810   0.02686       3.0 2.6e-03   0.0283   0.13363 3003   lwage</span>
+<span style="color:#75715e">## 4       exper   0.1184   0.02365       5.0 5.9e-07   0.0720   0.16472 3003   lwage</span>
+<span style="color:#75715e">## 5     expersq  -0.0024   0.00037      -6.6 5.0e-11  -0.0031  -0.00170 3003   lwage</span>
+<span style="color:#75715e">## 6       black  -0.1036   0.05245      -2.0 4.8e-02  -0.2064  -0.00074 3003   lwage</span>
+<span style="color:#75715e">## 7     south66  -0.0637   0.02798      -2.3 2.3e-02  -0.1186  -0.00885 3003   lwage</span>
+</code></pre></div><p>Cool cool. Based on the coefficient for <code>educ</code>, a year of education <em>causes</em> a 15.7% increase in annual wages, on average.</p>
+<p>Is that an improvement over a naive model where we don&rsquo;t account for any of the endogeneity?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_naive <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(lwage <span style="color:#f92672">~</span> educ <span style="color:#f92672">+</span> smsa66 <span style="color:#f92672">+</span> exper <span style="color:#f92672">+</span> expersq <span style="color:#f92672">+</span> black <span style="color:#f92672">+</span> south66,
+                  data <span style="color:#f92672">=</span> card)
+<span style="color:#a6e22e">tidy</span>(model_naive)
+<span style="color:#75715e">## # A tibble: 7 x 5</span>
+<span style="color:#75715e">##   term        estimate std.error statistic  p.value</span>
+<span style="color:#75715e">##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span>
+<span style="color:#75715e">## 1 (Intercept)  4.73     0.0686       68.9  0.      </span>
+<span style="color:#75715e">## 2 educ         0.0762   0.00355      21.5  3.68e-95</span>
+<span style="color:#75715e">## 3 smsa66       0.113    0.0151        7.47 1.06e-13</span>
+<span style="color:#75715e">## 4 exper        0.0852   0.00674      12.6  1.02e-35</span>
+<span style="color:#75715e">## 5 expersq     -0.00238  0.000322     -7.39 1.92e-13</span>
+<span style="color:#75715e">## 6 black       -0.177    0.0185       -9.58 1.99e-21</span>
+<span style="color:#75715e">## 7 south66     -0.0960   0.0161       -5.97 2.64e- 9</span>
+</code></pre></div><p>Yep! Without removing endogeneity from education, an additional year of education is only associated with a 7.6% increase in annual wages, on average.</p>
+<h3 id="compare-results-2">Compare results</h3>
+<p>For fun, we can look at the results side-by-side:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">modelsummary</span>(<span style="color:#a6e22e">list</span>(<span style="color:#e6db74">&#34;Naive OLS&#34;</span> <span style="color:#f92672">=</span> model_naive, <span style="color:#e6db74">&#34;2SLS&#34;</span> <span style="color:#f92672">=</span> model_2sls),
+             gof_omit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IC|Log|Adj|p\\.value|statistic|se_type&#34;</span>,
+             stars <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+  <span style="color:#75715e"># Add a background color to row 3</span>
+  <span style="color:#a6e22e">row_spec</span>(<span style="color:#ae81ff">3</span>, background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#F5ABEA&#34;</span>)
+</code></pre></div><table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> Naive OLS </th>
+   <th style="text-align:center;"> 2SLS </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:center;"> 4.731*** </td>
+   <td style="text-align:center;"> 3.357*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.069) </td>
+   <td style="text-align:center;"> (0.930) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: #F5ABEA !important;"> educ </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 0.076*** </td>
+   <td style="text-align:center;background-color: #F5ABEA !important;"> 0.157*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.004) </td>
+   <td style="text-align:center;"> (0.055) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> smsa66 </td>
+   <td style="text-align:center;"> 0.113*** </td>
+   <td style="text-align:center;"> 0.081*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.015) </td>
+   <td style="text-align:center;"> (0.027) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> exper </td>
+   <td style="text-align:center;"> 0.085*** </td>
+   <td style="text-align:center;"> 0.118*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.007) </td>
+   <td style="text-align:center;"> (0.024) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> expersq </td>
+   <td style="text-align:center;"> -0.002*** </td>
+   <td style="text-align:center;"> -0.002*** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.000) </td>
+   <td style="text-align:center;"> (0.000) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> black </td>
+   <td style="text-align:center;"> -0.177*** </td>
+   <td style="text-align:center;"> -0.104** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:center;"> (0.018) </td>
+   <td style="text-align:center;"> (0.052) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> south66 </td>
+   <td style="text-align:center;"> -0.096*** </td>
+   <td style="text-align:center;"> -0.064** </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;box-shadow: 0px 1px">  </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (0.016) </td>
+   <td style="text-align:center;box-shadow: 0px 1px"> (0.028) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num.Obs. </td>
+   <td style="text-align:center;"> 3010 </td>
+   <td style="text-align:center;"> 3010 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:center;"> 0.269 </td>
+   <td style="text-align:center;"> 0.143 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:center;"> 184.606 </td>
+   <td style="text-align:center;">  </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+</tfoot>
+</table>
+<h3 id="extra-diagnostics">Extra diagnostics</h3>
+<p>Finally, we can check for weak instruments issues. The F statistic we found in the first stage was pretty big, so that&rsquo;s a good sign, but we can look at the first stage&rsquo;s weak instrument statistic, as well as the Anderson-Rubin confidence interval.</p>
+<p>Because we included <code>diagnostics = TRUE</code> in the model, we can just use <code>summary()</code> to check weak instruments diagnostics:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">summary</span>(model_2sls)
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Call:</span>
+<span style="color:#75715e">## iv_robust(formula = lwage ~ educ + smsa66 + exper + expersq + </span>
+<span style="color:#75715e">##     black + south66 | nearc4 + smsa66 + exper + expersq + black + </span>
+<span style="color:#75715e">##     south66, data = card, diagnostics = TRUE)</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Standard error type:  HC2 </span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Coefficients:</span>
+<span style="color:#75715e">##             Estimate Std. Error t value Pr(&gt;|t|) CI Lower CI Upper   DF</span>
+<span style="color:#75715e">## (Intercept)  3.35723   0.930415    3.61 3.13e-04  1.53292  5.18155 3003</span>
+<span style="color:#75715e">## educ         0.15722   0.054807    2.87 4.15e-03  0.04976  0.26468 3003</span>
+<span style="color:#75715e">## smsa66       0.08097   0.026858    3.01 2.59e-03  0.02831  0.13363 3003</span>
+<span style="color:#75715e">## exper        0.11835   0.023649    5.00 5.93e-07  0.07198  0.16472 3003</span>
+<span style="color:#75715e">## expersq     -0.00241   0.000366   -6.60 5.00e-11 -0.00313 -0.00170 3003</span>
+<span style="color:#75715e">## black       -0.10358   0.052451   -1.97 4.84e-02 -0.20643 -0.00074 3003</span>
+<span style="color:#75715e">## south66     -0.06371   0.027979   -2.28 2.28e-02 -0.11857 -0.00885 3003</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Multiple R-squared:  0.143 ,	Adjusted R-squared:  0.141 </span>
+<span style="color:#75715e">## F-statistic: 96.7 on 6 and 3003 DF,  p-value: &lt;2e-16</span>
+<span style="color:#75715e">## </span>
+<span style="color:#75715e">## Diagnostics:</span>
+<span style="color:#75715e">##                  numdf dendf value p.value    </span>
+<span style="color:#75715e">## Weak instruments     1  3003 15.31 9.3e-05 ***</span>
+<span style="color:#75715e">## Wu-Hausman           1  3002  2.61    0.11    </span>
+<span style="color:#75715e">## Overidentifying      0    NA    NA      NA    </span>
+<span style="color:#75715e">## ---</span>
+<span style="color:#75715e">## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</span>
+</code></pre></div><p>The p-value for the &ldquo;Weak instruments&rdquo; test is tiny, which means we can safely reject the null hypothesis that the near college instrument is weak. Neat.</p>
+<p>To calculate Anderson-Rubin confidence intervals, we need to rerun the model with the <code>ivreg()</code> function (ugh) and feed those results to <code>anderson.rubin.ci()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model_again <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ivreg</span>(lwage <span style="color:#f92672">~</span> educ <span style="color:#f92672">+</span> smsa66 <span style="color:#f92672">+</span> exper <span style="color:#f92672">+</span> expersq <span style="color:#f92672">+</span> black <span style="color:#f92672">+</span> south66 <span style="color:#f92672">|</span>
+                       nearc4 <span style="color:#f92672">+</span> smsa66 <span style="color:#f92672">+</span> exper <span style="color:#f92672">+</span> expersq <span style="color:#f92672">+</span> black <span style="color:#f92672">+</span> south66,
+                     data <span style="color:#f92672">=</span> card, x <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">anderson.rubin.ci</span>(model_again)
+<span style="color:#75715e">## $confidence.interval</span>
+<span style="color:#75715e">## [1] &#34;[ 0.0570787017353594 , 0.314883971035808 ]&#34;</span>
+</code></pre></div><p>Phew. That&rsquo;s a pretty wide interval, ranging from 5.7% to 31.5%. It&rsquo;s still positive, but it could sometimes be fairly small.</p>
+
+                    </div>
+
+                    
+
+
+
+                    
+                </div>
+
+                <div class="body-footer">
+                    <p>Last updated on April 8, 2020</p>
+
+                    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com/edit/master/content/example%5civ.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+                    
+
+
+
+                </div>
+
+            </article>
+
+            <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>PMAP 8141: Program Evaluation (Spring 2021)</strong><br>
+
+                <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a> &emsp;&emsp;
+                <a href="https://aysps.gsu.edu/" target="_blank" rel="noopener">Andrew Young School of Policy Studies</a>
+            </p>
+
+            <p>
+                <a href="https://www.andrewheiss.com" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Andrew Heiss</a> &emsp;&emsp;
+                <a href="mailto:aheiss@gsu.edu"><i class="fas fa-envelope"></i>
+                    aheiss@gsu.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Any day &emsp;&emsp;
+                <i class="far fa-clock"></i> Any time 
+                
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://www.andrewheiss.com" target="_blank" rel="noopener">Andrew Heiss</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+</div>
+
+        
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.c6ceb5c48772e46156651a48070d6139.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+    
+    
+
+    
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
