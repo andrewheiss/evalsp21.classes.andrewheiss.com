@@ -11,4 +11,3 @@ temp_figs/*
 static/slides/*.pdf
 static/slides/**/*_cache/*
 blogdown/md5sum.txt
-themes/*
