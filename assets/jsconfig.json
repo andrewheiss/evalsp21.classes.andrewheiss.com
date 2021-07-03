@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../themes/wowchemy-hugo-modules/wowchemy/assets/*"
+    "..\\themes\\wowchemy-hugo-modules\\wowchemy\\assets\\*"
    ]
   }
  }
