@@ -23,7 +23,7 @@ font: "barlow"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size: "L"
+font_size: "M"
 
 
 ############################
@@ -38,7 +38,7 @@ font_size: "L"
 site_type: "Course"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description: "Use modern statistical and data scientific tools to measure causal effects and evaluate public policy"
+description: "Análisis de Datos Estadísticos en R, por Valentina Andrade"
 
 
 ############################
@@ -71,11 +71,11 @@ privacy_pack: false
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page:
-  repo_url: 'https://github.com/andrewheiss/evalsp21.classes.andrewheiss.com'
+  repo_url: 'https://github.com/learn-R'
   content_dir: ''
   repo_branch: master
   editable:
-    docs: true
+    docs: false
     page: false
     post: false
 
@@ -96,37 +96,37 @@ show_related:
 ## Additionally, for organizations, these details may be used to enrich search engine results.
 ############################
 
-author: Andrew Heiss
+author: Valentina Andrade
 
 instructor: 
-  name: Dr. Andrew Heiss
-  email: aheiss@gsu.edu
-  url: "https://www.andrewheiss.com"
-  twitter: andrewheiss
-  github: andrewheiss
-  office: "357 Andrew Young School"
+  name: Valentina Andrade
+  email: valentinaandrade@uchile.cl
+  url: "https://valentinaandrade.netlify.app/"
+  twitter: valentiandrade
+  github: valentinaandrade
+  office: "valentinaandrade.netlify.app/"
   contact_policy: >-
-    E-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (*really*), but also remember that life can be busy and chaotic for everyone (including me!), so if I don't respond right away, don't worry!
-  appointment_url: https://calendly.com/andrewheiss/
+    El canal de contacto de preferencia es [Slack](http://learn-r-uah.slack.com/), y en segunda instancia, email.
+  appointment_url: https://calendly.com/valentinaandrade/
 
 course:
-  number: "PMAP 8141"
-  semester: "Spring 2021"
-  days: "Any day"
-  time: "Any time"
-  # location: "Online only (thanks, COVID-19, for ruining everything)"
-  dates: "January 11–April 26, 2021"
-  github: "andrewheiss/evalsp21.classes.andrewheiss.com"
-  copyrightYear: "2021"
-  slack: "https://gsuevalsp2021.slack.com"
+  number: "2255"
+  semester: "II° Semestre- 2021"
+  days: "Clases: Lunes 16.30-17.40"
+  #time: ""
+  location: "Online, en link de Zoom"
+  dates: "Práctico: Lunes 18.00-19.20"
+  github: "valentinaandrade"
+  copyrightYear: "2021. Web developed by Andrew Heiss and custom by"
+  slack: "http://learn-r-uah.slack.com/"
 
 university: 
-  name: Georgia State University
-  url: "https://www.gsu.edu"
+  name: Universidad Alberto Hurtado
+  url: "https://www.uahurtado.cl/"
 
 school:
-  name: Andrew Young School of Policy Studies
-  url: "https://aysps.gsu.edu/"
+  name: Departamento de Sociología
+  url: "http://sociologia.uahurtado.cl/"
 
 
 ############################
@@ -134,10 +134,10 @@ school:
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
-sharing_image: "social-image-sp21.png"
+sharing_image: "social-image.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter: "andrewheiss"
+twitter: "valentiandrade"
 
 
 ############################
@@ -170,7 +170,7 @@ reading_time: false
 
 # Display next/previous section pager? (true/false)
 section_pager: false
-docs_section_pager: false  # Display pager in Docs layout (e.g. tutorials)?
+docs_section_pager: true  # Display pager in Docs layout (e.g. tutorials)?
 
 # Enable in-built social sharing buttons? (true/false)
 sharing: false
@@ -230,7 +230,7 @@ comments:
   #   0: Disabled
   #   1: Disqus (https://disqus.com)
   #   2: Commento (https://commento.io)
-  engine: 0
+  engine: 1
 
   # Which page types are commentable?
   commentable:
@@ -243,7 +243,7 @@ comments:
 
   # Configuration of Disqus.
   disqus:
-    shortname: ''  # Paste the shortname from your Disqus dashboard
+    shortname: 'learn-r-uah'  # Paste the shortname from your Disqus dashboard
     show_count: true  # Show comment count in page header? (true/false)
 
   # Configuration of Commento.

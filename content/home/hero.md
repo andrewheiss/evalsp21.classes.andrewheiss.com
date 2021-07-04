@@ -5,22 +5,22 @@ headless: true
 active: true
 weight: 10
 
-title: "Program Evaluation for Public Service"
+title: "Análisis de Datos Estadístico en R"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
-hero_media: eval_hires.png
+hero_media: logo.png
 
 design:
   background:
     # Background gradient
-    gradient_start: '#A52C60'
-    gradient_end: '#CF4446'
+    gradient_start: '#00c4cc'
+    gradient_end: '#5271ff'
 
     # Text color (true=light or false=dark).
     text_color_light: true
 
 cta_note:
-  label: PMAP 8141 • Spring 2021<br>Andrew Young School of Policy Studies<br>Georgia State University
+  label: Profesora Valentina Andrade • II° Semestre 2021<br>Sociología • Universidad Alberto Hurtado
 ---
 
-**Combine research design, causal inference, and econometric tools to measure the effects of social programs**
+Introducción al procesamiento, análisis y visualización para **Ciencias Sociales**

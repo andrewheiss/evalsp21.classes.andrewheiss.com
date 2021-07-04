@@ -7,7 +7,7 @@
     <description>Course materials</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/logo_hu02bc8dfe7cae86b2ee03430b67caeaf2_22353_300x300_fit_lanczos_2.png</url>
       <title>Course materials</title>
       <link>/</link>
     </image>
@@ -9757,35 +9757,274 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
 &lt;script src=&#34;/schedule/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Here’s your roadmap for the semester!&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/content/&#34;&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-book-reader&#34;&gt;&lt;/i&gt;): This page contains the readings, slides, and recorded lectures for the topic. Read and watch these first.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/example/&#34;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;): This page contains fully annotated R code and other supplementary information that you can use as a reference for your assignments and project. This is only a reference page—you don’t have to necessarily do anything here. Some sections also contain videos of me live coding the examples so you can see what it looks like to work with R in real time. This page will be &lt;em&gt;very&lt;/em&gt; helpful as you work on your assignments.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/assignment/&#34;&gt;&lt;strong&gt;Assignment&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-pencil-ruler&#34;&gt;&lt;/i&gt;): This page contains the instructions for each assignment. &lt;strong&gt;Assignments are due by 11:59 PM on the day they’re listed.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/content/&#34;&gt;&lt;strong&gt;Clases&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-book-reader&#34;&gt;&lt;/i&gt;): Esta página contiene las presentaciones, sesiones grabadas y lecturas correspondientes al tema.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/example/&#34;&gt;&lt;strong&gt;Prácticos&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;): Esta página contiene los ejercicios prácticos asociados a cada sesión de clase. Podrás encontrar tanto el código de R cómo, en algunos casos, los videos grabados del &lt;em&gt;live coding&lt;/em&gt;. Esta página será &lt;strong&gt;muy importante&lt;/strong&gt; para la entrega de las tareas.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/assignment/&#34;&gt;&lt;strong&gt;Tareas&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-pencil-ruler&#34;&gt;&lt;/i&gt;): Esta página contiene las instrucciones para cada tarea. &lt;strong&gt;Las tareas pueden ser entregadas hasta el día viernes a las 23.59 de la semana correspondiente&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;ical&#34;&gt;
-&lt;p&gt;You can subscribe to this calendar URL in Outlook, Google Calendar, or Apple Calendar:&lt;br&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;/schedule/schedule.ics&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt;&lt;/a&gt; &lt;input id=&#34;ics_url&#34; type=&#34;text&#34; value=&#34;https://evalsp21.classes.andrewheiss.com/schedule/schedule.ics&#34; onclick=&#34;this.select()&#34; readonly=&#34;readonly&#34; size=&#34;60&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Puedes suscribir la &lt;strong&gt;planificación&lt;/strong&gt; del curso con la URL del calendario en Outlook, Google Calendar o Apple Calendar:&lt;br&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;schedule.ics&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt;&lt;/a&gt; &lt;input id=&#34;ics_url&#34; type=&#34;text&#34; value=&#34;https://evalsp21.classes.andrewheiss.com/&#34; onclick=&#34;this.select()&#34; readonly=&#34;readonly&#34; size=&#34;60&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;table class=&#34;table schedule&#34; style=&#34;max-width:100%&#34;&gt;
+&lt;p&gt;&lt;table class=&#34;table schedule&#34; style=&#34;max-width:100%&#34;&gt;
     &lt;tbody&gt;
         &lt;tr
             class=&#34; fake-header-table&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
                 &lt;strong&gt;&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Evaluation and causation&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Análisis Estadístico en R&lt;/td&gt;
 
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Example&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
+            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Clases&lt;/td&gt;
+            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Prácticos&lt;/td&gt;
+            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Tareas&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr
             class=&#34; schedule-bg-1&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 11–15&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 1)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Evaluation and the causal revolution&lt;/span&gt;&lt;/td&gt;
+                &lt;strong&gt;9-16 de agosto&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Unidad 1. Elementos y herramientas básicos de R&lt;/span&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;9 Agosto&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 1)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;1.1 R enviroment: interfaz de RStudio, elementos de script, workspace&lt;br&gt;1.2 Prácticas y herramientas de consulta: CRAN, stackoverflow, Rcommunity&lt;br&gt;1.3 Herramientas para la colaboración y comunicación: Rprojects, GitHub y Slack&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;/content/01-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;16 Agosto&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 2)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;1.4 Librerías y funciones para las ciencias sociales: tidyverse y sj (sjmisc y sjPlot)&lt;br&gt;1.5 Construcción de reportes reproducibles e integrados con código: Rmarkdown&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/02-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/01-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;23 Agosto-6 Septiembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Unidad 2. Manipulación y limpieza de datos&lt;/span&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;23 Agosto&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 3)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;2.1 Importar/exportar datos en diferentes formatos&lt;br&gt;2.2 Validación y limpieza de variables&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/03-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;30 Agosto&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 4)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;2.3 Transformación y selección de variables&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;6 Septiembre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 5)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;2.4 Transformación de datos en tidydata&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/05-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/02-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;13-20 Septiembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Unidad 3. Análisis estadístico descriptivo en R&lt;/span&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;13 Septiembre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 6)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;3.1 Análisis descriptivos univariados: medidas de tendencia central, dispersión y frecuencias&lt;br&gt;3.2 Análisis bivariado: tablas de contingencia, correlaciones y ANOVA&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/06-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/03-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;20 Septiembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Semana de receso&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;27 Septiembre-8 Noviembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Unidad 4. Análisis estadístico inferencial en R&lt;/span&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;27 Septiembre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 7)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;4.1 Muestras complejas y precisión de inferencia estadística&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/07-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/04-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;4 Octubre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 8)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;4.2 Pruebas de hipótesis y representación gráfica&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/08-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;11 Octubre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Feriado&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;18 Octubre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 9)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;4.3 Regresiones &lt;strong&gt;lineales&lt;/strong&gt;, predictores categóricos y representación gráfica&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/09-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;/example/rstudio-tidyverse/&#34;&gt;
@@ -9798,481 +10037,24 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
         &lt;tr
             class=&#34; schedule-bg-1&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 19&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 1&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+                &lt;strong&gt;25 Octubre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 10)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;4.4 Regresiones &lt;strong&gt;logísticas&lt;/strong&gt;, exponenciación y representación gráfica&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 19&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 1&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/01-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 19–22&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 2)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Regression and inference&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/02-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 25&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 2&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 25&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 2&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/02-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 25–29&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 3)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Theories of change and logic models&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/03-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 1&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 3&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 1&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Evaluation: Background and theory&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/01-eval-background-theory/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 1–5&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 4)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Measurement and DAGs&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/04-content/&#34;&gt;
+                    href=&#34;/content/10-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/dags/&#34;&gt;
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 8&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 4&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 8&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Evaluation: Measurement&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/02-eval-measurement/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 8–12&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 5)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;DAGs and potential outcomes&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/05-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/po-ate-cate/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 15&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 5&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 15&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Evaluation: Causal model&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/03-eval-dag/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 15–19&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 6)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Threats to validity&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/06-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 22&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 6&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 22&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Evaluation: Threats to validity&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/04-eval-threats/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-3&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 22–28&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;strong&gt;Exam 1&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; fake-header-table&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Tools and methods&lt;/td&gt;
-
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Example&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;February 22–26&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 7)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Randomization and matching&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/07-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/matching-ipw/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 1&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 7&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 1&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 3&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/03-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 1–12&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Sessions 8–9)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Difference-in-differences I + II&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/08-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/diff-in-diff/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 8&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 8&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 8&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 4&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/04-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 22&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 9&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 22&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 5&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;/assignment/05-problem-set/&#34;&gt;
                     &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
+            class=&#34; section-bottom schedule-bg-2&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 22–26&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 10)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Regression discontinuity I&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/10-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/rdd/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 29&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 10&lt;/td&gt;
+                &lt;strong&gt;1 Noviembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Feriado&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -10281,15 +10063,51 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
             &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr
             class=&#34; section-bottom schedule-bg-1&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 29&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 6&lt;/td&gt;
+                &lt;strong&gt;8 Noviembre&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Sesión 11)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;4.5 Calidad de modelos y otras técnicas de estimación&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/content/11-content/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/example/rstudio-tidyverse/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;15 Noviembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Receso&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; section-bottom schedule-bg-3&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;22 Noviembre&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;strong&gt;Entrega final&lt;/strong&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -10302,272 +10120,11 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
                     href=&#34;/assignment/06-problem-set/&#34;&gt;
                     &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;March 29–April 2&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 11)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Instrumental variables I&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/11-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/iv/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 5&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 11&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 5&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 7&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/07-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 5–9&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 12)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Instrumental variables II + Regression discontinuity II&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/12-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/rdd-fuzzy/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 12&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 12&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 12&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 8&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/08-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-3&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 12–18&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;strong&gt;Exam 2&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; fake-header-table&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Applied evaluation&lt;/td&gt;
-
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Example&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 12–16&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 13)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Choosing and planning ethical evaluations&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/13-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/example/synthetic-data/&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 19&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 13&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 19&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 9&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/09-problem-set/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 19–23&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 14)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Ethics, stories, and curiosity&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/content/14-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; section-bottom schedule-bg-1&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 26&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Weekly check-in 14&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/weekly-check-in/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;April 26&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Work session&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; fake-header-table&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;Final&lt;/span&gt;&lt;/td&gt;
-
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Example&lt;/td&gt;
-            &lt;td style=&#34;width:8%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-3&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;May 3&lt;/strong&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;strong&gt;Final project due&lt;/strong&gt; (submit online by 11:59 PM)&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;/assignment/final-project/&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
 
     &lt;/tbody&gt;
 
 &lt;/table&gt;
-
+&lt;/p&gt;
 </description>
     </item>
     
@@ -10610,27 +10167,26 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
 
 &lt;div class=&#34;row&#34;&gt;
     &lt;div class=&#34;col-md-4&#34;&gt;
-        &lt;h3&gt;Instructor&lt;/h3&gt;
+        &lt;h3&gt;Docente&lt;/h3&gt;
         &lt;ul class=&#34;icon-list&#34;&gt;
-            &lt;li&gt;&lt;i class=&#34;fas fa-user&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.andrewheiss.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Dr. Andrew Heiss&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; 357 Andrew Young School&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:aheiss@gsu.edu&#34;&gt; aheiss@gsu.edu&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/andrewheiss&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; @andrewheiss&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fas fa-calendar-check&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://calendly.com/andrewheiss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Schedule an appointment&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-user&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://valentinaandrade.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Valentina Andrade&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt;&lt;a href=&#34;https://https://valentinaandrade.netlify.app/&#34;&gt; valentinaandrade.netlify.app/&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:valentinaandrade@uchile.cl&#34;&gt; valentinaandrade@uchile.cl&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/valentiandrade&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; @valentiandrade&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-calendar-check&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://calendly.com/valentinaandrade/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Agendar reunión&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&#34;col-md-4&#34;&gt;
         &lt;h3&gt;Course details&lt;/h3&gt;
         &lt;ul class=&#34;icon-list&#34;&gt;
-            &lt;li&gt;&lt;i class=&#34;far fa-calendar&#34;&gt;&lt;/i&gt; Any day&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt; January 11–April 26, 2021&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;far fa-clock&#34;&gt;&lt;/i&gt; Any time&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fab fa-slack&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://gsuevalsp2021.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slack&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt; Clases: Lunes 16.30-17.40&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-pencil-alt&#34;&gt;&lt;/i&gt; Práctico: Lunes 18.00-19.20&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; Online, en link de Zoom&lt;/li&gt;&lt;li&gt;&lt;i class=&#34;fab fa-slack&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://learn-r-uah.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slack&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&#34;col-md-4 contact-policy&#34;&gt;
-        &lt;h3&gt;Contacting me&lt;/h3&gt;
-        &lt;p&gt;E-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (&lt;em&gt;really&lt;/em&gt;), but also remember that life can be busy and chaotic for everyone (including me!), so if I don&amp;rsquo;t respond right away, don&amp;rsquo;t worry!&lt;/p&gt;
+        &lt;h3&gt;Contacto&lt;/h3&gt;
+        &lt;p&gt;El canal de contacto de preferencia es &lt;a href=&#34;http://learn-r-uah.slack.com/&#34;&gt;Slack&lt;/a&gt;, y en segunda instancia, email.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 

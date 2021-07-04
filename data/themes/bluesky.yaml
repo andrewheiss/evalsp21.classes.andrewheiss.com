@@ -1,0 +1,22 @@
+# Theme metadata
+name: "Inferno"
+
+# Is theme light or dark?
+light: true
+
+# Primary
+primary: "#00c4cc"
+
+# Links
+link: "#8c52ff"
+link_hover: "#00c4cc"
+
+# Menu
+menu_primary: "#fff"
+menu_text: "#00c4cc"
+menu_text_active: "##8c52ff"
+menu_title: "#5271ff"
+
+# Home sections
+home_section_odd: "rgb(255, 255, 255)"
+home_section_even: "rgb(247, 247, 247)"

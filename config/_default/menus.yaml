@@ -1,47 +1,62 @@
 main:
-  - name: Syllabus
-    url: /syllabus/
-    weight: 1
-  - name: Schedule
+  - name: Organización
+    identifier: schedule
     url: /schedule/
+    weight: 1
+  - name: Planificación
+    parent: schedule
+    url: /schedule/
+    weight: 1
+  - name: Syllabus
+    parent: schedule
+    url: /syllabus/
     weight: 2
-  - name: Content
+  - name: Clases
     url: /content/
     weight: 3
-  - name: Examples
+  - name: Prácticos
     url: /example/
-    weight: 5
-  - name: Assignments
+    weight: 4
+  - name: Tareas <i class="fab fa-github"></i>
+    identifier: assignment
     url: /assignment/
     weight: 4
-  - name: Resources
+  - name: Tareas
+    parent: assignment
+    url: /assignment/
+    weight: 4
+  - name: 'Github Classroom<i class="fab fa-github"></i>'
+    parent: assignment
+    url: "https://classroom.github.com/classrooms/86887318-learn-r-uah-2021"
+    weight: 8
+  - name: Recursos
     url: /resource/
     weight: 6
   - name: '<i class="fab fa-slack"></i>'
-    url: "https://gsuevalsp2021.slack.com"
+    url: "https://join.slack.com/t/learn-r-uah/shared_invite/zt-sh9uysuu-IzEG8~u5k2YYGWgpAFTRFA"
     weight: 7
-  - name: RStudio.cloud
+  - name: '<i class="fab fa-r-project"></i>'
     url: https://rstudio.cloud/
-    weight: 8
+    weight: 9
 
 content:
-  - name: Overview
+  - name: Información general
     weight: 1
-  - name: Course content
+  - name: Contenido
     weight: 2
 example:
-  - name: Overview
+  - name: Información general
     weight: 1
-  - name: Simulated data
+  - name: Datos
     weight: 2
-  - name: Examples
+  - name: Ejemplos
     weight: 3
 assignment:
-  - name: Assignments
+  - name: Información general
     weight: 1
   - name: Other projects
     weight: 2
-  - name: Problem sets
+  - name: Tareas
     weight: 3
   - name: Evaluation
     weight: 4
