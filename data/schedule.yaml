@@ -135,7 +135,52 @@ lessons:
     bg: 2
     bottomborder: True
 
-  - title: '<i class="fas fa-star"></i> **Entrega final**'
+  - title: '<i class="fas fa-dice-six"></i> **Entrega final**'
+    date: "22 Noviembre"
+    assignment: "06-problem-set"
+    bg: 3
+    bottomborder: True
+
+  - title: 'Resumen Evaluaciones'
+    header: True
+
+  - title: '<i class="fas fa-square"></i> **Tarea 0: Colaborando en Github**'
+    date: "9 Agosto-13 Agosto"
+    assignment: "weekly-check-in"
+    bg: 3
+    bottomborder: True
+ 
+  - title: '<i class="fas fa-dice-one"></i> **Tarea 1: Reporte en Rmarkdown**'
+    date: "16 Agosto-20 Agosto"
+    assignment: "01-problem-set"
+    bg: 3
+    bottomborder: True
+ 
+  - title: '<i class="fas fa-dice-two"></i> **Tarea 2: Procesamiento de datos**'
+    date: "6 Septiembre-10 septiembre"
+    assignment: "02-problem-set"
+    bg: 3
+    bottomborder: True
+
+  - title: '<i class="fas fa-dice-two"></i> **Tarea 3: Análisis descriptivo**'
+    date: "13 Septiembre-17 septiembre"
+    assignment: "03-problem-set"
+    bg: 3
+    bottomborder: True
+
+  - title: '<i class="fas fa-dice-two"></i> **Tarea 4: Muestras complejas**'
+    date: "27 Septiembre-1 octubre"
+    assignment: "04-problem-set"
+    bg: 3
+    bottomborder: True
+
+  - title: '<i class="fas fa-dice-two"></i> **Tarea 5: Regresiones en R**'
+    date: "25 octubre-29 octubre"
+    assignment: "05-problem-set"
+    bg: 3
+    bottomborder: True
+
+  - title: '<i class="fas fa-dice-six"></i> **Entrega investigación final**'
     date: "22 Noviembre"
     assignment: "06-problem-set"
     bg: 3

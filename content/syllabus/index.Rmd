@@ -18,243 +18,167 @@ library(pander)
 
 `r blogdown::shortcode("courseinfo")`
 
-## Course objectives
+# Presentación
 
-By the end of this course, you (1) will be literate in the language of causal inference, (2) will communicate evaluation outcomes clearly, and (3) will understand the ethics and limits of data analysis by designing, critiquing, coding, and running rigorous, valid, and feasible evaluations of public sector programs focused on society’s most pressing problems.
+R es uno de los lenguajes de programación estadística más populares y demandados del último tiempo. Una de las razones principales es que tanto el software como la comunidad que hace uso de este se maneja en un marco de la ciencia abierta (r Open Science Tools o *rOpensci*), permitiendo el desarrollo constante de una serie de herramientas que permiten mejorar nuestras investigaciones, de manera **libre, gratis y colaborativa.** 
 
-Specifically, you'll be able to:
+Para las ciencias sociales estos elementos no son triviales. Es frecuente encontrarse con personas de nuestro campo que se están iniciando en R y desisten de este intento dada la frustración y pensamientos de incapacidad. Aprender R puede ser difícil al iniciar – es como aprender cualquier otro lenguaje o idioma -, y poco se ha pensado en cómo implementar enseñanza a grupos más expuestos a estos prejuicios, como en las ciencias sociales y humanidades.
 
-- Explain the philosophy of causation
-- Identify and diagram program logic models
-- Outline theories of change with directed acyclic graphs (DAGs)
-- Summarize key threats to causal inference, identify these threats in evaluations, and mitigate these threats with research design
-- Develop rigorous and valid statistical measures
-- Run statistical models
-- Explain the theory, research design, methods, and results of evaluations to all types of stakeholders, from highly trained econometricians to the general public
-- Share your analyses and data with the public
-- Identify ethical issues and limits in data science and program evaluation
-- Become curious and confident in consuming and producing evaluations
+Se propone que un curso de introducción de R para análisis de datos sociales puede abordar estos desafíos basado en enseñar herramientas concretas que faciliten y potencien las investigaciones sociales. Basada en la experiencia de enseñanza de R en contextos similares, esto implica introducir prácticas del *rOpensci* como la colaboración y reproducibilidad, que facilitan sin duda el aprendizaje colectivo y la calidad de los productos desarrollados durante el curso.
 
+**¡Iniciemos este desafío juntas/os!**
 
-## Course philosophy
+![](../../img/eval-flowchart.png)
 
-Classical statistics classes spend substantial time covering probability theory, null hypothesis testing, and other statistical tests first developed hundreds of years ago. Some classes don't use software or actual real data and instead live in the world of mathematical proofs. They can be math-heavy and full of often unintuitive concepts and equations.
+## Descripción
 
-In this class, we will take the opposite approach. We *begin* with data and learn how to tidy, wrangle, manipulate, and visualize it with code. Later in the semester we'll turn to the powerful toolbox of causal inference approaches, but continue to keep the focus on data as we do so.
+Este curso busca introducir a estudiante en el uso de R y RStudio para el análisis de datos sociales. En ese sentido, será una introducción al entorno R y a la interfaz de RStudio para su uso en contextos académicos. Al mismo tiempo, el curso profundiza en temas específicos para las ciencias sociales como el análisis estadístico y la presentación de resultados (visualización de datos). 
 
-In other words, there's way less of this:
+## Objetivos
 
-$$
-f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
-$$
+### Objetivo general
 
-And way more of this:
+Aprender las principales herramientas para el análisis de datos sociales en RStudio, con el fin de lograr un uso autónomo del software
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">summary_monthly_temp <span style="color:#f92672">&lt;-</span> weather <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(month) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">summarize</span>(mean <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(temp),
-            std_dev <span style="color:#f92672">=</span> <span style="color:#a6e22e">sd</span>(temp))
-</code></pre></div>
+### Objetivos específicos
+El curso no es un curso de programación en R , sino que una aplicación concreta del uso de R para ciencias sociales. Por ello, el curso tiene como propósito específico que los estudiantes sean capaces de
 
-Over the last decade there has been a revolution in statistical and scientific computing. Open source languages like R and Python have overtaken older (and expensive!) corporate software packages like SAS and SPSS, and there are now thousands of books and blog posts and other online resources with excellent tutorials about how to analyze pretty much any kind of data.
+1.  Manejar R y herramientas asociadas a su utilización (*rOpensci*), utilizando prácticas que les permitan avanzar en su aprendizaje de manera autónoma (Unidad 1)
 
-This class will expose you to [R](https://cran.r-project.org/)—one of the most popular, sought-after, and in-demand statistical programming languages. Armed with the foundation of R skills you'll learn in this class, you'll know enough to be able to find how to analyze any sort of data-based question in the future.
+2. Manipular, procesar y limpiar datos sociales utilizando R (Unidad 2)
 
-## Important pep talk!
+3. Aplicar herramientas para análisis estadísticos descriptivos en R (Unidad 3)
 
-I *promise* you can succeed in this class.
+4. Aplicar herramientas para análisis estadísticos inferenciales en R (Unidad 4)
 
-Learning R can be difficult at first—it's like learning a new language, just like Spanish, French, or Chinese. Hadley Wickham—the chief data scientist at RStudio and the author of some amazing R packages you'll be using like `ggplot2`—[made this wise observation](https://r-posts.com/advice-to-young-and-old-programmers-a-conversation-with-hadley-wickham/):
+5. Presentar de resultados, a partir de la visualización de datos y construcción de documentos (transversal a todas las unidades)
 
-> It’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.
 
-Even experienced programmers and evaluators find themselves bashing their heads against seemingly intractable errors. If you're finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, e-mail me, etc.
+# I. Contenidos
 
-```{r echo=FALSE, out.width="60%"}
-# https://twitter.com/allison_horst/status/1213275783675822080
-knitr::include_graphics("/img/syllabus/hosrt_error_tweet.png", error = FALSE)
-```
+## Unidad 1. Elementos y herramientas básicos de R
 
-[![Alison Horst: Gator error](/img/syllabus/gator_error.jpg)](https://twitter.com/allison_horst/status/1213275783675822080)
+  1.1 R enviroment: interfaz de RStudio, elementos de script, workspace
 
+  1.2 Prácticas y herramientas de consulta: CRAN, stackoverflow, Rcommunity 
 
-## Course materials
+  1.3 Herramientas para la colaboración y comunicación: Rprojects, GitHub y Slack
 
-Most of the readings in this class are free.
+  1.4 Librerías y funciones para las ciencias sociales: tidyverse y sj (sjmisc y sjPlot)
 
-### Books
+  1.5 Construcción de reportes reproducibles e integrados con código: RMarkdown
 
-We will only use one physical textbook. There are three official textbooks for the class:
+## Unidad 2. Manipulación y limpieza de datos
 
-- Paul J. Gertler et al., *Impact Evaluation in Practice*, 2nd ed. (Inter-American Development Bank; World Bank, 2016), <https://openknowledge.worldbank.org/handle/10986/25030.> ([**Free!**](https://openknowledge.worldbank.org/handle/10986/25030))
-- Scott Cunningham, Causal Inference: The Mixtape (New Haven, CT: Yale University Press, 2021), <https://mixtape.scunning.com/>. ([**Also free(!)**](https://mixtape.scunning.com/), but there's also a print version for <span>$35</span> that you might want to get for reference after the class is over)
-- Joshua D. Angrist and Jörn-Steffen Pischke, Mastering ’Metrics: The Path from Cause to Effect (Princeton, NJ: Princeton University Press, 2015). (**<span>$25</span> used or <span>$30</span> new at [Amazon](https://www.amazon.com/Mastering-Metrics-Path-Cause-Effect/dp/0691152845/))**
+  2.1 Importar y exportar datos en diferentes formatos
 
-The World Bank's *Impact Evaluation in Practice* will be our main textbook. It's written at a general, easy-to-understand level with relatively minimal math. *Mastering 'Metrics* goes into more depth about the mechanics of different causal inference approaches and has a bit more math, but it's still fairly accessible. *Causal Inference: The Mixtape* has even more math, but hopefully not an excessively terrifying amount.
+  2.2 Validación y limpieza de variables (missing values)
 
-*You do not need to understand all the equations and notation.* If your eyes start to gloss over the Greek letters and subscripts, it's okay. Try to learn them, but don't stress out about it too much.
+  2.3 Transformación y selección de variables
 
-### Articles, book chapters, and other materials
+  2.4 Transformación de datos en tidydata con tidyr
 
-There will also occasionally be additional articles and videos to read and watch. When this happens, links to these other resources will be included on the reading page for that week.
+## Unidad 3. Análisis estadístico descriptivo en R
 
-### R and RStudio
+  3.1 Análisis descriptivos univariados: medidas de tendencia central, dispersión y frecuencias
 
-You will do all of your analysis with the open source (and free!) programming language [R](https://cran.r-project.org/). You will use [RStudio](https://www.rstudio.com/) as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.
+  3.2 Análisis descriptivo bivariado: tablas de contingencia, correlaciones y ANOVA
 
-R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free [RStudio.cloud](http://rstudio.cloud/) service, which lets you run a full instance of RStudio in your web browser. This means you won't have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.
+  3.3 Representación gráfica con sjPlot: Likert, proporciones agrupadas y distribuciones
 
-RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets or more complicated analysis. Over the course of the semester, you'll probably want to get around to installing R, RStudio, and other R packages on your computer and wean yourself off of RStudio.cloud. This isn't necessary, but it's helpful.
+## Unidad 4. Análisis estadístico inferencial en R
 
-You can [find instructions for installing R, RStudio, and all the tidyverse packages here.](/resource/install/)
+  4.1 Muestras complejas y precisión de inferencia estadística con survey y srvyr
+  
+  4.2 Pruebas de hipótesis y representación gráfica
+  
+  4.3 Regresiones lineales, predictores categóricos y representación gráfica
+  
+  4.4 Regresiones logísticas, exponenciación y representación gráfica
+  
+  4.5 Ajuste de modelos (performance) y otras representaciones gráficas (predicción, efectos marginales e interacciones)
 
-### Online help
+# II. Metodología del curso
 
-Data science and statistical programming can be difficult. Computers are stupid and little errors in your code can cause hours of headache (even if you've been doing this stuff for years!).
+Dado el contexto de pandemia se tendrán tres espacios principales de aprendizaje:
 
-Fortunately there are tons of online resources to help you with this. Two of the most important are [StackOverflow](https://stackoverflow.com/) (a Q&A site with hundreds of thousands of answers to all sorts of programming questions) and [RStudio Community](https://community.rstudio.com/) (a forum specifically designed for people using RStudio and the tidyverse (i.e. you)).
+1. **Sesiones de clases lectivas**  (<i class="fas fa-book-reader"></i>), donde se presentarán los aspectos centrales de los contenidos correspondientes a la semana vía Zoom. Tanto el documento de presentación como el video de la clase se encontrará disponible en la pestaña de [**Clases**](/content/) de este sitio web del curso.
 
-If you use Twitter, post R-related questions and content with [#rstats](https://twitter.com/search?q=%23rstats). The community there is exceptionally generous and helpful.
+2. **Prácticas guiadas** (<i class="fas fa-laptop-code"></i>): cada tema de las sesiones se acompaña de una guía práctica de aplicación de contenidos, y que estarán disponibles en la pestaña [**Prácticos**](/example/). Estas guías están diseñadas para ser desarrolladas de manera autónoma por cada estudiante semana a semana. También serán desarrolladas y revisadas cada semana en grupos pequeños con supervisión de ayudantes para dar mayor oportunidad de participación y resolver las dudas respectivas. Existe un **reporte de progreso** asociado a estas guías que deberá ser completado semanalmente con fines de monitoreo y retroalimentación.
 
-Searching for help with R on Google can sometimes be tricky because the program name is, um, a single letter. Google is generally smart enough to figure out what you mean when you search for "r scatterplot", but if it does struggle, try searching for "rstats" instead (e.g. "rstats scatterplot").
+3. **Tareas**: se desarrollarán **6 tareas** que les permitirán aplicar contenidos y replicar lo aprendido en los prácticos en base a una base de datos seleccionada por ustedes **al inicio de semestre**. Esto permitirá no solo recibir retroalimentación constante, sino que aprender con datos que puedan ser útiles para otros proyectos de investigación que sean de su interés.
 
-Additionally, we have a class chatroom at [Slack](https://gsuevalf2020.slack.com) where anyone in the class can ask questions and anyone can answer. **I will monitor Slack regularly and will respond quickly.** (It's one of the rare Slack workspaces where I actually have notifications enabled!) Ask questions about the readings, assignments, and project. You'll likely have similar questions as your peers, and you'll likely be able to answer other peoples' questions too.
+## Recursos principales de aprendizaje
 
+**1. Sitio web**
 
-## Course schedule
+El curso tiene disponible este sitio web, que he programado pues permite integrar texto y código de R, junto con hacer interactuar con otras plataformas como el *foro Disqus* y *Github*.
 
-We have no regularly scheduled meeting times. There may be an occasional live Webex-streamed (and recorded for later) lab or two during the semester, if we can coordinate a time.
+**2. R, RStudio y RStudio Cloud**
 
-Instead, 100% of the class content is asynchronous. You can do the readings and watch the videos on your own schedule at whatever time works best for you. Many of you work full time and you have childcare and parental care responsibilities, leaving you with only evenings for coursework. I've designed this asynchronous system with *you specifically* in mind. I also can only really do teaching work at night when my kids are in bed—I recorded all these videos between like 10 PM and 2 AM. We're all in similar pandemic boats.
+El software que se utilizará principalmente será R y su interfaz RStudio. Ahora bien, muchos usuario/as de R presentan problemas de instalación dada la capacidad de sus computadores y sistemas operativos. Por ello se promoverá el uso del servicio gratuito de [RStudio.cloud]( https://rstudio.cloud/) , que permite ejecutar la interfaz de RStudio en el navegador web y compartir el código de manera sincrónica con la docente. Dado el enfoque *rOpensci*, las plantillas para ejemplos, ejercicios y mini proyectos podrán ser implementados en esta plataforma. Si bien no es ideal pues tiene limitantes de memoria, mientras ustedes asimilan el programa será una buena herramienta.
 
-Each session has a set of readings and an accompanying lecture. I would **strongly** recommend working through the readings before watching the lecture, but you can do it in whatever order you want.
+**3. *Slack**
 
+[*Slack*](https://slack.com/intl/es-cl/)  es una herramienta de uso frecuente en equipos de trabajo que utilizan R pues permite integrar script (o *código*) de distintos lenguajes en el chat. Se tendrá un espacio de trabajo en la *app Slack* que permite que cualquier persona del curso pueda hacer preguntas y cualquiera pueda responder. Esta es una de las prácticas que se promoverán en el curso pues es probable que los estudiantes tengan dudas similares a las de sus compañeros, por lo que las respuestas de la docente, ayudante y otros compañeros serán de libre disposición de todo el curso. Dentro del *Slack* se tendrán canales para hacer preguntas sobre las sesiones, tareas y proyectos, y el link que permite unirse a este estará disponible en el sitio del curso.
 
-## Course policies
+[Guía de uso de slack](https://slack.com/intl/es-cl/help/articles/360059928654-C%C3%B3mo-usar-Slack--tu-gu%C3%ADa-de-inicio-r%C3%A1pido)
 
-**Be nice. Be honest. Don't cheat.**
+**4. GitHub**
 
-We will also follow [Georgia State's Code of Conduct](https://codeofconduct.gsu.edu/).
+Github es una plataforma online que permite depositar archivos y el control de versiones (VCS), por lo que se ha transformado una herramienta fácil y popular para corregir, colaborar y compartir códigos de distintos lenguajes (no solo R). Utilizaremos esta plataforma para subir las tareas, ayudarlos/as de manera directa con su código y darles feedback. 
 
-This syllabus reflects a plan for the semester. Deviations may become necessary as the semester progresses.
+**5. Zotero**
 
-### Student hours
+Zotero es un gestor bibliográfico que permite sistematizar las referencias y archivos utilizados en una investigación o informe. Enseñaremos este de manera complementaria pues este software se puede integrar en los documentos escritos hechos en R. 
 
-Please watch this video:
+# III. Evaluación de aprendizajes
 
-<iframe src="https://player.vimeo.com/video/270014784" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="display: block; margin: 0 auto 1rem;"></iframe>
+Las evaluaciones del curso se componen de **tareas** (70% de la nota final) y la **entrega de una investigación** (30% de la nota final), en dónde en ambos casos la/el estudiante deberá seleccionar datos y temas de interés de modo de acercar la aplicación del software a contextos de investigación propios de la/el estudiante. En concreto, cada evaluación consiste en:
 
-Student hours are set times dedicated to all of you (most professors call these "office hours"; I don't^[There's fairly widespread misunderstanding about what office hours actually are! [Many students often think that they are the times I *shouldn't* be disturbed](https://www.chronicle.com/article/Can-This-Man-Change-How-Elite/245714/), which is the exact opposite of what they're for!]). This means that I will be ~~in my office~~ at home (wistfully) waiting for you to ~~come by~~ talk to me remotely with whatever questions you have. This is the best and easiest way to find me and the best chance for discussing class material and concerns.
+**1. Tareas** (*70% de la nota final*): consisten en evaluaciones parciales temáticas que buscan poner en práctica los aprendizajes expuestos en la sesión de clases y herramientas reforzadas en los prácticos. **El promedio de notas las de tareas será calculado solo con las cuatro mejores entregas** a partir de la Tarea 1 (*25% c/u*)[^1].
 
-Because of the pandemic, we cannot meet in person. I can meet you online via Webex. [Make an appointment with me here](https://calendly.com/andrewheiss/), and then use this link to talk to me during student hours: <https://gsumeetings.webex.com/meet/aheiss>. You can also find me through e-mail and Slack.
+**2. Investigación final** (*30% de la nota final*): consiste en una evaluación final que aplica los conocimientos y herramientas entregadas a lo largo de curso, a un proyecto de investigación de elección por el/la estudiante.
 
-### Learning during a pandemic
+[^1]: Es decir, a lo largo del semestre deberá entregar 6 tareas: 5 calificadas (Tarea 1 a Tarea 5) y 1 no (Tarea 0). De las 5 tareas restantes, solo las 4 mejores serán consideradas en su promedio de las tareas.
 
-Life absolutely sucks right now. None of us is really okay. **We're all just pretending.**
 
-You most likely know people who have lost their jobs, have tested positive for COVID-19, have been hospitalized, or perhaps have even died. You all have increased (or possibly decreased) work responsibilities and increased family care responsibilities—you might be caring for extra people (young and/or old!) right now, and you are likely facing uncertain job prospects (or have been laid off!).
+# IV.  Calendario de actividades
 
-**I'm fully committed to making sure that you learn everything you were hoping to learn from this class!** I will make whatever accommodations I can to help you finish your exercises, do well on your projects, and learn and understand the class material. Under ordinary conditions, I am flexible and lenient with grading and course expectations when students face difficult challenges. Under pandemic conditions, that flexibility and leniency is intensified.
+El calendario de actividades se puede revisar con detención en la [pestaña planificación](/schedule/). Un resumen breve de las tareas es
 
-If you tell me you're having trouble, I will not judge you or think less of you. I hope you'll extend me the same grace.
+| Evaluación    | Formato       | Fecha |  Ponderación Nota Final   |
+| ------------- |:-------------:| -----:| -------------------:|
+| Tarea         | 4 tareas[^1]   | *Hasta Viernes de la semana informada* | 70% (25% c/u)|
+| Investigación | Única entrega | 22 de noviembre  | 30% |
 
-You *never* owe me personal information about your health (mental or physical). You are *always* welcome to talk to me about things that you're going through, though. If I can't help you, I usually know somebody who can.
 
-If you need extra help, or if you need more time with something, or if you feel like you're behind or not understanding everything, **do not suffer in silence!** Talk to me! I will work with you. **I promise.**
 
-*Please* sign up for a time to meet with me during student hours at <https://calendly.com/andrewheiss/>. I'm also available through e-mail and Slack. I've enabled notifications on my Slack account, so I'll see your messages quickly!
+# V. Recursos pedagógicos
 
-I want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded during this crisis.
+## 1. Referencias bibliográficas
 
-### Late work
+- **Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data (First edition). Sebastopol: O’Reilly.** Libro con enfoque en el aprendizaje de R. Disponible en español como [“R para ciencia de datos”](https://es.r4ds.hadley.nz/) 
 
-You will lose 1 point per day for each day a problem set is late. This is designed to not be a huge penalty (3 days late = 27/30 points on a problem set that gets a ✓), but instead is a commitment device to help you stay on schedule.
+- [**Daniel Lüdecke (2021) Data Visualization for Statistics in Social Science** R package version 2.8.7 ](https://CRAN.R-project.org/package=sjPlot)
 
-### Counseling and Psychological Services (CPS)
+- [**Wickham et al., (2019). Welcome to the tidyverse.** Journal of Open Source Software, 4(43), 1686](https://doi.org/10.21105/joss.01686)  
 
-Life at GSU can be complicated and challenging (especially during a pandemic!). You might feel overwhelmed, experience anxiety or depression, or struggle with relationships or family responsibilities. [Counseling and Psychological Services (CPS)](https://education.gsu.edu/cps/) provides free, *confidential* support for students who are struggling with mental health and emotional challenges. The CPS office is staffed by professional psychologists who are attuned to the needs of all types of college and professional students. Please do not hesitate to contact CPS for assistance—getting help is a smart and courageous thing to do.
+- [**Yihui Xie, J. J. Allaire, Garrett Grolemund (2021) R Markdown: The Definitive Guide**](https://bookdown.org/yihui/rmarkdown/)
 
-### Basic needs security
+- [**Bryan, Jenny (2019) Happy Git in R**](https://happygitwithr.com/) 
 
-If you have difficulty affording groceries or accessing sufficient food to eat every day, or if you lack a safe and stable place to live, and you believe this may affect your performance in this course, please contact the [Dean of Students](https://deanofstudents.gsu.edu/) for support. They can provide a host of services including free groceries from the [Panther Pantry](https://nutrition.gsu.edu/panther-pantry/) and assisting with homelessness with the [Embark Network](https://deanofstudents.gsu.edu/student-assistance/embark/). Additionally, please talk to me if you are comfortable in doing so. This will enable me to provide any resources that I might possess.
+## 2. Sitios de consulta
 
-### Lauren's Promise
+- [*rOpensci*](https://*rOpensci*.org/) (R Open Scicnce Tools) 
+- Laboratorio de Ciencia Social Abierta, Centro de Estudios de Conflicto y Cohesión Social [(LISA-COES)](https://lisa-coes.netlify.app/) 
+- [Stackoverflow](https://stackoverflow.com/)
+- [RStudio Community]( https://community.rstudio.com/)
+- [RMarkdown]( https://rmarkdown.rstudio.com/)
+- [sjPlot](https://strengejacke.github.io/sjPlot/)
+- [tidyverse](https://www.tidyverse.org/)
 
-**I will listen and believe you if someone is threatening you.**
 
-Lauren McCluskey, a 21-year-old honors student athlete, [was murdered on October 22, 2018 by a man she briefly dated on the University of Utah campus](https://www.sltrib.com/opinion/commentary/2019/02/10/commentary-failing-lauren/). We must all take action to ensure that this never happens again.
+# [Descargar programa en pdf](/programa-R-uah.pdf/)
 
-If you are in immediate danger, call 911 or GSU police (404-413-3333).
-
-If you are experiencing sexual assault, domestic violence, or stalking, please report it to me and I will connect you to resources or call [GSU's Counseling and Psychological Services](https://counselingcenter.gsu.edu/crisis-services/concern-self/immediate-help/) (404-413-1640).
-
-Any form of sexual harassment or violence will not be excused or tolerated at Georgia State. GSU has instituted procedures to respond to violations of these laws and standards, programs aimed at the prevention of such conduct, and intervention on behalf of the victims. Georgia State University Police officers will treat victims of sexual assault, domestic violence, and stalking with respect and dignity. Advocates on campus and in the community can help with victims' physical and emotional health, reporting options, and academic concerns.
-
-### Academic honesty
-
-Violation of [GSU's Policy on Academic Honesty](https://deanofstudents.gsu.edu/faculty-staff-resources/academic-honesty/) will result in an F in the course and possible disciplinary action.^[So seriously, just don't cheat or plagiarize!] All violations will be formally reported to the Dean of Students.
-
-### Special needs
-
-Students who wish to request accommodation for a disability may do so by registering with the [Office of Disability Services](https://disability.gsu.edu/). Students may only be accommodated upon issuance by the Office of Disability Services of a signed [Accommodation Plan](https://disability.gsu.edu/services/how-to-register/) and are responsible for providing a copy of that plan to instructors of all classes in which accommodations are sought.
-
-Students with special needs should then make an appointment with me during the first week of class to discuss any accommodations that need to be made.
-
-
-## Assignments and grades
-
-You can find descriptions for all the assignments on the [assignments page](/assignment/).
-
-```{r assignments-grades, include=FALSE}
-assignments <- tribble(
-  ~Points,   ~Assignment,
-  10 * 14,   "Weekly check-ins (14 × 10)",
-  8 * 30,    "Problem sets (8 × 30)",
-  4 * 30,    "Evaluation assignments (4 × 30)",
-  100,       "Exam 1",
-  100,       "Exam 2",
-  200,       "Final project"
-) %>%
-  mutate(Percent = Points / sum(Points),
-         Percent = scales::percent(Percent))
-
-grading <- tribble(
-  ~Grade, ~Range, ~Grade1, ~Range1,
-  "A",  "93–100%", "C",  "73–76%",
-  "A−", "90–92%", "C−", "70–72%",
-  "B+", "87–89%", "D+", "67–69%",
-  "B",  "83–86%", "D",  "63–66%",
-  "B−", "80–82%", "D−", "60–62%",
-  "C+", "77–79%", "F",  "< 60%"
-)
-```
-
-<div class="centered-table">
-
-```{r show-assignments-table, echo=FALSE, results="asis"}
-assignments_total <- tibble(Assignment = "Total",
-                            Points = sum(assignments$Points),
-                            Percent = NA)
-
-bind_rows(assignments, assignments_total) %>%
-  select(Assignment, Points, Percent) %>%
-  pandoc.table(justify = "lcc", missing = "—")
-```
-</div>
-
-<div class="centered-table">
-
-```{r show-grades-table, echo=FALSE, results="asis"}
-grading %>%
-  pandoc.table(justify = "lclc",
-               col.names = c("Grade", "Range", "Grade", "Range"))
-```
-
-<div>
-
-
-## Star Wars
-
-Once you have read this entire syllabus and [the assignments page](/assignment/), please [click here](mailto:aheiss@gsu.edu) and e-mail me a picture of a *cute* Star Wars character.^[Baby Yoda, Babu Frik, porgs, etc. are all super fair game.] Brownie points if it's animated.
-
-`r blogdown::shortcode("figure", src = "https://media.giphy.com/media/j4q4h9uWKWwnYT1k3Z/giphy.gif", alt = "Baby Yoda with IG-11", lightbox = "false")`
+[Puedes descargar el programa apretando el siguiente botón](/programa-R-uah.pdf/)
