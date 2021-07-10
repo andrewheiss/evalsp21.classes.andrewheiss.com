@@ -10,7 +10,7 @@ slug: schedule
 - [**Tareas**](/assignment/) (<i class="fas fa-pencil-ruler"></i>): Esta página contiene las instrucciones para cada tarea. **Las tareas pueden ser entregadas hasta el día viernes a las 23.59 de la semana correspondiente**. 
 
 <div class="ical">
-Puedes suscribir la **planificación** del curso con la URL del calendario en Outlook, Google Calendar o Apple Calendar:<br><a class="btn btn-primary" href="schedule.ics" role="button"><i class="far fa-calendar-alt"></i></a> <input id="ics_url" type="text" value="https://learn-r-uah.netlify.app/schedule/schedule.ics" onclick="this.select()" readonly="readonly" size="60" />
+Puedes suscribir la **planificación** del curso con la URL del calendario en Outlook, Google Calendar o Apple Calendar:<br><a class="btn btn-primary" href="https://bit.ly/3AYfLhR" role="button"><i class="far fa-calendar-alt"></i></a> <input id="ics_url" type="text" value="https://bit.ly/3AYfLhR" onclick="this.select()" readonly="readonly" size="60" />
 </div>
 
 `r blogdown::shortcode("schedule")`
