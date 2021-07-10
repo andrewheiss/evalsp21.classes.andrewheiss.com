@@ -114,21 +114,23 @@ Dado el contexto de pandemia se tendrán tres espacios principales de aprendizaj
 
 El curso tiene disponible este sitio web, que he programado pues permite integrar texto y código de R, junto con hacer interactuar con otras plataformas como el *foro Disqus* y *Github*.
 
-**2. R, RStudio y RStudio Cloud**
+**2. R, RStudio y RStudio Cloud** <i class="fab fa-r-project"></i>
 
 El software que se utilizará principalmente será R y su interfaz RStudio. Ahora bien, muchos usuario/as de R presentan problemas de instalación dada la capacidad de sus computadores y sistemas operativos. Por ello se promoverá el uso del servicio gratuito de [RStudio.cloud]( https://rstudio.cloud/) , que permite ejecutar la interfaz de RStudio en el navegador web y compartir el código de manera sincrónica con la docente. Dado el enfoque *rOpensci*, las plantillas para ejemplos, ejercicios y mini proyectos podrán ser implementados en esta plataforma. Si bien no es ideal pues tiene limitantes de memoria, mientras ustedes asimilan el programa será una buena herramienta.
 
-**3. *Slack**
+**3. Slack** <i class="fab fa-slack"></i>
 
 [*Slack*](https://slack.com/intl/es-cl/)  es una herramienta de uso frecuente en equipos de trabajo que utilizan R pues permite integrar script (o *código*) de distintos lenguajes en el chat. Se tendrá un espacio de trabajo en la *app Slack* que permite que cualquier persona del curso pueda hacer preguntas y cualquiera pueda responder. Esta es una de las prácticas que se promoverán en el curso pues es probable que los estudiantes tengan dudas similares a las de sus compañeros, por lo que las respuestas de la docente, ayudante y otros compañeros serán de libre disposición de todo el curso. Dentro del *Slack* se tendrán canales para hacer preguntas sobre las sesiones, tareas y proyectos, y el link que permite unirse a este estará disponible en el sitio del curso.
 
-[Guía de uso de slack](https://slack.com/intl/es-cl/help/articles/360059928654-C%C3%B3mo-usar-Slack--tu-gu%C3%ADa-de-inicio-r%C3%A1pido)
+<i class="fab fa-slack"></i> [Guía de uso de slack](https://slack.com/intl/es-cl/help/articles/360059928654-C%C3%B3mo-usar-Slack--tu-gu%C3%ADa-de-inicio-r%C3%A1pido)
 
-**4. GitHub**
+<i class="fab fa-slack"></i> [Unirse a slack de curso](https://join.slack.com/t/learn-r-uah/shared_invite/zt-sh9uysuu-IzEG8~u5k2YYGWgpAFTRFA)
+
+**4. GitHub** <i class="fab fa-github"></i>
 
 Github es una plataforma online que permite depositar archivos y el control de versiones (VCS), por lo que se ha transformado una herramienta fácil y popular para corregir, colaborar y compartir códigos de distintos lenguajes (no solo R). Utilizaremos esta plataforma para subir las tareas, ayudarlos/as de manera directa con su código y darles feedback. 
 
-**5. Zotero**
+**5. Zotero** <i class="fab fa-zotero"></i>
 
 Zotero es un gestor bibliográfico que permite sistematizar las referencias y archivos utilizados en una investigación o informe. Enseñaremos este de manera complementaria pues este software se puede integrar en los documentos escritos hechos en R. 
 
@@ -179,6 +181,7 @@ El calendario de actividades se puede revisar con detención en la [pestaña pla
 - [tidyverse](https://www.tidyverse.org/)
 
 
-# [Descargar programa en pdf](/programa-R-uah.pdf/)
+# [Descargar programa en pdf](../files/programa-R-uah.pdf/)
 
-[Puedes descargar el programa apretando el siguiente botón](/programa-R-uah.pdf/)
+<a Puedes descargar el programa apretando el siguiente botón class="btn btn-primary" href="../files/programa-R-uah.pdf/" role="button"><i class="far fa-file-pdf"></i></a>
+
