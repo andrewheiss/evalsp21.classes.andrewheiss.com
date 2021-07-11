@@ -1,12 +1,12 @@
 ---
-title: "Randomization and matching"
-linktitle: "7: Randomization and matching"
-date: "2021-02-22"
-start_date: "2021-02-22"
-end_date: "2021-02-26"
+title: "Muestras complejas"
+linktitle: "7: Muestras complejas"
+date: "2021-09-27"
+start_date: "2021-09-27"
+end_date: "2021-11-08"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 7
 type: docs
 toc: true

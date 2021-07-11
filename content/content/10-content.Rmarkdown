@@ -1,12 +1,12 @@
 ---
-title: "Regression discontinuity I"
-linktitle: "10: RDD I"
-date: "2021-03-22"
-start_date: "2021-03-22"
-end_date: "2021-03-26"
+title: "Regresiones logísticas"
+linktitle: "10: Regresiones logísticas"
+date: "2021-10-25"
+start_date: "2021-10-25"
+end_date: "2021-11-08"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 10
 type: docs
 toc: true

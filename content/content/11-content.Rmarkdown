@@ -1,12 +1,12 @@
 ---
-title: "Instrumental variables I"
-linktitle: "11: IV I"
-date: "2021-03-29"
-start_date: "2021-03-29"
-end_date: "2021-04-02"
+title: "Calidad de modelos y otras técnicas"
+linktitle: "11: Calidad de modelos y otras técnicas"
+date: "2021-11-08"
+start_date: "2021-09-27"
+end_date: "2021-11-08"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 11
 type: docs
 toc: true

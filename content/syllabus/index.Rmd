@@ -128,7 +128,7 @@ El software que se utilizará principalmente será R y su interfaz RStudio. Ahor
 
 **4. GitHub** <i class="fab fa-github"></i>
 
-Github es una plataforma online que permite depositar archivos y el control de versiones (VCS), por lo que se ha transformado una herramienta fácil y popular para corregir, colaborar y compartir códigos de distintos lenguajes (no solo R). Utilizaremos esta plataforma para subir las tareas, ayudarlos/as de manera directa con su código y darles feedback. 
+Github es una plataforma online que permite depositar archivos y el control de versiones (VCS), por lo que se ha transformado una herramienta fácil y popular para corregir, colaborar y compartir códigos de distintos lenguajes (no solo R). Utilizaremos esta plataforma para subir las tareas, ayudarlos/as de manera directa con su código y darles *feedback*. 
 
 **5. Zotero** <i class="fab fa-zotero"></i>
 

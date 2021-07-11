@@ -1,12 +1,12 @@
 ---
-title: "Measurement and DAGs"
-linktitle: "4: Measurement and DAGs"
-date: "2021-02-01"
-start_date: "2021-02-01"
-end_date: "2021-02-05"
+title: "Transformación y selección de variables"
+linktitle: "4: Transformación y selección de variables"
+date: "2021-08-30"
+start_date: "2021-08-23"
+end_date: "2021-09-06"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 4
 type: docs
 toc: true

@@ -1,12 +1,12 @@
 ---
-title: "Evaluation and the causal revolution"
-linktitle: "1: Evaluation and the causal revolution"
-date: "2021-01-11"
-start_date: "2021-01-11"
-end_date: "2021-01-15"
+title: "Herramientas para el uso de R"
+linktitle: "1: Herramientas para el uso de R"
+date: "2021-08-09"
+start_date: "2021-08-09"
+end_date: "2021-08-16"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 1
 type: docs
 toc: true

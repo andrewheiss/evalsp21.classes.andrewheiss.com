@@ -1,12 +1,12 @@
 ---
-title: "Regression and inference"
-linktitle: "2: Regression and inference"
-date: "2021-01-19"
-start_date: "2021-01-19"
-end_date: "2021-01-22"
+title: "Herramientas para el uso de R"
+linktitle: "2: Herramientas para el uso de R"
+date: "2021-08-09"
+start_date: "2021-08-09"
+end_date: "2021-08-16"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 2
 type: docs
 toc: true

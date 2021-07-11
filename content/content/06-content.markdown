@@ -1,12 +1,12 @@
 ---
-title: "Threats to validity"
-linktitle: "6: Threats to validity"
-date: "2021-02-15"
-start_date: "2021-02-15"
-end_date: "2021-02-19"
+title: "Análisis descriptivo"
+linktitle: "6: Análisis descriptivo"
+date: "2021-09-13"
+start_date: "2021-09-13"
+end_date: "2021-09-20"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 6
 type: docs
 toc: true

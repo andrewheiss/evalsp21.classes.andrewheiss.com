@@ -1,12 +1,12 @@
 ---
-title: "DAGs and potential outcomes"
-linktitle: "5: DAGs and potential outcomes"
-date: "2021-02-08"
-start_date: "2021-02-08"
-end_date: "2021-02-12"
+title: "Transformación estructura datos"
+linktitle: "5: Transformación estructura datos"
+date: "2021-09-06"
+start_date: "2021-08-23"
+end_date: "2021-09-06"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 5
 type: docs
 toc: true

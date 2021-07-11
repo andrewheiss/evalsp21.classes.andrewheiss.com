@@ -1,12 +1,12 @@
 ---
-title: "Difference-in-differences I + II"
-linktitle: "8–9: Diff-in-diff I + II"
-date: "2021-03-01"
-start_date: "2021-03-01"
-end_date: "2021-03-12"
+title: "Pruebas de hipótesis"
+linktitle: "8: Pruebas de hipótesis"
+date: "2021-10-04"
+start_date: "2021-09-27"
+end_date: "2021-11-08"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 8
 type: docs
 toc: true

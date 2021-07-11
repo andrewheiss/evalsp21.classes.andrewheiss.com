@@ -1,350 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Readings, lectures, and videos | Análisis Estadístico en R</title>
+    <title>Clases, prácticos y materiales | Análisis Estadístico en R</title>
     <link>/content/</link>
       <atom:link href="/content/index.xml" rel="self" type="application/rss+xml" />
-    <description>Readings, lectures, and videos</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <description>Clases, prácticos y materiales</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/logo_hu02bc8dfe7cae86b2ee03430b67caeaf2_22353_300x300_fit_lanczos_2.png</url>
-      <title>Readings, lectures, and videos</title>
+      <title>Clases, prácticos y materiales</title>
       <link>/content/</link>
     </image>
     
     <item>
-      <title>Ethics, stories, and curiosity</title>
-      <link>/content/14-content/</link>
-      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/content/14-content/</guid>
-      <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
-&lt;p&gt;This looks like a lot, but most of these are quite short!&lt;/p&gt;
-&lt;h3 id=&#34;causal-inference-and-data-science&#34;&gt;Causal inference and data science&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Miguel A. Hernán, &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5888052/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“The C-Word: Scientific Euphemisms Do Not Improve Causal Inference From Observational Data”&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Hannah Fresques and Meg Marco, &lt;a href=&#34;https://www.propublica.org/nerds/hadley-wickham-your-default-position-should-be-skepticism-and-other-advice-for-data-journalists&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“‘Your Default Position Should Be Skepticism’ and Other Advice for Data Journalists From Hadley Wickham,”&lt;/a&gt; &lt;em&gt;ProPublica&lt;/em&gt;, June 10, 2019&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;storytelling&#34;&gt;Storytelling&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Chapter 14 in &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Martin Krzywinski and Alberto Cairo, &lt;a href=&#34;https://www.nature.com/articles/nmeth.2571.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Storytelling”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Ben Wellington, &lt;a href=&#34;https://www.youtube.com/watch?v=6xsvGYIxJok&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Making data mean more through storytelling”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Will Schoder, &lt;a href=&#34;https://www.youtube.com/watch?v=LuD2Aa0zFiA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Every Story is the Same”&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;ethics&#34;&gt;Ethics&lt;/h3&gt;
-&lt;p&gt;Keep in mind throughout all these readings that an “algorithm” in these contexts is typically some fancy type of regression model where the outcome variable is something binary like “Safe babysitter/unsafe babysitter,” “Gave up seat in past/didn’t give up seat in past,” or “Violated probation in past/didn’t violate probation in past,” and the explanatory variables are hundreds of pieces of data that might predict those outcomes (social media history, flight history, race, etc.).&lt;/p&gt;
-&lt;p&gt;Data scientists build a (sometimes proprietary and complex) model based on existing data, plug in values for any given new person, multiply that person’s values by the coefficients in the model, and get a final score in the end for how likely someone is to be a safe babysitter or how likely someone is to return to jail.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; DJ Patil, &lt;a href=&#34;https://medium.com/@dpatil/a-code-of-ethics-for-data-science-cda27d1fac1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“A Code of Ethics for Data Science”&lt;/a&gt; (if your’re interested in this, also check out Mike Loukides, Hilary Mason, and DJ Patil, &lt;a href=&#34;https://www.amazon.com/dp/B07GTC8ZN7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Ethics and Data Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://medium.com/@AINowInstitute/ai-in-2018-a-year-in-review-8b161ead2b4e&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“AI in 2018: A Year in Review”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.nytimes.com/2018/05/04/books/review/automating-inequality-virginia-eubanks.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“How Big Data Is ‘Automating Inequality’”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://annenberg.usc.edu/news/diversity-and-inclusion/algorithms-oppression-safiya-noble-finds-old-stereotypes-persist-new&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“In ‘Algorithms of Oppression,’ Safiya Noble finds old stereotypes persist in new media”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-podcast&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://99percentinvisible.org/episode/the-age-of-the-algorithm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;99% Invisible, “The Age of the Algorithm”&lt;/a&gt;: Note that this is a podcast, or a 20ish minute audio story. &lt;strong&gt;Listen to this.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-podcast&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.wnycstudios.org/podcasts/otm/segments/biased-algorithms-biased-world&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;On the Media, “Biased Algorithms, Biased World”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.washingtonpost.com/technology/2018/11/16/wanted-perfect-babysitter-must-pass-ai-scan-respect-attitude/?utm_term=.080010494ed5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Wanted: The ‘perfect babysitter.’ Must pass AI scan for respect and attitude.”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://qz.com/1427621/companies-are-on-the-hook-if-their-hiring-algorithms-are-biased/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Companies are on the hook if their hiring algorithms are biased”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.popsci.com/recidivism-algorithm-random-bias&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Courts use algorithms to help determine sentencing, but random people get the same results”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fab fa-twitter-square&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/dhh/status/1192540900393705474&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;David Heinemeier Hansson’s rant on the Apple Card&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;And &lt;a href=&#34;https://dhh.dk/2019/about-the-apple-card.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jamie Heinemeier Hansson’s response&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/14-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/14-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;what-did-we-just-learn-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#what-did-we-just-learn&#34; role=&#34;tab&#34; aria-controls=&#34;what-did-we-just-learn&#34; aria-selected=&#34;false&#34;&gt;What did we just learn?&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-data-analyitcs-a-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-data-analyitcs-a&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-data-analyitcs-a&#34; aria-selected=&#34;false&#34;&gt;Ethics of data analyitcs (a)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-data-analytics-b-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-data-analytics-b&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-data-analytics-b&#34; aria-selected=&#34;false&#34;&gt;Ethics of data analytics (b)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-data-analytics-c-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-data-analytics-c&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-data-analytics-c&#34; aria-selected=&#34;false&#34;&gt;Ethics of data analytics (c)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-storytelling-a-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-storytelling-a&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-storytelling-a&#34; aria-selected=&#34;false&#34;&gt;Ethics of storytelling (a)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-storytelling-b-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-storytelling-b&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-storytelling-b&#34; aria-selected=&#34;false&#34;&gt;Ethics of storytelling (b)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-storytelling-c-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-storytelling-c&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-storytelling-c&#34; aria-selected=&#34;false&#34;&gt;Ethics of storytelling (c)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-of-storytelling-d-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-of-storytelling-d&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-of-storytelling-d&#34; aria-selected=&#34;false&#34;&gt;Ethics of storytelling (d)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;curiosity-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#curiosity&#34; role=&#34;tab&#34; aria-controls=&#34;curiosity&#34; aria-selected=&#34;false&#34;&gt;Curiosity&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;slide-tabs&#34; class=&#34;tab-content&#34;&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introduction-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#1&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;what-did-we-just-learn&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;what-did-we-just-learn-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#overview&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-data-analyitcs-a&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-data-analyitcs-a-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#ethics-analysis&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-data-analytics-b&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-data-analytics-b-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#analysis-bias&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-data-analytics-c&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-data-analytics-c-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#analysis-evil&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-storytelling-a&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-storytelling-a-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#telling-stories&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-storytelling-b&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-storytelling-b-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#stories-manipulation&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-storytelling-c&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-storytelling-c-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#stories-misrepresentation&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-of-storytelling-d&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-of-storytelling-d-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#stories-equity&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;curiosity&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;curiosity-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/14-slides.html#curiosity&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;fyi&#34;&gt;
-&lt;strong&gt;Fun fact&lt;/strong&gt;: If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while going through the slides, you can see a list of special slide-specific commands.
-&lt;/div&gt;
-&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
-&lt;p&gt;Videos for each section of the lecture are &lt;a href=&#34;https://www.youtube.com/playlist?list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available at this YouTube playlist&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=djmK0RIldu0&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ini449ZegKI&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What did we just learn?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=NjwiGW_bpOg&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of data analyitcs (a)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=VeX7WWZOyAc&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of data analytics (b)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=lr0rgzRondo&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of data analytics (c)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RJpl7V76NeA&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of storytelling (a)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dXPj0XGCpag&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of storytelling (b)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=O_yridxo4A8&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of storytelling (c)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=k-59BLi8dMc&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics of storytelling (d)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gqhoIe5vwoU&amp;amp;list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curiosity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can also watch the playlist (and skip around to different sections) here:&lt;/p&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sEKfedoOEFJvvNNHtDiYS-Q&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Miguel A. Hernán, “The c-Word: Scientific Euphemisms Do Not Improve Causal Inference from Observational Data,” &lt;em&gt;American Journal of Publich Health&lt;/em&gt; 108, no. 5 (May 2018): 616–19, doi:&lt;a href=&#34;https://doi.org/10.2105/AJPH.2018.304337&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.2105/AJPH.2018.304337&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Paul J. Gertler et al., &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;, 2nd ed. (Inter-American Development Bank; World Bank, 2016), &lt;a href=&#34;https://openknowledge.worldbank.org/handle/10986/25030&#34;&gt;https://openknowledge.worldbank.org/handle/10986/25030&lt;/a&gt;. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Choosing and planning ethical evaluations</title>
-      <link>/content/13-content/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/content/13-content/</guid>
-      <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;/example/random-numbers/&#34;&gt;“Generating random numbers”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;/example/synthetic-data/&#34;&gt;“The ultimate guide to generating synthetic data for causal inference”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Paul Hünermund and Beyers Louw, &lt;a href=&#34;https://arxiv.org/abs/2005.10314&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“On the Nuisance of Control Variables in Regression Analysis”&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; (&lt;strong&gt;click on the PDF link in the right sidebar&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.cdc.gov/std/Program/pupestd/Types%20of%20Evaluation.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Types of Evaluation,”&lt;/a&gt; National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, Centers for Disease Control (CDC)&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Chapters 11–13 in &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/13-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/13-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;types-of-evaluations-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#types-of-evaluations&#34; role=&#34;tab&#34; aria-controls=&#34;types-of-evaluations&#34; aria-selected=&#34;false&#34;&gt;Types of evaluations&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;model-and-designbased-inference-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#model-and-designbased-inference&#34; role=&#34;tab&#34; aria-controls=&#34;model-and-designbased-inference&#34; aria-selected=&#34;false&#34;&gt;Model- and design-based inference&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;ethics-and-open-science-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#ethics-and-open-science&#34; role=&#34;tab&#34; aria-controls=&#34;ethics-and-open-science&#34; aria-selected=&#34;false&#34;&gt;Ethics and open science&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;slide-tabs&#34; class=&#34;tab-content&#34;&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introduction-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/13-slides.html#1&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;types-of-evaluations&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;types-of-evaluations-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/13-slides.html#types-evaluations&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;model-and-designbased-inference&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;model-and-designbased-inference-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/13-slides.html#model-design-inference&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ethics-and-open-science&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;ethics-and-open-science-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/13-slides.html#ethics-open-science&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;fyi&#34;&gt;
-&lt;strong&gt;Fun fact&lt;/strong&gt;: If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while going through the slides, you can see a list of special slide-specific commands.
-&lt;/div&gt;
-&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
-&lt;p&gt;Videos for each section of the lecture are &lt;a href=&#34;https://www.youtube.com/playlist?list=PLS6tnpTr39sEkOTbIIpoXYu8czSTl1yIh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available at this YouTube playlist&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rMUkZ4PSInY&amp;amp;list=PLS6tnpTr39sEkOTbIIpoXYu8czSTl1yIh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=n2Sbyx0hz6I&amp;amp;list=PLS6tnpTr39sEkOTbIIpoXYu8czSTl1yIh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Types of evaluations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=bXYPjwSl-Wg&amp;amp;list=PLS6tnpTr39sEkOTbIIpoXYu8czSTl1yIh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Model- and design-based inference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=XdWbgeeCwZ8&amp;amp;list=PLS6tnpTr39sEkOTbIIpoXYu8czSTl1yIh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ethics and open science&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can also watch the playlist (and skip around to different sections) here:&lt;/p&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sEkOTbIIpoXYu8czSTl1yIh&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Paul Hünermund and Beyers Louw, “On the Nuisance of Control Variables in Regression Analysis,” October 1, 2020, &lt;a href=&#34;https://arxiv.org/abs/2005.10314&#34;&gt;https://arxiv.org/abs/2005.10314&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Paul J. Gertler et al., &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;, 2nd ed. (Inter-American Development Bank; World Bank, 2016), &lt;a href=&#34;https://openknowledge.worldbank.org/handle/10986/25030&#34;&gt;https://openknowledge.worldbank.org/handle/10986/25030&lt;/a&gt;. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Instrumental variables II &#43; Regression discontinuity II</title>
-      <link>/content/12-content/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/content/12-content/</guid>
-      <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href=&#34;/example/cace/&#34;&gt;example page on complier average causal effects&lt;/a&gt; shows how to use R to disentangle complier average causal effects&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;/example/rdd-fuzzy&#34;&gt;example page on fuzzy regression discontinuity&lt;/a&gt; shows how to use R to use instrumental variables in fuzzy regression discontinuity, both parametrically and nonparametrically&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/12-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/12-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;treatment-effects-and-compliance-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#treatment-effects-and-compliance&#34; role=&#34;tab&#34; aria-controls=&#34;treatment-effects-and-compliance&#34; aria-selected=&#34;false&#34;&gt;Treatment effects and compliance&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;randomized-promotion-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#randomized-promotion&#34; role=&#34;tab&#34; aria-controls=&#34;randomized-promotion&#34; aria-selected=&#34;false&#34;&gt;Randomized promotion&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;fuzzy-regression-discontinuity-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#fuzzy-regression-discontinuity&#34; role=&#34;tab&#34; aria-controls=&#34;fuzzy-regression-discontinuity&#34; aria-selected=&#34;false&#34;&gt;Fuzzy regression discontinuity&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;slide-tabs&#34; class=&#34;tab-content&#34;&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introduction-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/12-slides.html#1&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;treatment-effects-and-compliance&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;treatment-effects-and-compliance-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/12-slides.html#treatment-effects&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;randomized-promotion&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;randomized-promotion-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/12-slides.html#encouragement&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;fuzzy-regression-discontinuity&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;fuzzy-regression-discontinuity-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/12-slides.html#fuzzy-rdd&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;fyi&#34;&gt;
-&lt;strong&gt;Fun fact&lt;/strong&gt;: If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while going through the slides, you can see a list of special slide-specific commands.
-&lt;/div&gt;
-&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
-&lt;p&gt;Videos for each section of the lecture are &lt;a href=&#34;https://www.youtube.com/playlist?list=PLS6tnpTr39sGrbGfvdp0Gob6qAghIdiLq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available at this YouTube playlist&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=qDAFXXriFyE&amp;amp;list=PLS6tnpTr39sGrbGfvdp0Gob6qAghIdiLq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_Ue7blCyEXk&amp;amp;list=PLS6tnpTr39sGrbGfvdp0Gob6qAghIdiLq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Treatment effects and compliance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M5cuBBuqZys&amp;amp;list=PLS6tnpTr39sGrbGfvdp0Gob6qAghIdiLq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Randomized promotion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=9xGeCGRvVgE&amp;amp;list=PLS6tnpTr39sGrbGfvdp0Gob6qAghIdiLq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fuzzy regression discontinuity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can also watch the playlist (and skip around to different sections) here:&lt;/p&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sGrbGfvdp0Gob6qAghIdiLq&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Instrumental variables I</title>
+      <title>Calidad de modelos y otras técnicas</title>
       <link>/content/11-content/</link>
-      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       <guid>/content/11-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -433,9 +104,9 @@
     </item>
     
     <item>
-      <title>Regression discontinuity I</title>
+      <title>Regresiones logísticas</title>
       <link>/content/10-content/</link>
-      <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
       <guid>/content/10-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -524,9 +195,9 @@
     </item>
     
     <item>
-      <title>Difference-in-differences II</title>
+      <title>Regresiones lineales</title>
       <link>/content/09-content/</link>
-      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
       <guid>/content/09-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;p&gt;This session is a continuation of &lt;a href=&#34;/content/08-content/&#34;&gt;session 8&lt;/a&gt;.&lt;/p&gt;
@@ -534,9 +205,9 @@
     </item>
     
     <item>
-      <title>Difference-in-differences I &#43; II</title>
+      <title>Pruebas de hipótesis</title>
       <link>/content/08-content/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
       <guid>/content/08-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -631,9 +302,9 @@
     </item>
     
     <item>
-      <title>Randomization and matching</title>
+      <title>Muestras complejas</title>
       <link>/content/07-content/</link>
-      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
       <guid>/content/07-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -732,9 +403,9 @@
     </item>
     
     <item>
-      <title>Threats to validity</title>
+      <title>Análisis descriptivo</title>
       <link>/content/06-content/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       <guid>/content/06-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -824,9 +495,9 @@
     </item>
     
     <item>
-      <title>DAGs and potential outcomes</title>
+      <title>Transformación estructura datos</title>
       <link>/content/05-content/</link>
-      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       <guid>/content/05-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -902,9 +573,9 @@
     </item>
     
     <item>
-      <title>Measurement and DAGs</title>
+      <title>Transformación y selección de variables</title>
       <link>/content/04-content/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       <guid>/content/04-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;h3 id=&#34;measurement&#34;&gt;Measurement&lt;/h3&gt;
@@ -1002,9 +673,9 @@
     </item>
     
     <item>
-      <title>Theories of change and logic models</title>
+      <title>Importar y explorar datos</title>
       <link>/content/03-content/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       <guid>/content/03-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -1096,9 +767,106 @@
     </item>
     
     <item>
-      <title>Regression and inference</title>
+      <title>Herramientas para el uso de R</title>
+      <link>/content/01-content/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/content/01-content/</guid>
+      <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;/syllabus/&#34;&gt;syllabus&lt;/a&gt;, &lt;a href=&#34;/content/&#34;&gt;content&lt;/a&gt;, &lt;a href=&#34;/example/&#34;&gt;examples&lt;/a&gt;, and &lt;a href=&#34;/assigment/&#34;&gt;assignments&lt;/a&gt; pages for this class&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Chapter 1 in &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; DJ Patil, &lt;a href=&#34;https://www.youtube.com/watch?v=UOoMzaWOQJA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“What Makes a Radical and Revolutionary Technology?”&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;(DJ Patil is the former Chief Data Scientist of the United States under President Obama. He gave this forum address at Brigham Young University on February 13, 2018.)&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Stephen Goldsmith, &lt;a href=&#34;http://www.govtech.com/opinion/Next-Generation-Public-Employees-Must-Understand-Data-Policy.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Next Generation of Public Employees Must Understand Data and Policy”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Hadley Wickham, &lt;a href=&#34;http://bulletin.imstat.org/2014/09/data-science-how-is-it-different-to-statistics%E2%80%89/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Data Science: How is it Different To Statistics?”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
+&lt;li class=&#34;nav-item&#34;&gt;
+&lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&#34;nav-item&#34;&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;data-science-and-public-service-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#data-science-and-public-service&#34; role=&#34;tab&#34; aria-controls=&#34;data-science-and-public-service&#34; aria-selected=&#34;false&#34;&gt;Data science and public service&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&#34;nav-item&#34;&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;evidence-evaluation-and-causation-1-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#evidence-evaluation-and-causation-1&#34; role=&#34;tab&#34; aria-controls=&#34;evidence-evaluation-and-causation-1&#34; aria-selected=&#34;false&#34;&gt;Evidence, evaluation, and causation (1)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&#34;nav-item&#34;&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;evidence-evaluation-and-causation-2-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#evidence-evaluation-and-causation-2&#34; role=&#34;tab&#34; aria-controls=&#34;evidence-evaluation-and-causation-2&#34; aria-selected=&#34;false&#34;&gt;Evidence, evaluation, and causation (2)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&#34;nav-item&#34;&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;class-details-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#class-details&#34; role=&#34;tab&#34; aria-controls=&#34;class-details&#34; aria-selected=&#34;false&#34;&gt;Class details&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;slide-tabs&#34; class=&#34;tab-content&#34;&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introduction-tab&#34;&gt;
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#1&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-science-and-public-service&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;data-science-and-public-service-tab&#34;&gt;
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#ds-ps&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evidence-evaluation-and-causation-1&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;evidence-evaluation-and-causation-1-tab&#34;&gt;
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#evidence-evaluation-causation&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evidence-evaluation-and-causation-2&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;evidence-evaluation-and-causation-2-tab&#34;&gt;
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#evidence-evaluation-causation1&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;class-details&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;class-details-tab&#34;&gt;
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#class-details&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;fyi&#34;&gt;
+&lt;strong&gt;Fun fact&lt;/strong&gt;: If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while going through the slides, you can see a list of special slide-specific commands.
+&lt;/div&gt;
+&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
+&lt;p&gt;Videos for each section of the lecture are &lt;a href=&#34;https://www.youtube.com/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available at this YouTube playlist&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BIhz1dz5Vws&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=f-sOSXyeeJE&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data science and public service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Z2foqSMWnGU&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Evidence, evaluation, and causation (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=W5ChuEhAzrs&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Evidence, evaluation, and causation (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=D4LoEctZxHE&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class details&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also watch the playlist (and skip around to different sections) here:&lt;/p&gt;
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Paul J. Gertler et al., &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;, 2nd ed. (Inter-American Development Bank; World Bank, 2016), &lt;a href=&#34;https://openknowledge.worldbank.org/handle/10986/25030&#34;&gt;https://openknowledge.worldbank.org/handle/10986/25030&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Herramientas para el uso de R</title>
       <link>/content/02-content/</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       <guid>/content/02-content/</guid>
       <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
 &lt;ul&gt;
@@ -1193,103 +961,6 @@
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Ibid. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Evaluation and the causal revolution</title>
-      <link>/content/01-content/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/content/01-content/</guid>
-      <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href=&#34;/syllabus/&#34;&gt;syllabus&lt;/a&gt;, &lt;a href=&#34;/content/&#34;&gt;content&lt;/a&gt;, &lt;a href=&#34;/example/&#34;&gt;examples&lt;/a&gt;, and &lt;a href=&#34;/assigment/&#34;&gt;assignments&lt;/a&gt; pages for this class&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Chapter 1 in &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; DJ Patil, &lt;a href=&#34;https://www.youtube.com/watch?v=UOoMzaWOQJA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“What Makes a Radical and Revolutionary Technology?”&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;small&gt;(DJ Patil is the former Chief Data Scientist of the United States under President Obama. He gave this forum address at Brigham Young University on February 13, 2018.)&lt;/small&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Stephen Goldsmith, &lt;a href=&#34;http://www.govtech.com/opinion/Next-Generation-Public-Employees-Must-Understand-Data-Policy.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Next Generation of Public Employees Must Understand Data and Policy”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Hadley Wickham, &lt;a href=&#34;http://bulletin.imstat.org/2014/09/data-science-how-is-it-different-to-statistics%E2%80%89/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Data Science: How is it Different To Statistics?”&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;data-science-and-public-service-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#data-science-and-public-service&#34; role=&#34;tab&#34; aria-controls=&#34;data-science-and-public-service&#34; aria-selected=&#34;false&#34;&gt;Data science and public service&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;evidence-evaluation-and-causation-1-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#evidence-evaluation-and-causation-1&#34; role=&#34;tab&#34; aria-controls=&#34;evidence-evaluation-and-causation-1&#34; aria-selected=&#34;false&#34;&gt;Evidence, evaluation, and causation (1)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;evidence-evaluation-and-causation-2-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#evidence-evaluation-and-causation-2&#34; role=&#34;tab&#34; aria-controls=&#34;evidence-evaluation-and-causation-2&#34; aria-selected=&#34;false&#34;&gt;Evidence, evaluation, and causation (2)&lt;/a&gt;
-&lt;/li&gt;
-&lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;class-details-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#class-details&#34; role=&#34;tab&#34; aria-controls=&#34;class-details&#34; aria-selected=&#34;false&#34;&gt;Class details&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;slide-tabs&#34; class=&#34;tab-content&#34;&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introduction-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#1&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;data-science-and-public-service&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;data-science-and-public-service-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#ds-ps&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;evidence-evaluation-and-causation-1&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;evidence-evaluation-and-causation-1-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#evidence-evaluation-causation&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;evidence-evaluation-and-causation-2&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;evidence-evaluation-and-causation-2-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#evidence-evaluation-causation1&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;class-details&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;class-details-tab&#34;&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#class-details&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;fyi&#34;&gt;
-&lt;strong&gt;Fun fact&lt;/strong&gt;: If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while going through the slides, you can see a list of special slide-specific commands.
-&lt;/div&gt;
-&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
-&lt;p&gt;Videos for each section of the lecture are &lt;a href=&#34;https://www.youtube.com/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available at this YouTube playlist&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BIhz1dz5Vws&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=f-sOSXyeeJE&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data science and public service&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Z2foqSMWnGU&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Evidence, evaluation, and causation (1)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=W5ChuEhAzrs&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Evidence, evaluation, and causation (2)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=D4LoEctZxHE&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class details&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can also watch the playlist (and skip around to different sections) here:&lt;/p&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Paul J. Gertler et al., &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;, 2nd ed. (Inter-American Development Bank; World Bank, 2016), &lt;a href=&#34;https://openknowledge.worldbank.org/handle/10986/25030&#34;&gt;https://openknowledge.worldbank.org/handle/10986/25030&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

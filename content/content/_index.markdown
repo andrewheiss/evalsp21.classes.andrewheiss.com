@@ -1,8 +1,8 @@
 ---
-title: Readings, lectures, and videos
+title: Clases, prácticos y materiales
 menu:
   content:
-    parent: Overview
+    parent: Información general
     weight: 1
 type: docs
 weight: 1

@@ -1,12 +1,12 @@
 ---
-title: "Theories of change and logic models"
-linktitle: "3: Theories of change and logic models"
-date: "2021-01-25"
-start_date: "2021-01-25"
-end_date: "2021-01-29"
+title: "Importar y explorar datos"
+linktitle: "3: Importar y explorar datos"
+date: "2021-08-23"
+start_date: "2021-08-23"
+end_date: "2021-09-06"
 menu:
   content:
-    parent: Course content
+    parent: Contenido
     weight: 3
 type: docs
 toc: true

@@ -1,8 +1,8 @@
 ---
-title: Code examples
+title: Prácticos (códigos de ejemplo)
 menu:
   example:
-    parent: Overview
+    parent: Información general
     weight: 1
 type: docs
 weight: 1
