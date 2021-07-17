@@ -109,6 +109,16 @@ instructor:
     El canal de contacto de preferencia es [Slack](http://learn-r-uah.slack.com/), y en segunda instancia, email.
   appointment_url: https://calendly.com/valentinaandrade/
 
+ayudante1: 
+  name: Dafne Jaime
+  email: dafne.jaime@ug.uchile.cl
+  appointment_url: https://calendly.com/valentinaandrade/
+
+ayudante2: 
+  name: Nicolas Godoy
+  email: nicolas.godoy.m@ug.uchile.cl
+  appointment_url: https://calendly.com/valentinaandrade/
+
 course:
   number: "2255"
   semester: "II° Semestre- 2021"
