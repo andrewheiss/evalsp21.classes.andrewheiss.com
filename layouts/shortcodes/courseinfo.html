@@ -10,7 +10,18 @@
         </ul>
     </div>
     <div class="col-md-4">
-        <h3>Course details</h3>
+        <h3>Ayudantes</h3>
+        <ul class="icon-list">
+            <li><i class="fas fa-user"></i> <a href="{{ .Site.Params.ayudante1.url }}" target="_blank" rel="noopener"> {{ .Site.Params.ayudante1.name }}</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:{{ .Site.Params.ayudante1.email }}"> {{ .Site.Params.ayudante1.email }}</a></li>
+            <li><i class="fas fa-calendar-check"></i> <a href="{{ .Site.Params.ayudante1.appointment_url }}" target="_blank" rel="noopener"> Agendar reunión</a></li>
+            <li><i class="fas fa-user"></i> <a href="{{ .Site.Params.ayudante2.url }}" target="_blank" rel="noopener"> {{ .Site.Params.ayudante2.name }}</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:{{ .Site.Params.ayudante2.email }}"> {{ .Site.Params.ayudante2.email }}</a></li>
+            <li><i class="fas fa-calendar-check"></i> <a href="{{ .Site.Params.ayudante2.appointment_url }}" target="_blank" rel="noopener"> Agendar reunión</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h3>Detalles del curso</h3>
         <ul class="icon-list">
             <li><i class="far fa-calendar-alt"></i> {{ .Site.Params.course.days }}</li>
             <li><i class="fas fa-pencil-alt"></i> {{ .Site.Params.course.dates }}</li>
