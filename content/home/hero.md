@@ -5,7 +5,7 @@ headless: true
 active: true
 weight: 10
 
-title: "Análisis de Datos Estadístico en R"
+title: "Análisis de Datos Estadísticos en R"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
 hero_media: logo.png
