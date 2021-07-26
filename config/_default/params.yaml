@@ -112,12 +112,12 @@ instructor:
 ayudante1: 
   name: Dafne Jaime
   email: dafne.jaime@ug.uchile.cl
-  appointment_url: https://calendly.com/valentinaandrade/
+  appointment_url: https://calendly.com/dafne-jaime-vargas/
 
 ayudante2: 
   name: Nicolas Godoy
   email: nicolas.godoy.m@ug.uchile.cl
-  appointment_url: https://calendly.com/valentinaandrade/
+  appointment_url: https://calendly.com/nicolas-godoy-m/
 
 course:
   number: "2255"
