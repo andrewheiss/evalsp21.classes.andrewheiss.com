@@ -867,7 +867,7 @@ lm_3 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span s
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/11-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/11-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/11-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/11-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -1223,7 +1223,7 @@ mosquito_nets &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/10-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/10-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/10-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/10-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -1850,7 +1850,7 @@ mosquito_nets &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/08-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/08-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/08-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/08-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -1954,7 +1954,7 @@ mosquito_nets &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/07-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/07-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/07-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/07-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -2314,7 +2314,7 @@ mosquito_nets &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/06-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/06-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/06-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/06-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -2939,7 +2939,7 @@ mosquito_nets &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/05-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/05-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/05-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/05-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -3288,7 +3288,7 @@ mosquito_nets &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/04-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/04-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/04-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/04-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -4904,7 +4904,7 @@ faux_data &lt;span style=&#34;color:#f92672&#34;&gt;%&amp;gt;%&lt;/span&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/03-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/03-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/03-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/03-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -5654,64 +5654,51 @@ $$&lt;/p&gt;
       <link>/content/01-content/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       <guid>/content/01-content/</guid>
-      <description>&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href=&#34;/syllabus/&#34;&gt;syllabus&lt;/a&gt;, &lt;a href=&#34;/content/&#34;&gt;content&lt;/a&gt;, &lt;a href=&#34;/example/&#34;&gt;examples&lt;/a&gt;, and &lt;a href=&#34;/assigment/&#34;&gt;assignments&lt;/a&gt; pages for this class&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Chapter 1 in &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; DJ Patil, &lt;a href=&#34;https://www.youtube.com/watch?v=UOoMzaWOQJA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“What Makes a Radical and Revolutionary Technology?”&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;small&gt;(DJ Patil is the former Chief Data Scientist of the United States under President Obama. He gave this forum address at Brigham Young University on February 13, 2018.)&lt;/small&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Stephen Goldsmith, &lt;a href=&#34;http://www.govtech.com/opinion/Next-Generation-Public-Employees-Must-Understand-Data-Policy.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Next Generation of Public Employees Must Understand Data and Policy”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Hadley Wickham, &lt;a href=&#34;http://bulletin.imstat.org/2014/09/data-science-how-is-it-different-to-statistics%E2%80%89/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Data Science: How is it Different To Statistics?”&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/01-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
+&lt;a class=&#34;nav-link active&#34; id=&#34;introducción-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introducción&#34; role=&#34;tab&#34; aria-controls=&#34;introducción&#34; aria-selected=&#34;true&#34;&gt;Introducción&lt;/a&gt;
 &lt;/li&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;data-science-and-public-service-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#data-science-and-public-service&#34; role=&#34;tab&#34; aria-controls=&#34;data-science-and-public-service&#34; aria-selected=&#34;false&#34;&gt;Data science and public service&lt;/a&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;r-enviroment-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#r-enviroment&#34; role=&#34;tab&#34; aria-controls=&#34;r-enviroment&#34; aria-selected=&#34;false&#34;&gt;R enviroment&lt;/a&gt;
 &lt;/li&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;evidence-evaluation-and-causation-1-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#evidence-evaluation-and-causation-1&#34; role=&#34;tab&#34; aria-controls=&#34;evidence-evaluation-and-causation-1&#34; aria-selected=&#34;false&#34;&gt;Evidence, evaluation, and causation (1)&lt;/a&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;r-comunicación-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#r-comunicación&#34; role=&#34;tab&#34; aria-controls=&#34;r-comunicación&#34; aria-selected=&#34;false&#34;&gt;R comunicación&lt;/a&gt;
 &lt;/li&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;evidence-evaluation-and-causation-2-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#evidence-evaluation-and-causation-2&#34; role=&#34;tab&#34; aria-controls=&#34;evidence-evaluation-and-causation-2&#34; aria-selected=&#34;false&#34;&gt;Evidence, evaluation, and causation (2)&lt;/a&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;librerías-para-el-uso-de-r-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#librerías-para-el-uso-de-r&#34; role=&#34;tab&#34; aria-controls=&#34;librerías-para-el-uso-de-r&#34; aria-selected=&#34;false&#34;&gt;Librerías para el uso de R&lt;/a&gt;
 &lt;/li&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
-&lt;a class=&#34;nav-link&#34; id=&#34;class-details-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#class-details&#34; role=&#34;tab&#34; aria-controls=&#34;class-details&#34; aria-selected=&#34;false&#34;&gt;Class details&lt;/a&gt;
+&lt;a class=&#34;nav-link&#34; id=&#34;detalles-del-curso-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#detalles-del-curso&#34; role=&#34;tab&#34; aria-controls=&#34;detalles-del-curso&#34; aria-selected=&#34;false&#34;&gt;Detalles del curso&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div id=&#34;slide-tabs&#34; class=&#34;tab-content&#34;&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introduction-tab&#34;&gt;
+&lt;div id=&#34;introducción&#34; class=&#34;tab-pane fade show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;introducción-tab&#34;&gt;
 &lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
 &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#1&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;data-science-and-public-service&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;data-science-and-public-service-tab&#34;&gt;
+&lt;div id=&#34;r-enviroment&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;r-enviroment-tab&#34;&gt;
 &lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
 &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#ds-ps&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;evidence-evaluation-and-causation-1&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;evidence-evaluation-and-causation-1-tab&#34;&gt;
+&lt;div id=&#34;r-comunicación&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;r-comunicación-tab&#34;&gt;
 &lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
 &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#evidence-evaluation-causation&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;evidence-evaluation-and-causation-2&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;evidence-evaluation-and-causation-2-tab&#34;&gt;
+&lt;div id=&#34;librerías-para-el-uso-de-r&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;librerías-para-el-uso-de-r-tab&#34;&gt;
 &lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
 &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#evidence-evaluation-causation1&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;class-details&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;class-details-tab&#34;&gt;
+&lt;div id=&#34;detalles-del-curso&#34; class=&#34;tab-pane fade&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;detalles-del-curso-tab&#34;&gt;
 &lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
 &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;/slides/01-slides.html#class-details&#34;&gt;
 &lt;/iframe&gt;
@@ -5719,30 +5706,24 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;fyi&#34;&gt;
-&lt;strong&gt;Fun fact&lt;/strong&gt;: If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while going through the slides, you can see a list of special slide-specific commands.
+&lt;strong&gt;¿Cómo ocupar&lt;/strong&gt;: Si presionas &lt;kbd&gt;?&lt;/kbd&gt; (o &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) mientras estas viendo las slides, podrás ver los comandos específicos para navegar en ellas.
 &lt;/div&gt;
-&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
-&lt;p&gt;Videos for each section of the lecture are &lt;a href=&#34;https://www.youtube.com/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available at this YouTube playlist&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;video-de-la-clase&#34;&gt;Video de la clase&lt;/h1&gt;
+&lt;h1 id=&#34;recomendaciones&#34;&gt;Recomendaciones&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BIhz1dz5Vws&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=f-sOSXyeeJE&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data science and public service&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Z2foqSMWnGU&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Evidence, evaluation, and causation (1)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=W5ChuEhAzrs&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Evidence, evaluation, and causation (2)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=D4LoEctZxHE&amp;amp;list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Class details&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can also watch the playlist (and skip around to different sections) here:&lt;/p&gt;
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-&lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Paul J. Gertler et al., &lt;em&gt;Impact Evaluation in Practice&lt;/em&gt;, 2nd ed. (Inter-American Development Bank; World Bank, 2016), &lt;a href=&#34;https://openknowledge.worldbank.org/handle/10986/25030&#34;&gt;https://openknowledge.worldbank.org/handle/10986/25030&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Hadley Wickham, &lt;a href=&#34;http://bulletin.imstat.org/2014/09/data-science-how-is-it-different-to-statistics%E2%80%89/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Data Science: How is it Different To Statistics?”&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; Tutoriales, &lt;a href=&#34;https://www.youtube.com/watch?v=UOoMzaWOQJA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Learn-R”&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;Instalación de softwares&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://learn-r.formr.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Contestar reporte de registro&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -5862,7 +5843,7 @@ Recent versions of &lt;strong&gt;tidyr&lt;/strong&gt; have renamed these core fu
 &lt;p&gt;We’ll review all this regression stuff in the videos, so &lt;em&gt;don’t panic&lt;/em&gt; if this all looks terrifying! Also, take advantage of the videos that accompany the &lt;em&gt;OpenIntro&lt;/em&gt; chapters. And &lt;em&gt;also&lt;/em&gt;, the &lt;em&gt;OpenIntro&lt;/em&gt; chapters are heavier on the math—don’t worry if you don’t understand everything.&lt;/p&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;p&gt;The slides for today’s lesson are available online as an HTML file. Use the buttons below to open the slides either as an interactive website or as a static PDF (for printing or storing for later). You can also click in the slides below and navigate through them with your left and right arrow keys.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/02-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/02-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/02-slides.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Ver las slides en una nueva ventana&lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;/slides/02-slides.pdf&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Descargar las slides en PDF&lt;/a&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;slide-tabs&#34; role=&#34;tablist&#34;&gt;
 &lt;li class=&#34;nav-item&#34;&gt;
 &lt;a class=&#34;nav-link active&#34; id=&#34;introduction-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#introduction&#34; role=&#34;tab&#34; aria-controls=&#34;introduction&#34; aria-selected=&#34;true&#34;&gt;Introduction&lt;/a&gt;
@@ -7188,7 +7169,7 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
     </item>
     
     <item>
-      <title>Schedule</title>
+      <title>Calendario</title>
       <link>/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/schedule/</guid>
@@ -7693,6 +7674,10 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
 
 &lt;/table&gt;
 &lt;/p&gt;
+&lt;p&gt;
+Puedes descargar el programa apretando el siguiente botón:
+&lt;a Puedes descargar el programa apretando el siguiente botón class=&#34;btn btn-primary&#34; href=&#34;../files/programa-R-uah.pdf/&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -7753,10 +7738,10 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
         &lt;ul class=&#34;icon-list&#34;&gt;
             &lt;li&gt;&lt;i class=&#34;fas fa-user&#34;&gt;&lt;/i&gt; &lt;a href=&#34;&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Dafne Jaime&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:dafne.jaime@ug.uchile.cl&#34;&gt; dafne.jaime@ug.uchile.cl&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fas fa-calendar-check&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://calendly.com/valentinaandrade/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Agendar reunión&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-calendar-check&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://calendly.com/dafne-jaime-vargas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Agendar reunión&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;i class=&#34;fas fa-user&#34;&gt;&lt;/i&gt; &lt;a href=&#34;&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Nicolas Godoy&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:nicolas.godoy.m@ug.uchile.cl&#34;&gt; nicolas.godoy.m@ug.uchile.cl&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;i class=&#34;fas fa-calendar-check&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://calendly.com/valentinaandrade/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Agendar reunión&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-calendar-check&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://calendly.com/nicolas-godoy-m/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Agendar reunión&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&#34;col-md-4&#34;&gt;
@@ -7840,8 +7825,14 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
 &lt;p&gt;Dado el contexto de pandemia se tendrán tres espacios principales de aprendizaje:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Sesiones de clases lectivas&lt;/strong&gt; (&lt;i class=&#34;fas fa-book-reader&#34;&gt;&lt;/i&gt;), donde se presentarán los aspectos centrales de los contenidos correspondientes a la semana vía Zoom. Tanto el documento de presentación como el video de la clase se encontrará disponible en la pestaña de &lt;a href=&#34;/content/&#34;&gt;&lt;strong&gt;Clases&lt;/strong&gt;&lt;/a&gt; de este sitio web del curso.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Prácticas guiadas&lt;/strong&gt; (&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;): cada tema de las sesiones se acompaña de una guía práctica de aplicación de contenidos, y que estarán disponibles en la pestaña &lt;a href=&#34;/example/&#34;&gt;&lt;strong&gt;Prácticos&lt;/strong&gt;&lt;/a&gt;. Estas guías están diseñadas para ser desarrolladas de manera autónoma por cada estudiante semana a semana. También serán desarrolladas y revisadas cada semana en grupos pequeños con supervisión de ayudantes para dar mayor oportunidad de participación y resolver las dudas respectivas. Existe un &lt;strong&gt;reporte de progreso&lt;/strong&gt; asociado a estas guías que deberá ser completado semanalmente con fines de monitoreo y retroalimentación.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Tareas&lt;/strong&gt;: se desarrollarán &lt;strong&gt;6 tareas&lt;/strong&gt; que les permitirán aplicar contenidos y replicar lo aprendido en los prácticos en base a una base de datos seleccionada por ustedes &lt;strong&gt;al inicio de semestre&lt;/strong&gt;. Esto permitirá no solo recibir retroalimentación constante, sino que aprender con datos que puedan ser útiles para otros proyectos de investigación que sean de su interés.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Prácticas guiadas&lt;/strong&gt; (&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;): cada tema de las sesiones se acompaña de una guía práctica de aplicación de contenidos, y que estarán disponibles en la pestaña &lt;a href=&#34;/example/&#34;&gt;&lt;strong&gt;Prácticos&lt;/strong&gt;&lt;/a&gt;. Estas guías están diseñadas para ser desarrolladas de manera autónoma por cada estudiante semana a semana. También serán desarrolladas y revisadas cada semana en grupos pequeños con supervisión de ayudantes para dar mayor oportunidad de participación y resolver las dudas respectivas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;https://learn-r.formr.org&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt;&lt;/a&gt; Existe un &lt;strong&gt;reporte de progreso&lt;/strong&gt; asociado a estas guías que deberá ser completado una vez que finalices cada práctica. Estos se realizan con fines de monitoreo y retroalimentación.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn-r.formr.org&#34;&gt;Link&lt;/a&gt; &lt;a class=&#34;btn btn-primary&#34; href=&#34;https://learn-r.formr.org&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Tareas&lt;/strong&gt;: se desarrollarán &lt;strong&gt;6 tareas&lt;/strong&gt; que les permitirán aplicar contenidos y replicar lo aprendido en los prácticos en base a una base de datos seleccionada por ustedes &lt;strong&gt;al inicio de semestre&lt;/strong&gt;. Esto permitirá no solo recibir retroalimentación constante, sino que aprender con datos que puedan ser útiles para otros proyectos de investigación que sean de su interés.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div id=&#34;recursos-principales-de-aprendizaje&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Recursos principales de aprendizaje&lt;/h2&gt;
@@ -7854,7 +7845,7 @@ avg_mpg &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;spa
 &lt;p&gt;&lt;i class=&#34;fab fa-slack&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://slack.com/intl/es-cl/help/articles/360059928654-C%C3%B3mo-usar-Slack--tu-gu%C3%ADa-de-inicio-r%C3%A1pido&#34;&gt;Guía de uso de slack&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;i class=&#34;fab fa-slack&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://join.slack.com/t/learn-r-uah/shared_invite/zt-sh9uysuu-IzEG8~u5k2YYGWgpAFTRFA&#34;&gt;Unirse a slack de curso&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4. GitHub&lt;/strong&gt; &lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;Github es una plataforma online que permite depositar archivos y el control de versiones (VCS), por lo que se ha transformado una herramienta fácil y popular para corregir, colaborar y compartir códigos de distintos lenguajes (no solo R). Utilizaremos esta plataforma para subir las tareas, ayudarlos/as de manera directa con su código y darles feedback.&lt;/p&gt;
+&lt;p&gt;Github es una plataforma online que permite depositar archivos y el control de versiones (VCS), por lo que se ha transformado una herramienta fácil y popular para corregir, colaborar y compartir códigos de distintos lenguajes (no solo R). Utilizaremos esta plataforma para subir las tareas, ayudarlos/as de manera directa con su código y darles &lt;em&gt;feedback&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5. Zotero&lt;/strong&gt; &lt;i class=&#34;fab fa-zotero&#34;&gt;&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;Zotero es un gestor bibliográfico que permite sistematizar las referencias y archivos utilizados en una investigación o informe. Enseñaremos este de manera complementaria pues este software se puede integrar en los documentos escritos hechos en R.&lt;/p&gt;
 &lt;/div&gt;

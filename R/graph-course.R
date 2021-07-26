@@ -27,3 +27,5 @@ ggplot(aes(x=date, y = sesion, color = unit)) +
   theme_minimal(),  width = 900, height = 600, 
 end_pause = 13,
 fps = 10, rewind = FALSE, duration = 20)
+
+anim_save(filename = "static/media/plan.gif", last_animation())
