@@ -1,5 +1,5 @@
 ---
-title: "Schedule"
+title: "Calendario"
 slug: schedule
 ---
 
@@ -14,3 +14,6 @@ Puedes suscribir la **planificación** del curso con la URL del calendario en Ou
 </div>
 
 `r blogdown::shortcode("schedule")`
+
+<p>Puedes descargar el programa apretando el siguiente botón:
+<a Puedes descargar el programa apretando el siguiente botón class="btn btn-primary" href="../files/programa-R-uah.pdf/" role="button"><i class="far fa-file-pdf"></i></a></p>
