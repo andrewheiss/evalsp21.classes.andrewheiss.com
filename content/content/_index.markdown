@@ -8,10 +8,15 @@ type: docs
 weight: 1
 ---
 
-Each class session has a set of required readings that you should complete ***before*** watching the lecture. 
+Cada sesión de clases está dividida por una pestaña que puedes ver al costado izquierdo de tu pantalla. Dentro de cada página por sesión podrás encontrar
 
-Every class session also has a YouTube playlist of short recorded videos for each of the lecture sections. The lecture slides are special HTML files made with the R package [**xaringan**](https://bookdown.org/yihui/rmarkdown/xaringan.html) (R can do so much!). On each class session page you'll see buttons for opening the presentation in a new tab or for downloading a PDF of the slides in case you want to print them or store them on your computer:
+- [(**Slides**)](https://bookdown.org/yihui/rmarkdown/xaringan.html) que es la presentación mostrada en clases. Encontrarás estos botones de modo de facilitar la descarga de la presentación y explorar las presentaciones
 
-<p style="text-align:center;"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-alt"></i> View all slides in new window</span> <span class="btn btn-primary btn-lg"><i class="far fa-file-pdf"></i> Download PDF of all slides</span></p>
+<p style="text-align:center;"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-alt"></i> Ver las slides en una nueva ventana</span> <span class="btn btn-primary btn-lg"><i class="far fa-file-pdf"></i> Descargar las slides en PDF</span></p>
 
-The slides are also embedded on each page. You can click in the slides and navigate through them with <kbd>←</kbd> and <kbd>→</kbd>. If you type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) while viewing the slides you can see a list of slide-specific commands (like <kbd>f</kbd> for fullscreen or <kbd>p</kbd> for presenter mode if you want to see my notes).
+La presentación también se puede ver directamente desde el sitio web del curso. Puedes presionar estas presentaciones y puedes navegar en ellas con <kbd>←</kbd> y <kbd>→</kbd>. Si presionas <kbd>?</kbd> (o <kbd>shift</kbd> + <kbd>/</kbd>) mientras estas viendo las slides, podrás ver una lista de comandos que te permitirán interactuar con ellos (por ejemplo, <kbd>f</kbd> sirve para ver en pantalla completa. También <kbd>p</kbd> modo presentador si quieres ver las notas. El lápiz en la esquina derecha te permite dejar tus **propias notas**).
+
+- **Video** de la grabación de la clase, que además estará disponible en la nube de Zoom
+
+- **Material** asociado a la clase, lo que incluye los ejemplos [**prácticos**](/example/) y contenido adicional que puede potenciar sus aprendizajes. 
+

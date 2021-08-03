@@ -22,8 +22,8 @@ slide_details <- tibble::tribble(
   ~title, ~slide, ~active,
   "Introducción", "1", TRUE,
    "R enviroment", "ds-ps", FALSE,
-   "R comunicación", "evidence-evaluation-causation", FALSE,
-  "Librerías para el uso de R", "evidence-evaluation-causation1", FALSE, "Detalles del curso", "class-details", FALSE
+   "R consulta", "evidence-evaluation-causation", FALSE,
+  "R comunicación", "evidence-evaluation-causation1", FALSE, "Detalles del curso", "class-details", FALSE
 )
 ```
 

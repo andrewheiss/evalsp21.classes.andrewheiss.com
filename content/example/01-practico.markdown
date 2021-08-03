@@ -14,6 +14,8 @@ editor_options:
 
 ## Part 1: The basics of R and dplyr
 
+Hola Dafne!!!
+
 For this week's problem set, you need to work through a few of RStudio's introductory primers. You'll do these in your browser and type code and see results there.
 
 You'll learn some of the basics of R, as well as some powerful methods for manipulating data with the **dplyr** package.
