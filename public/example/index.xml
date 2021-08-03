@@ -4063,6 +4063,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       <guid>/example/01-practico/</guid>
       <description>&lt;h2 id=&#34;part-1-the-basics-of-r-and-dplyr&#34;&gt;Part 1: The basics of R and dplyr&lt;/h2&gt;
+&lt;p&gt;Hola Dafne!!!&lt;/p&gt;
 &lt;p&gt;For this week&amp;rsquo;s problem set, you need to work through a few of RStudio&amp;rsquo;s introductory primers. You&amp;rsquo;ll do these in your browser and type code and see results there.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll learn some of the basics of R, as well as some powerful methods for manipulating data with the &lt;strong&gt;dplyr&lt;/strong&gt; package.&lt;/p&gt;
 &lt;p&gt;Complete these primers. It seems like there are a lot, but they&amp;rsquo;re short and go fairly quickly (especially as you get the hang of the syntax). Also, &lt;strong&gt;I have no way of seeing what you do or what you get wrong or right&lt;/strong&gt;, and that&amp;rsquo;s totally fine! If you get stuck and want to skip some (or if it gets too easy), go right ahead and skip them!&lt;/p&gt;

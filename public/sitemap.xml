@@ -8,13 +8,13 @@
   </url>
   
   <url>
-    <loc>/content/</loc>
+    <loc>/example/</loc>
     <lastmod>2021-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/example/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <loc>/content/</loc>
+    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -64,11 +64,6 @@
   </url>
   
   <url>
-    <loc>/content/11-content/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/example/11-practico/</loc>
     <lastmod>2021-11-08T00:00:00+00:00</lastmod>
   </url>
@@ -79,18 +74,8 @@
   </url>
   
   <url>
-    <loc>/content/10-content/</loc>
-    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/example/10-practico/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/content/09-content/</loc>
-    <lastmod>2021-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -99,23 +84,8 @@
   </url>
   
   <url>
-    <loc>/content/08-content/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/content/07-content/</loc>
-    <lastmod>2021-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/example/07-practico/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/content/06-content/</loc>
-    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -129,27 +99,12 @@
   </url>
   
   <url>
-    <loc>/content/05-content/</loc>
-    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/example/04-practico/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/content/04-content/</loc>
-    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/example/01-datos/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/content/03-content/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -170,11 +125,6 @@
   
   <url>
     <loc>/example/01-practico/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/content/02-content/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url>
   
