@@ -1,5 +1,5 @@
 ---
-title: Helpful resources
+title: Recursos
 menu:
   resource:
     parent: Resources
@@ -7,4 +7,4 @@ type: docs
 weight: -1
 ---
 
-I have included a bunch of extra resources and guides related to causal inference, program evaluation, R, data, and other relevant topics. Enjoy!
+En esta pestaña dejaremos recursos tales como tutoriales, material complementario y otros que puedan ser útiles durante el curso. 
