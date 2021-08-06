@@ -29,7 +29,7 @@
   
     
   
-  <meta name="description" content="Part 1: The basics of R and dplyr For this week&rsquo;s problem set, you need to work through a few of RStudio&rsquo;s introductory primers. You&rsquo;ll do these in your browser and type code and see results there." />
+  <meta name="description" content="1. Github Es un sistema de control de versiones en línea que rastrea los cambios de códigos, facilita la colaboración y el acceso abierto. En este curso será un programa esencial para el desarrollo tanto de clases como prácticos, por lo que en este práctico vamos a aprender a utilizarlo repasando aspectos básicos." />
 
   
   <link rel="alternate" hreflang="en-us" href="/example/01-practico/" />
@@ -288,7 +288,7 @@
   <meta property="og:site_name" content="Análisis Estadístico en R" />
   <meta property="og:url" content="/example/01-practico/" />
   <meta property="og:title" content="Bienvenido/a a R, RStudio y Github | Análisis Estadístico en R" />
-  <meta property="og:description" content="Part 1: The basics of R and dplyr For this week&rsquo;s problem set, you need to work through a few of RStudio&rsquo;s introductory primers. You&rsquo;ll do these in your browser and type code and see results there." /><meta property="og:image" content="/media/logo_hu02bc8dfe7cae86b2ee03430b67caeaf2_22353_300x300_fit_lanczos_2.png" />
+  <meta property="og:description" content="1. Github Es un sistema de control de versiones en línea que rastrea los cambios de códigos, facilita la colaboración y el acceso abierto. En este curso será un programa esencial para el desarrollo tanto de clases como prácticos, por lo que en este práctico vamos a aprender a utilizarlo repasando aspectos básicos." /><meta property="og:image" content="/media/logo_hu02bc8dfe7cae86b2ee03430b67caeaf2_22353_300x300_fit_lanczos_2.png" />
     <meta property="twitter:image" content="/media/logo_hu02bc8dfe7cae86b2ee03430b67caeaf2_22353_300x300_fit_lanczos_2.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -674,7 +674,7 @@
 
       
       <li >
-        <a href="/example/02-practico/">2: R, RStudio y tidyverse</a>
+        <a href="/example/02-practico/">2: RMarkdown</a>
       </li>
 
       
@@ -736,10 +736,30 @@
 
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#part-1-the-basics-of-r-and-dplyr">Part 1: The basics of R and dplyr</a></li>
-    <li><a href="#part-2-getting-familiar-with-rstudio">Part 2: Getting familiar with RStudio</a></li>
-    <li><a href="#part-3-rstudio-projects">Part 3: RStudio Projects</a></li>
-    <li><a href="#part-4-getting-familiar-with-r-markdown">Part 4: Getting familiar with R Markdown</a></li>
+    <li><a href="#1-github">1. Github</a>
+      <ul>
+        <li><a href="#ventajas">Ventajas:</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-github-classroom">2. Github Classroom</a></li>
+    <li><a href="#3-github-desktop">3. Github Desktop</a></li>
+    <li><a href="#4-botones-principales-en-github-desktop">4. Botones principales en GitHub Desktop:</a></li>
+    <li><a href="#5-conceptos-claves-de-github">5. Conceptos claves de Github</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#flujo-de-trabajo-colectivo-y-de-acceso-abierto">Flujo de trabajo colectivo y de acceso abierto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#5-learn-r-uah">5. Learn-R-UAH</a>
+      <ul>
+        <li><a href="#pasos-para-las-dinámicas-del-curso">Pasos para las dinámicas del curso</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-learn-r-youtube">6. Learn R Youtube</a></li>
+    <li><a href="#7-reporte-de-progreso">7. Reporte de progreso</a></li>
   </ul>
 </nav>
 
@@ -761,93 +781,187 @@
                     
 
                     <div class="article-style">
-                        <h2 id="part-1-the-basics-of-r-and-dplyr">Part 1: The basics of R and dplyr</h2>
-<p>For this week&rsquo;s problem set, you need to work through a few of RStudio&rsquo;s introductory primers. You&rsquo;ll do these in your browser and type code and see results there.</p>
-<p>You&rsquo;ll learn some of the basics of R, as well as some powerful methods for manipulating data with the <strong>dplyr</strong> package.</p>
-<p>Complete these primers. It seems like there are a lot, but they&rsquo;re short and go fairly quickly (especially as you get the hang of the syntax). Also, <strong>I have no way of seeing what you do or what you get wrong or right</strong>, and that&rsquo;s totally fine! If you get stuck and want to skip some (or if it gets too easy), go right ahead and skip them!</p>
+                        <h2 id="1-github">1. Github</h2>
+<p>Es un sistema de control de versiones en línea que rastrea los cambios de códigos, facilita la colaboración y el acceso abierto. En este curso será un programa esencial para el desarrollo tanto de clases como prácticos, por lo que en este práctico vamos a aprender a utilizarlo repasando aspectos básicos. Esto además será profundizado y detallado en clases.</p>
+<h3 id="ventajas">Ventajas:</h3>
+<p>Las principales ventajas son:</p>
 <ul>
-<li><strong>The Basics</strong>
-<ul>
-<li><a href="https://rstudio.cloud/learn/primers/1.1" target="_blank" rel="noopener">Visualization Basics</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/1.2" target="_blank" rel="noopener">Programming Basics</a></li>
-</ul>
+<li>
+<p>Facilita el flujo del trabajo y la colaboración entre usuarios</p>
 </li>
-<li><strong>Work with Data</strong>
-<ul>
-<li><a href="https://rstudio.cloud/learn/primers/2.1" target="_blank" rel="noopener">Working with Tibbles</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/2.2" target="_blank" rel="noopener">Isolating Data with dplyr</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/2.3" target="_blank" rel="noopener">Deriving Information with dplyr</a></li>
-</ul>
+<li>
+<p>Es de acceso abierto</p>
 </li>
-<li><strong>Visualize Data</strong>
-<ul>
-<li><a href="https://rstudio.cloud/learn/primers/3.1" target="_blank" rel="noopener">Exploratory Data Analysis</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.2" target="_blank" rel="noopener">Bar Charts</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.3" target="_blank" rel="noopener">Histograms</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.4" target="_blank" rel="noopener">Boxplots and Counts</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.5" target="_blank" rel="noopener">Scatterplots</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.6" target="_blank" rel="noopener">Line plots</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.7" target="_blank" rel="noopener">Overplotting and Big Data</a></li>
-<li><a href="https://rstudio.cloud/learn/primers/3.8" target="_blank" rel="noopener">Customize Your Plots</a></li>
-</ul>
+<li>
+<p>Permite hacer seguimiento a los errores</p>
 </li>
-<li><strong>Tidy Your Data</strong>
-<ul>
-<li><a href="https://rstudio.cloud/learn/primers/4.1" target="_blank" rel="noopener">Reshape Data</a></li>
-</ul>
+<li>
+<p>Tiene variedades de funciones y plataformas</p>
 </li>
 </ul>
+<p>Pero la plataforma central en el curso será <strong>GitHub Classroom</strong></p>
+<h2 id="2-github-classroom">2. Github Classroom</h2>
+<p>Es una plataforma de Github que facilita la interacción y aprendizaje entre estudiantes y profesores. Esta plataforma la usaremos a lo largo del curso, principalmente porque permite estudiantes trabajen individual y colectivamente usando los repositorios de github. En esta plataforma entregarán sus trabajos, recibirán comentarios y retroalimentaciones pudiendo trabajar colaborativamente.</p>
+<ul>
+<li>Pasos para ingresar a Github classroom</li>
+</ul>
+<ol>
+<li>Crear cuenta:</li>
+<li>Dirigirse al <a href="https://n9.cl/954ne" target="_blank" rel="noopener">Link</a></li>
+</ol>
+<p><img src="../www-learn-R-uah/static/img/example/create.png" width="60%" /></p>
+<ol>
+<li>Clickear en “Crea una cuenta”</li>
+<li>Introduce tu correo electrónico</li>
+<li>Crea una contraseña</li>
+<li>Introduce el nombre de usuario (similar a su nombre)</li>
+<li>Clickear en Crear una cuenta</li>
+</ol>
+<p><img src="../www-learn-R-uah/static/img/example/capt.png" width="60%" /></p>
+<ol>
+<li>Ve al correo electrónico que pusiste anteriormente</li>
+<li>Copia el código e introdúcelo en la página</li>
+</ol>
 <div class="note">
-Recent versions of <strong>tidyr</strong> have renamed these core functions: <code>gather()</code> is now <code>pivot_longer()</code> and <code>spread()</code> is now <code>pivot_wider()</code>. The syntax for these <code>pivot_*()</code> functions is <em>slightly</em> different from what it was in <code>gather()</code> and <code>spread()</code>, so you can&rsquo;t just replace the names. Fortunately, both <code>gather()</code> and <code>spread()</code> still work and won&rsquo;t go away for a while, so you can still use them as you learn about reshaping and tidying data. It would be worth learning how the newer <code>pivot_*()</code> functions work, eventually, though (<a href="https://tidyr.tidyverse.org/articles/pivot.html">see here for examples</a>).
+Recuerda que el correo que uses debe ser el mismo correo que usaste en pasos anteriores. <a href="https://youtu.be/9YD-F6-ktes">Ver tutorial 1</a>.
 </div>
 
-<p>The content from these primers comes from the (free and online!) book <a href="https://r4ds.had.co.nz/" target="_blank" rel="noopener"><em>R for Data Science</em> by Garrett Grolemund and Hadley Wickham</a>. I highly recommend the book as a reference and for continuing to learn and use R in the future.</p>
-<h2 id="part-2-getting-familiar-with-rstudio">Part 2: Getting familiar with RStudio</h2>
-<p>The RStudio primers you just worked through are a great introduction to writing and running R code, but you typically won&rsquo;t type code in a browser when you work with R. Instead, you&rsquo;ll use a nicer programming environment like RStudio, which lets you type and save code in scripts, run code from those scripts, and see the output of that code, all in the same program.</p>
-<p>To get familiar with RStudio, watch this video (it&rsquo;s from PMAP 8921, but the content still applies here):</p>
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cnQ-v1UUWyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<h2 id="part-3-rstudio-projects">Part 3: RStudio Projects</h2>
-<p>One of the most powerful and useful aspects of RStudio is its ability to manage projects.</p>
-<p>When you first open R, it is &ldquo;pointed&rdquo; at some folder on your computer, and anything you do will be relative to that folder. The technical term for this is a &ldquo;working directory.&rdquo;</p>
-<p>When you first open RStudio, look in the area right at the top of the Console pane to see your current working directory. Most likely you&rsquo;ll see something cryptic: <code>~/</code></p>
-<p><img src="/img/example/working-directory.png" width="50%" /></p>
-<p>That tilde sign (<code>~</code>) is a shortcut that stands for your user directory. On Windows this is <code>C:\Users\your_user_name\</code>; on macOS this is <code>/Users/your_user_name/</code>. With the working directory set to <code>~/</code>, R is &ldquo;pointed&rdquo; at that folder, and anything you save will end up in that folder, and R will expect any data that you load to be there too.</p>
-<p>It&rsquo;s always best to point R at some other directory. If you don&rsquo;t use RStudio, you need to manually set the working directory to where you want it with <code>setwd()</code>, and many R scripts in the wild include something like <code>setwd(&quot;C:\\Users\\bill\\Desktop\\Important research project&quot;)</code> at the beginning to change the directory. <strong>THIS IS BAD THOUGH</strong> (<a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" target="_blank" rel="noopener">see here for an explanation</a>). If you ever move that directory somewhere else, or run the script on a different computer, or share the project with someone, the path will be wrong and nothing will run and you will be sad.</p>
-<p>The best way to deal with working directories with RStudio is to use RStudio Projects. These are special files that RStudio creates for you that end in a <code>.Rproj</code> extension. When you open one of these special files, a new RStudio instance will open up and be pointed at the correct directory automatically. If you move the folder later or open it on a different computer, it will work just fine and you will not be sad.</p>
-<p><a href="https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects" target="_blank" rel="noopener">Read this super short chapter on RStudio projects to learn how to create and use them</a></p>
-<p>In general, you can create a new project by going to File &gt; New Project &gt; New Directory &gt; Empty Project, which will create a new folder on your computer that is empty except for a single <code>.Rproj</code> file. Double click on that file to open an RStudio instance that is pointed at the correct folder.</p>
-<h2 id="part-4-getting-familiar-with-r-markdown">Part 4: Getting familiar with R Markdown</h2>
-<p>To ensure that the analysis and graphics you make are reproducible, you&rsquo;ll do the majority of your work in this class using <strong>R Markdown</strong> files.</p>
-<p>Do the following things:</p>
-<ol>
-<li>Watch this video:</li>
-</ol>
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/178485416?color=428bca" frameborder="0"  allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
-<p> </p>
-<ol start="2">
-<li>
-<p>Skim through the content at these pages:</p>
+<h2 id="3-github-desktop">3. Github Desktop</h2>
+<p>Esta aplicación es una versión de Github que puede ser instalada tanto en windows como en mac. Facilitando el uso de Github a través de la coordinación de los cambios locales y la plataforma.</p>
+<p>a. Instalar Github Desktop</p>
+<p>b. Dirigirse a <a href="https://desktop.github.com/" target="_blank" rel="noopener">Link</a></p>
+<p><img src="../www-learn-R-uah/static/img/example/deskdown.png" width="60%" /></p>
+<p>c. Crea una carpeta para los contenidos del curso</p>
+<p>d. Vincula la dirección de la carpeta</p>
+<div class="note">
+<h4 id="para-windows">Para Windows</h4>
 <ul>
-<li><a href="/resource/markdown/">Using Markdown</a></li>
-<li><a href="/resource/rmarkdown/">Using R Markdown</a></li>
-<li><a href="http://rmarkdown.rstudio.com/lesson-2.html" target="_blank" rel="noopener">How it Works</a></li>
-<li><a href="http://rmarkdown.rstudio.com/lesson-3.html" target="_blank" rel="noopener">Code Chunks</a></li>
-<li><a href="http://rmarkdown.rstudio.com/lesson-4.html" target="_blank" rel="noopener">Inline Code</a></li>
-<li><a href="http://rmarkdown.rstudio.com/lesson-8.html" target="_blank" rel="noopener">Markdown Basics</a> (The <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" target="_blank" rel="noopener">R Markdown Reference Guide</a> is super useful here.)</li>
-<li><a href="http://rmarkdown.rstudio.com/lesson-9.html" target="_blank" rel="noopener">Output Formats</a></li>
-</ul>
+<li>
+<p>Clickear en Download for Windows (64bit)</p>
 </li>
 <li>
-<p>Watch this video (again, it&rsquo;s from PMAP 8921, but the content works for this class):</p>
- <div class="embed-responsive embed-responsive-16by9">
- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fT5xI1cmE2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </div>
+<p>Ejecutar el archivo descargado</p>
+</li>
+<li>
+<p>Introduce tu usuario y contraseña</p>
+</li>
+</ul>
+<h4 id="para-mac">Para Mac</h4>
+<ul>
+<li>
+<p>Clickear en Download for macOS</p>
+</li>
+<li>
+<p>Ejecutar el archivo descargado</p>
+</li>
+<li>
+<p>Introduce tu usuario y contraseña</p>
+</li>
+</ul>
+
+</div>
+
+<h2 id="4-botones-principales-en-github-desktop">4. Botones principales en GitHub Desktop:</h2>
+<ul>
+<li>
+<p><strong>Clone repository</strong>: Copia un repositorio a tu computador</p>
+</li>
+<li>
+<p><strong>Create new repository</strong>: crea un nuevo repositorio</p>
+</li>
+<li>
+<p><strong>Add existing repository</strong>: incorpora un repositorio existente</p>
+</li>
+</ul>
+<p><img src="../www-learn-R-uah/static/img/example/con1desk.png" width="60%" /></p>
+<ul>
+<li>
+<p><strong>Open the repository in Rstudio</strong>: Abre todo el proyecto en Rstudio</p>
+</li>
+<li>
+<p><strong>View the files of your repository in explorer</strong>: Muestra los archivos en la carpeta que se encuentra</p>
+</li>
+<li>
+<p><strong>Open the repository on Github</strong>: abre el repositorio en la página</p>
+</li>
+<li>
+<p><strong>Commit to master</strong>: forma de guardar los cambios</p>
+</li>
+<li>
+<p><strong>Push origin</strong>: manda los cambios al repositorio en línea</p>
+</li>
+</ul>
+<p><img src="../www-learn-R-uah/static/img/example/con2desk.jpg" width="60%" /></p>
+<h2 id="5-conceptos-claves-de-github">5. Conceptos claves de Github</h2>
+<ul>
+<li>
+<p><strong>Repositorios</strong>: Es donde se alberga el trabajo, como una carpeta que contiene todos los archivos y el historial de cambios realizados. Estos se almacenan en la nube</p>
+</li>
+<li>
+<p><strong>Cloning</strong>: Los repositorios pueden clonarse creando copias locales que extraen toda la información y antiguas versiones del repositorio. Después se puede ir subiendo los cambios para sincronizar la copia local y la copia de github.</p>
+</li>
+<li>
+<p><strong>Commit</strong>: Es la forma de guardar el estado de tu proyecto, como una captura en la que se deja un mensaje informativo</p>
+</li>
+<li>
+<p><strong>Push</strong>: Esta es la forma en la que se puede agregar ( <em>subir</em> ) los cambios locales al repositorio de Github.</p>
+</li>
+<li>
+<p><strong>README</strong>: Se utiliza a modo de presentación o introducción de los repositorios.</p>
+</li>
+<li>
+<p><strong>Pull</strong>: Esta es la forma en la que se puede agregar ( <em>bajar</em> ) los cambios del repositorio de Github al repositorio local.</p>
+</li>
+</ul>
+<h4 id="flujo-de-trabajo-colectivo-y-de-acceso-abierto">Flujo de trabajo colectivo y de acceso abierto</h4>
+<ul>
+<li>
+<p><strong>Forks</strong>: Es otra forma de copiar un repositorio, permitiendo hacer cambios sin afectar al proyecto original.</p>
+</li>
+<li>
+<p><strong>Pull requests</strong>: Es una forma de solicitar que sean incorporados los cambios que has hecho desde un repositorio local, al repositorio original.</p>
+</li>
+</ul>
+<p><img src="../www-learn-R-uah/static/img/example/concepclav.png" width="60%" /></p>
+<h2 id="5-learn-r-uah">5. Learn-R-UAH</h2>
+<h3 id="pasos-para-las-dinámicas-del-curso">Pasos para las dinámicas del curso</h3>
+<ol>
+<li>
+<p>Recibir una tarea</p>
+</li>
+<li>
+<p>Ingresa el <a href="https://classroom.github.com/classrooms/86887318-learn-r-uah-2021" target="_blank" rel="noopener">link</a></p>
 </li>
 </ol>
+<p>a. El link contiene la tarea, ustedes deben aceptar la tarea la cual creará un <em><strong>repositorio</strong></em> que contendrá la <em>información</em> y las <em>instrucciones</em> de la tarea.</p>
+<p><img src="../www-learn-R-uah/static/img/example/ingrestarea.png" width="60%" /></p>
+<p>b. Para eso deben ir a <em><strong>GitHub Desktop</strong></em>, <em><strong>clonar</strong> el respositiorio desde internet</em>.</p>
+<p><img src="../www-learn-R-uah/static/img/example/paso2tarea.png" width="60%" /></p>
+<p>c. Luego deben escoger el repositorio de la tarea, escoger la carpeta en la que se encontrará y clonarlo</p>
+<p><img src="../www-learn-R-uah/static/img/example/paso3tarea.png" width="60%" /></p>
+<p>d. Después deben abrir el repositorio creado a través de <em><strong>RStudio</strong></em>, ahí verán el mismo contenido pero en un archivo <em><strong>.md</strong></em></p>
+<p><img src="../www-learn-R-uah/static/img/example/paso4tarea.png" width="60%" /></p>
+<ol start="3">
+<li>Resolver una tarea</li>
+</ol>
+<p>a. La tarea se encuentra en un archivo llamado <code>*README*</code> con información de los conceptos básicos y el flujo de GitHub, deben leerlo detalladamente.</p>
+<p>b. Una vez leido deberán ir a Tarea 0 y responder las preguntas correspondientes</p>
+<p><img src="../www-learn-R-uah/static/img/example/paso5tarea.png" width="60%" /></p>
+<ol start="4">
+<li>Subir una tarea</li>
+</ol>
+<p>a. Una vez listo, deberán <em><strong>subir</strong></em> la tarea al repositorio remoto a través de GitHub Desktop</p>
+<p><img src="../www-learn-R-uah/static/img/example/paso6tarea.png" width="60%" /></p>
+<ol start="5">
+<li>Recibir comentarios</li>
+</ol>
+<p>a. Les llegará un correo con los comentarios y retroalimentación de su tarea</p>
+<h2 id="6-learn-r-youtube">6. Learn R Youtube</h2>
+<p>Recuerden que el <a href="https://www.youtube.com/watch?v=Zj8yL-nx9vM" target="_blank" rel="noopener">video de asociado a este práctico</a> y muchos más podrán encontrarlos en el <a href="https://www.youtube.com/channel/UCqBUeqBttVjS6h8fawK8sWg" target="_blank" rel="noopener">canal de youtube del curso</a></p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Zj8yL-nx9vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="7-reporte-de-progreso">7. Reporte de progreso</h2>
 
                     </div>
 
