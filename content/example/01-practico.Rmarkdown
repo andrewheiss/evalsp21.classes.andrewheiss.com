@@ -12,100 +12,209 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Part 1: The basics of R and dplyr
+## 1. Github
 
-For this week's problem set, you need to work through a few of RStudio's introductory primers. You'll do these in your browser and type code and see results there.
-
-You'll learn some of the basics of R, as well as some powerful methods for manipulating data with the **dplyr** package.
-
-Complete these primers. It seems like there are a lot, but they're short and go fairly quickly (especially as you get the hang of the syntax). Also, **I have no way of seeing what you do or what you get wrong or right**, and that's totally fine! If you get stuck and want to skip some (or if it gets too easy), go right ahead and skip them!
-
-- **The Basics**
-	- [Visualization Basics](https://rstudio.cloud/learn/primers/1.1)
-	- [Programming Basics](https://rstudio.cloud/learn/primers/1.2)
-- **Work with Data**
-	- [Working with Tibbles](https://rstudio.cloud/learn/primers/2.1)
-	- [Isolating Data with dplyr](https://rstudio.cloud/learn/primers/2.2)
-	- [Deriving Information with dplyr](https://rstudio.cloud/learn/primers/2.3)
-- **Visualize Data**
-  - [Exploratory Data Analysis](https://rstudio.cloud/learn/primers/3.1)
-  - [Bar Charts](https://rstudio.cloud/learn/primers/3.2)
-  - [Histograms](https://rstudio.cloud/learn/primers/3.3)
-  - [Boxplots and Counts](https://rstudio.cloud/learn/primers/3.4)
-  - [Scatterplots](https://rstudio.cloud/learn/primers/3.5)
-  - [Line plots](https://rstudio.cloud/learn/primers/3.6)
-  - [Overplotting and Big Data](https://rstudio.cloud/learn/primers/3.7)
-  - [Customize Your Plots](https://rstudio.cloud/learn/primers/3.8)
-- **Tidy Your Data**
-  - [Reshape Data](https://rstudio.cloud/learn/primers/4.1)
-
-{{< div "note" >}}
-Recent versions of **tidyr** have renamed these core functions: `gather()` is now `pivot_longer()` and `spread()` is now `pivot_wider()`. The syntax for these `pivot_*()` functions is *slightly* different from what it was in `gather()` and `spread()`, so you can't just replace the names. Fortunately, both `gather()` and `spread()` still work and won't go away for a while, so you can still use them as you learn about reshaping and tidying data. It would be worth learning how the newer `pivot_*()` functions work, eventually, though ([see here for examples](https://tidyr.tidyverse.org/articles/pivot.html)).
-{{< /div >}}
-
-The content from these primers comes from the (free and online!) book [*R for Data Science* by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/). I highly recommend the book as a reference and for continuing to learn and use R in the future.
+Es un sistema de control de versiones en línea que rastrea los cambios de códigos, facilita la colaboración y el acceso abierto. En este curso será un programa esencial para el desarrollo tanto de clases como prácticos, por lo que en este práctico vamos a aprender a utilizarlo repasando aspectos básicos. Esto además será profundizado y detallado en clases.
 
 
-## Part 2: Getting familiar with RStudio
+### Ventajas:
 
-The RStudio primers you just worked through are a great introduction to writing and running R code, but you typically won't type code in a browser when you work with R. Instead, you'll use a nicer programming environment like RStudio, which lets you type and save code in scripts, run code from those scripts, and see the output of that code, all in the same program.
+Las principales ventajas son:
 
-To get familiar with RStudio, watch this video (it's from PMAP 8921, but the content still applies here): 
+- Facilita el flujo del trabajo y la colaboración entre usuarios 
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cnQ-v1UUWyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+- Es de acceso abierto 
+
+- Permite hacer seguimiento a los errores
+
+- Tiene variedades de funciones y plataformas
 
 
-## Part 3: RStudio Projects
+Pero la plataforma central en el curso será **GitHub Classroom**
 
-One of the most powerful and useful aspects of RStudio is its ability to manage projects. 
 
-When you first open R, it is "pointed" at some folder on your computer, and anything you do will be relative to that folder. The technical term for this is a "working directory."
+## 2. Github Classroom
 
-When you first open RStudio, look in the area right at the top of the Console pane to see your current working directory. Most likely you'll see something cryptic: `~/`
+Es una plataforma de Github que facilita la interacción y aprendizaje entre estudiantes y profesores. Esta plataforma la usaremos a lo largo del curso, principalmente porque permite estudiantes trabajen individual y colectivamente usando los repositorios de github. En esta plataforma entregarán sus trabajos, recibirán comentarios y retroalimentaciones pudiendo trabajar colaborativamente.
 
-```{r working-directory, echo=FALSE, out.width="50%"}
-knitr::include_graphics("/img/example/working-directory.png", error = FALSE)
+- Pasos para ingresar a Github classroom
+
+1. Crear cuenta: 
+1. Dirigirse al [Link](https://n9.cl/954ne ) 
+
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/create.png", error = FALSE)
 ```
 
-That tilde sign (`~`) is a shortcut that stands for your user directory. On Windows this is `C:\Users\your_user_name\`; on macOS this is `/Users/your_user_name/`. With the working directory set to `~/`, R is "pointed" at that folder, and anything you save will end up in that folder, and R will expect any data that you load to be there too.
+1. Clickear en “Crea una cuenta”
+1. Introduce tu correo electrónico 
+1. Crea una contraseña
+1. Introduce el nombre de usuario (similar a su nombre)
+1. Clickear en Crear una cuenta
 
-It's always best to point R at some other directory. If you don't use RStudio, you need to manually set the working directory to where you want it with `setwd()`, and many R scripts in the wild include something like `setwd("C:\\Users\\bill\\Desktop\\Important research project")` at the beginning to change the directory. **THIS IS BAD THOUGH** ([see here for an explanation](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)). If you ever move that directory somewhere else, or run the script on a different computer, or share the project with someone, the path will be wrong and nothing will run and you will be sad.
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/capt.png", error = FALSE)
+```
 
-The best way to deal with working directories with RStudio is to use RStudio Projects. These are special files that RStudio creates for you that end in a `.Rproj` extension. When you open one of these special files, a new RStudio instance will open up and be pointed at the correct directory automatically. If you move the folder later or open it on a different computer, it will work just fine and you will not be sad.
-
-[Read this super short chapter on RStudio projects to learn how to create and use them](https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects)
-
-In general, you can create a new project by going to File > New Project > New Directory > Empty Project, which will create a new folder on your computer that is empty except for a single `.Rproj` file. Double click on that file to open an RStudio instance that is pointed at the correct folder.
+1. Ve al correo electrónico que pusiste anteriormente 
+1. Copia el código e introdúcelo en la página
 
 
-## Part 4: Getting familiar with R Markdown
+{{< div "note" >}}
+Recuerda que el correo que uses debe ser el mismo correo que usaste en pasos anteriores. [Ver tutorial 1](https://youtu.be/9YD-F6-ktes).
+{{< /div >}}
 
-To ensure that the analysis and graphics you make are reproducible, you'll do the majority of your work in this class using **R Markdown** files.
 
-Do the following things: 
+## 3. Github Desktop
 
-1. Watch this video:
+Esta aplicación es una versión de Github que puede ser instalada tanto en windows como en mac. Facilitando el uso de Github a través de la coordinación de los cambios locales y la plataforma.
+
+a. Instalar Github Desktop
+
+b. Dirigirse a [Link](https://desktop.github.com/) 
+
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/deskdown.png", error = FALSE)
+```
+
+c. Crea una carpeta para los contenidos del curso
+
+d. Vincula la dirección de la carpeta
+
+{{< div "note" >}} 
+
+#### Para Windows
+
+   - Clickear en Download for Windows (64bit)
+
+   - Ejecutar el archivo descargado
+
+   - Introduce tu usuario y contraseña
+
+#### Para Mac
+
+   - Clickear en Download for macOS
+
+   - Ejecutar el archivo descargado
+
+   - Introduce tu usuario y contraseña
+   
+{{< /div >}}
+
+
+## 4. Botones principales en GitHub Desktop:
+
+- **Clone repository**: Copia un repositorio a tu computador
+
+- **Create new repository**: crea un nuevo repositorio
+
+- **Add existing repository**: incorpora un repositorio existente
+
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/con1desk.png", error = FALSE)
+```
+
+- **Open the repository in Rstudio**: Abre todo el proyecto en Rstudio
+
+- **View the files of your repository in explorer**: Muestra los archivos en la carpeta que se encuentra
+
+- **Open the repository on Github**: abre el repositorio en la página
+
+- **Commit to master**: forma de guardar los cambios
+
+- **Push origin**: manda los cambios al repositorio en línea
+
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/con2desk.jpg", error = FALSE)
+```
+
+
+## 5. Conceptos claves de Github
+
+- **Repositorios**: Es donde se alberga el trabajo, como una carpeta que contiene todos los archivos y el historial de cambios realizados. Estos se almacenan en la nube
+
+- **Cloning**: Los repositorios pueden clonarse creando copias locales que extraen toda la información y antiguas versiones del repositorio. Después se puede ir subiendo los cambios para sincronizar la copia local y la copia de github.
+
+- **Commit**: Es la forma de guardar el estado de tu proyecto, como una captura en la que se deja un mensaje informativo
+
+- **Push**: Esta es la forma en la que se puede agregar ( _subir_ ) los cambios locales al repositorio de Github.
+
+- **README**: Se utiliza a modo de presentación o introducción de los repositorios.
+
+- **Pull**: Esta es la forma en la que se puede agregar ( _bajar_ ) los cambios del repositorio de Github al repositorio local.
+
+#### Flujo de trabajo colectivo y de acceso abierto
+
+- **Forks**: Es otra forma de copiar un repositorio, permitiendo hacer cambios sin afectar al proyecto original.
+
+- **Pull requests**: Es una forma de solicitar que sean incorporados los cambios que has hecho desde un repositorio local, al repositorio original.
+
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/concepclav.png", error = FALSE)
+```
+
+## 5. Learn-R-UAH
+
+### Pasos para las dinámicas del curso
+
+1. Recibir una tarea 
+
+2. Ingresa el [link](https://classroom.github.com/classrooms/86887318-learn-r-uah-2021)
+
+  a. El link contiene la tarea, ustedes deben aceptar la tarea la cual creará un _**repositorio**_ que contendrá la *información* y las *instrucciones* de la tarea.
+  
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/ingrestarea.png", error = FALSE)
+```
+  
+  b. Para eso deben ir a _**GitHub Desktop**_, _**clonar** el respositiorio desde internet_.
+  
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/paso2tarea.png", error = FALSE)
+```
+  
+  c. Luego deben escoger el repositorio de la tarea, escoger la carpeta en la que se encontrará y clonarlo
+  
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/paso3tarea.png", error = FALSE)
+``` 
+  
+  d. Después deben abrir el repositorio creado a través de _**RStudio**_, ahí verán el mismo contenido pero en un archivo _**.md**_ 
+
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/paso4tarea.png", error = FALSE)
+``` 
+  
+3. Resolver una tarea
+
+  a. La tarea se encuentra en un archivo llamado `*README*` con información de los conceptos básicos y el flujo de GitHub, deben leerlo detalladamente.
+ 
+  b. Una vez leido deberán ir a Tarea 0 y responder las preguntas correspondientes
+  
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/paso5tarea.png", error = FALSE)
+``` 
+  
+  
+4. Subir una tarea
+
+  a. Una vez listo, deberán _**subir**_ la tarea al repositorio remoto a través de GitHub Desktop
+  
+```{r, echo=FALSE, out.width="60%"}
+    knitr::include_graphics("../www-learn-R-uah/static/img/example/paso6tarea.png", error = FALSE)
+``` 
+
+5. Recibir comentarios 
+
+  a. Les llegará un correo con los comentarios y retroalimentación de su tarea
+
+## 6. Learn R Youtube
+
+Recuerden que el [video de asociado a este práctico](https://www.youtube.com/watch?v=Zj8yL-nx9vM) y muchos más podrán encontrarlos en el [canal de youtube del curso](https://www.youtube.com/channel/UCqBUeqBttVjS6h8fawK8sWg)
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/178485416?color=428bca" frameborder="0"  allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Zj8yL-nx9vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-&nbsp;
 
-2. Skim through the content at these pages:
-
-    - [Using Markdown](/resource/markdown/)
-    - [Using R Markdown](/resource/rmarkdown/)
-    - [How it Works](http://rmarkdown.rstudio.com/lesson-2.html)
-    - [Code Chunks](http://rmarkdown.rstudio.com/lesson-3.html)
-    - [Inline Code](http://rmarkdown.rstudio.com/lesson-4.html)
-    - [Markdown Basics](http://rmarkdown.rstudio.com/lesson-8.html) (The [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) is super useful here.)
-    - [Output Formats](http://rmarkdown.rstudio.com/lesson-9.html)
-
-3. Watch this video (again, it's from PMAP 8921, but the content works for this class):
-
-    <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fT5xI1cmE2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+## 7. Reporte de progreso
